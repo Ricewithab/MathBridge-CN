@@ -1,0 +1,206 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "domain_id": "number",
+  "subdomain_id": "number-sense-place-value",
+  "concept_ids": [
+    "counting",
+    "number-recognition",
+    "number-composition-decomposition",
+    "place-value",
+    "compare-order-numbers",
+    "rounding-estimation",
+    "negative-numbers",
+    "decimal-place-value"
+  ],
+  "research_policy": {
+    "verified": "Requirement checked against a primary curriculum source.",
+    "partially_verified": "Primary authority/document identity is verified, but detailed content was cross-checked through an accessible transcription or mirror and still requires direct page-level verification before publication as a verbatim quotation.",
+    "pending_textbook_mapping": "The national curriculum gives a stage-level requirement; exact single-grade placement must be verified against the relevant approved textbook edition/teacher guide.",
+    "rule": "MathBridge should paraphrase requirements in the teacher-facing UI and retain source locators internally. Do not imply that Common Core represents every US state."
+  },
+  "systems": {
+    "CN": {
+      "source_id": "cn-moe-math-2022",
+      "verification_status": "partially_verified",
+      "curriculum_granularity": "learning_stage",
+      "important_note": "The 2022 national mathematics standard groups primary requirements into Grades 1-2, 3-4 and 5-6. It does not itself provide the same year-by-year granularity as England or Common Core. Exact Grade 1 vs Grade 2 sequencing should be added from an approved textbook edition rather than inferred.",
+      "progression": [
+        {
+          "stage": "第一学段",
+          "grades": [1, 2],
+          "summary_en": "Develop meaning for whole numbers up to 10,000 in real contexts; understand positional value; compare numbers; connect quantities, representations and written numerals.",
+          "summary_cn": "在现实情境中理解万以内数的意义和数位含义，比较数的大小，并把数量、表征与数字符号联系起来。",
+          "source_locator": "课程内容 → 小学部分 → 数与代数 → 第一学段（1-2年级）→ 数与运算；学业要求；教学提示",
+          "teaching_signals": [
+            "Begin with familiar quantities and concrete representations.",
+            "Move from quantity to numeral representation.",
+            "Make the value of a digit depend explicitly on its position.",
+            "Use the transition from 9 to 10 to establish a new place and unit of ten.",
+            "Extend the same structural idea to larger whole numbers."
+          ],
+          "status": "partially_verified"
+        },
+        {
+          "stage": "第二学段",
+          "grades": [3, 4],
+          "summary_en": "Extend whole-number understanding beyond 10,000 and develop the decimal base-ten numeration system; use estimation and large-number structure in problem solving.",
+          "summary_cn": "认识万以上的数，了解十进制计数法，并在估算和解决实际问题中继续发展数感。",
+          "source_locator": "课程内容 → 小学部分 → 数与代数 → 第二学段（3-4年级）→ 数与运算",
+          "status": "partially_verified"
+        },
+        {
+          "stage": "第三学段",
+          "grades": [5, 6],
+          "summary_en": "Place-value structure is no longer presented mainly as expansion to ever-larger whole numbers; it is applied within decimal and fraction meaning, counting units and consistent reasoning about operations.",
+          "summary_cn": "位值与计数单位的思想继续用于小数、分数和运算一致性的理解，而不是主要作为更大整数范围的独立主题推进。",
+          "source_locator": "课程内容 → 小学部分 → 数与代数 → 第三学段（5-6年级）→ 数与运算；教学提示",
+          "status": "partially_verified"
+        }
+      ],
+      "single_grade_records": {
+        "grade_1": "pending_textbook_mapping",
+        "grade_2": "pending_textbook_mapping",
+        "grade_3": "pending_textbook_mapping",
+        "grade_4": "pending_textbook_mapping",
+        "grade_5": "pending_textbook_mapping",
+        "grade_6": "pending_textbook_mapping"
+      }
+    },
+    "UK": {
+      "source_id": "uk-dfe-mathematics",
+      "verification_status": "verified",
+      "curriculum_granularity": "year_by_year",
+      "scope_note": "UK mode currently means England. Scotland, Wales and Northern Ireland have separate curriculum systems and should not be represented by this mapping.",
+      "progression": [
+        {
+          "year": 1,
+          "summary": "Count, read and write to 100; represent and compare numbers; begin recognising place value beyond 20 using objects and pictorial representations.",
+          "range_or_structure": "to 100",
+          "source_locator": "Year 1 → Number - number and place value",
+          "status": "verified"
+        },
+        {
+          "year": 2,
+          "summary": "Recognise tens and ones in two-digit numbers; represent, estimate, compare and order numbers to at least 100; use place value to solve problems.",
+          "range_or_structure": "two-digit place value; to at least 100",
+          "source_locator": "Year 2 → Number - number and place value",
+          "status": "verified"
+        },
+        {
+          "year": 3,
+          "summary": "Recognise hundreds, tens and ones in three-digit numbers; compare, order, represent and partition numbers up to 1,000.",
+          "range_or_structure": "three-digit place value; to 1,000",
+          "source_locator": "Year 3 → Number - number and place value",
+          "status": "verified"
+        },
+        {
+          "year": 4,
+          "summary": "Recognise thousands, hundreds, tens and ones; compare numbers beyond 1,000; round to 10, 100 or 1,000; begin extending place-value understanding into decimals.",
+          "range_or_structure": "four-digit structure and beyond 1,000",
+          "source_locator": "Year 4 → Number - number and place value",
+          "status": "verified"
+        },
+        {
+          "year": 5,
+          "summary": "Read, write, order and compare numbers to at least 1,000,000; determine digit values; use powers-of-ten steps and rounding; apply the number system to decimals and fractions.",
+          "range_or_structure": "to at least 1,000,000",
+          "source_locator": "Year 5 → Number - number and place value",
+          "status": "verified"
+        },
+        {
+          "year": 6,
+          "summary": "Read, write, order and compare numbers up to 10,000,000; determine digit values; round whole numbers to required accuracy and use negative numbers in context.",
+          "range_or_structure": "to 10,000,000",
+          "source_locator": "Year 6 → Number - number and place value",
+          "status": "verified"
+        }
+      ]
+    },
+    "US": {
+      "source_id": "us-common-core-math",
+      "verification_status": "verified",
+      "curriculum_granularity": "grade_by_grade_reference_framework",
+      "scope_note": "These records describe Common Core State Standards for Mathematics as MathBridge's baseline US reference framework. US states may use Common Core, modified standards or different state standards; state layers should be added separately.",
+      "progression": [
+        {
+          "grade": 1,
+          "standards": ["1.NBT.A.1", "1.NBT.B.2", "1.NBT.B.3", "1.NBT.C.4", "1.NBT.C.5", "1.NBT.C.6"],
+          "summary": "Develop two-digit place value as tens and ones; compare two-digit numbers; use place-value reasoning with addition and subtraction within 100.",
+          "range_or_structure": "two-digit numbers; count to 120",
+          "source_locator": "Grade 1 → Number and Operations in Base Ten (1.NBT)",
+          "status": "verified"
+        },
+        {
+          "grade": 2,
+          "standards": ["2.NBT.A.1", "2.NBT.A.2", "2.NBT.A.3", "2.NBT.A.4", "2.NBT.B.5", "2.NBT.B.7", "2.NBT.B.8", "2.NBT.B.9"],
+          "summary": "Develop three-digit place value as hundreds, tens and ones; count and write to 1,000; compare three-digit numbers; use place value to explain addition and subtraction strategies.",
+          "range_or_structure": "three-digit numbers; to 1,000",
+          "source_locator": "Grade 2 → Number and Operations in Base Ten (2.NBT)",
+          "status": "verified"
+        },
+        {
+          "grade": 3,
+          "standards": ["3.NBT.A.1", "3.NBT.A.2", "3.NBT.A.3"],
+          "summary": "Apply place-value understanding to rounding and multi-digit arithmetic rather than adding a new dedicated place-value-understanding cluster.",
+          "range_or_structure": "round to nearest 10 or 100; arithmetic within 1,000",
+          "source_locator": "Grade 3 → Number and Operations in Base Ten (3.NBT)",
+          "status": "verified"
+        },
+        {
+          "grade": 4,
+          "standards": ["4.NBT.A.1", "4.NBT.A.2", "4.NBT.A.3"],
+          "summary": "Generalise base-ten place value for multi-digit whole numbers: each place is ten times the place to its right; read, write, compare and round multi-digit whole numbers.",
+          "range_or_structure": "whole numbers up to 1,000,000 in this domain",
+          "source_locator": "Grade 4 → Number and Operations in Base Ten (4.NBT)",
+          "status": "verified"
+        },
+        {
+          "grade": 5,
+          "standards": ["5.NBT.A.1", "5.NBT.A.2", "5.NBT.A.3", "5.NBT.A.4"],
+          "summary": "Extend base-ten place value to decimals: each place is ten times the place to its right and one tenth of the place to its left; read, write, compare and round decimals to thousandths.",
+          "range_or_structure": "whole-number powers of ten and decimals to thousandths",
+          "source_locator": "Grade 5 → Number and Operations in Base Ten (5.NBT)",
+          "status": "verified"
+        },
+        {
+          "grade": 6,
+          "standards": ["6.NS.B.2", "6.NS.B.3", "6.NS.C.5", "6.NS.C.6", "6.NS.C.7", "6.NS.C.8"],
+          "summary": "There is no separate Number and Operations in Base Ten domain in Grade 6. Students apply prior base-ten understanding to fluent multi-digit decimal operations and extend the number system to negative and rational numbers.",
+          "range_or_structure": "multi-digit decimals and rational-number system",
+          "source_locator": "Grade 6 → The Number System (6.NS)",
+          "status": "verified"
+        }
+      ]
+    }
+  },
+  "comparison_insights": [
+    {
+      "id": "npv-insight-001",
+      "status": "supported",
+      "statement_en": "The three systems organise progression differently: China's national standard is stage-based, England publishes year-by-year expectations, and Common Core publishes grade-by-grade standards.",
+      "statement_cn": "三个体系的课程颗粒度不同：中国国家课标按学段组织，英格兰按学年列出要求，Common Core按年级列出标准。",
+      "source_ids": ["cn-moe-math-2022", "uk-dfe-mathematics", "us-common-core-math"]
+    },
+    {
+      "id": "npv-insight-002",
+      "status": "supported",
+      "statement_en": "A simple 'same grade = same content' comparison is misleading. For example, China's first learning stage expects understanding of whole numbers within 10,000 by the end of Grade 2, while England Year 2 focuses primarily on two-digit place value and Common Core Grade 2 focuses on three-digit numbers to 1,000.",
+      "statement_cn": "不能把“同年级”直接视为“同内容”。例如，中国第一学段到二年级结束要求理解万以内数，而英格兰Year 2主要聚焦两位数位值，Common Core二年级则系统发展到三位数和1000以内。",
+      "source_ids": ["cn-moe-math-2022", "uk-dfe-mathematics", "us-common-core-math"]
+    },
+    {
+      "id": "npv-insight-003",
+      "status": "supported",
+      "statement_en": "Across all three systems, place value is not only a naming-of-digits topic; it is used as structural knowledge for comparison, estimation and arithmetic.",
+      "statement_cn": "三个体系都不把位值仅仅视为“认识数位名称”，而是把它作为数的比较、估算和运算的重要结构基础。",
+      "source_ids": ["cn-moe-math-2022", "uk-dfe-mathematics", "us-common-core-math"]
+    }
+  ],
+  "next_research": [
+    "Verify approved PEP textbook edition sequencing for Grades 1-6 so China can be shown year-by-year without inventing grade placement.",
+    "Add DfE 2020 ready-to-progress criteria and NCETM materials to describe England teaching representations, not just statutory outcomes.",
+    "Add at least two state layers to US mode (recommended: California plus Texas) so Common Core is clearly a baseline rather than 'the US curriculum'.",
+    "Attach claim-level research on concrete/pictorial representations, place-value charts, base-ten blocks and number lines."
+  ]
+}
