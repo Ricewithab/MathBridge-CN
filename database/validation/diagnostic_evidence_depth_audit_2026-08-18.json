@@ -1,0 +1,29 @@
+{
+  "version":"0.1.0",
+  "audit_date":"2026-08-18",
+  "purpose":"Track the strength of evidence behind high-use misconception records separately from diagnostic route coverage. A concept may have a usable diagnostic route while the exact misconception wording remains curriculum-inferred or research-required.",
+  "status_definitions":{
+    "direct_empirical":"A checked original study directly supports the relevant reasoning pattern within stated sample limits.",
+    "direct_empirical_broad_construct_or_mechanism":"An original study supports the broader construct or cognitive mechanism, but not every detail of the MathBridge wording or target age range.",
+    "evidence_synthesis":"An evidence-reviewed practice guide or research synthesis supports the instructional interpretation.",
+    "guidance_supported":"Official teaching guidance supports the instructional risk or response, but direct misconception-specific empirical evidence has not been checked.",
+    "curriculum_inferred":"The reasoning pattern is plausible from the mathematical structure/curriculum but direct evidence for the exact claim is not yet verified.",
+    "research_required":"The exact wording is stronger than the evidence currently verified and should not be presented as research-established."
+  },
+  "reviewed_high_use_records":[
+    {"misconception_id":"equals-sign-means-answer-next","depth":"direct_empirical","sources":["research-stephens-equal-sign-2013"],"publication_status":"usable_with_scope_note"},
+    {"misconception_id":"fraction-larger-denominator-means-larger","depth":"direct_empirical_plus_synthesis","sources":["research-meert-fraction-comparison-2010","us-ies-fractions-2010"],"publication_status":"usable_with_scope_note"},
+    {"misconception_id":"pv-digit-value-is-digit-name","depth":"direct_empirical_broad_construct_or_mechanism","sources":["research-fuson-place-value-1997","research-lafay-place-value-2023"],"publication_status":"usable_if_worded_as_possible_place_value_reasoning"},
+    {"misconception_id":"division-sharing-only","depth":"direct_empirical","sources":["research-ching-wu-division-2021","research-kinda-division-2013"],"publication_status":"usable_as_probe_hypothesis"},
+    {"misconception_id":"decimal-more-digits-means-larger","depth":"direct_empirical_broad_construct_or_mechanism","sources":["research-roell-decimal-2019"],"publication_status":"usable_with_age_range_caution"},
+    {"misconception_id":"perimeter-area-confusion","depth":"direct_empirical","sources":["research-huang-area-2013","research-tansisman-measurement-2016"],"publication_status":"usable_with_sample_caution"},
+    {"misconception_id":"ratio-treated-as-additive-difference","depth":"direct_empirical_plus_synthesis","sources":["research-vandooren-additive-multiplicative-2010","us-ies-fractions-2010"],"publication_status":"usable_as_one_possible_error_pattern"},
+    {"misconception_id":"bar-chart-scale-assumed-one","depth":"curriculum_inferred_with_broader_empirical_support","sources":["research-watson-moritz-bargraphs-1999"],"publication_status":"probe_only_exact_claim_not_empirically_verified"},
+    {"misconception_id":"pv-zero-has-no-structural-role","depth":"research_required_for_exact_placeholder_claim","sources":[],"publication_status":"probe_only"},
+    {"misconception_id":"mult-is-only-repeated-addition","depth":"guidance_supported_research_required_for_exact_claim","sources":[],"publication_status":"probe_only_do_not_call_research_established"}
+  ],
+  "audit_summary":{"high_use_records_reviewed":10,"direct_or_direct_plus_synthesis":5,"direct_broad_construct_or_mechanism":2,"curriculum_inferred_with_broader_support":1,"research_required_or_exact_claim_pending":2,"full_diagnostic_empirical_depth_complete":false},
+  "next_priority_records":["angle-size-depends-on-arm-length","measurement-counts-marks-not-intervals","unit-conversion-rule-without-unit-size","probability-counts-outcomes-without-size","clock-hands-read-as-same-scale","elapsed-time-endpoints-not-duration","money-count-coins-not-value","change-operation-not-linked-to-difference","volume-surface-area-confusion"],
+  "publication_rules":["Never convert direct evidence from one population into a jurisdictional prevalence claim.","A diagnostic item remains an instructional probe unless independently validated as an assessment instrument.","If evidence supports only a broader construct, teacher-facing text must use possible/may language rather than state a fixed misconception.","Evidence depth does not alter curriculum placement evidence."],
+  "status":"in_progress"
+}
