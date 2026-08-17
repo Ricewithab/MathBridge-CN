@@ -1,27 +1,24 @@
 {
-  "version":"0.3.0",
+  "version":"0.4.0",
   "research_date":"2026-08-18",
   "misconception_files":[
     "database/diagnostics/misconception_catalog_extension_2026-08-18.json",
     "database/diagnostics/misconception_catalog_number_extension_2026-08-18.json",
-    "database/diagnostics/misconception_catalog_algebra_extension_2026-08-18.json"
+    "database/diagnostics/misconception_catalog_algebra_extension_2026-08-18.json",
+    "database/diagnostics/misconception_catalog_measurement_extension_2026-08-18.json"
   ],
   "diagnostic_question_files":[
     "database/diagnostics/diagnostic_question_catalog_extension_2026-08-18.json",
     "database/diagnostics/diagnostic_question_catalog_number_extension_2026-08-18.json",
-    "database/diagnostics/diagnostic_question_catalog_algebra_extension_2026-08-18.json"
+    "database/diagnostics/diagnostic_question_catalog_algebra_extension_2026-08-18.json",
+    "database/diagnostics/diagnostic_question_catalog_measurement_extension_2026-08-18.json"
   ],
   "link_files":[
     "database/intelligence/diagnostic_links_2026-08-18.json",
     "database/intelligence/diagnostic_links_number_2026-08-18.json",
-    "database/intelligence/diagnostic_links_algebra_2026-08-18.json"
+    "database/intelligence/diagnostic_links_algebra_2026-08-18.json",
+    "database/intelligence/diagnostic_links_measurement_2026-08-18.json"
   ],
-  "resolution_order":[
-    "Load the base misconception and diagnostic question catalogs.",
-    "Load all extension catalogs listed here.",
-    "Resolve the base concept profile.",
-    "Apply all concept diagnostic links from link_files and deduplicate IDs.",
-    "Apply diagnostic interpretation rules before presenting a likely misconception."
-  ],
+  "resolution_order":["Load base catalogs.","Load all extension catalogs listed here.","Resolve the base concept profile.","Apply all diagnostic links and deduplicate IDs.","Apply diagnostic interpretation rules before presenting a likely misconception."],
   "status":"active"
 }
