@@ -1,71 +1,76 @@
 {
-  "version":"0.2.0",
+  "version":"0.3.0",
   "audit_date":"2026-08-18",
-  "purpose":"Separate internal structural readiness, verified revised-PEP sequence coverage and teacher-facing publication readiness.",
-  "dimensions":["curriculum placement","revised PEP unit sequence","textbook subsection/page detail","teaching representation/guidance","diagnostic route","diagnostic evidence depth","source locator quality","bilingual copy review"],
-  "readiness_levels":{
-    "internal_preview_ready":"The card can assemble without inventing missing data and visibly carries evidence/pending labels.",
-    "teacher_ready_with_caveats":"Core curriculum comparison and teaching guidance are supported; unresolved details are explicitly labelled rather than inferred.",
-    "pep_unit_sequence_verified":"PEP revised-series grade/semester/unit placement is verified from the authoritative all-volume series table.",
-    "pep_subsection_page_verified":"Subsection/example/page claims are checked against a volume or teacher-guide artifact.",
-    "research_pending":"A factual claim required for the requested view is not sufficiently verified."
-  },
+  "purpose":"Separate completed research layers from remaining fine-grained textbook/artifact work and teacher-facing release validation.",
+  "dimensions":["curriculum placement","China printed locators","revised PEP unit sequence","textbook subsection/page detail","artifact identity","rollout","teaching representation/guidance","diagnostic route","diagnostic evidence classification","bilingual copy review"],
   "current_state":{
     "taxonomy_concepts":121,
     "structural_intelligence_profiles":121,
     "curriculum_or_framework_routes":121,
     "diagnostic_routes":121,
+    "diagnostic_canonical_misconceptions":80,
+    "diagnostic_evidence_classified":80,
+    "diagnostic_evidence_classification_percent":100,
+    "diagnostic_unclassified":0,
     "internal_preview_ready_concepts":121,
     "pep_revised_series_volume_slots":12,
     "pep_revised_series_sequences_verified":12,
     "pep_revised_series_sequence_coverage_percent":100,
     "pep_unit_to_taxonomy_records_classified":true,
+    "pep_volumes_with_some_below_unit_detail":10,
+    "pep_volumes_with_teacher_guide_page_detail":4,
+    "pep_revised_textbook_isbns_verified":3,
+    "pep_additional_first_edition_dates_verified":3,
     "pep_subsection_page_detail_complete":false,
-    "pep_locality_specific_rollout_complete":false,
+    "pep_locality_specific_rollout_complete":"not_a_single_national_state; locality_term_query_required",
+    "cn_primary_domain_printed_ranges_complete":true,
+    "cn_hierarchical_stage_domain_locators_complete":true,
+    "cn_exact_per_bullet_rendered_page_complete":false,
     "us_state_overlay_concepts":14,
-    "teacher_card_validation_fixtures":6,
-    "diagnostic_empirical_depth_complete":false
+    "teacher_card_validation_fixtures":6
   },
-  "canonical_pep_files":["database/research/cn_pep_current_sequence_verified_2026.json","database/research/cn_pep_unit_concept_map_2026.json","database/research/cn_pep_volume_registry.json"],
+  "completed_research_layers":[
+    {"layer":"Grade 1-6 neutral concept taxonomy","status":"complete","coverage":"121/121"},
+    {"layer":"Curriculum/framework reference routing","status":"complete","coverage":"121/121 concepts"},
+    {"layer":"Revised PEP Grade 1-6 semester/unit sequence","status":"complete","coverage":"12/12 volumes","note":"Authoritative publisher-authored all-volume table."},
+    {"layer":"Revised PEP unit-to-taxonomy classification","status":"complete","note":"Unit-title evidence level; fine-grained subsection claims remain separate."},
+    {"layer":"China 2022 primary printed-domain locator structure","status":"complete_at_domain_range_and_hierarchy_level","coverage":"数与代数 p17-26; 图形与几何 p27-35; 统计与概率 p36-41; 综合与实践 p42-52"},
+    {"layer":"Diagnostic route coverage","status":"complete","coverage":"121/121 concepts"},
+    {"layer":"Canonical misconception evidence-state classification","status":"complete","coverage":"80/80 canonical records; 0 unclassified","note":"Classification completeness does not imply every record has direct empirical evidence."},
+    {"layer":"Bilingual classroom-task structural coverage","status":"complete","coverage":"121/121 concepts"}
+  ],
+  "partially_complete_research_layers":[
+    {"layer":"PEP below-unit subsection/lesson detail","status":"partial","coverage":"10/12 volumes have some below-unit detail; 4 volumes have secondary teacher-guide page detail","main_gap":"Grade 4 lower and Grade 6 lower are designed-sequence books without verified revised below-unit classroom artifacts as of the research date; active volumes also vary in page-level detail."},
+    {"layer":"PEP physical artifact metadata","status":"partial","coverage":"3 revised textbook ISBNs verified; 3 additional active revised volumes have verified first-edition dates with ISBN pending","rule":"Never infer ISBNs or reuse legacy edition identifiers."},
+    {"layer":"Locality-specific PEP rollout","status":"query_dependent","note":"Series design is complete, but actual-use status varies by locality, publisher and term; rollout should be resolved only when those inputs are known."},
+    {"layer":"US state overlays","status":"partial_optional_overlay","coverage":"California/Texas high-use concepts only; Common Core baseline remains complete enough for baseline comparison."},
+    {"layer":"Misconception direct empirical depth","status":"classified_not_universally_direct","note":"Every claim has an evidence state. Curriculum-inferred probes remain intentionally labelled as such rather than being promoted without matching research."}
+  ],
+  "remaining_true_research_gaps":[
+    {"gap":"Revised PEP below-unit details for all 12 designed volumes","priority":"highest","action":"Continue volume-by-volume subsection/example/page and teacher-guide research, prioritising released/active volumes and explicitly marking later-semester designed books when artifacts are not yet publicly available."},
+    {"gap":"Revised PEP textbook ISBN/copyright metadata for remaining volumes","priority":"medium","action":"Accept only edition-matched artifacts; unresolved identifiers remain pending rather than inferred."},
+    {"gap":"Exact rendered page number for individual China 2022 curriculum bullets","priority":"medium","action":"Current printed domain ranges plus hierarchy are safe; exact bullet page numbers require direct page rendering or another equivalent verified source."},
+    {"gap":"Optional direct empirical studies for probe-only misconceptions","priority":"ongoing_nonblocking","action":"Search selectively when a teacher-facing claim would materially benefit; do not treat absence of a dedicated study as an integrity failure when the item is explicitly a probe hypothesis."}
+  ],
+  "not_a_research_failure":[
+    "A future/later-semester revised PEP volume may have an authoritative designed sequence before a locality has started using it.",
+    "A diagnostic probe can be valid instructional questioning without having a dedicated prevalence study, provided it is labelled as a probe rather than research-established misconception.",
+    "Local rollout cannot be represented as one nationwide PEP state because China uses multiple approved textbook series and locality-specific adoption."
+  ],
   "publication_policy":[
-    "When PEP revised series is selected, Grade 1-6 semester and unit placement may be shown from the verified series table.",
-    "Do not infer subsection headings, exact example pages or teacher-guide objectives from a unit title.",
-    "Do not infer that every Chinese school uses PEP or that all localities adopted every revised volume simultaneously.",
-    "Keep national 2022 curriculum stage requirements distinct from PEP textbook sequence.",
-    "A curriculum-inferred misconception can be shown only as a possible misunderstanding/probe, not as research-established.",
-    "A direct empirical misconception source does not make the diagnostic question a validated test.",
-    "US mode must state Common Core baseline or a selected state; never render a generic nationwide US curriculum claim."
-  ],
-  "resolved_blockers":[{"blocker":"Revised PEP Grade 1-6 exact semester/unit sequencing","resolution":"Authoritative publisher-authored Table 1 provides all 12 volume contents; canonical sequence and unit-concept mapping are stored.","status":"resolved_at_unit_sequence_level"}],
-  "highest_priority_blockers":[
-    {"blocker":"PEP subsection/example/page-level textbook detail","impact":"Unit placement is exact, but fine-grained lesson/example placement and teacher-guide objectives are not yet complete across all 12 volumes.","status":"major_open"},
-    {"blocker":"China official 2022 standard printed page locators","impact":"Section locators work internally, but printed-page citation precision remains incomplete.","status":"open"},
-    {"blocker":"Misconception-specific empirical depth","impact":"All concepts have probes; some exact reasoning-risk records remain guidance-supported or curriculum-inferred.","status":"in_progress"},
-    {"blocker":"Bilingual classroom wording validation","impact":"Stored Chinese/English wording exists, but classroom validation is separate from research completeness.","status":"open_nonblocking_for_research_database"},
-    {"blocker":"US state breadth","impact":"California/Texas overlays cover selected high-use concepts rather than all 121 concepts.","status":"planned_nonblocking_for_Common_Core_baseline"}
-  ],
-  "ready_now":[
-    "Exact revised-PEP Grade 1-6 semester/unit sequence",
-    "PEP unit-to-taxonomy navigation at unit-title evidence level",
-    "China national learning-stage versus England comparisons",
-    "China national learning-stage versus Common Core baseline comparisons",
-    "California/Texas comparisons for registered overlay concepts",
-    "Representation/teaching-move explanations where evidence is registered",
-    "Diagnostic probes for all 121 concepts when evidence depth is shown"
-  ],
-  "not_ready_to_claim":[
-    "Complete subsection/example/page map for every revised PEP volume",
-    "Simultaneous nationwide rollout/use of PEP revised volumes",
-    "Nationwide US teaching method",
-    "A misconception prevalence rate for a jurisdiction without a matching comparative study",
-    "Psychometric validity of MathBridge diagnostic questions",
-    "Exact China printed curriculum PDF page numbers where not directly rendered"
+    "Show exact revised-PEP grade/semester/unit placement where the canonical sequence supports it.",
+    "Only show below-unit detail at the evidence level actually verified.",
+    "Do not call PEP the national textbook.",
+    "Do not imply all revised PEP volumes were adopted simultaneously.",
+    "Every misconception retains its canonical evidence class.",
+    "Diagnostic questions are probes, not validated assessments.",
+    "Common Core remains a US baseline unless a state overlay is selected."
   ],
   "next_work_order":[
-    "Capture revised PEP subsection/example/page-level evidence and teacher-guide/catalog metadata volume by volume.",
-    "Use the verified unit sequence to upgrade China concept mappings from stage-only to exact PEP grade/semester/unit where supported.",
-    "Complete direct China curriculum locators and remaining diagnostic evidence classifications.",
-    "Run final research-completion audit before UI work."
+    "Run the overall research-completeness audit against every registered research/evidence layer.",
+    "Continue targeted PEP below-unit research for remaining volume/detail gaps identified by that audit.",
+    "Continue artifact metadata recovery where an edition-matched source exists.",
+    "Do not begin UI work until the user changes the research-first instruction."
   ],
-  "status":"pep_unit_sequence_complete_research_completion_in_progress"
+  "status":"core_research_complete_fine_grained_pep_research_in_progress"
 }
