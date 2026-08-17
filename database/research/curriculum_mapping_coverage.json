@@ -1,28 +1,42 @@
 {
-  "version":"0.1.0",
+  "version":"0.2.0",
   "research_date":"2026-08-18",
-  "purpose":"Track curriculum-mapping depth separately from structural intelligence coverage.",
+  "purpose":"Track curriculum-mapping depth separately from structural intelligence and textbook-sequence coverage.",
   "definitions":{
     "reference_complete":"Every concept profile in the domain points to at least one relevant curriculum/framework research source.",
-    "framework_mapped":"The concept has a defensible placement or explicit non-placement in China 2022, England, and the Common Core comparison baseline, or is mapped as a cross-cutting practice rather than a grade standard.",
+    "framework_mapped":"The concept has a defensible placement or explicit non-placement in China 2022, England and the Common Core comparison baseline, or is mapped as a cross-cutting practice.",
     "fully_verified":"All surfaced system-specific claims have direct authoritative locators at the required granularity.",
-    "pep_sequence_verified":"Exact current PEP 12th-series grade/semester/unit placement is directly verified."
+    "pep_unit_sequence_verified":"The revised PEP all-volume table verifies grade/semester/unit placement.",
+    "pep_subsection_verified":"Subsection/example/page-level placement is verified from a volume/teacher-guide artifact."
+  },
+  "pep_series_coverage":{
+    "canonical_sequence":"database/research/cn_pep_current_sequence_verified_2026.json",
+    "unit_concept_map":"database/research/cn_pep_unit_concept_map_2026.json",
+    "volume_slots":12,
+    "unit_sequence_verified_volumes":12,
+    "unit_sequence_coverage_percent":100,
+    "unit_to_taxonomy_classification_complete":true,
+    "subsection_page_detail_complete":false,
+    "locality_rollout_complete":false
   },
   "domains":[
-    {"domain_id":"number","concepts":49,"reference_complete":true,"framework_mapping_status":"substantial_existing_plus_upper_primary_addendum","fully_verified":false,"pep_sequence_verified":false,"main_files":["database/progression/core_number_cn_uk_us.json","database/progression/operations_cn_uk_us.json","database/research/number_upper_primary_curriculum_verified.json"],"remaining_work":["audit every broad progression record against individual taxonomy concepts","add direct MOE locators where current China records are partially verified","verify current PEP grade/semester sequence","expand diagnostics"]},
-    {"domain_id":"algebraic-thinking","concepts":13,"reference_complete":true,"framework_mapping_status":"mapped","fully_verified":false,"pep_sequence_verified":false,"main_files":["database/research/algebraic_thinking_curriculum_verified.json"],"remaining_work":["replace secondary China content cross-checks with direct MOE locators where possible","verify current PEP treatment of letters/equality/ratio/direct proportion","expand diagnostics"]},
-    {"domain_id":"measurement","concepts":14,"reference_complete":true,"framework_mapping_status":"mapped","fully_verified":false,"pep_sequence_verified":false,"main_files":["database/research/measurement_curriculum_verified.json"],"remaining_work":["add direct MOE locators for stage statements","verify current PEP grade/semester placement","expand diagnostics"]},
-    {"domain_id":"geometry","concepts":16,"reference_complete":true,"framework_mapping_status":"mapped","fully_verified":false,"pep_sequence_verified":false,"main_files":["database/research/geometry_curriculum_verified.json"],"remaining_work":["add direct MOE locators for stage statements","verify current PEP grade/semester placement","expand diagnostics"]},
-    {"domain_id":"statistics-probability","concepts":12,"reference_complete":true,"framework_mapping_status":"mapped","fully_verified":false,"pep_sequence_verified":false,"main_files":["database/research/statistics_probability_curriculum_verified.json"],"remaining_work":["add direct MOE locators for stage statements","verify current PEP statistics/probability sequence","expand diagnostics"]},
-    {"domain_id":"mathematical-practices","concepts":17,"reference_complete":true,"framework_mapping_status":"cross_cutting_framework_mapped","fully_verified":false,"pep_sequence_verified":"not_applicable_as_single_sequence","main_files":["database/research/mathematical_practices_cross_system_verified.json"],"remaining_work":["add direct China core-competence locators from the official standard when accessible","keep representation-specific claims separated from curriculum-wide practice aims","expand diagnostics where useful"]}
+    {"domain_id":"number","concepts":49,"reference_complete":true,"framework_mapping_status":"substantial_existing_plus_upper_primary_addendum","fully_verified":false,"pep_unit_sequence_verified":true,"pep_subsection_verified":false,"main_files":["database/progression/core_number_cn_uk_us.json","database/progression/operations_cn_uk_us.json","database/research/number_upper_primary_curriculum_verified.json","database/research/cn_pep_unit_concept_map_2026.json"],"remaining_work":["upgrade individual China concept records with exact PEP unit locators","capture subsection/page evidence","finish direct MOE locators for broad stage claims"]},
+    {"domain_id":"algebraic-thinking","concepts":13,"reference_complete":true,"framework_mapping_status":"mapped","fully_verified":false,"pep_unit_sequence_verified":true,"pep_subsection_verified":false,"main_files":["database/research/algebraic_thinking_curriculum_verified.json","database/research/cn_pep_unit_concept_map_2026.json"],"remaining_work":["attach exact PEP unit locators for quantity relationships, letters, ratio/proportion","capture subsection/page evidence","complete direct MOE locators"]},
+    {"domain_id":"measurement","concepts":14,"reference_complete":true,"framework_mapping_status":"mapped","fully_verified":false,"pep_unit_sequence_verified":true,"pep_subsection_verified":false,"main_files":["database/research/measurement_curriculum_verified.json","database/research/cn_pep_unit_concept_map_2026.json"],"remaining_work":["attach exact PEP unit locators","capture subsection/page evidence","complete direct MOE locators"]},
+    {"domain_id":"geometry","concepts":16,"reference_complete":true,"framework_mapping_status":"mapped","fully_verified":false,"pep_unit_sequence_verified":true,"pep_subsection_verified":false,"main_files":["database/research/geometry_curriculum_verified.json","database/research/cn_pep_unit_concept_map_2026.json"],"remaining_work":["attach exact PEP unit locators","capture subsection/page evidence","complete direct MOE locators"]},
+    {"domain_id":"statistics-probability","concepts":12,"reference_complete":true,"framework_mapping_status":"mapped","fully_verified":false,"pep_unit_sequence_verified":true,"pep_subsection_verified":false,"main_files":["database/research/statistics_probability_curriculum_verified.json","database/research/cn_pep_unit_concept_map_2026.json"],"remaining_work":["attach exact PEP unit locators for data/statistics/probability units","capture subsection/page evidence","complete direct MOE locators"]},
+    {"domain_id":"mathematical-practices","concepts":17,"reference_complete":true,"framework_mapping_status":"cross_cutting_framework_mapped","fully_verified":false,"pep_unit_sequence_verified":"integrated_practice_units_classified","pep_subsection_verified":false,"main_files":["database/research/mathematical_practices_cross_system_verified.json","database/research/cn_pep_unit_concept_map_2026.json"],"remaining_work":["verify integrated-practice/project details below title level where useful","complete direct China core-competence locators","keep classroom-task recommendations separate from national practice claims"]}
   ],
   "overall":{
     "taxonomy_concepts":121,
     "concept_profiles_with_curriculum_or_framework_reference":121,
     "profile_reference_coverage_complete":true,
+    "current_pep_grade_semester_unit_sequence_complete":true,
+    "current_pep_volume_sequence_coverage":"12/12",
+    "current_pep_subsection_page_mapping_complete":false,
     "full_claim_level_verification_complete":false,
-    "current_pep_grade_semester_mapping_complete":false,
-    "diagnostic_coverage_complete":false
+    "diagnostic_route_coverage_complete":true,
+    "diagnostic_empirical_depth_complete":false
   },
-  "publication_rule":"A complete structural/reference map is not permission to publish an unverified claim. The renderer must still obey evidence status on each record."
+  "publication_rule":"Unit-level PEP placement may be shown from the verified revised-series table. Fine-grained subsection/page claims still require separate evidence; source status on every record remains binding."
 }
