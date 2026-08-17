@@ -1,5 +1,5 @@
 {
-  "version":"0.7.0",
+  "version":"0.8.0",
   "research_date":"2026-08-18",
   "misconception_files":[
     "database/diagnostics/misconception_catalog_extension_2026-08-18.json",
@@ -8,7 +8,8 @@
     "database/diagnostics/misconception_catalog_measurement_extension_2026-08-18.json",
     "database/diagnostics/misconception_catalog_geometry_extension_2026-08-18.json",
     "database/diagnostics/misconception_catalog_statistics_extension_2026-08-18.json",
-    "database/diagnostics/misconception_catalog_practices_extension_2026-08-18.json"
+    "database/diagnostics/misconception_catalog_practices_extension_2026-08-18.json",
+    "database/diagnostics/misconception_catalog_research_extension_2026-08-18.json"
   ],
   "diagnostic_question_files":[
     "database/diagnostics/diagnostic_question_catalog_extension_2026-08-18.json",
@@ -18,7 +19,8 @@
     "database/diagnostics/diagnostic_question_catalog_geometry_extension_2026-08-18.json",
     "database/diagnostics/diagnostic_question_catalog_statistics_extension_2026-08-18.json",
     "database/diagnostics/diagnostic_question_catalog_practices_extension_2026-08-18.json",
-    "database/diagnostics/diagnostic_question_catalog_algorithm_extension_2026-08-18.json"
+    "database/diagnostics/diagnostic_question_catalog_algorithm_extension_2026-08-18.json",
+    "database/diagnostics/diagnostic_question_catalog_research_extension_2026-08-18.json"
   ],
   "link_files":[
     "database/intelligence/diagnostic_links_2026-08-18.json",
@@ -28,8 +30,10 @@
     "database/intelligence/diagnostic_links_geometry_2026-08-18.json",
     "database/intelligence/diagnostic_links_statistics_2026-08-18.json",
     "database/intelligence/diagnostic_links_practices_2026-08-18.json",
-    "database/intelligence/diagnostic_links_algorithms_2026-08-18.json"
+    "database/intelligence/diagnostic_links_algorithms_2026-08-18.json",
+    "database/intelligence/diagnostic_links_research_2026-08-18.json"
   ],
-  "resolution_order":["Load base catalogs.","Load all extension catalogs listed here.","Resolve the base concept profile.","Apply all diagnostic links and deduplicate IDs.","Apply diagnostic interpretation rules before presenting a likely misconception."],
+  "evidence_depth_file":"database/research/diagnostic_misconception_evidence_seed_2026-08-18.json",
+  "resolution_order":["Load base catalogs.","Load all extension catalogs listed here.","Resolve the base concept profile.","Apply all diagnostic links and deduplicate IDs.","Resolve misconception evidence depth where an evidence record exists.","Apply diagnostic interpretation rules before presenting a likely misconception."],
   "status":"active"
 }
