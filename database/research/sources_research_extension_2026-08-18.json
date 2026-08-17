@@ -1,5 +1,5 @@
 {
-  "version":"0.2.0",
+  "version":"0.3.0",
   "research_date":"2026-08-18",
   "category":"research",
   "sources":[
@@ -11,6 +11,8 @@
     {"id":"research-gibson-angle-2015","country":"INT","title_en":"The Effects of Word-Learning Biases on Children's Concept of Angle","organisation":"Child Development","doi":"10.1111/cdev.12286"},
     {"id":"research-berthelot-angle-2013","country":"INT","title_en":"About the concept of angle in elementary school: Misconceptions and teaching sequences","organisation":"Journal of Mathematical Behavior","doi":"10.1016/j.jmathb.2012.10.001"},
     {"id":"research-kwon-ruler-2024","country":"INT","title_en":"Overturning Children’s Misconceptions about Ruler Measurement: The Power of Disconfirming Evidence","organisation":"Journal of Intelligence","doi":"10.3390/jintelligence12070062"},
-    {"id":"research-earnest-clock-2018","country":"INT","title_en":"Time as a Measure: Elementary Students Positioning the Hands of an Analog Clock","organisation":"Journal of Numerical Cognition","doi":"10.5964/jnc.v4i1.94"}
+    {"id":"research-earnest-clock-2018","country":"INT","title_en":"Time as a Measure: Elementary Students Positioning the Hands of an Analog Clock","organisation":"Journal of Numerical Cognition","doi":"10.5964/jnc.v4i1.94"},
+    {"id":"research-kamii-russell-elapsed-time-2012","country":"INT","title_en":"Elapsed Time: Why Is It So Difficult to Teach?","organisation":"Journal for Research in Mathematics Education","doi":"10.5951/jresematheduc.43.3.0296"},
+    {"id":"research-he-xin-probability-2024","country":"CN","title_en":"Transforming fifth graders’ misconceptions in solving probability comparison problems with purposefully designed instructional interventions","organisation":"Mathematical Thinking and Learning","doi":"10.1080/10986065.2024.2403044"}
   ]
 }
