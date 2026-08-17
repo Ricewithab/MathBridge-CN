@@ -1,0 +1,166 @@
+{
+  "version": "0.1.0",
+  "purpose": "Join MathBridge data layers by canonical IDs. This file stores relationships, not duplicated curriculum text or source claims.",
+  "registry": "database/intelligence/reference_registry.json",
+  "profile_schema": {
+    "concept_id": "Canonical ID from concept_taxonomy.json",
+    "curriculum_refs": "Files from which system-specific placement and progression are resolved",
+    "representation_ids": "Canonical representations recommended for this concept",
+    "teaching_move_ids": "Canonical teacher moves that can be paired with the concept",
+    "misconception_ids": "Student-thinking patterns relevant to the concept",
+    "diagnostic_question_ids": "Short questions that can probe those misconceptions",
+    "coverage_status": "Current integration completeness",
+    "notes": "Guardrails or research gaps"
+  },
+  "profiles": [
+    {
+      "concept_id": "place-value",
+      "curriculum_refs": ["database/concept_curriculum_map.json", "database/progression/core_number_cn_uk_us.json"],
+      "representation_ids": ["base-ten-place-value-models", "ten-frame", "number-line", "number-bonds-part-whole"],
+      "teaching_move_ids": ["connect-representations", "variation-one-feature", "reason-from-structure", "explain-why", "use-precise-language-structures"],
+      "misconception_ids": ["pv-digit-value-is-digit-name", "pv-zero-has-no-structural-role", "algorithm-digits-without-units"],
+      "diagnostic_question_ids": ["dq-pv-001", "dq-pv-002", "dq-as-002", "dq-alg-001"],
+      "coverage_status": "integrated",
+      "notes": "China national-stage evidence is stronger than exact current PEP grade-by-grade placement; preserve that distinction in UI assembly."
+    },
+    {
+      "concept_id": "addition-meaning",
+      "curriculum_refs": ["database/concept_curriculum_map.json", "database/progression/operations_cn_uk_us.json"],
+      "representation_ids": ["number-bonds-part-whole", "ten-frame", "number-line", "bar-model-tape-diagram"],
+      "teaching_move_ids": ["represent-before-symbolise", "connect-representations", "move-from-context-to-model", "reason-from-structure", "compare-methods"],
+      "misconception_ids": ["add-subtract-operation-keyword-only"],
+      "diagnostic_question_ids": ["dq-as-001", "dq-as-002"],
+      "coverage_status": "integrated_partial_diagnostics",
+      "notes": "Add a dedicated addition-structure diagnostic in a later expansion."
+    },
+    {
+      "concept_id": "subtraction-meaning",
+      "curriculum_refs": ["database/concept_curriculum_map.json", "database/progression/operations_cn_uk_us.json"],
+      "representation_ids": ["number-bonds-part-whole", "number-line", "bar-model-tape-diagram"],
+      "teaching_move_ids": ["represent-before-symbolise", "connect-representations", "move-from-context-to-model", "reason-from-structure", "compare-methods", "explain-why"],
+      "misconception_ids": ["subtraction-is-always-take-away", "add-subtract-operation-keyword-only"],
+      "diagnostic_question_ids": ["dq-as-001"],
+      "coverage_status": "integrated"
+    },
+    {
+      "concept_id": "multiplication-meaning",
+      "curriculum_refs": ["database/concept_curriculum_map.json", "database/progression/operations_cn_uk_us.json"],
+      "representation_ids": ["arrays", "area-model", "bar-model-tape-diagram"],
+      "teaching_move_ids": ["represent-before-symbolise", "connect-representations", "variation-one-feature", "reason-from-structure", "compare-methods", "explain-why"],
+      "misconception_ids": ["mult-is-only-repeated-addition"],
+      "diagnostic_question_ids": ["dq-mult-001"],
+      "coverage_status": "integrated"
+    },
+    {
+      "concept_id": "division-meaning",
+      "curriculum_refs": ["database/concept_curriculum_map.json", "database/progression/operations_cn_uk_us.json"],
+      "representation_ids": ["arrays", "bar-model-tape-diagram", "number-line"],
+      "teaching_move_ids": ["represent-before-symbolise", "connect-representations", "move-from-context-to-model", "compare-methods", "reason-from-structure"],
+      "misconception_ids": ["division-sharing-only"],
+      "diagnostic_question_ids": ["dq-div-001"],
+      "coverage_status": "integrated"
+    },
+    {
+      "concept_id": "fraction-as-part-whole",
+      "curriculum_refs": ["database/concept_curriculum_map.json", "database/progression/core_number_cn_uk_us.json"],
+      "representation_ids": ["area-model", "bar-model-tape-diagram", "number-line"],
+      "teaching_move_ids": ["represent-before-symbolise", "connect-representations", "variation-one-feature", "explain-why"],
+      "misconception_ids": ["fraction-parts-need-not-be-equal"],
+      "diagnostic_question_ids": ["dq-frac-002"],
+      "coverage_status": "integrated"
+    },
+    {
+      "concept_id": "unit-fractions",
+      "curriculum_refs": ["database/progression/core_number_cn_uk_us.json"],
+      "representation_ids": ["number-line", "bar-model-tape-diagram", "area-model"],
+      "teaching_move_ids": ["connect-representations", "variation-one-feature", "reason-from-structure", "explain-why"],
+      "misconception_ids": ["fraction-larger-denominator-means-larger", "fraction-parts-need-not-be-equal"],
+      "diagnostic_question_ids": ["dq-frac-001", "dq-frac-002"],
+      "coverage_status": "integrated"
+    },
+    {
+      "concept_id": "fraction-as-measure",
+      "curriculum_refs": ["database/progression/core_number_cn_uk_us.json"],
+      "representation_ids": ["number-line", "bar-model-tape-diagram", "area-model"],
+      "teaching_move_ids": ["connect-representations", "reason-from-structure", "explain-why", "fade-support"],
+      "misconception_ids": ["fraction-not-a-number", "fraction-larger-denominator-means-larger"],
+      "diagnostic_question_ids": ["dq-frac-003", "dq-frac-001"],
+      "coverage_status": "integrated"
+    },
+    {
+      "concept_id": "fraction-number-line",
+      "curriculum_refs": ["database/progression/core_number_cn_uk_us.json"],
+      "representation_ids": ["number-line", "area-model", "bar-model-tape-diagram"],
+      "teaching_move_ids": ["connect-representations", "reason-from-structure", "variation-one-feature", "explain-why"],
+      "misconception_ids": ["fraction-not-a-number", "equivalent-fractions-look-different-so-different-value"],
+      "diagnostic_question_ids": ["dq-frac-003", "dq-frac-004"],
+      "coverage_status": "integrated"
+    },
+    {
+      "concept_id": "equivalent-fractions",
+      "curriculum_refs": ["database/concept_curriculum_map.json", "database/progression/core_number_cn_uk_us.json"],
+      "representation_ids": ["number-line", "bar-model-tape-diagram", "area-model"],
+      "teaching_move_ids": ["connect-representations", "compare-methods", "variation-one-feature", "explain-why"],
+      "misconception_ids": ["equivalent-fractions-look-different-so-different-value"],
+      "diagnostic_question_ids": ["dq-frac-004"],
+      "coverage_status": "integrated"
+    },
+    {
+      "concept_id": "decimal-place-value",
+      "curriculum_refs": ["database/progression/core_number_cn_uk_us.json"],
+      "representation_ids": ["base-ten-place-value-models", "number-line"],
+      "teaching_move_ids": ["connect-representations", "variation-one-feature", "reason-from-structure", "use-precise-language-structures", "explain-why"],
+      "misconception_ids": ["decimal-more-digits-means-larger", "pv-zero-has-no-structural-role"],
+      "diagnostic_question_ids": ["dq-dec-001"],
+      "coverage_status": "integrated"
+    },
+    {
+      "concept_id": "written-addition",
+      "curriculum_refs": ["database/progression/operations_cn_uk_us.json"],
+      "representation_ids": ["base-ten-place-value-models", "standard-written-algorithm"],
+      "teaching_move_ids": ["connect-representations", "compare-methods", "reason-from-structure", "explain-why", "fade-support"],
+      "misconception_ids": ["algorithm-digits-without-units"],
+      "diagnostic_question_ids": ["dq-alg-001"],
+      "coverage_status": "integrated"
+    },
+    {
+      "concept_id": "written-subtraction",
+      "curriculum_refs": ["database/progression/operations_cn_uk_us.json"],
+      "representation_ids": ["base-ten-place-value-models", "standard-written-algorithm", "number-line"],
+      "teaching_move_ids": ["connect-representations", "compare-methods", "reason-from-structure", "explain-why", "fade-support"],
+      "misconception_ids": ["algorithm-digits-without-units"],
+      "diagnostic_question_ids": [],
+      "coverage_status": "diagnostic_question_required"
+    },
+    {
+      "concept_id": "written-multiplication",
+      "curriculum_refs": ["database/progression/operations_cn_uk_us.json"],
+      "representation_ids": ["arrays", "area-model", "partial-products-expanded-methods", "standard-written-algorithm"],
+      "teaching_move_ids": ["connect-representations", "compare-methods", "reason-from-structure", "explain-why", "fade-support"],
+      "misconception_ids": ["algorithm-digits-without-units"],
+      "diagnostic_question_ids": [],
+      "coverage_status": "diagnostic_question_required"
+    },
+    {
+      "concept_id": "written-division",
+      "curriculum_refs": ["database/progression/operations_cn_uk_us.json"],
+      "representation_ids": ["bar-model-tape-diagram", "area-model", "standard-written-algorithm"],
+      "teaching_move_ids": ["connect-representations", "compare-methods", "reason-from-structure", "explain-why", "fade-support"],
+      "misconception_ids": ["algorithm-digits-without-units", "division-sharing-only"],
+      "diagnostic_question_ids": ["dq-div-001"],
+      "coverage_status": "integrated_partial_algorithm_diagnostic"
+    }
+  ],
+  "next_priority_profiles": [
+    "compare-order-numbers",
+    "rounding-estimation",
+    "fact-families",
+    "multiplication-facts",
+    "division-facts",
+    "compare-order-fractions",
+    "add-subtract-fractions",
+    "multiply-fractions",
+    "area-concept",
+    "ratio-meaning"
+  ]
+}
