@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "research_date": "2026-08-17",
   "description": "Initial edition-aware PEP textbook unit mappings. Current 12th-series entries are only included where directly supported by official PEP evidence. Legacy entries are retained separately and must never be surfaced as current by default.",
   "current_12th_series": [
@@ -13,14 +13,7 @@
         {
           "sequence_relation": "consecutive",
           "unit_title_cn": "5以内数的认识和加、减法",
-          "concept_ids": [
-            "counting",
-            "number-recognition",
-            "number-composition-decomposition",
-            "compare-order-numbers",
-            "addition-meaning",
-            "subtraction-meaning"
-          ],
+          "concept_ids": ["counting","number-recognition","number-composition-decomposition","compare-order-numbers","addition-meaning","subtraction-meaning"],
           "pedagogical_notes": [
             "Build number meaning and composition before treating calculation as detached procedure.",
             "Connect quantities, numerals and operation situations."
@@ -29,28 +22,14 @@
         {
           "sequence_relation": "immediately_after_previous",
           "unit_title_cn": "6～10的认识和加、减法",
-          "concept_ids": [
-            "counting",
-            "number-recognition",
-            "number-composition-decomposition",
-            "compare-order-numbers",
-            "addition-meaning",
-            "subtraction-meaning"
-          ],
+          "concept_ids": ["counting","number-recognition","number-composition-decomposition","compare-order-numbers","addition-meaning","subtraction-meaning"],
           "pedagogical_notes": [
             "Extends the same structural ideas to a larger number range.",
             "Provides a direct opportunity for MathBridge to compare how early number composition supports later facts and place-value thinking."
           ]
         }
       ],
-      "missing_before_full_verification": [
-        "Full unit list",
-        "Unit numbers",
-        "Subsection titles",
-        "Example numbers/pages",
-        "Teacher-guide objectives",
-        "ISBN/edition metadata"
-      ]
+      "missing_before_full_verification": ["Full unit list","Unit numbers","Subsection titles","Example numbers/pages","Teacher-guide objectives","ISBN/edition metadata"]
     }
   ],
   "legacy_pep_reference": [
@@ -61,51 +40,15 @@
       "status": "verified_legacy_sequence",
       "source_ids": ["cn-pep-legacy-grade2-upper-support"],
       "units": [
-        {
-          "order": 1,
-          "unit_title_cn": "长度单位",
-          "concept_ids": ["standard-units", "comparison-measurement"]
-        },
-        {
-          "order": 2,
-          "unit_title_cn": "100以内的加法和减法（二）",
-          "concept_ids": ["mental-addition-subtraction", "written-addition", "written-subtraction", "addition-subtraction-problems"]
-        },
-        {
-          "order": 3,
-          "unit_title_cn": "角的初步认识",
-          "concept_ids": ["angle-as-turn", "angle-size"]
-        },
-        {
-          "order": 4,
-          "unit_title_cn": "表内乘法（一）",
-          "concept_ids": ["multiplication-meaning", "equal-groups", "arrays", "repeated-addition", "multiplication-facts"]
-        },
-        {
-          "order": 5,
-          "unit_title_cn": "观察物体（一）",
-          "concept_ids": ["visualising-3d", "spatial-reasoning"]
-        },
-        {
-          "order": 6,
-          "unit_title_cn": "表内乘法（二）",
-          "concept_ids": ["multiplication-facts", "multiplication-meaning", "multiplication-division-problems"]
-        },
-        {
-          "order": 7,
-          "unit_title_cn": "认识时间",
-          "concept_ids": ["telling-time"]
-        },
-        {
-          "order": 8,
-          "unit_title_cn": "数学广角——搭配（一）",
-          "concept_ids": ["systematic-counting", "problem-solving"]
-        },
-        {
-          "order": 9,
-          "unit_title_cn": "总复习",
-          "concept_ids": []
-        }
+        {"order":1,"unit_title_cn":"长度单位","concept_ids":["standard-units","comparison-measurement"]},
+        {"order":2,"unit_title_cn":"100以内的加法和减法（二）","concept_ids":["mental-addition-subtraction","written-addition","written-subtraction","addition-subtraction-problems"]},
+        {"order":3,"unit_title_cn":"角的初步认识","concept_ids":["angle-as-turn","angle-size"]},
+        {"order":4,"unit_title_cn":"表内乘法（一）","concept_ids":["multiplication-meaning","equal-groups","arrays","repeated-addition","multiplication-facts"]},
+        {"order":5,"unit_title_cn":"观察物体（一）","concept_ids":["3d-shapes","visual-models"],"mapping_note":"Taxonomy currently lacks a dedicated viewpoint/visualisation concept; mapped provisionally to 3D shapes and visual models."},
+        {"order":6,"unit_title_cn":"表内乘法（二）","concept_ids":["multiplication-facts","multiplication-meaning","multiplication-division-problems"]},
+        {"order":7,"unit_title_cn":"认识时间","concept_ids":["telling-time"]},
+        {"order":8,"unit_title_cn":"数学广角——搭配（一）","concept_ids":["choose-strategy"],"taxonomy_gap":"combinatorial-counting / systematic enumeration"},
+        {"order":9,"unit_title_cn":"总复习","concept_ids":[]}
       ]
     }
   ],
