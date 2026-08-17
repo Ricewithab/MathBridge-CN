@@ -1,0 +1,15 @@
+{
+  "version":"0.1.0",
+  "research_date":"2026-08-18",
+  "purpose":"Override evidence metadata for existing misconception records after targeted empirical review. This file changes evidence status/source attribution only; it does not replace the underlying instructional description.",
+  "overrides":[
+    {"misconception_id":"equals-sign-means-answer-next","resolved_status":"evidence_supported","evidence_level":"direct_empirical","add_source_ids":["research-stephens-equal-sign-2013"],"note":"Operational-versus-relational equal-sign reasoning is directly supported in a Grades 3-5 study. Do not infer prevalence in a jurisdiction or treat one MathBridge item as validated."},
+    {"misconception_id":"decimal-more-digits-means-larger","resolved_status":"evidence_supported","evidence_level":"direct_empirical_reasoning_mechanism","add_source_ids":["research-roell-decimal-2019"],"note":"Whole-number digit-length interference in decimal comparison is directly supported, but the verified school-age sample is Grade 7 rather than primary; use as a possible mechanism, not a primary prevalence claim."},
+    {"misconception_id":"perimeter-area-confusion","resolved_status":"evidence_supported","evidence_level":"direct_empirical","add_source_ids":["research-huang-area-2013","research-tansisman-measurement-2016"],"note":"Empirical studies document difficulty distinguishing area/perimeter and confusion between their formulae. Samples are local and do not establish universal prevalence."},
+    {"misconception_id":"ratio-treated-as-additive-difference","resolved_status":"evidence_supported","evidence_level":"direct_empirical_plus_guidance","add_source_ids":["research-vandooren-additive-multiplicative-2010","us-ies-fractions-2010"],"note":"Grades 3-6 research directly documents inappropriate additive reasoning on proportional problems. Not every ratio error should be classified this way."},
+    {"misconception_id":"bar-chart-scale-assumed-one","resolved_status":"curriculum_inferred","evidence_level":"curriculum_inferred_with_broader_empirical_graph_support","add_source_ids":["research-watson-moritz-bargraphs-1999"],"note":"The study supports broader variation in children's bar-graph interpretation, not the exact scale-assumed-one error. Keep the exact claim cautious."},
+    {"misconception_id":"mult-is-only-repeated-addition","resolved_status":"research_required","evidence_level":"guidance_supported_research_required_for_exact_claim","note":"Teaching guidance supports broader multiplicative representations, but direct empirical support for the exact internal wording has not yet been verified."},
+    {"misconception_id":"pv-zero-has-no-structural-role","resolved_status":"curriculum_inferred","evidence_level":"research_required_for_exact_placeholder_claim","note":"Keep as a useful probe; direct evidence for the exact internal-zero placeholder pattern remains pending."}
+  ],
+  "resolver_rule":"After resolving misconception aliases, merge an override by canonical misconception_id. resolved_status and evidence_level supersede the catalog's evidence metadata; source IDs are appended and deduplicated."
+}
