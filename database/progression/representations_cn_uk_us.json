@@ -1,0 +1,107 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "title": "Mathematical Representations: China, England and US Baseline",
+  "purpose": "Explain why lessons can look different even when the underlying mathematical concept is similar.",
+  "comparison_rule": "Compare documented representation pathways and teacher guidance, not national stereotypes or unsupported frequency claims.",
+  "systems": {
+    "CN": {
+      "evidence_status": "current_design_verified_representation_specifics_partial",
+      "documented_emphases": [
+        "structured and connected content",
+        "counting units as a unifying idea across whole numbers, decimals, fractions and operations",
+        "operation, experiment and reasoning during knowledge exploration",
+        "analogy, transfer, induction and connection between mathematical ideas",
+        "use of contexts and mathematical modelling"
+      ],
+      "publication_caution": "Current 12th-series PEP volume-level evidence is still needed before claiming that a named representation such as a ten-frame, bar model or area model is standard at a particular grade."
+    },
+    "UK": {
+      "evidence_status": "verified_dfe_and_ncetm_guidance",
+      "documented_emphases": [
+        "a core set of representations reused consistently across year groups",
+        "representations selected to expose mathematical structure",
+        "explicit links between representations, language and calculation",
+        "tens frames and place-value counters scaled across powers of ten",
+        "number lines for magnitude, fractions, decimals and proportional reasoning",
+        "bar models for part-whole, division, fractions and unknowns"
+      ],
+      "important_distinction": "The DfE guidance is non-statutory teaching guidance supporting the statutory National Curriculum; NCETM mastery resources are guidance/resources, not statutory curriculum."
+    },
+    "US": {
+      "evidence_status": "verified_common_core_plus_ies_evidence",
+      "documented_emphases": [
+        "objects, drawings, diagrams and equations in elementary problem solving",
+        "number-line diagrams for whole-number operations and fractions",
+        "arrays and equal groups as early multiplication structure",
+        "visual fraction models including tape diagrams, number lines and area models",
+        "place-value-based strategies before required standard algorithms",
+        "evidence-backed use of concrete and semi-concrete representations and number lines in elementary intervention"
+      ],
+      "important_distinction": "Common Core defines learning expectations and some required representational competencies but explicitly does not prescribe a complete curriculum or teaching method."
+    }
+  },
+  "comparison_cards": [
+    {
+      "id": "early-number-composition",
+      "title_en": "Early Number Composition",
+      "title_cn": "低年级数的组成",
+      "concept_ids": ["number-recognition", "number-composition-decomposition", "addition-meaning", "subtraction-meaning"],
+      "CN": "Current PEP explicitly places number recognition/composition and addition-subtraction in connected Grade 1 units. The design principle is structural integration; exact named manipulatives remain to be verified from current pages.",
+      "UK": "DfE guidance uses multiple representations of the same number, tens frames, counters and part-whole structures, then connects them to equations and precise language.",
+      "US": "Common Core expects pupils to model addition/subtraction situations using objects, drawings and equations and to use decomposition strategies such as making ten.",
+      "teacher_insight": "The key comparison is not concrete versus abstract. All three systems support conceptual structure. The useful question is which representation is made explicit, how long it remains visible, and how directly it is connected to equations and reasoning."
+    },
+    {
+      "id": "place-value-unitisation",
+      "title_en": "Place Value and Unitisation",
+      "title_cn": "位值与计数单位",
+      "concept_ids": ["place-value", "decimal-place-value", "number-composition-decomposition"],
+      "CN": "Current PEP makes the counting-unit idea a major unifying thread across integer, decimal and fraction learning.",
+      "UK": "DfE guidance deliberately reuses representations such as tens frames and place-value counters at different scales so pupils see the same base-ten structure across years.",
+      "US": "Common Core repeatedly grounds multi-digit computation in the meaning of hundreds, tens and ones and in composing/decomposing units before later standard algorithms.",
+      "teacher_insight": "A powerful MathBridge lesson suggestion is to preserve the same structural representation while changing the value of the unit, then ask pupils what changed and what stayed invariant."
+    },
+    {
+      "id": "multiplication-from-groups-to-structure",
+      "title_en": "Multiplication: Groups, Arrays and Structure",
+      "title_cn": "乘法：等量组、阵列与结构",
+      "concept_ids": ["multiplication-meaning", "equal-groups", "arrays", "multiplication-properties", "written-multiplication"],
+      "CN": "Current PEP reorganises related multiplication content to support analogy and transfer, but exact current representation sequence is still being verified.",
+      "UK": "DfE/NCETM guidance treats representations as tools for exposing multiplicative structure and links them progressively to efficient calculation.",
+      "US": "Common Core moves from equal groups/arrays toward place-value and distributive reasoning, then into standard written multiplication at a later grade.",
+      "teacher_insight": "The productive bridge is array or rectangular structure → partitioning/distributivity → partial products → compact algorithm, with each transition explicitly justified."
+    },
+    {
+      "id": "fractions-as-numbers-and-quantities",
+      "title_en": "Fractions as Numbers and Quantities",
+      "title_cn": "分数作为数与数量",
+      "concept_ids": ["fraction-as-part-whole", "fraction-as-measure", "fraction-number-line", "equivalent-fractions", "multiply-fractions"],
+      "CN": "Current PEP's counting-unit thread explicitly links fraction understanding to broader number structure; exact current diagrams and grade sequence need direct volume evidence.",
+      "UK": "DfE guidance uses number lines and bar models to connect fraction magnitude, division, fractions of quantities and later reasoning.",
+      "US": "Common Core explicitly defines fractions as numbers on the number line and repeatedly requires visual fraction models, defined to include tape diagrams, number lines and area models.",
+      "teacher_insight": "Avoid teaching fractions only as shaded parts of shapes. Move among part-whole, measure/number-line and quantity models so pupils see a fraction as a number with magnitude and as an operator on quantities."
+    },
+    {
+      "id": "representation-to-algorithm",
+      "title_en": "From Representation to Written Algorithm",
+      "title_cn": "从表征到笔算算法",
+      "concept_ids": ["written-addition", "written-subtraction", "written-multiplication", "written-division"],
+      "CN": "Current PEP retains calculation while strengthening structural connections and inquiry; exact algorithm-introduction points are still edition/volume verification targets.",
+      "UK": "DfE guidance explicitly connects representations and calculation development, then expects increasingly efficient formal methods across the primary years.",
+      "US": "Common Core deliberately requires strategy and representation work before mandatory standard algorithms for major multi-digit operations.",
+      "teacher_insight": "The instructional question should be: can the pupil explain what each step of the compact algorithm represents in terms of place value or an earlier model? If not, return to the structural connection rather than merely adding more algorithm practice."
+    }
+  ],
+  "ui_pattern": {
+    "show": ["representation", "what_it_makes_visible", "country/system evidence", "teacher move", "why it helps", "misconception warning", "source trail"],
+    "avoid": ["country ranking", "better/worse labels", "unsupported claims that one country is conceptual and another procedural"]
+  },
+  "source_ids": [
+    "cn-pep-math-new-edition-intro-2024",
+    "uk-dfe-primary-math-guidance-2020",
+    "uk-ncetm-primary-mastery",
+    "us-common-core-math",
+    "us-ies-math-practice"
+  ]
+}
