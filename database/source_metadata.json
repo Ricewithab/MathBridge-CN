@@ -1,4 +1,5 @@
 {
+  "version": "0.2.0",
   "source_metadata_fields": {
     "source_id": "Unique identifier matching sources.json",
     "official_url": "Primary reference URL",
@@ -7,32 +8,94 @@
     "domains": "Mathematical areas covered",
     "languages": "Available languages",
     "citation_format": "How sources are displayed to users",
-    "verification_status": "Verified, pending review, or archived",
+    "verification_status": "verified, partially_verified, pending_review, or archived",
     "last_verified": "Date of last verification",
     "notes": "Additional context for teachers"
   },
-  "examples": [
+  "records": [
     {
-      "source_id": "cn_moe_math_2022",
-      "official_url": "https://www.moe.gov.cn/",
+      "source_id": "cn-moe-math-2022",
+      "official_url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
       "document_year": 2022,
-      "grade_range": "Grades 1-6",
-      "domains": ["Number", "Geometry", "Measurement", "Statistics"],
+      "grade_range": "Compulsory education; MathBridge primary scope Grades 1-6",
+      "domains": ["Number & Algebra", "Geometry", "Statistics & Probability", "Integrated Practice"],
       "languages": ["Chinese"],
       "citation_format": "教育部《义务教育数学课程标准（2022年版）》",
-      "verification_status": "Verified",
-      "notes": "Primary Chinese national mathematics curriculum reference"
+      "verification_status": "verified",
+      "last_verified": "2026-08-17",
+      "notes": "Primary national authority. The 2022 standard is organised by learning stages rather than giving every requirement as a single-grade prescription. For Grades 1-6, stages are 1-2, 3-4 and 5-6. Exact year-by-year sequencing should therefore be mapped using approved textbook editions and teacher materials in addition to the national standard."
     },
     {
-      "source_id": "uk_nc_math",
-      "official_url": "https://www.gov.uk/government/collections/national-curriculum",
-      "document_year": 2014,
-      "grade_range": "Key Stage 1-2",
-      "domains": ["Number", "Measurement", "Geometry", "Statistics"],
+      "source_id": "cn-pEp-math-primary",
+      "official_url": "https://www.pep.com.cn/",
+      "document_year": null,
+      "grade_range": "Primary",
+      "domains": ["Number & Algebra", "Geometry", "Statistics & Probability", "Integrated Practice"],
+      "languages": ["Chinese"],
+      "citation_format": "人民教育出版社小学数学教材（具体册次）",
+      "verification_status": "pending_review",
+      "last_verified": null,
+      "notes": "Use edition-specific records before making grade-by-grade claims. Do not treat one PEP edition as the only Chinese classroom sequence."
+    },
+    {
+      "source_id": "uk-dfe-mathematics",
+      "official_url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+      "document_year": 2013,
+      "grade_range": "England Years 1-6 / Key Stages 1-2",
+      "domains": ["Number", "Measurement", "Geometry", "Statistics", "Ratio & Proportion", "Algebra"],
       "languages": ["English"],
-      "citation_format": "England National Curriculum: Mathematics",
-      "verification_status": "Verified",
-      "notes": "Statutory curriculum framework for England primary schools"
+      "citation_format": "Department for Education, National Curriculum in England: Mathematics Programmes of Study",
+      "verification_status": "verified",
+      "last_verified": "2026-08-17",
+      "notes": "Statutory programme of study. Page last updated by DfE in 2021. Year-by-year programmes are published, while schools retain some flexibility within each key stage."
+    },
+    {
+      "source_id": "uk-ncetm-primary-mastery",
+      "official_url": "https://www.ncetm.org.uk/",
+      "document_year": null,
+      "grade_range": "Primary",
+      "domains": ["Number", "Calculation", "Fractions", "Geometry", "Measurement"],
+      "languages": ["English"],
+      "citation_format": "NCETM Primary Mastery Materials",
+      "verification_status": "pending_review",
+      "last_verified": null,
+      "notes": "Use specific NCETM resource pages and spine/material identifiers for claim-level citations."
+    },
+    {
+      "source_id": "us-common-core-math",
+      "official_url": "https://corestandards.org/mathematics-standards/",
+      "document_year": 2010,
+      "grade_range": "K-12; MathBridge primary scope Grades 1-6",
+      "domains": ["Operations & Algebraic Thinking", "Number & Operations in Base Ten", "Fractions", "Measurement & Data", "Geometry", "Ratios", "The Number System"],
+      "languages": ["English"],
+      "citation_format": "Common Core State Standards for Mathematics (CCSSM)",
+      "verification_status": "verified",
+      "last_verified": "2026-08-17",
+      "notes": "Reference framework for US mode, not a claim that every US state uses Common Core. State-specific mappings should be stored separately."
+    },
+    {
+      "source_id": "us-ies-math-practice",
+      "official_url": "https://ies.ed.gov/ncee/wwc/PracticeGuides",
+      "document_year": null,
+      "grade_range": "Varies by practice guide",
+      "domains": ["Mathematics Instruction"],
+      "languages": ["English"],
+      "citation_format": "Institute of Education Sciences / What Works Clearinghouse Mathematics Practice Guide",
+      "verification_status": "pending_review",
+      "last_verified": null,
+      "notes": "Each instructional claim should cite the specific practice guide, recommendation and evidence rating rather than this collection page alone."
+    },
+    {
+      "source_id": "international-timss",
+      "official_url": "https://timssandpirls.bc.edu/",
+      "document_year": null,
+      "grade_range": "International assessment frameworks, especially Grade 4 and Grade 8",
+      "domains": ["Number", "Measurement & Geometry", "Data"],
+      "languages": ["English"],
+      "citation_format": "TIMSS Mathematics Framework",
+      "verification_status": "pending_review",
+      "last_verified": null,
+      "notes": "Use edition-specific framework records when comparing international expectations."
     }
   ]
 }
