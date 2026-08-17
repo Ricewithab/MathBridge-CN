@@ -1,0 +1,8 @@
+{
+  "version":"0.1.0",
+  "research_date":"2026-08-18",
+  "records":[
+    {"source_id":"research-kamii-russell-elapsed-time-2012","official_url":"https://doi.org/10.5951/jresematheduc.43.3.0296","document_year":2012,"publication":"Journal for Research in Mathematics Education 43(3), 296-315","population":"126 students in Grades 2-5","domains":["Elapsed time","Hours and minutes","Hierarchical units"],"evidence_type":"elementary empirical study","verification_status":"verified","last_verified":"2026-08-18","notes":"The study attributes major elapsed-time difficulty to coordinating hierarchical units such as hours and minutes. Use for the unit-coordination mechanism, not as proof of every specific elapsed-time error pattern."},
+    {"source_id":"research-he-xin-probability-2024","official_url":"https://doi.org/10.1080/10986065.2024.2403044","document_year":2024,"publication":"Mathematical Thinking and Learning; online 2024, Volume 28 Issue 2 pages 133-155 in 2026","population":"Chinese fifth graders in a test-based single-group instructional intervention","domains":["Probability comparison","Sample space","Elementary probability misconceptions"],"evidence_type":"quasi-experimental instructional study","verification_status":"verified","last_verified":"2026-08-18","notes":"Directly supports the existence of probability-comparison misconceptions in the studied Grade 5 population and improvement through targeted intervention. The public abstract does not identify the exact unequal-spinner-sector error used in MathBridge, so do not use it as direct evidence for that specific wording."}
+  ]
+}
