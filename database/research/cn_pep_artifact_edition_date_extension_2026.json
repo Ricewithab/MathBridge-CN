@@ -1,0 +1,15 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "purpose":"Record revised PEP artifact edition dates/existence where the physical/digital book is identifiable but the revised textbook ISBN has not yet been verified.",
+  "records":[
+    {
+      "grade":3,"semester":"upper","edition_date":"2025-05","edition_statement":"2025年05月第01版","publisher":"人民教育出版社","isbn_status":"pending","evidence":[{"source":"步步高学习数据资源","url":"https://www.elpsky.com/index.php/updatemore?category=pc&model=P26&module=%E6%95%B0%E5%AD%A6%E5%85%A8%E8%A7%A3","record":"人教版数学小学3年级上册_11068166","status":"secondary_dataset"},{"source":"current revised teacher guide/content indexes","status":"sequence_match_verified"}],"note":"Do not use ISBN 9787107369247; that identifier belongs to the 2022 edition."},
+    {
+      "grade":2,"semester":"lower","edition_date":"2025-12","edition_statement":"2025年12月第01版","publisher":"人民教育出版社","isbn_status":"pending","evidence":[{"source":"步步高学习数据资源","url":"https://www.elpsky.com/index.php/updatemore?category=pc&model=P26&module=%E6%95%B0%E5%AD%A6%E5%85%A8%E8%A7%A3","record":"人教版数学小学2年级下册_12649166","status":"secondary_dataset"},{"source":"湖北新华印务2026春教材生产印制信息","url":"https://www.hbprint.cn/News_d/130.html","status":"official_printer_production_evidence"},{"source":"2026 revised teacher guide/current lesson indexes","status":"sequence_match_verified"}],"note":"ISBN 9787107371769 is a 2023 legacy artifact and is rejected for the revised book."},
+    {
+      "grade":3,"semester":"lower","edition_date":"2025-12","edition_statement":"2025年12月第01版","publisher":"人民教育出版社","isbn_status":"pending","evidence":[{"source":"步步高学习数据资源","url":"https://www.elpsky.com/index.php/updatemore?category=pc&model=P26&module=%E6%95%B0%E5%AD%A6%E5%85%A8%E8%A7%A3","record":"人教版数学小学3年级下册_12662166","status":"secondary_dataset"},{"source":"湖北新华印务2026春教材生产印制信息","url":"https://www.hbprint.cn/News_d/130.html","status":"official_printer_production_evidence"},{"source":"2026 revised teacher-guide reproduction","url":"https://www.sohu.com/a/1044975242_120904083","status":"secondary_sequence_and_teacher_guide_detail"}],"note":"Do not use legacy Grade 3 lower ISBNs such as 9787107371752 or old-content pages with 位置与方向/两位数乘两位数."
+    }
+  ],
+  "resolver_rule":"These records supplement cn_pep_artifact_metadata_audit_2026.json. A verified edition date does not imply a verified ISBN."
+}
