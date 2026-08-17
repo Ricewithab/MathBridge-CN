@@ -1,88 +1,24 @@
 {
-  "version": "0.2.0",
-  "purpose": "Define how MathBridge assembles one teacher-facing concept card from curriculum, progression, representation, teaching, diagnostic and evidence records.",
-  "inputs": {
-    "required": ["concept_id", "comparison_system"],
-    "optional": ["cn_grade", "target_grade_or_year", "textbook_edition", "diagnostic_mode", "language"]
-  },
-  "comparison_system_values": ["UK", "US"],
-  "resolution_order": [
-    "Resolve concept_id against concept_taxonomy.json.",
-    "Load concept_intelligence_manifest.json and locate the concept profile in the listed profile files.",
-    "Resolve curriculum placement and progression for CN plus the selected comparison system.",
-    "Apply grade/stage filters without forcing same-numbered-grade equivalence.",
-    "Resolve canonical representations from both representation catalogs.",
-    "Resolve canonical teaching moves.",
-    "Resolve misconceptions relevant to the concept.",
-    "Resolve diagnostic questions that target those misconceptions.",
-    "Resolve source IDs and source metadata for every factual claim.",
-    "Assemble teacher-facing sections after evidence/status checks."
+  "version":"0.3.0",
+  "purpose":"Define how MathBridge assembles one teacher-facing concept card from curriculum, progression, representation, teaching, diagnostic and evidence records.",
+  "localization":{"terminology":"database/localization/terminology_glossary.json","interface_labels":"database/localization/interface_labels.json"},
+  "inputs":{"required":["concept_id","comparison_system"],"optional":["cn_grade","target_grade_or_year","textbook_edition","diagnostic_mode","language"]},
+  "comparison_system_values":["UK","US"],
+  "resolution_order":["Resolve concept_id against concept_taxonomy.json.","Load concept_intelligence_manifest.json and locate the concept profile.","Resolve China and comparison-system curriculum placement independently.","Apply grade/stage filters without forcing same-numbered-grade equivalence.","Apply China section locators when available.","Resolve representations and teaching moves.","Load base and extension diagnostic catalogs, then apply all diagnostic link overlays.","Resolve source IDs and source metadata for every factual claim.","Apply terminology and interface labels only after the underlying jurisdiction/evidence context is resolved.","Assemble teacher-facing sections after evidence/status checks."],
+  "teacher_facing_sections":[
+    {"id":"what_is_taught","label_id":"what-is-taught","rule":"Show curriculum expectation or placement. Do not present inferred classroom practice as curriculum."},
+    {"id":"progression","label_id":"progression","rule":"Show how the concept develops within each system. Do not imply equivalence from matching grade numbers."},
+    {"id":"how_it_is_represented","label_id":"representations","rule":"State system-specific use only when evidence supports it. Otherwise present the representation as an instructional option."},
+    {"id":"how_it_is_taught","label_id":"teaching-moves","rule":"Recommend moves because they fit the mathematics and evidence, not as national teaching traits."},
+    {"id":"why_it_works","label_id":"why-this-helps","rule":"Keep pedagogical rationale separate from curriculum requirements."},
+    {"id":"likely_misunderstandings","label_id":"possible-misunderstandings","rule":"Describe possible reasoning patterns. Do not attribute them to nationality or diagnose from one answer."},
+    {"id":"diagnostic_question","label_id":"ask-next","rule":"Include a follow-up explanation, representation or second item before classification."},
+    {"id":"classroom_bridge","label_id":"classroom-use","rule":"Give one practical option that fits the Chinese curriculum context. Do not frame the comparison system as inherently better."},
+    {"id":"evidence","label_id":"evidence","rule":"Show the smallest set of sources needed, with section/standard locators where available."}
   ],
-  "teacher_facing_sections": [
-    {"id":"what_is_taught","title_en":"What is taught","title_cn":"教什么","sources":["curriculum_map","progression"],"rule":"Show curriculum expectation or placement. Do not present inferred classroom practice as curriculum."},
-    {"id":"how_it_is_represented","title_en":"How the mathematics is represented","title_cn":"数学如何被表征","sources":["representations","representations_extended"],"rule":"State system-specific use only when evidence supports it. Otherwise present the representation as an option."},
-    {"id":"how_it_is_taught","title_en":"Teaching moves","title_cn":"教学动作","sources":["teaching_moves"],"rule":"Recommend moves because they fit the concept and evidence. Do not describe them as national teaching traits without evidence."},
-    {"id":"why_it_works","title_en":"Why this helps","title_cn":"为什么这样做有帮助","sources":["teaching_moves","research_evidence","official_guidance"],"rule":"Keep pedagogical rationale separate from curriculum requirements."},
-    {"id":"likely_misunderstandings","title_en":"What pupils may misunderstand","title_cn":"学生可能误解什么","sources":["misconceptions"],"rule":"Do not attribute misconceptions to nationality or curriculum without evidence."},
-    {"id":"diagnostic_question","title_en":"Ask this next","title_cn":"下一步可以这样问","sources":["diagnostic_questions","diagnostic_rules"],"rule":"A wrong answer is a signal to probe, not a diagnosis. Include a follow-up explanation or representation prompt."},
-    {"id":"classroom_bridge","title_en":"Classroom option","title_cn":"课堂可用做法","sources":["representations","teaching_moves","diagnostic_questions"],"rule":"Give one practical adaptation that fits the Chinese curriculum context. Do not frame another system as inherently better."},
-    {"id":"evidence","title_en":"Evidence","title_cn":"证据来源","sources":["sources","source_metadata"],"rule":"Show the smallest set of sources needed to support the claims, with locators where available."}
-  ],
-  "status_gates": {
-    "verified": "May be shown as a factual curriculum or source claim.",
-    "partially_verified": "Show only with a qualification explaining what remains unverified.",
-    "research_required": "Do not show as established fact.",
-    "current_specifics_pending": "May describe the general function, but not current grade-specific PEP use.",
-    "grade_placement_pending": "Do not infer an exact Chinese grade from stage-level or legacy evidence.",
-    "joined_curriculum_mapping_required": "The profile links teaching resources, but curriculum placement is not yet mapped.",
-    "joined_diagnostic_required": "The profile links teaching resources, but diagnostic content is not yet complete."
-  },
-  "china_rules": [
-    "Use the 2022 MOE mathematics standard for national curriculum requirements.",
-    "Use current PEP 12th-series evidence for exact textbook sequencing only when the relevant volume or locator has been verified.",
-    "Never silently substitute a legacy PEP sequence for the current edition.",
-    "If exact current grade placement is unknown, show the verified learning stage and mark textbook sequencing as pending."
-  ],
-  "england_rules": [
-    "Label the jurisdiction England when using the statutory National Curriculum in England.",
-    "Separate statutory programme-of-study requirements from DfE or NCETM teaching guidance."
-  ],
-  "us_rules": [
-    "Label Common Core as the comparison baseline, not the single US curriculum.",
-    "State-specific frameworks such as California or Texas may be layered separately when requested.",
-    "Do not infer that a Common Core representation requirement dictates one classroom method."
-  ],
-  "diagnostic_rules": [
-    "Require at least two pieces of evidence before recording a likely misconception.",
-    "Distinguish conceptual misunderstanding, procedural weakness, fluency, representation difficulty and language difficulty.",
-    "For bilingual pupils, use a language-light or Chinese-language re-probe when wording may be the barrier.",
-    "After a targeted response, recheck with a similar problem using different surface details."
-  ],
-  "copy_rules": [
-    "Use direct educational language.",
-    "Use short headings and plain explanations.",
-    "State what the teacher or pupil should do.",
-    "Avoid marketing language, slogans, hype, promotional claims and AI-style filler.",
-    "Do not use unnecessary adjectives.",
-    "Prefer specific evidence labels such as Verified, Partially verified, and Research required."
-  ],
-  "assembly_output_schema": {
-    "concept": "Resolved concept metadata",
-    "context": "CN grade/stage plus selected comparison jurisdiction/year/grade",
-    "what_is_taught": "System-specific curriculum progression",
-    "representations": "Selected representation records with evidence status",
-    "teaching_moves": "Selected teacher actions",
-    "misconceptions": "Relevant misconception records",
-    "diagnostic": "Diagnostic prompts and interpretation guidance when available",
-    "classroom_bridge": "Practical adaptation grounded in the resolved records",
-    "sources": "Deduplicated evidence records with locators and status"
-  },
-  "integrity_checks_before_render": [
-    "Every concept ID resolves to exactly one profile.",
-    "Every representation and teaching-move ID resolves through the canonical registry.",
-    "Every non-empty misconception and diagnostic-question ID resolves.",
-    "Every factual system-specific statement has a source or an explicit pending/research status.",
-    "No grade equivalence is inferred merely because grade/year numbers match.",
-    "No legacy PEP record is selected as current by default."
-  ]
+  "jurisdiction_language_rules":["Display Chinese placement as 中国N年级 only when an exact Chinese grade is verified; otherwise display the verified 学段.","Display England placements as 英格兰 Year N in Chinese-language output.","Display Common Core placements as 美国 Common Core Grade N in Chinese-language output.","Do not translate England Year N or Common Core Grade N into 中国N年级.","Use the terminology glossary for representations; preserve an English term in parentheses on first use when no exact Chinese curriculum term exists."],
+  "status_gates":{"verified":"May be shown as factual.","partially_verified":"Show with a qualification.","research_required":"Do not show as established fact.","current_specifics_pending":"Describe only the general function; do not claim current grade-specific PEP use.","grade_placement_pending":"Show the verified Chinese learning stage rather than inventing a grade."},
+  "diagnostic_rules":["Require at least two pieces of evidence before recording a likely misconception.","Distinguish conceptual, procedural, fluency, representation and language difficulties.","For bilingual pupils, re-probe with simpler language or Chinese when wording may be the barrier.","Recheck with the same mathematical structure and different surface details."],
+  "copy_rules":["Use direct educational language.","Use short headings and plain explanations.","State what the teacher or pupil should do.","Avoid marketing language, slogans, hype, promotional claims and AI-style filler.","Avoid unnecessary adjectives.","Do not use phrases such as unlock, transform, powerful insight, game-changing, revolutionary or supercharge.","Prefer concrete verbs: compare, show, explain, ask, check, represent, calculate, justify."],
+  "integrity_checks_before_render":["Every concept resolves to exactly one profile.","Every representation and teaching-move ID resolves.","Every misconception and diagnostic-question ID resolves after overlays.","Every factual system-specific statement has a source or explicit pending status.","No grade equivalence is inferred from matching numbers.","No legacy PEP record is selected as current by default.","Jurisdiction labels survive translation without being converted into false grade equivalents."]
 }
