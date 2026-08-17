@@ -1,0 +1,43 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "purpose":"Close the revised-PEP artifact metadata audit by assigning an explicit evidence state to every volume instead of leaving generic pending values.",
+  "status_definitions":{
+    "verified":"Edition-matched ISBN/publication metadata is supported by sufficient independent evidence and the artifact matches the revised sequence.",
+    "single_source_candidate":"A plausible edition-matched identifier appears in one current source but lacks an independent second match; it must not be rendered as verified ISBN.",
+    "not_publicly_recovered":"The revised artifact/edition is verified, but no trustworthy edition-matched ISBN was recovered from publicly indexed sources by the research date.",
+    "designed_sequence_verified_artifact_not_yet_required":"The revised series design is authoritative, but the corresponding later-semester classroom artifact is not required to be publicly available in the documented rollout phase as of the research date.",
+    "rollout_context_required":"Actual classroom use depends on locality, approved publisher and term and cannot be represented as one nationwide state."
+  },
+  "volumes":[
+    {"grade":1,"semester":"upper","artifact_identity_status":"verified","isbn":"978-7-107-38244-4","publication":"2024-07","evidence_ref":"database/research/cn_pep_artifact_metadata_audit_2026.json"},
+    {"grade":1,"semester":"lower","artifact_identity_status":"verified","isbn":"978-7-107-38245-1","publication":"2024-11","evidence_ref":"database/research/cn_pep_artifact_metadata_audit_2026.json"},
+    {"grade":2,"semester":"upper","artifact_identity_status":"verified","isbn":"978-7-107-38912-2","publication":"2025-08","evidence_ref":"database/research/cn_pep_artifact_metadata_audit_2026.json"},
+    {"grade":2,"semester":"lower","artifact_identity_status":"single_source_candidate","candidate_isbn":"978-7-107-38913-9","publication":"2025-12 first edition independently supported","candidate_evidence":"A current JD result labels the 2026 spring PEP Grade 2 lower textbook with ISBN 9787107389139.","independent_crosscheck_status":"not_found","render_rule":"Do not display candidate ISBN as verified. The physical revised artifact and first-edition date may be displayed without ISBN."},
+    {"grade":3,"semester":"upper","artifact_identity_status":"not_publicly_recovered","publication":"2025-05 first edition verified","artifact_existence":"verified","sequence_and_detail":"verified","isbn":"not_publicly_recovered_as_of_2026-08-18","legacy_isbn_rejected":"978-7-107-36924-7"},
+    {"grade":3,"semester":"lower","artifact_identity_status":"not_publicly_recovered","publication":"2025-12 first edition verified","artifact_existence":"verified","sequence_and_detail":"verified","isbn":"not_publicly_recovered_as_of_2026-08-18","legacy_identifiers_rejected":true},
+    {"grade":4,"semester":"upper","artifact_identity_status":"not_publicly_recovered","rollout_state":"2026 autumn entry/training phase in documented contexts","sequence_and_lesson_detail":"verified","isbn":"not_publicly_recovered_as_of_2026-08-18","legacy_isbn_rejected":"978-7-107-36927-8"},
+    {"grade":4,"semester":"lower","artifact_identity_status":"designed_sequence_verified_artifact_not_yet_required","rollout_state":"later semester; revised lower-semester classroom artifact not verified by 2026-08-18","isbn":"not_applicable_as_current_rollout_evidence","sequence":"verified"},
+    {"grade":5,"semester":"upper","artifact_identity_status":"not_publicly_recovered","rollout_state":"2026 autumn entry/training phase in documented contexts","sequence_and_lesson_detail":"verified","isbn":"not_publicly_recovered_as_of_2026-08-18","legacy_isbn_rejected":"978-7-107-36926-1"},
+    {"grade":5,"semester":"lower","artifact_identity_status":"designed_sequence_verified_artifact_not_yet_required","rollout_state":"later semester use not verified by 2026-08-18","designed_series_secondary_detail":"available","isbn":"not_applicable_as_current_rollout_evidence","sequence":"verified"},
+    {"grade":6,"semester":"upper","artifact_identity_status":"not_publicly_recovered","rollout_state":"2026 autumn entry/training phase in documented contexts","sequence_and_lesson_detail":"verified","isbn":"not_publicly_recovered_as_of_2026-08-18","legacy_isbn_rejected":"978-7-107-36925-4"},
+    {"grade":6,"semester":"lower","artifact_identity_status":"designed_sequence_verified_artifact_not_yet_required","rollout_state":"later semester; revised lower-semester classroom artifact not verified by 2026-08-18","isbn":"not_applicable_as_current_rollout_evidence","sequence":"verified"}
+  ],
+  "completion":{
+    "volume_slots":12,
+    "generic_pending_states":0,
+    "verified_isbn_volumes":3,
+    "single_source_candidate_volumes":1,
+    "not_publicly_recovered_active_or_entering_volumes":5,
+    "later_semester_designed_sequence_volumes":3,
+    "artifact_state_classification_percent":100
+  },
+  "publication_rules":[
+    "Only status verified may display an ISBN without a qualification label.",
+    "single_source_candidate values remain internal research notes unless explicitly requested with their evidence status.",
+    "not_publicly_recovered is a completed research state, not a guessed null and not permission to substitute a legacy ISBN.",
+    "designed_sequence_verified_artifact_not_yet_required must not be rendered as a missing/error state.",
+    "Actual-use questions require locality + textbook publisher + term when known."
+  ],
+  "status":"complete_classification"
+}
