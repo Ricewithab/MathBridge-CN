@@ -1,0 +1,35 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "sources":[
+    {
+      "id":"uk-nfer-ks1-money-value-assessment",
+      "country":"UK",
+      "category":"research",
+      "title_en":"How do I help pupils understand value in KS1 maths?",
+      "organisation":"National Foundation for Educational Research",
+      "publication_year":2026,
+      "source_type":"assessment_response_analysis"
+    },
+    {
+      "id":"research-wilkie-hopkins-subtraction-difference-2024",
+      "country":"INT",
+      "category":"research",
+      "title_en":"Primary students’ relational thinking and computation strategies with concrete-to-symbolic representations of subtraction as difference",
+      "organisation":"The Journal of Mathematical Behavior",
+      "authors":["Karina J. Wilkie","Sarah Hopkins"],
+      "publication_year":2024,
+      "doi":"10.1016/j.jmathb.2023.101121"
+    },
+    {
+      "id":"research-thomas-time-2023",
+      "country":"INT",
+      "category":"research",
+      "title_en":"Assessing students’ understanding of time concepts in Years 3 and 4: insights from the development and use of a one-to-one task-based interview",
+      "organisation":"Mathematics Education Research Journal",
+      "authors":["Margaret Thomas","Doug M. Clarke","Andrea McDonough","Philip C. Clarkson"],
+      "publication_year":2023,
+      "doi":"10.1007/s13394-023-00451-3"
+    }
+  ]
+}
