@@ -1,0 +1,140 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "system": "England",
+  "scope": ["addition", "subtraction", "multiplication", "division", "written_methods"],
+  "primary_source": {
+    "source_id": "uk-dfe-mathematics",
+    "title": "National Curriculum in England: Mathematics Programmes of Study",
+    "authority": "Department for Education",
+    "official_url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study"
+  },
+  "progression": [
+    {
+      "year": 1,
+      "addition_subtraction": {
+        "range": "within 20",
+        "expectations": [
+          "Represent and use number bonds and related subtraction facts within 20.",
+          "Add and subtract one-digit and two-digit numbers to 20, including zero.",
+          "Solve one-step addition and subtraction problems with concrete objects, pictorial representations and missing-number forms."
+        ],
+        "teaching_signals": ["number bonds", "inverse relationship", "practical contexts", "concrete and pictorial representations"],
+        "formal_written_algorithm": false
+      },
+      "multiplication_division": {
+        "expectations": ["Solve one-step multiplication and division problems using concrete objects, pictorial representations and arrays with teacher support."],
+        "teaching_signals": ["grouping", "sharing", "doubling", "arrays", "counting in 2s, 5s and 10s"],
+        "formal_written_algorithm": false
+      }
+    },
+    {
+      "year": 2,
+      "addition_subtraction": {
+        "expectations": [
+          "Recall and use addition and subtraction facts to 20 fluently and derive related facts to 100.",
+          "Add and subtract two-digit numbers using concrete, pictorial and mental methods.",
+          "Use the inverse relationship to check calculations and solve missing-number problems."
+        ],
+        "written_method_status": "Recording in columns supports place value and prepares pupils for later formal written methods.",
+        "formal_written_algorithm": false
+      },
+      "multiplication_division": {
+        "expectations": [
+          "Recall and use multiplication and division facts for the 2, 5 and 10 multiplication tables.",
+          "Represent multiplication and division using signs and equations.",
+          "Solve problems using materials, arrays, repeated addition, mental methods and known facts."
+        ],
+        "teaching_signals": ["equal groups", "sharing", "arrays", "repeated addition", "commutativity of multiplication", "inverse relationship"],
+        "formal_written_algorithm": false
+      }
+    },
+    {
+      "year": 3,
+      "addition_subtraction": {
+        "expectations": [
+          "Mentally add and subtract a three-digit number and ones, tens or hundreds.",
+          "Add and subtract numbers with up to three digits using formal columnar addition and subtraction.",
+          "Estimate and use inverse operations to check answers."
+        ],
+        "formal_written_algorithm": true,
+        "algorithm": ["columnar addition", "columnar subtraction"]
+      },
+      "multiplication_division": {
+        "expectations": [
+          "Recall and use multiplication and division facts for the 3, 4 and 8 tables.",
+          "Calculate two-digit by one-digit multiplication, moving from mental approaches toward formal written methods.",
+          "Develop reliable written multiplication and division methods beginning with two-digit by one-digit calculations."
+        ],
+        "written_method_status": "Transition year: mental and derived facts are explicitly connected to emerging written methods.",
+        "algorithm": ["early short multiplication", "early short division"]
+      }
+    },
+    {
+      "year": 4,
+      "addition_subtraction": {
+        "expectations": [
+          "Add and subtract numbers with up to four digits using formal columnar methods where appropriate.",
+          "Estimate and use inverse operations to check calculations.",
+          "Choose operations and methods in two-step contextual problems."
+        ],
+        "formal_written_algorithm": true,
+        "algorithm": ["columnar addition", "columnar subtraction"]
+      },
+      "multiplication_division": {
+        "expectations": [
+          "Recall multiplication and division facts up to 12 × 12.",
+          "Use place value and known/derived facts for mental multiplication and division.",
+          "Multiply two- and three-digit numbers by one digit using formal written layout.",
+          "Practise short multiplication and short division with exact answers."
+        ],
+        "algorithm": ["short multiplication", "short division"],
+        "teaching_signals": ["distributive law", "associative law", "factor pairs", "derived facts"]
+      }
+    },
+    {
+      "year": 5,
+      "addition_subtraction": {
+        "expectations": [
+          "Add and subtract whole numbers with more than four digits using formal columnar methods.",
+          "Calculate mentally with increasingly large numbers.",
+          "Use rounding to check answers and judge appropriate accuracy."
+        ],
+        "formal_written_algorithm": true
+      },
+      "multiplication_division": {
+        "expectations": [
+          "Multiply up to four-digit numbers by one- or two-digit numbers using formal written methods, including long multiplication for two-digit multipliers.",
+          "Divide up to four-digit numbers by one digit using short division and interpret remainders in context.",
+          "Use factors, multiples, primes, square and cube numbers in calculation and problem solving."
+        ],
+        "algorithm": ["short multiplication", "long multiplication", "short division"]
+      }
+    },
+    {
+      "year": 6,
+      "addition_subtraction": {
+        "expectations": [
+          "Use formal columnar addition and subtraction with larger numbers as part of fluent four-operation calculation.",
+          "Solve multi-step contextual problems and use estimation to check reasonableness."
+        ],
+        "formal_written_algorithm": true
+      },
+      "multiplication_division": {
+        "expectations": [
+          "Multiply up to four-digit numbers by a two-digit whole number using long multiplication.",
+          "Divide up to four-digit numbers by a two-digit whole number using long division and short division where appropriate.",
+          "Interpret remainders as whole-number remainders, fractions or rounded values according to context.",
+          "Perform mental calculations involving mixed operations and large numbers."
+        ],
+        "algorithm": ["long multiplication", "short division", "long division"],
+        "end_of_stage_signal": "By the end of Year 6 pupils should be fluent in written methods for all four operations."
+      }
+    }
+  ],
+  "mathbridge_interpretation": {
+    "core_pattern": "England delays formal algorithms until conceptual, mental and representational foundations have been established, then makes formal written methods increasingly explicit from Year 3 onward.",
+    "comparison_warning": "The statutory programmes are written year-by-year, but schools have flexibility within each key stage; MathBridge should therefore label these as statutory year expectations, not mandatory week-by-week sequencing.",
+    "source_locator": "Year 1–6 programmes of study; Number—addition and subtraction; Number—multiplication and division; Upper Key Stage 2 overview."
+  }
+}
