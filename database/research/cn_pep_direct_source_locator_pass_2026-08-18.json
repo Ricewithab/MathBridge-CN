@@ -1,0 +1,88 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-18",
+  "purpose": "Record direct official PEP source checks for the current 12th-series primary mathematics volumes and distinguish confirmed evidence from unresolved volume metadata.",
+  "rules": [
+    "Use only official PEP pages for current-volume confirmation in this pass.",
+    "Do not infer a current mathematics rollout schedule from rollout notices for other subjects.",
+    "Do not treat legacy digital textbooks as evidence for the 12th-series unit sequence.",
+    "A synchronized companion resource can corroborate that a current volume/resource exists, but it does not replace the textbook table of contents unless the unit structure is directly exposed."
+  ],
+  "confirmed": [
+    {
+      "claim": "The PEP 12th series was revised against the 2022 compulsory-education curriculum plan and standards and began formal use in starting grades from autumn 2024.",
+      "source_id": "cn-pep-series12-overview-2024",
+      "status": "verified"
+    },
+    {
+      "claim": "The new PEP primary mathematics series uses units, sections and knowledge points, and each volume ends with a '复习与关联' unit.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "status": "verified"
+    },
+    {
+      "claim": "Grade 1 upper places '5以内数的认识和加、减法' and '6～10的认识和加、减法' as consecutive units.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "status": "verified"
+    },
+    {
+      "claim": "The revised series merges the former '万以内的加减法（一）/（二）' units, merges '两位数乘两位数' with '三位数乘两位数', and merges two upper-primary '图形的位置' blocks.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "status": "verified"
+    },
+    {
+      "claim": "PEP published a Grade 1 upper '同步口算练习册' in September 2024 and states that it is synchronized by lesson period with the new textbook.",
+      "source_id": "cn-pep-grade1-upper-oral-practice-2024",
+      "status": "verified_companion_resource",
+      "use_limit": "Confirms a current Grade 1 upper synchronized companion resource; the page does not expose the unit table of contents or textbook ISBN."
+    }
+  ],
+  "current_volume_findings": [
+    {
+      "grade": 1,
+      "semester": "upper",
+      "status": "partial_verified",
+      "confirmed_fields": ["series", "grade", "semester", "two current unit titles and their consecutive relationship", "current synchronized companion-resource evidence"],
+      "still_missing": ["complete table of contents", "unit numbers", "subsection titles", "textbook ISBN", "exact publication metadata", "teacher-guide catalog record"]
+    },
+    {
+      "grade": 1,
+      "semester": "lower",
+      "status": "research_required"
+    },
+    {
+      "grade": 2,
+      "semester": "upper",
+      "status": "research_required",
+      "note": "Official PEP search currently surfaces a legacy digital textbook and legacy companion materials. These must not be treated as current 12th-series sequence evidence."
+    },
+    {
+      "grade": 2,
+      "semester": "lower",
+      "status": "research_required"
+    },
+    {
+      "grade": 3,
+      "semester": "upper",
+      "status": "research_required",
+      "note": "Current official search results did not expose a mathematics-specific 12th-series TOC or ISBN."
+    },
+    {"grade": 3, "semester": "lower", "status": "research_required"},
+    {"grade": 4, "semester": "upper", "status": "research_required"},
+    {"grade": 4, "semester": "lower", "status": "research_required"},
+    {"grade": 5, "semester": "upper", "status": "research_required"},
+    {"grade": 5, "semester": "lower", "status": "research_required"},
+    {"grade": 6, "semester": "upper", "status": "research_required"},
+    {"grade": 6, "semester": "lower", "status": "research_required"}
+  ],
+  "search_result_limitations": [
+    "The official PEP product and training pages indexed by public search do not currently expose complete 12th-series primary mathematics TOCs for all 12 semester volumes.",
+    "The PEP teacher-training platform is identified as an official source of textbook training videos and slides, but its internal mathematics resources were not exposed through public web indexing in this pass.",
+    "Legacy PEP digital books remain useful for historical comparison only."
+  ],
+  "next_source_targets": [
+    "PEP teacher-training platform mathematics volume training slides/videos",
+    "PEP current textbook catalog records with ISBN and publication year",
+    "current teacher teaching books for Grades 1-6",
+    "official synchronized current-edition companion books where a table of contents is exposed"
+  ]
+}
