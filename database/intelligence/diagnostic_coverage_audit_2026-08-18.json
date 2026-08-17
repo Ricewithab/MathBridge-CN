@@ -1,0 +1,40 @@
+{
+  "version":"0.1.0",
+  "audit_date":"2026-08-18",
+  "purpose":"Check whether every Grade 1-6 taxonomy concept resolves to at least one misconception and at least one diagnostic question after all registered diagnostic extensions are applied.",
+  "method":[
+    "Load all 121 concept profiles from the concept intelligence manifest.",
+    "Load base misconception and diagnostic-question catalogs.",
+    "Load every extension registered in diagnostic_extension_manifest_2026-08-18.json.",
+    "Apply every registered diagnostic link to the matching concept profile and deduplicate IDs.",
+    "Count a concept as diagnostic-route covered only when the resolved profile has at least one misconception ID and at least one diagnostic-question ID."
+  ],
+  "summary":{
+    "taxonomy_concepts":121,
+    "concepts_with_misconception_and_question_route":121,
+    "concepts_without_route":0,
+    "route_coverage_complete":true
+  },
+  "by_domain":[
+    {"domain_id":"number","concepts":49,"covered":49,"uncovered":0},
+    {"domain_id":"algebraic-thinking","concepts":13,"covered":13,"uncovered":0},
+    {"domain_id":"measurement","concepts":14,"covered":14,"uncovered":0},
+    {"domain_id":"geometry","concepts":16,"covered":16,"uncovered":0},
+    {"domain_id":"statistics-probability","concepts":12,"covered":12,"uncovered":0},
+    {"domain_id":"mathematical-practices","concepts":17,"covered":17,"uncovered":0}
+  ],
+  "final_gap_closed":{
+    "concept_id":"written-subtraction",
+    "question_id":"dq-wsub-001",
+    "misconception_id":"algorithm-digits-without-units",
+    "focus":"Place-value unit exchange during regrouping rather than digit-level borrowing rules."
+  },
+  "quality_cautions":[
+    "Coverage is structural and instructional, not psychometric validation.",
+    "A diagnostic question is a probe for follow-up discussion; one response must not be used as a definitive diagnosis.",
+    "Some misconception records are curriculum-inferred and should be strengthened with misconception-specific research where available.",
+    "Language demand must be considered separately from mathematical understanding in bilingual classrooms.",
+    "Curriculum placement evidence and diagnostic evidence are separate layers; a strong curriculum source does not automatically validate a misconception claim."
+  ],
+  "interpretation_rule":"Use the Elicit → Probe → Classify → Respond → Recheck process from diagnostic_interpretation_rules.json before presenting a likely misconception to a teacher."
+}
