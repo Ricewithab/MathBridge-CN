@@ -1,0 +1,39 @@
+{
+  "description": "Links educational claims to supporting evidence sources.",
+  "claims": [
+    {
+      "id": "claim_001",
+      "statement": "Effective mathematics instruction often uses multiple representations to support conceptual understanding.",
+      "claim_type": "pedagogy",
+      "related_domains": ["Number", "Fractions", "Geometry"],
+      "supported_by": [
+        "UK_NCETM_PRIMARY_MASTERY",
+        "US_IES_MATHEMATICS_PRACTICE_GUIDES",
+        "RESEARCH_REPRESENTATION_LEARNING"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "claim_002",
+      "statement": "Chinese primary mathematics places strong emphasis on structured progression, fluency and mathematical accuracy.",
+      "claim_type": "curriculum_characteristic",
+      "related_domains": ["Number", "Arithmetic"],
+      "supported_by": [
+        "CN_MATH_CURRICULUM_2022",
+        "CN_PEP_PRIMARY_MATH"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "claim_003",
+      "statement": "US mathematics standards include mathematical practices that require students to explain reasoning and solve problems in different ways.",
+      "claim_type": "curriculum_characteristic",
+      "related_domains": ["Problem Solving", "Number"],
+      "supported_by": [
+        "US_COMMON_CORE_MATH",
+        "US_IES_MATHEMATICS_PRACTICE_GUIDES"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
