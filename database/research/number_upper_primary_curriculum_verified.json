@@ -1,0 +1,215 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-18",
+  "purpose": "Fill the remaining upper-primary Number curriculum mappings that were previously missing from the intelligence profiles. China uses the 2022 national standard at learning-stage level; England uses the statutory National Curriculum in England; the US uses Common Core as the comparison baseline.",
+  "verification_policy": {
+    "CN": "The official MOE 2022 mathematics standard is the authority. Where direct page-level extraction is unavailable, exact content is cross-checked against accessible transcriptions and official/provincial curriculum-training material and marked partially_verified. Exact current PEP grade/semester placement remains pending until the relevant 12th-series volume is directly verified.",
+    "UK": "Year placement is verified against the statutory National Curriculum in England mathematics programmes of study.",
+    "US": "Grade placement is verified against the Common Core State Standards for Mathematics. Common Core is a comparison baseline, not a single nationwide US curriculum."
+  },
+  "concepts": [
+    {
+      "concept_id": "negative-numbers",
+      "CN": {
+        "status": "verified_scope_change_secondary_crosscheck",
+        "primary_stage": null,
+        "placement": "Not a primary-school content requirement in the 2022 standard; moved to junior secondary.",
+        "source_id": "cn-moe-math-2022",
+        "notes": "Official/provincial curriculum interpretation of the 2022 revision explicitly states that negative numbers were moved from primary to junior secondary. Do not show a current PEP primary grade for this concept without contradictory official evidence."
+      },
+      "UK": {
+        "status": "verified",
+        "placement": [
+          {"year": 4, "expectation": "Count backwards through zero to include negative numbers."},
+          {"year": 5, "expectation": "Interpret negative numbers in context and count forwards and backwards with positive and negative whole numbers, including through zero."},
+          {"year": 6, "expectation": "Use negative numbers in context and calculate intervals across zero."}
+        ],
+        "source_id": "uk-dfe-mathematics"
+      },
+      "US": {
+        "status": "verified_common_core_baseline",
+        "placement": [
+          {"grade": 6, "standard_codes": ["6.NS.C.5", "6.NS.C.6", "6.NS.C.7"], "expectation": "Introduce positive and negative numbers in real contexts, locate rational numbers on number lines/coordinate planes, and compare/order them."}
+        ],
+        "source_id": "us-common-core-math"
+      }
+    },
+    {
+      "concept_id": "factors",
+      "CN": {
+        "status": "partially_verified",
+        "stage": "第三学段",
+        "grades": [5, 6],
+        "expectation": "Know divisibility features for 2, 3 and 5; find all factors of a natural number within the specified primary range; use factor structure as part of number reasoning.",
+        "source_id": "cn-moe-math-2022",
+        "locator": "第三学段（5-6年级）→ 数与代数 → 数与运算",
+        "current_pep_grade": "pending_direct_volume_verification"
+      },
+      "UK": {
+        "status": "verified",
+        "placement": [
+          {"year": 4, "expectation": "Recognise and use factor pairs in mental calculations."},
+          {"year": 5, "expectation": "Identify multiples and factors, find all factor pairs of a number, and identify common factors of two numbers."},
+          {"year": 6, "expectation": "Identify common factors and use common factors to simplify fractions."}
+        ],
+        "source_id": "uk-dfe-mathematics"
+      },
+      "US": {
+        "status": "verified_common_core_baseline",
+        "placement": [
+          {"grade": 4, "standard_codes": ["4.OA.B.4"], "expectation": "Find all factor pairs for whole numbers 1-100 and recognise the factor-multiple relationship."},
+          {"grade": 6, "standard_codes": ["6.NS.B.4"], "expectation": "Find greatest common factors for specified whole numbers and use common-factor structure with the distributive property."}
+        ],
+        "source_id": "us-common-core-math"
+      }
+    },
+    {
+      "concept_id": "multiples",
+      "CN": {
+        "status": "partially_verified",
+        "stage": "第三学段",
+        "grades": [5, 6],
+        "expectation": "Know divisibility features for 2, 3 and 5; find multiples, common multiples and least common multiples within the primary-school range specified by the standard.",
+        "source_id": "cn-moe-math-2022",
+        "locator": "第三学段（5-6年级）→ 数与代数 → 数与运算",
+        "current_pep_grade": "pending_direct_volume_verification"
+      },
+      "UK": {
+        "status": "verified",
+        "placement": [
+          {"year": 5, "expectation": "Identify multiples and factors and use them in multiplication/division problems."},
+          {"year": 6, "expectation": "Identify common multiples; use common multiples to express fractions in the same denomination."}
+        ],
+        "source_id": "uk-dfe-mathematics"
+      },
+      "US": {
+        "status": "verified_common_core_baseline",
+        "placement": [
+          {"grade": 4, "standard_codes": ["4.OA.B.4"], "expectation": "Recognise that a whole number is a multiple of each of its factors and test whether a number 1-100 is a multiple of a one-digit number."},
+          {"grade": 6, "standard_codes": ["6.NS.B.4"], "expectation": "Find least common multiples for specified whole numbers."}
+        ],
+        "source_id": "us-common-core-math"
+      }
+    },
+    {
+      "concept_id": "prime-composite",
+      "CN": {
+        "status": "partially_verified",
+        "stage": "第三学段",
+        "grades": [5, 6],
+        "expectation": "Understand odd/even and prime/composite number classifications and determine whether natural numbers in the primary range are prime or composite.",
+        "source_id": "cn-moe-math-2022",
+        "locator": "第三学段（5-6年级）→ 数与代数 → 数与运算",
+        "current_pep_grade": "pending_direct_volume_verification"
+      },
+      "UK": {
+        "status": "verified",
+        "placement": [
+          {"year": 5, "expectation": "Use the vocabulary of prime numbers, prime factors and composite numbers; determine whether numbers up to 100 are prime and recall prime numbers up to 19."},
+          {"year": 6, "expectation": "Identify prime numbers within calculation and number-structure work."}
+        ],
+        "source_id": "uk-dfe-mathematics"
+      },
+      "US": {
+        "status": "verified_common_core_baseline",
+        "placement": [
+          {"grade": 4, "standard_codes": ["4.OA.B.4"], "expectation": "Determine whether a whole number in the range 1-100 is prime or composite."}
+        ],
+        "source_id": "us-common-core-math"
+      }
+    },
+    {
+      "concept_id": "common-factors-multiples",
+      "CN": {
+        "status": "partially_verified",
+        "stage": "第三学段",
+        "grades": [5, 6],
+        "expectation": "Find common multiples and least common multiples; find common factors and greatest common factors within the ranges specified by the standard.",
+        "source_id": "cn-moe-math-2022",
+        "locator": "第三学段（5-6年级）→ 数与代数 → 数与运算",
+        "current_pep_grade": "pending_direct_volume_verification"
+      },
+      "UK": {
+        "status": "verified",
+        "placement": [
+          {"year": 5, "expectation": "Find common factors of two numbers."},
+          {"year": 6, "expectation": "Identify common factors and common multiples; use them in fraction simplification and common-denominator work."}
+        ],
+        "source_id": "uk-dfe-mathematics"
+      },
+      "US": {
+        "status": "verified_common_core_baseline",
+        "placement": [
+          {"grade": 6, "standard_codes": ["6.NS.B.4"], "expectation": "Find the greatest common factor of two whole numbers up to 100 and the least common multiple of two whole numbers up to 12."}
+        ],
+        "source_id": "us-common-core-math"
+      }
+    },
+    {
+      "concept_id": "percent-meaning",
+      "CN": {
+        "status": "partially_verified",
+        "stage": "第三学段",
+        "grades": [5, 6],
+        "domain": "统计与概率",
+        "expectation": "Explore the meaning of percentage in context, solve simple percentage problems, and understand its statistical meaning as a way to describe part-whole/data relationships.",
+        "source_id": "cn-moe-math-2022",
+        "locator": "第三学段（5-6年级）→ 统计与概率 → 数据的收集、整理与表达",
+        "important_change": "The 2022 standard moves percentage from the earlier number-focused treatment into Statistics and Probability and explicitly emphasises statistical meaning.",
+        "current_pep_grade": "pending_direct_volume_verification"
+      },
+      "UK": {
+        "status": "verified",
+        "placement": [
+          {"year": 5, "expectation": "Recognise the percent symbol, understand percent as parts per 100, and express percentages as fractions with denominator 100 and as decimals."},
+          {"year": 6, "expectation": "Recall and use equivalences between simple fractions, decimals and percentages and solve percentage problems in ratio/proportion contexts."}
+        ],
+        "source_id": "uk-dfe-mathematics"
+      },
+      "US": {
+        "status": "verified_common_core_baseline",
+        "placement": [
+          {"grade": 6, "standard_codes": ["6.RP.A.3c"], "expectation": "Treat percent as a rate per 100; find a percent of a quantity and solve problems involving the whole, part and percent."}
+        ],
+        "source_id": "us-common-core-math"
+      }
+    },
+    {
+      "concept_id": "fraction-decimal-percent",
+      "CN": {
+        "status": "partially_verified_split_across_domains",
+        "stage": "第三学段",
+        "grades": [5, 6],
+        "expectation": "The 2022 standard explicitly requires conversion between decimals and fractions and separately requires understanding and applying percentages in Statistics and Probability. A single explicit three-way fraction-decimal-percent conversion requirement has not yet been directly verified from the national standard.",
+        "source_id": "cn-moe-math-2022",
+        "locator": "第三学段 → 数与代数 / 统计与概率",
+        "current_pep_grade": "pending_direct_volume_verification",
+        "publication_rule": "Do not state that three-way conversion is a national primary requirement until a direct locator or current textbook evidence is verified."
+      },
+      "UK": {
+        "status": "verified",
+        "placement": [
+          {"year": 5, "expectation": "Connect fractions, decimals and percentages, including percentages as fractions over 100 and decimal fractions."},
+          {"year": 6, "expectation": "Recall and use equivalences between simple fractions, decimals and percentages in different contexts."}
+        ],
+        "source_id": "uk-dfe-mathematics"
+      },
+      "US": {
+        "status": "verified_common_core_baseline_with_split_progression",
+        "placement": [
+          {"grade": 4, "expectation": "Use decimal notation for fractions with denominators 10 or 100 and compare decimals to hundredths."},
+          {"grade": 5, "expectation": "Read, write and compare decimals to thousandths and deepen fraction-decimal relationships."},
+          {"grade": 6, "standard_codes": ["6.RP.A.3c"], "expectation": "Introduce percent as a rate per 100 and solve percent problems."}
+        ],
+        "source_id": "us-common-core-math",
+        "notes": "Common Core builds fraction-decimal connections before percentage is introduced in Grade 6; it does not frame the sequence as one single three-way-conversion standard."
+      }
+    }
+  ],
+  "china_crosscheck_notes": [
+    "Accessible transcriptions of the 2022 standard place factors/multiples/prime-composite work in the third learning stage (Grades 5-6).",
+    "Official/provincial training material states that negative numbers were moved from primary to junior secondary in the 2022 revision.",
+    "The 2022 revision treats percentage under Statistics and Probability and emphasises its statistical meaning.",
+    "Direct MOE PDF page-level locators should replace secondary cross-checks when the official file becomes reliably machine-readable."
+  ]
+}
