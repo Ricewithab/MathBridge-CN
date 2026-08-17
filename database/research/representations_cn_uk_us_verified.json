@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "research_date": "2026-08-18",
   "purpose": "Record what primary sources actually support about mathematical representations in China, England and the US baseline. This file deliberately separates explicit curriculum/guidance evidence from broader inference.",
   "evidence_rules": [
@@ -13,11 +13,7 @@
     "CN": {
       "status": "verified_general_representation_policy_specific_models_partly_pending",
       "primary_sources": [
-        {
-          "source_id": "cn-pep-math-new-edition-intro-2024",
-          "locator": "主要变化及特色优势 → 突出探究性和实践性；聚焦核心素养、加强整体设计；计数单位主线",
-          "official_url": "https://www.pep.com.cn/xw/zt/hd/12/xjcjs/xx/202409/t20240920_1995566.html"
-        }
+        {"source_id":"cn-pep-math-new-edition-intro-2024","locator":"主要变化及特色优势 → 突出探究性和实践性；聚焦核心素养、加强整体设计；计数单位主线","official_url":"https://www.pep.com.cn/xw/zt/hd/12/xjcjs/xx/202409/t20240920_1995566.html"}
       ],
       "verified_signals": [
         "The current PEP primary series presents new knowledge through exploration, communication, hands-on activity, experiment and reasoning rather than only final procedures.",
@@ -40,119 +36,41 @@
     "UK": {
       "status": "verified_England",
       "primary_sources": [
-        {
-          "source_id": "uk-dfe-mathematics",
-          "locator": "Year 1–6 programmes of study and non-statutory notes",
-          "official_url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study"
-        },
-        {
-          "source_id": "uk-dfe-primary-math-guidance-2020",
-          "locator": "Mathematics guidance: key stages 1 and 2, years 1–6",
-          "official_url": "https://www.gov.uk/government/publications/teaching-mathematics-in-primary-schools"
-        },
-        {
-          "source_id": "uk-ncetm-primary-mastery",
-          "locator": "The Bar Model; Five Big Ideas: Representation and Structure; Primary Mastery PD Materials",
-          "official_url": "https://www.ncetm.org.uk/"
-        }
+        {"source_id":"uk-dfe-mathematics","locator":"Year 1–6 programmes of study and non-statutory notes","official_url":"https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study"},
+        {"source_id":"uk-dfe-primary-math-guidance-2020","locator":"Mathematics guidance: key stages 1 and 2, years 1–6","official_url":"https://www.gov.uk/government/publications/teaching-mathematics-in-primary-schools"},
+        {"source_id":"uk-ncetm-bar-model","locator":"The Bar Model","official_url":"https://www.ncetm.org.uk/classroom-resources/ca-the-bar-model/"},
+        {"source_id":"uk-ncetm-representation-structure","locator":"The Five Big Ideas at Primary: Representation and Structure","official_url":"https://www.ncetm.org.uk/features/the-five-big-ideas-at-primary-representation-and-structure/"}
       ],
       "verified_model_evidence": [
-        {
-          "representation_id": "number-bonds",
-          "status": "explicit_curriculum_and_guidance",
-          "evidence": "Year 1 requires pupils to represent and use number bonds and related subtraction facts; NCETM representation-and-structure materials explicitly develop part-part-whole relationships."
-        },
-        {
-          "representation_id": "number-lines",
-          "status": "explicit_curriculum",
-          "evidence": "The National Curriculum repeatedly names number-line representations for whole number, fractions, measures and negative number work across primary years."
-        },
-        {
-          "representation_id": "bar-models",
-          "status": "explicit_NCETM_guidance",
-          "evidence": "NCETM describes the bar model as a representation for exposing mathematical structure, bridging concrete experiences and abstraction, and supporting four operations, ratio, proportion and unknowns."
-        },
-        {
-          "representation_id": "ten-frames",
-          "status": "strong_early_years_and_mastery_support_not_statutory_method",
-          "evidence": "DfE early-years guidance explicitly mentions tens frames; mastery resources use structured representations, but the National Curriculum does not mandate ten-frames as an exclusive method."
-        },
-        {
-          "representation_id": "standard-written-algorithms",
-          "status": "explicit_curriculum",
-          "evidence": "England's primary curriculum explicitly progresses toward formal columnar methods, short multiplication/division, long multiplication and long division while retaining reasoning and representation where useful."
-        }
+        {"representation_id":"number-bonds","status":"explicit_curriculum_and_guidance","evidence":"Year 1 requires pupils to represent and use number bonds and related subtraction facts; NCETM representation-and-structure materials explicitly develop part-part-whole relationships."},
+        {"representation_id":"number-lines","status":"explicit_curriculum","evidence":"The National Curriculum repeatedly names number-line representations for whole number, fractions, measures and negative number work across primary years."},
+        {"representation_id":"bar-models","status":"explicit_NCETM_guidance","evidence":"NCETM describes the bar model as a representation for exposing mathematical structure, bridging concrete experiences and abstraction, and supporting four operations, ratio, proportion and unknowns."},
+        {"representation_id":"ten-frames","status":"strong_early_years_and_mastery_support_not_statutory_method","evidence":"DfE early-years guidance explicitly mentions tens frames; mastery resources use structured representations, but the National Curriculum does not mandate ten-frames as an exclusive method."},
+        {"representation_id":"standard-written-algorithms","status":"explicit_curriculum","evidence":"England's primary curriculum explicitly progresses toward formal columnar methods, short multiplication/division, long multiplication and long division while retaining reasoning and representation where useful."}
       ],
       "teacher_facing_interpretation": "England's strongest evidence-based signature is not simply 'use manipulatives'. It is deliberate movement among representations to expose structure, followed by increasingly efficient formal methods as understanding and fluency develop."
     },
     "US": {
       "status": "verified_Common_Core_plus_IES_evidence",
       "primary_sources": [
-        {
-          "source_id": "us-common-core-math",
-          "locator": "K–5 Operations and Algebraic Thinking; Number and Operations in Base Ten; Number and Operations—Fractions",
-          "official_url": "https://corestandards.org/mathematics-standards/"
-        },
-        {
-          "source_id": "us-ies-math-practice",
-          "locator": "Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades, Recommendations 3–4; Improving Mathematical Problem Solving Grades 4–8, Recommendation 3",
-          "official_url": "https://ies.ed.gov/ncee/wwc/practiceguide/26"
-        }
+        {"source_id":"us-common-core-math","locator":"K–5 Operations and Algebraic Thinking; Number and Operations in Base Ten; Number and Operations—Fractions","official_url":"https://corestandards.org/mathematics-standards/"},
+        {"source_id":"us-ies-elementary-representations-2021","locator":"Recommendations 3–4: representations and number lines","official_url":"https://ies.ed.gov/ncee/wwc/practiceguide/26"},
+        {"source_id":"us-ies-problem-solving-2012","locator":"Recommendation 3: teach students how to use visual representations","official_url":"https://ies.ed.gov/ncee/wwc/PracticeGuide/16"}
       ],
       "verified_model_evidence": [
-        {
-          "representation_id": "number-lines",
-          "status": "explicit_standard_and_strong_IES_evidence",
-          "evidence": "Common Core explicitly uses number-line diagrams in fraction development; IES gives a strong-evidence recommendation to use the number line to build mathematical concepts and prepare students for advanced mathematics."
-        },
-        {
-          "representation_id": "arrays",
-          "status": "explicit_standard",
-          "evidence": "Common Core uses equal groups, arrays and related visual models in the development of multiplication, division and properties."
-        },
-        {
-          "representation_id": "area-models",
-          "status": "explicit_standard",
-          "evidence": "Common Core explicitly uses rectangular arrays and area models in multi-digit multiplication and area-based reasoning, and connects visual fraction models to fraction operations."
-        },
-        {
-          "representation_id": "base-ten-materials",
-          "status": "concrete_models_explicit_but_specific_material_not_mandated",
-          "evidence": "Common Core repeatedly permits/requests concrete models or drawings based on place value; it does not mandate one branded or physical base-ten material."
-        },
-        {
-          "representation_id": "ten-frames",
-          "status": "not_prescribed_by_Common_Core",
-          "evidence": "Ten-frames can be compatible with Common Core early-number goals, but should not be presented as a Common Core requirement unless supported by a specific curriculum or state resource."
-        },
-        {
-          "representation_id": "standard-written-algorithms",
-          "status": "explicit_later_endpoint",
-          "evidence": "Common Core preserves strategy/model reasoning in earlier grades, then explicitly requires standard algorithms at identified later endpoints, including Grade 4 whole-number addition/subtraction, Grade 5 multi-digit multiplication and Grade 6 multi-digit division."
-        }
+        {"representation_id":"number-lines","status":"explicit_standard_and_strong_IES_evidence","evidence":"Common Core explicitly uses number-line diagrams in fraction development; IES gives a strong-evidence recommendation to use the number line to build mathematical concepts and prepare students for advanced mathematics."},
+        {"representation_id":"arrays","status":"explicit_standard","evidence":"Common Core uses equal groups, arrays and related visual models in the development of multiplication, division and properties."},
+        {"representation_id":"area-models","status":"explicit_standard","evidence":"Common Core explicitly uses rectangular arrays and area models in multi-digit multiplication and area-based reasoning, and connects visual fraction models to fraction operations."},
+        {"representation_id":"base-ten-materials","status":"concrete_models_explicit_but_specific_material_not_mandated","evidence":"Common Core repeatedly permits or requires concrete models or drawings based on place value; it does not mandate one branded or physical base-ten material."},
+        {"representation_id":"ten-frames","status":"not_prescribed_by_Common_Core","evidence":"Ten-frames can be compatible with Common Core early-number goals, but should not be presented as a Common Core requirement unless supported by a specific curriculum or state resource."},
+        {"representation_id":"standard-written-algorithms","status":"explicit_later_endpoint","evidence":"Common Core preserves strategy/model reasoning in earlier grades, then explicitly requires standard algorithms at identified later endpoints, including Grade 4 whole-number addition/subtraction, Grade 5 multi-digit multiplication and Grade 6 multi-digit division."}
       ],
       "teacher_facing_interpretation": "The Common Core baseline often makes the transition from models and strategies to standard algorithms explicit: representations are used to explain place value, operation structure and why procedures work, not to prohibit eventual procedural fluency."
     }
   },
   "research_evidence": [
-    {
-      "source_id": "us-ies-math-practice",
-      "claim": "Well-chosen concrete and semi-concrete representations can support learning of mathematical concepts and procedures.",
-      "evidence_rating": "strong",
-      "scope": "elementary mathematics intervention",
-      "caution": "The guide addresses intervention evidence; MathBridge should not automatically generalise every intervention recommendation to every whole-class context."
-    },
-    {
-      "source_id": "us-ies-math-practice",
-      "claim": "Number lines can support grade-level mathematical concepts and procedures and preparation for later mathematics.",
-      "evidence_rating": "strong",
-      "scope": "elementary mathematics intervention"
-    },
-    {
-      "source_id": "us-ies-math-practice",
-      "claim": "Visual representations are an evidence-supported component of mathematical problem-solving instruction.",
-      "evidence_rating": "strong",
-      "scope": "Grades 4–8 problem solving"
-    }
+    {"source_id":"us-ies-elementary-representations-2021","claim":"Well-chosen concrete and semi-concrete representations can support learning of mathematical concepts and procedures.","evidence_rating":"strong","scope":"elementary mathematics intervention","caution":"The guide addresses intervention evidence; MathBridge should not automatically generalise every intervention recommendation to every whole-class context."},
+    {"source_id":"us-ies-elementary-representations-2021","claim":"Number lines can support grade-level mathematical concepts and procedures and preparation for later mathematics.","evidence_rating":"strong","scope":"elementary mathematics intervention"},
+    {"source_id":"us-ies-problem-solving-2012","claim":"Visual representations are an evidence-supported component of mathematical problem-solving instruction.","evidence_rating":"strong","scope":"Grades 4–8 problem solving"}
   ]
 }
