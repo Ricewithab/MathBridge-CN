@@ -1,0 +1,17 @@
+{
+  "version":"0.1.0",
+  "validation_date":"2026-08-18",
+  "purpose":"Check that California and Texas selections resolve state-specific requirements without being replaced by the Common Core baseline.",
+  "cases":[
+    {"id":"place-value-ca2","input":{"concept_id":"place-value","us_jurisdiction":"California","grade":2},"expected":{"source_id":"us-california-math-standards","standard_codes_include":["2.NBT.1","2.NBT.2"],"range":"to 1,000","common_core_used_as_state_requirement":false},"status":"pass"},
+    {"id":"place-value-tx2","input":{"concept_id":"place-value","us_jurisdiction":"Texas","grade":2},"expected":{"source_id":"us-texas-teks-math","standard_code":"§111.4(b)(2)(A-F)","range":"to 1,200","common_core_used_as_state_requirement":false},"status":"pass"},
+    {"id":"written-multiplication-ca4-tx3","input":{"concept_id":"written-multiplication","compare_us_jurisdictions":["California","Texas"]},"expected":{"California":{"grade4":"place-value/property strategies with equations, arrays or area models; standard algorithm not yet required","standard_algorithm_endpoint":5},"Texas":{"standard_algorithm_first_explicit_grade_in_seed":3,"grade3_scope":"two-digit by one-digit"},"difference_preserved":true},"status":"pass"},
+    {"id":"written-division-ca-tx","input":{"concept_id":"written-division","compare_us_jurisdictions":["California","Texas"]},"expected":{"California":{"model_strategy_through_grade":5,"standard_algorithm_endpoint":6},"Texas":{"standard_algorithm_one_digit_divisor_grade":4,"two_digit_divisor_extension_grade":5},"difference_preserved":true},"status":"pass"},
+    {"id":"coordinates-ca5-tx5","input":{"concept_id":"coordinates","compare_us_jurisdictions":["California","Texas"],"grade":5},"expected":{"California":{"source_id":"us-california-math-standards","first_quadrant":true},"Texas":{"source_id":"us-texas-teks-math","first_quadrant":true},"alignment_can_be_reported":true},"status":"pass"},
+    {"id":"coordinates-ca6-tx6","input":{"concept_id":"coordinates","compare_us_jurisdictions":["California","Texas"],"grade":6},"expected":{"California":{"all_four_quadrants":true,"negative_rational_coordinates":true},"Texas":{"all_four_quadrants":true,"rational_coordinates":true},"alignment_can_be_reported":true},"status":"pass"},
+    {"id":"data-display-grade6","input":{"concept_id":"interpret-data","compare_us_jurisdictions":["California","Texas"],"grade":6},"expected":{"California":{"display_types_include":["dot plots","histograms","box plots"]},"Texas":{"display_types_include":["dot plots","stem-and-leaf plots","histograms","box plots"]},"texas_specific_stem_leaf_preserved":true},"status":"pass"},
+    {"id":"missing-state-overlay-behaviour","input":{"concept_id":"unmapped_future_concept","us_jurisdiction":"Texas"},"expected":{"fallback":"state_specific_mapping_not_available","common_core_silently_substituted":false},"status":"pass"}
+  ],
+  "result":{"cases":8,"passed":8,"failed":0,"status":"pass"},
+  "rules_verified":["State standards replace the generic US baseline for the curriculum layer when available.","Common Core may remain optional context but is not relabelled as California or Texas.","State alignment is reported as alignment; differences are not manufactured.","State differences in algorithm timing and data-display vocabulary remain visible."]
+}
