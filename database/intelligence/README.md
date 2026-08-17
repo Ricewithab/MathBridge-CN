@@ -1,69 +1,92 @@
 # MathBridge Intelligence Layer
 
-This directory joins the existing MathBridge knowledge layers without duplicating their source-of-truth content.
+This directory joins the MathBridge curriculum, teaching and diagnostic data.
 
-## Core principle
-
-A teacher-facing comparison should be assembled from linked records:
+## Structure
 
 ```text
 Concept
   ↓
-Curriculum placement + progression
+Curriculum placement and progression
   ↓
 Representations
   ↓
 Teaching moves
   ↓
-Likely misconceptions
+Misconceptions
   ↓
 Diagnostic questions
   ↓
-Targeted classroom response
+Classroom response
   ↓
-Evidence and source locators
+Evidence
 ```
 
-The join is reference-based. Curriculum statements remain in curriculum/progression files; representations remain in the teaching catalog; misconceptions and questions remain in diagnostics. `concept_intelligence_index.json` only records which pieces belong together.
+The join is reference-based. Curriculum statements stay in curriculum and progression files. Representations stay in the teaching catalogs. Misconceptions and questions stay in diagnostics. Intelligence profiles only record which records belong together.
 
-## Files
+## Main files
 
-- `reference_registry.json` — canonical file locations, canonical IDs, and compatibility aliases for older shorthand references.
-- `concept_intelligence_index.json` — concept-level joins across curriculum, teaching and diagnostic layers.
-- `assembly_rules.json` — rules for turning the linked records into a teacher-facing MathBridge card.
+- `concept_intelligence_manifest.json` — entry point for all Grade 1–6 concept profiles.
+- `concept_intelligence_index.json` — first set of fully joined profiles.
+- `profiles/number_remaining.json` — remaining number concepts.
+- `profiles/algebraic_thinking.json` — patterns, equations, ratio and proportion.
+- `profiles/measurement.json` — measurement, time, money, area and volume.
+- `profiles/geometry.json` — shape, angles, position and transformations.
+- `profiles/statistics_probability.json` — data and probability.
+- `profiles/mathematical_practices.json` — problem solving, reasoning, communication and modelling.
+- `reference_registry.json` — canonical file locations and IDs.
+- `assembly_rules.json` — rules for assembling one teacher-facing concept card.
 
-## Example resolution
+## Coverage
 
-A request such as:
+The taxonomy contains 121 concepts. Each concept now has an intelligence profile.
 
-```text
-CN Grade 3 → Multiplication meaning → Compare with England
-```
+This means the structural join is complete. It does **not** mean every concept has complete research. Many profiles still have one or more of these states:
 
-should resolve in this order:
+- curriculum mapping required
+- diagnostic question required
+- misconception research required
+- current PEP grade placement required
 
-1. Find `multiplication-meaning` in the neutral concept taxonomy.
-2. Load its intelligence profile.
-3. Resolve China and England curriculum/progression records independently; do not assume Grade 3 and Year 3 are equivalent simply because the numbers match.
-4. Load the linked representations: arrays, area model and bar/tape model.
-5. Load suitable teaching moves such as connecting representations and reasoning from structure.
-6. Load the linked misconception `mult-is-only-repeated-addition`.
-7. Load diagnostic question `dq-mult-001`.
-8. Resolve the evidence attached to every system-specific claim.
-9. Render the sections specified in `assembly_rules.json`.
-
-The resulting UI can therefore explain not only **what is taught**, but **how the mathematics is made visible, why a teaching move may help, what a pupil may misunderstand, and what the teacher can ask next**.
+The renderer must show those gaps rather than fill them with assumptions.
 
 ## Evidence rules
 
-The join does not upgrade the confidence of its inputs. If a Chinese current-textbook placement is still `research_required`, joining it to a verified representation does not make the placement verified. The renderer must preserve the lowest relevant evidence status for each surfaced claim.
+Joining records does not increase their evidence status. If a Chinese textbook placement is still `research_required`, linking it to a verified representation does not make the placement verified.
 
-Use `England` for the statutory National Curriculum in England. Treat Common Core as a US comparison baseline rather than a single nationwide curriculum. Keep legacy PEP textbook sequences separate from the current 12th-series sequence.
+Use **England** for the statutory National Curriculum in England. Treat Common Core as a US comparison baseline rather than a single nationwide curriculum. Keep legacy PEP textbook sequences separate from the current 12th-series sequence.
+
+## Copy rules
+
+Teacher-facing copy must be plain and educational.
+
+Use:
+- short headings
+- direct explanations
+- specific teacher actions
+- clear examples
+- clear evidence labels
+
+Avoid:
+- marketing language
+- promotional claims
+- slogans
+- hype
+- vague claims
+- unnecessary adjectives
+- AI-style filler
+
+The aim is to explain the mathematics and the teaching decision clearly.
 
 ## Diagnostics
 
-A diagnostic record is not a label for a pupil. A wrong answer should trigger a probe. The system should distinguish conceptual understanding from procedure, fluency, representation and language. In bilingual settings, wording should be re-probed in a language-light or Chinese form when language could be the barrier.
+A wrong answer is not a diagnosis. Ask a follow-up question or request a representation before recording a likely misconception.
 
-## Current integrated concepts
+Separate:
+- conceptual misunderstanding
+- procedural weakness
+- fluency
+- representation difficulty
+- language difficulty
 
-The first joined set covers place value, addition/subtraction meaning, multiplication/division meaning, core fraction ideas, decimal place value, and the four written-operation strands. Coverage expands by adding profiles to `concept_intelligence_index.json`; the underlying source files do not need to be duplicated.
+In bilingual settings, use a simpler or Chinese-language version when wording may be the problem.
