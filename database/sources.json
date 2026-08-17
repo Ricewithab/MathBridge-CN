@@ -6,9 +6,10 @@
     {"id":"research","name":"Research Evidence","description":"Peer-reviewed or evidence-reviewed mathematics education research"},
     {"id":"classroom_practice","name":"Classroom Practice","description":"High-quality examples of teaching approaches, tasks and activities"}
   ],
+  "source_aliases": {"cn-pEp-math-primary":"cn-pep-math-primary"},
   "sources": [
     {"id":"cn-moe-math-2022","country":"CN","category":"official_curriculum","title_cn":"义务教育数学课程标准（2022年版）","title_en":"Mathematics Curriculum Standards for Compulsory Education (2022 Edition)","organisation":"中华人民共和国教育部","reliability_rating":5},
-    {"id":"cn-pEp-math-primary","country":"CN","category":"textbook","title_cn":"人教版小学数学教材","title_en":"PEP Primary Mathematics Textbooks","organisation":"人民教育出版社","reliability_rating":5},
+    {"id":"cn-pep-math-primary","legacy_ids":["cn-pEp-math-primary"],"country":"CN","category":"textbook","title_cn":"人教版小学数学教材","title_en":"PEP Primary Mathematics Textbooks","organisation":"人民教育出版社","reliability_rating":5},
     {"id":"cn-pep-math-new-edition-intro-2024","country":"CN","category":"teaching_guidance","title_cn":"人教版义务教育数学（一～六年级）新教材简介","title_en":"Introduction to the New PEP Compulsory Education Mathematics Textbooks (Grades 1–6)","organisation":"人民教育出版社","reliability_rating":5},
     {"id":"cn-pep-series12-overview-2024","country":"CN","category":"teaching_guidance","title_cn":"人教版第十二套教材纵览","title_en":"Overview of the 12th PEP Textbook Series","organisation":"人民教育出版社","reliability_rating":5},
     {"id":"cn-pep-digital-math-textbooks","country":"CN","category":"textbook","title_cn":"人教版小学数学电子教材","title_en":"PEP Primary Mathematics Digital Textbooks","organisation":"人民教育出版社","reliability_rating":5},
