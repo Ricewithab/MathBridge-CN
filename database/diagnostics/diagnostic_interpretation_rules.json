@@ -1,0 +1,101 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-18",
+  "purpose": "Define how MathBridge should interpret diagnostic responses and convert them into teacher-facing next steps without over-diagnosing from a single error.",
+  "core_rules": [
+    {
+      "id": "rule-no-single-answer-diagnosis",
+      "rule": "Never infer a stable misconception from one wrong answer alone.",
+      "required_follow_up": "Ask for explanation, representation, comparison or a structurally similar second item."
+    },
+    {
+      "id": "rule-separate-fluency-from-concept",
+      "rule": "Distinguish slow or inaccurate recall from conceptual misunderstanding.",
+      "required_follow_up": "Offer a representation or untimed reasoning prompt. If conceptual reasoning is secure but recall is weak, classify the issue primarily as fluency."
+    },
+    {
+      "id": "rule-separate-language-from-math",
+      "rule": "In bilingual classrooms, distinguish mathematical misunderstanding from language comprehension difficulty.",
+      "required_follow_up": "Restate the problem with simpler language, allow drawing/manipulatives, and compare performance before classifying the mathematical misconception."
+    },
+    {
+      "id": "rule-representation-transfer",
+      "rule": "A concept is more secure when the pupil can express the same structure across more than one representation.",
+      "required_follow_up": "Ask the pupil to move between symbols, diagrams, manipulatives, number lines or verbal explanation as appropriate."
+    },
+    {
+      "id": "rule-method-versus-understanding",
+      "rule": "Correct execution of a standard algorithm does not by itself establish conceptual understanding.",
+      "required_follow_up": "Ask the pupil to explain a regrouping/exchange, estimate the result, or connect a line of the algorithm to place value or a model."
+    }
+  ],
+  "confidence_levels": {
+    "low": "One response suggests a possible issue, but evidence is insufficient.",
+    "moderate": "Two different prompts or representations show the same reasoning pattern.",
+    "high": "The reasoning pattern persists across contexts and the pupil can articulate or consistently demonstrate the underlying misconception."
+  },
+  "teacher_response_sequence": [
+    {
+      "step": 1,
+      "name": "Elicit",
+      "action": "Ask the diagnostic question without teaching during the response."
+    },
+    {
+      "step": 2,
+      "name": "Probe",
+      "action": "Ask how the pupil knows and request a representation or second method."
+    },
+    {
+      "step": 3,
+      "name": "Classify",
+      "action": "Identify whether the difficulty is primarily conceptual, procedural, fluency-related, representational or language-related."
+    },
+    {
+      "step": 4,
+      "name": "Respond",
+      "action": "Select a representation or teaching move that directly exposes the mathematical structure causing difficulty."
+    },
+    {
+      "step": 5,
+      "name": "Recheck",
+      "action": "Use a new example with the same structure but different surface features to test whether understanding transferred."
+    }
+  ],
+  "recommended_response_types": [
+    {
+      "id": "conceptual",
+      "teacher_actions": ["use a contrasting example", "connect two representations", "ask the pupil to justify", "return to quantity before symbols"]
+    },
+    {
+      "id": "procedural",
+      "teacher_actions": ["link each procedure step to mathematical meaning", "use worked-example comparison", "ask what each digit/line represents"]
+    },
+    {
+      "id": "fluency",
+      "teacher_actions": ["short focused practice", "fact-family connections", "retrieval with reasoning checks", "avoid reteaching the whole concept if understanding is already secure"]
+    },
+    {
+      "id": "representational",
+      "teacher_actions": ["teach how to read the representation", "map model features to quantities", "move concrete to pictorial to symbolic only when connections are explicit"]
+    },
+    {
+      "id": "language",
+      "teacher_actions": ["simplify non-mathematical language", "preteach precise mathematical vocabulary", "use sentence frames", "allow demonstration through diagrams or manipulatives"]
+    }
+  ],
+  "cross_system_policy": "Diagnostic logic is concept-based rather than country-based. Curriculum system determines when a concept is expected and which representations are commonly supported by official guidance, but student errors must not be attributed to nationality or curriculum without evidence.",
+  "source_basis": [
+    {
+      "source_id": "uk-dfe-mathematics",
+      "use": "Supports probing and remedying misconceptions through discussion in mathematics teaching."
+    },
+    {
+      "source_id": "uk-dfe-primary-math-guidance-2020",
+      "use": "Supports structured concept progression and use of representations to build understanding."
+    },
+    {
+      "source_id": "us-ies-math-practice",
+      "use": "Supports systematic instruction, mathematical language, concrete/semi-concrete representations, number lines and deliberate word-problem instruction."
+    }
+  ]
+}
