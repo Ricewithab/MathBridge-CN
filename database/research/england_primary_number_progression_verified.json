@@ -1,0 +1,103 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "system": "UK",
+  "jurisdiction": "England",
+  "source_ids": ["uk-dfe-mathematics", "uk-dfe-primary-math-guidance-2020"],
+  "verification_status": "verified_primary_source",
+  "scope": ["place-value", "multiplication-division", "fractions"],
+  "years": [
+    {
+      "year": 1,
+      "place_value": {
+        "summary": "Count, read, write and compare numbers to 100; begin recognising place value beyond 20 using objects and pictorial representations.",
+        "concept_ids": ["counting", "number-recognition", "place-value", "compare-order-numbers", "number-lines"]
+      },
+      "multiplication_division": {
+        "summary": "Solve one-step multiplication and division problems using concrete objects, pictorial representations and arrays; connect grouping/sharing with counting in 2s, 5s and 10s.",
+        "concept_ids": ["multiplication-meaning", "division-meaning", "equal-groups", "arrays", "sharing-grouping-division"]
+      },
+      "fractions": {
+        "summary": "Recognise, find and name halves and quarters of objects, shapes or quantities.",
+        "concept_ids": ["fraction-as-part-whole", "unit-fractions"]
+      }
+    },
+    {
+      "year": 2,
+      "place_value": {
+        "summary": "Recognise tens and ones in two-digit numbers; read, write, compare and order numbers to at least 100 using multiple representations.",
+        "concept_ids": ["place-value", "compare-order-numbers", "number-lines"]
+      },
+      "multiplication_division": {
+        "summary": "Use arrays, repeated addition, grouping and sharing; become fluent in 2, 5 and 10 times tables and related division facts; use commutativity and inverse relationships.",
+        "concept_ids": ["arrays", "repeated-addition", "equal-groups", "sharing-grouping-division", "multiplication-facts", "division-facts", "multiplication-properties"]
+      },
+      "fractions": {
+        "summary": "Recognise and write thirds, quarters, halves and three-quarters of lengths, shapes, sets and quantities; recognise simple equivalence such as 2/4 = 1/2; count in fractions on a number line.",
+        "concept_ids": ["fraction-as-part-whole", "unit-fractions", "equivalent-fractions", "fraction-number-line"]
+      }
+    },
+    {
+      "year": 3,
+      "place_value": {
+        "summary": "Recognise hundreds, tens and ones in three-digit numbers; compare and order to 1,000; partition and represent numbers flexibly.",
+        "concept_ids": ["place-value", "compare-order-numbers", "number-composition-decomposition"]
+      },
+      "multiplication_division": {
+        "summary": "Develop fluency in multiplication/division facts and use them to solve increasingly structured problems; connect multiplication and division through inverse relationships.",
+        "concept_ids": ["multiplication-facts", "division-facts", "multiplication-properties", "multiplication-division-problems"]
+      },
+      "fractions": {
+        "summary": "Understand unit and non-unit fractions as numbers, including on the number line; recognise simple equivalent fractions; compare fractions and add/subtract fractions with the same denominator within one whole.",
+        "concept_ids": ["fraction-as-part-whole", "fraction-as-measure", "fraction-number-line", "unit-fractions", "equivalent-fractions", "compare-order-fractions", "add-subtract-fractions"]
+      }
+    },
+    {
+      "year": 4,
+      "place_value": {
+        "summary": "Recognise four-digit place value, compare numbers beyond 1,000, round to nearest 10/100/1,000, and count backwards through zero into negative numbers.",
+        "concept_ids": ["place-value", "compare-order-numbers", "rounding-estimation", "negative-numbers"]
+      },
+      "multiplication_division": {
+        "summary": "Recall tables to 12×12; use factor pairs, commutativity, distributive reasoning and formal written multiplication/division with increasingly large numbers.",
+        "concept_ids": ["multiplication-facts", "division-facts", "factors", "multiplication-properties", "written-multiplication", "written-division"]
+      },
+      "fractions": {
+        "summary": "Develop families of equivalent fractions, work with hundredths, connect fractions and decimals, and add/subtract fractions with the same denominator.",
+        "concept_ids": ["equivalent-fractions", "fraction-number-line", "add-subtract-fractions", "decimal-place-value", "fractions-decimals"]
+      }
+    },
+    {
+      "year": 5,
+      "place_value": {
+        "summary": "Read, write, order and compare whole numbers to at least 1,000,000; extend understanding to negative numbers, rounding and decimals to thousandths.",
+        "concept_ids": ["place-value", "compare-order-numbers", "rounding-estimation", "negative-numbers", "decimal-place-value"]
+      },
+      "multiplication_division": {
+        "summary": "Apply multiplication/division facts to larger calculations, use factors/multiples/prime numbers, and use formal written methods including multi-digit multiplication and division.",
+        "concept_ids": ["factors", "multiples", "prime-composite", "written-multiplication", "written-division", "multiplication-division-problems"]
+      },
+      "fractions": {
+        "summary": "Compare/order fractions, identify equivalents, convert improper/mixed numbers, add/subtract related denominators, multiply fractions by whole numbers, and connect fractions, decimals and percentages.",
+        "concept_ids": ["compare-order-fractions", "equivalent-fractions", "mixed-improper-fractions", "add-subtract-fractions", "multiply-fractions", "fractions-decimals", "fraction-decimal-percent"]
+      }
+    },
+    {
+      "year": 6,
+      "place_value": {
+        "summary": "Read, write, order and compare whole numbers to 10,000,000, round to required accuracy and use negative numbers in context.",
+        "concept_ids": ["place-value", "compare-order-numbers", "rounding-estimation", "negative-numbers"]
+      },
+      "multiplication_division": {
+        "summary": "Use fluent formal methods for multi-digit multiplication and division; interpret remainders flexibly and connect factors/common factors with fraction work.",
+        "concept_ids": ["written-multiplication", "written-division", "remainders", "common-factors-multiples", "multiplication-division-problems"]
+      },
+      "fractions": {
+        "summary": "Simplify using common factors, compare/order fractions greater than one, add/subtract unlike denominators, multiply pairs of proper fractions, divide proper fractions by whole numbers, and connect fractions with decimals and percentages.",
+        "concept_ids": ["equivalent-fractions", "compare-order-fractions", "add-subtract-fractions", "multiply-fractions", "divide-fractions", "fraction-as-quotient", "fraction-decimal-percent"]
+      }
+    }
+  ],
+  "source_locator": "England National Curriculum: mathematics programmes of study, Year 1-6 sections; DfE Mathematics Guidance KS1-2 for progression support.",
+  "ui_caution": "England is used for UK mode. Do not label these requirements as a single statutory curriculum for Scotland, Wales or Northern Ireland."
+}
