@@ -1,0 +1,20 @@
+{
+  "version":"0.1.0",
+  "audit_date":"2026-08-18",
+  "purpose":"Check the evidence layer for obsolete source IDs, unresolved references and early records that could overstate evidence if used by the interface.",
+  "scope":["database/sources.json","database/source_metadata.json","database/source_claims.json","database/source_coverage_matrix.json","database/teaching_principles.json","database/teaching_moves.json","database/concept_curriculum_map.json","database/diagnostics/*.json","database/intelligence/*.json","high-use research/progression files referenced by the intelligence manifest"],
+  "resolved_issues":[
+    {"issue":"source_claims.json used obsolete uppercase IDs and one nonexistent representation-research ID.","resolution":"Replaced with canonical source IDs and narrower claims tied to explicit evidence scope.","status":"fixed"},
+    {"issue":"teaching_principles.json used unsupported national prevalence labels and obsolete research/source IDs.","resolution":"Removed national prevalence fields, rewrote principles as documented pedagogical ideas or named NCETM programme guidance, and attached canonical source IDs.","status":"fixed"},
+    {"issue":"teaching_moves.json linked to principle slugs that did not match teaching_principles.json IDs.","resolution":"All linked_principles now resolve to the canonical principle IDs.","status":"fixed"},
+    {"issue":"Recent diagnostics referenced the IES fractions practice guide without a dedicated source record.","resolution":"Added us-ies-fractions-2010 to sources.json and source_metadata.json.","status":"fixed"},
+    {"issue":"NCETM Five Big Ideas and Essence claims were previously routed through a broad umbrella source.","resolution":"Added uk-ncetm-five-big-ideas and uk-ncetm-mastery-essence as explicit source records.","status":"fixed"}
+  ],
+  "remaining_technical_debt":[
+    {"id":"source-id-casing-pep","issue":"The existing umbrella PEP source ID is cn-pEp-math-primary, with inconsistent casing.","risk":"Low while it remains a registered source ID, but it is undesirable as a long-term canonical identifier.","recommended_action":"Migrate references to cn-pep-math-primary in one controlled pass with a compatibility alias or complete reference audit before removing the old ID.","status":"open_low_priority"},
+    {"id":"seed-map-stale-status","issue":"concept_curriculum_map.json still marks its five original seed concepts as research_required even though later research files now contain verified or partially verified progression evidence.","risk":"A renderer that reads the seed map without following the newer progression/research files could show stale status.","recommended_action":"Synchronise the seed map with the verified research layer and attach research_file_refs.","status":"open_high_priority"},
+    {"id":"diagnostic-link-registry","issue":"reference_registry.json registers diagnostic extension catalogs but does not directly list the diagnostic link overlay because two GitHub update attempts returned upstream 502 errors.","risk":"Low because concept_intelligence_manifest.json points to diagnostic_extension_manifest_2026-08-18.json, which includes the link overlay and defines resolution order.","recommended_action":"Fold the link overlay into reference_registry.json during a later successful registry edit.","status":"open_low_priority_with_workaround"}
+  ],
+  "publication_guardrails":["Do not surface a source ID that is not present in sources.json.","Do not upgrade a claim because several files refer to it; preserve the verification status of the directly supporting source.","Do not use an umbrella organisation record when a specific practice guide or guidance page is available for the claim.","Do not infer national teaching frequency from curriculum, textbook or programme guidance."],
+  "audit_status":"pass_with_recorded_technical_debt"
+}
