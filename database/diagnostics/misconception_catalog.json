@@ -1,144 +1,20 @@
 {
-  "version": "0.1.0",
-  "research_date": "2026-08-18",
-  "purpose": "Store common conceptual errors that MathBridge can use to generate diagnostic questions, teacher explanations and targeted teaching responses. Misconceptions are treated as student-thinking patterns, not as claims about a country or curriculum.",
-  "evidence_policy": {
-    "rule": "Do not label a misconception as typical of Chinese, English or US pupils without comparative empirical evidence.",
-    "statuses": ["evidence_supported", "curriculum_inferred", "research_required"],
-    "diagnostic_principle": "A wrong answer alone does not prove a misconception; use follow-up questions, representations and explanation prompts to distinguish conceptual misunderstanding from slips or weak fluency."
-  },
-  "misconceptions": [
-    {
-      "id": "pv-digit-value-is-digit-name",
-      "concept_ids": ["place-value", "number-composition-decomposition"],
-      "statement": "The pupil treats a digit as having the same value regardless of its position.",
-      "examples": ["Says the 5 in 507 means five rather than five hundreds.", "Cannot explain why moving a digit one place changes its value by a factor of ten."],
-      "diagnostic_signals": ["Reads digits individually", "Can name a numeral but cannot partition it", "Struggles to connect place-value models to notation"],
-      "useful_representations": ["base-ten-place-value-model", "number-line", "part-whole-number-bond"],
-      "response_moves": ["ask-for-representation", "compare-examples", "connect-representations", "probe-why"],
-      "source_ids": ["uk-dfe-primary-math-guidance-2020", "us-ies-math-practice"],
-      "status": "evidence_supported"
-    },
-    {
-      "id": "pv-zero-has-no-structural-role",
-      "concept_ids": ["place-value", "number-recognition"],
-      "statement": "The pupil treats zero only as 'nothing' and does not understand its placeholder role in positional notation.",
-      "examples": ["Writes 504 as 54", "Reads 3.05 as if the zero were irrelevant"],
-      "diagnostic_signals": ["Omission of internal zero", "Incorrect partitioning", "Difficulty matching numeral to place-value chart"],
-      "useful_representations": ["base-ten-place-value-model"],
-      "response_moves": ["vary-one-feature", "compare-examples", "connect-representations"],
-      "source_ids": ["uk-dfe-primary-math-guidance-2020"],
-      "status": "curriculum_inferred"
-    },
-    {
-      "id": "add-subtract-operation-keyword-only",
-      "concept_ids": ["addition-meaning", "subtraction-meaning", "addition-subtraction-problems"],
-      "statement": "The pupil chooses an operation by spotting a keyword rather than understanding the quantitative relationship in the problem.",
-      "examples": ["Always subtracts when a problem contains 'left'", "Always adds when it contains 'altogether' even when the unknown structure differs"],
-      "diagnostic_signals": ["Correct on familiar wording but fails paraphrased problems", "Cannot model the quantities", "Cannot identify what is unknown"],
-      "useful_representations": ["part-whole-number-bond", "bar-model", "number-line"],
-      "response_moves": ["ask-what-is-known-unknown", "represent-before-calculate", "compare-problem-structures"],
-      "source_ids": ["us-ies-math-practice"],
-      "status": "evidence_supported"
-    },
-    {
-      "id": "subtraction-is-always-take-away",
-      "concept_ids": ["subtraction-meaning", "addition-subtraction-problems", "fact-families"],
-      "statement": "The pupil understands subtraction only as removing objects and not as difference, comparison or an unknown-addend relationship.",
-      "examples": ["Can solve 12-5 by crossing out but not 'how many more is 12 than 5?'", "Does not connect 5 + ? = 12 to 12 - 5"],
-      "diagnostic_signals": ["Weak comparison problems", "Difficulty using inverse operations", "Single strategy regardless of structure"],
-      "useful_representations": ["bar-model", "number-line", "part-whole-number-bond"],
-      "response_moves": ["compare-problem-structures", "connect-inverse", "ask-for-second-method"],
-      "source_ids": ["uk-dfe-primary-math-guidance-2020", "us-ies-math-practice"],
-      "status": "evidence_supported"
-    },
-    {
-      "id": "mult-is-only-repeated-addition",
-      "concept_ids": ["multiplication-meaning", "equal-groups", "arrays", "multiplication-properties"],
-      "statement": "The pupil treats multiplication only as repeated addition and does not generalise to arrays, scaling, area or multiplicative comparison.",
-      "examples": ["Can solve 4 groups of 3 but struggles to interpret a 4 by 3 array", "Cannot explain why 3 x 4 and 4 x 3 have the same product while representing different group structures"],
-      "diagnostic_signals": ["Counts all objects one by one", "Weak use of commutativity", "Difficulty moving from equal groups to area models"],
-      "useful_representations": ["array", "area-model", "bar-model"],
-      "response_moves": ["connect-representations", "compare-examples", "probe-structure"],
-      "source_ids": ["uk-dfe-primary-math-guidance-2020", "us-ies-math-practice"],
-      "status": "evidence_supported"
-    },
-    {
-      "id": "division-sharing-only",
-      "concept_ids": ["division-meaning", "sharing-grouping-division", "multiplication-division-problems"],
-      "statement": "The pupil understands division only as sharing into a known number of groups and not as finding how many groups of a known size fit into a quantity.",
-      "examples": ["Can share 24 objects among 6 children but struggles with 'How many groups of 6 are in 24?'"],
-      "diagnostic_signals": ["Different performance on sharing versus grouping contexts", "Weak inverse connection to multiplication"],
-      "useful_representations": ["array", "bar-model", "number-line"],
-      "response_moves": ["compare-problem-structures", "connect-inverse", "represent-before-calculate"],
-      "source_ids": ["uk-dfe-primary-math-guidance-2020", "us-ies-math-practice"],
-      "status": "evidence_supported"
-    },
-    {
-      "id": "fraction-larger-denominator-means-larger",
-      "concept_ids": ["unit-fractions", "compare-order-fractions", "fraction-as-measure"],
-      "statement": "The pupil applies whole-number thinking to denominators and assumes a larger denominator means a larger fraction when numerators are equal.",
-      "examples": ["Claims 1/8 > 1/4 because 8 > 4"],
-      "diagnostic_signals": ["Compares numerator and denominator as separate whole numbers", "Cannot justify relative size with a model or benchmark"],
-      "useful_representations": ["number-line", "bar-model", "visual-fraction-model"],
-      "response_moves": ["use-benchmark", "compare-same-whole", "ask-for-representation", "probe-why"],
-      "source_ids": ["us-ies-math-practice", "uk-dfe-primary-math-guidance-2020"],
-      "status": "evidence_supported"
-    },
-    {
-      "id": "fraction-parts-need-not-be-equal",
-      "concept_ids": ["fraction-as-part-whole", "unit-fractions"],
-      "statement": "The pupil counts the number of pieces shaded without attending to whether the whole has been partitioned into equal parts.",
-      "examples": ["Calls one of four unequal regions one quarter"],
-      "diagnostic_signals": ["Focuses on count of pieces only", "Does not check equality of parts"],
-      "useful_representations": ["visual-fraction-model", "bar-model"],
-      "response_moves": ["vary-one-feature", "compare-examples", "probe-definition"],
-      "source_ids": ["us-ies-math-practice", "uk-dfe-mathematics"],
-      "status": "evidence_supported"
-    },
-    {
-      "id": "fraction-not-a-number",
-      "concept_ids": ["fraction-as-measure", "fraction-number-line"],
-      "statement": "The pupil sees a fraction only as a part of a pictured object and not as a number with magnitude and a position on the number line.",
-      "examples": ["Can shade 3/4 of a rectangle but cannot locate 3/4 between 0 and 1", "Does not understand improper fractions as numbers greater than 1"],
-      "diagnostic_signals": ["Strong area-model performance but weak number-line performance", "Treats numerator and denominator as labels rather than a quantity"],
-      "useful_representations": ["number-line", "visual-fraction-model", "bar-model"],
-      "response_moves": ["connect-representations", "use-benchmark", "locate-before-calculate"],
-      "source_ids": ["us-ies-math-practice"],
-      "status": "evidence_supported"
-    },
-    {
-      "id": "equivalent-fractions-look-different-so-different-value",
-      "concept_ids": ["equivalent-fractions", "fraction-number-line"],
-      "statement": "The pupil assumes fractions with different numerators and denominators must represent different quantities.",
-      "examples": ["Claims 2/4 and 1/2 cannot be equal because the numbers are different"],
-      "diagnostic_signals": ["Relies on symbol appearance", "Cannot generate or justify equivalent fractions"],
-      "useful_representations": ["number-line", "bar-model", "visual-fraction-model"],
-      "response_moves": ["connect-representations", "compare-same-point", "ask-for-justification"],
-      "source_ids": ["us-ies-math-practice", "uk-dfe-primary-math-guidance-2020"],
-      "status": "evidence_supported"
-    },
-    {
-      "id": "decimal-more-digits-means-larger",
-      "concept_ids": ["decimal-place-value", "compare-order-decimals"],
-      "statement": "The pupil applies whole-number length reasoning to decimals and assumes the decimal with more digits is larger.",
-      "examples": ["Claims 0.35 > 0.5 because 35 > 5"],
-      "diagnostic_signals": ["Reads decimal parts as whole numbers", "Cannot connect tenths and hundredths to place-value structure"],
-      "useful_representations": ["base-ten-place-value-model", "number-line"],
-      "response_moves": ["align-place-values", "compare-examples", "use-benchmark", "connect-representations"],
-      "source_ids": ["uk-dfe-primary-math-guidance-2020", "us-ies-math-practice"],
-      "status": "evidence_supported"
-    },
-    {
-      "id": "algorithm-digits-without-units",
-      "concept_ids": ["written-addition", "written-subtraction", "written-multiplication", "written-division", "place-value"],
-      "statement": "The pupil can imitate a written algorithm but treats digits as isolated symbols rather than quantities with place value.",
-      "examples": ["Regroups mechanically but cannot explain what was exchanged", "Produces an answer without noticing an impossible magnitude"],
-      "diagnostic_signals": ["Procedure works only in familiar layouts", "Cannot model a regrouping step", "Weak estimation/checking"],
-      "useful_representations": ["base-ten-place-value-model", "area-model", "partial-products"],
-      "response_moves": ["connect-representation-to-algorithm", "estimate-before-calculate", "explain-each-line", "compare-methods"],
-      "source_ids": ["uk-dfe-primary-math-guidance-2020", "us-ies-math-practice"],
-      "status": "evidence_supported"
-    }
+  "version":"0.2.0",
+  "research_date":"2026-08-18",
+  "purpose":"Store common conceptual errors that MathBridge can use to generate diagnostic questions, teacher explanations and targeted teaching responses. Misconceptions are treated as student-thinking patterns, not as claims about a country or curriculum.",
+  "evidence_policy":{"rule":"Do not label a misconception as typical of Chinese, English or US pupils without comparative empirical evidence.","statuses":["evidence_supported","curriculum_inferred","research_required"],"evidence_depth":"Resolve the more precise empirical/synthesis/guidance depth from database/research/diagnostic_misconception_evidence_seed_2026-08-18.json where available.","diagnostic_principle":"A wrong answer alone does not prove a misconception; use follow-up questions, representations and explanation prompts to distinguish conceptual misunderstanding from slips or weak fluency."},
+  "misconceptions":[
+    {"id":"pv-digit-value-is-digit-name","concept_ids":["place-value","number-composition-decomposition"],"statement":"The pupil treats a digit as having the same value regardless of its position.","examples":["Says the 5 in 507 means five rather than five hundreds.","Cannot explain why moving a digit one place changes its value by a factor of ten."],"diagnostic_signals":["Reads digits individually","Can name a numeral but cannot partition it","Struggles to connect place-value models to notation"],"useful_representations":["base-ten-place-value-model","number-line","part-whole-number-bond"],"response_moves":["ask-for-representation","compare-examples","connect-representations","probe-why"],"source_ids":["research-fuson-place-value-1997","research-lafay-place-value-2023","uk-dfe-primary-math-guidance-2020"],"status":"evidence_supported","evidence_note":"Direct studies support the broader place-value construct and difficulty interpreting multidigit denominations; the exact example response is a diagnostic illustration, not a prevalence claim."},
+    {"id":"pv-zero-has-no-structural-role","concept_ids":["place-value","number-recognition"],"statement":"The pupil treats zero only as 'nothing' and does not understand its placeholder role in positional notation.","examples":["Writes 504 as 54","Reads 3.05 as if the zero were irrelevant"],"diagnostic_signals":["Omission of internal zero","Incorrect partitioning","Difficulty matching numeral to place-value chart"],"useful_representations":["base-ten-place-value-model"],"response_moves":["vary-one-feature","compare-examples","connect-representations"],"source_ids":["uk-dfe-primary-math-guidance-2020"],"status":"curriculum_inferred","evidence_note":"The exact internal-zero placeholder claim remains pending a directly verified empirical source in the current evidence pass."},
+    {"id":"add-subtract-operation-keyword-only","concept_ids":["addition-meaning","subtraction-meaning","addition-subtraction-problems"],"statement":"The pupil chooses an operation by spotting a keyword rather than understanding the quantitative relationship in the problem.","examples":["Always subtracts when a problem contains 'left'","Always adds when it contains 'altogether' even when the unknown structure differs"],"diagnostic_signals":["Correct on familiar wording but fails paraphrased problems","Cannot model the quantities","Cannot identify what is unknown"],"useful_representations":["part-whole-number-bond","bar-model","number-line"],"response_moves":["ask-what-is-known-unknown","represent-before-calculate","compare-problem-structures"],"source_ids":["us-ies-math-practice"],"status":"evidence_supported"},
+    {"id":"subtraction-is-always-take-away","concept_ids":["subtraction-meaning","addition-subtraction-problems","fact-families"],"statement":"The pupil understands subtraction only as removing objects and not as difference, comparison or an unknown-addend relationship.","examples":["Can solve 12-5 by crossing out but not 'how many more is 12 than 5?'","Does not connect 5 + ? = 12 to 12 - 5"],"diagnostic_signals":["Weak comparison problems","Difficulty using inverse operations","Single strategy regardless of structure"],"useful_representations":["bar-model","number-line","part-whole-number-bond"],"response_moves":["compare-problem-structures","connect-inverse","ask-for-second-method"],"source_ids":["uk-dfe-primary-math-guidance-2020","us-ies-math-practice"],"status":"evidence_supported"},
+    {"id":"mult-is-only-repeated-addition","concept_ids":["multiplication-meaning","equal-groups","arrays","multiplication-properties"],"statement":"The pupil treats multiplication only as repeated addition and does not generalise to arrays, scaling, area or multiplicative comparison.","examples":["Can solve 4 groups of 3 but struggles to interpret a 4 by 3 array","Cannot explain why 3 x 4 and 4 x 3 have the same product while representing different group structures"],"diagnostic_signals":["Counts all objects one by one","Weak use of commutativity","Difficulty moving from equal groups to area models"],"useful_representations":["array","area-model","bar-model"],"response_moves":["connect-representations","compare-examples","probe-structure"],"source_ids":["uk-dfe-primary-math-guidance-2020"],"status":"research_required","evidence_note":"Official guidance supports connecting multiplication across equal groups, arrays, area and properties, but direct empirical support for this exact 'repeated-addition-only' reasoning pattern has not yet been verified in the current research pass."},
+    {"id":"division-sharing-only","concept_ids":["division-meaning","sharing-grouping-division","multiplication-division-problems"],"statement":"The pupil understands division only as sharing into a known number of groups and not as finding how many groups of a known size fit into a quantity.","examples":["Can share 24 objects among 6 children but struggles with 'How many groups of 6 are in 24?'"],"diagnostic_signals":["Different performance on sharing versus grouping contexts","Weak inverse connection to multiplication"],"useful_representations":["array","bar-model","number-line"],"response_moves":["compare-problem-structures","connect-inverse","represent-before-calculate"],"source_ids":["research-ching-wu-division-2021","research-kinda-division-2013","uk-dfe-primary-math-guidance-2020"],"status":"evidence_supported","evidence_note":"Direct studies support treating partitive and quotitive division as distinct reasoning situations. The label 'sharing-only' remains a probe hypothesis, not a diagnosis from one item."},
+    {"id":"fraction-larger-denominator-means-larger","concept_ids":["unit-fractions","compare-order-fractions","fraction-as-measure"],"statement":"The pupil applies whole-number thinking to denominators and assumes a larger denominator means a larger fraction when numerators are equal.","examples":["Claims 1/8 > 1/4 because 8 > 4"],"diagnostic_signals":["Compares numerator and denominator as separate whole numbers","Cannot justify relative size with a model or benchmark"],"useful_representations":["number-line","bar-model","visual-fraction-model"],"response_moves":["use-benchmark","compare-same-whole","ask-for-representation","probe-why"],"source_ids":["research-meert-fraction-comparison-2010","us-ies-fractions-2010","uk-dfe-primary-math-guidance-2020"],"status":"evidence_supported","evidence_note":"Direct research supports denominator-magnitude interference in children's fraction comparison; the example is one manifestation of broader natural-number interference."},
+    {"id":"fraction-parts-need-not-be-equal","concept_ids":["fraction-as-part-whole","unit-fractions"],"statement":"The pupil counts the number of pieces shaded without attending to whether the whole has been partitioned into equal parts.","examples":["Calls one of four unequal regions one quarter"],"diagnostic_signals":["Focuses on count of pieces only","Does not check equality of parts"],"useful_representations":["visual-fraction-model","bar-model"],"response_moves":["vary-one-feature","compare-examples","probe-definition"],"source_ids":["us-ies-fractions-2010","uk-dfe-mathematics"],"status":"evidence_supported"},
+    {"id":"fraction-not-a-number","concept_ids":["fraction-as-measure","fraction-number-line"],"statement":"The pupil sees a fraction only as a part of a pictured object and not as a number with magnitude and a position on the number line.","examples":["Can shade 3/4 of a rectangle but cannot locate 3/4 between 0 and 1","Does not understand improper fractions as numbers greater than 1"],"diagnostic_signals":["Strong area-model performance but weak number-line performance","Treats numerator and denominator as labels rather than a quantity"],"useful_representations":["number-line","visual-fraction-model","bar-model"],"response_moves":["connect-representations","use-benchmark","locate-before-calculate"],"source_ids":["us-ies-fractions-2010"],"status":"evidence_supported"},
+    {"id":"equivalent-fractions-look-different-so-different-value","concept_ids":["equivalent-fractions","fraction-number-line"],"statement":"The pupil assumes fractions with different numerators and denominators must represent different quantities.","examples":["Claims 2/4 and 1/2 cannot be equal because the numbers are different"],"diagnostic_signals":["Relies on symbol appearance","Cannot generate or justify equivalent fractions"],"useful_representations":["number-line","bar-model","visual-fraction-model"],"response_moves":["connect-representations","compare-same-point","ask-for-justification"],"source_ids":["us-ies-fractions-2010","uk-dfe-primary-math-guidance-2020"],"status":"evidence_supported"},
+    {"id":"decimal-more-digits-means-larger","concept_ids":["decimal-place-value","compare-order-decimals"],"statement":"The pupil applies whole-number length reasoning to decimals and assumes the decimal with more digits is larger.","examples":["Claims 0.35 > 0.5 because 35 > 5"],"diagnostic_signals":["Reads decimal parts as whole numbers","Cannot connect tenths and hundredths to place-value structure"],"useful_representations":["base-ten-place-value-model","number-line"],"response_moves":["align-place-values","compare-examples","use-benchmark","connect-representations"],"source_ids":["uk-dfe-primary-math-guidance-2020","us-ies-math-practice"],"status":"evidence_supported"},
+    {"id":"algorithm-digits-without-units","concept_ids":["written-addition","written-subtraction","written-multiplication","written-division","place-value"],"statement":"The pupil can imitate a written algorithm but treats digits as isolated symbols rather than quantities with place value.","examples":["Regroups mechanically but cannot explain what was exchanged","Produces an answer without noticing an impossible magnitude"],"diagnostic_signals":["Procedure works only in familiar layouts","Cannot model a regrouping step","Weak estimation/checking"],"useful_representations":["base-ten-place-value-model","area-model","partial-products"],"response_moves":["connect-representation-to-algorithm","estimate-before-calculate","explain-each-line","compare-methods"],"source_ids":["uk-dfe-primary-math-guidance-2020","us-ies-math-practice"],"status":"evidence_supported"}
   ]
 }
