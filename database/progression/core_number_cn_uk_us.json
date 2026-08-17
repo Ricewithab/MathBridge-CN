@@ -1,0 +1,153 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "purpose": "First cross-system progression spine for MathBridge. It aligns broad mathematical development without pretending that same-numbered grades are equivalent curricula.",
+  "systems": {
+    "CN": {
+      "label": "China",
+      "granularity": "National standard uses 1-2, 3-4 and 5-6 learning stages; exact grade sequencing comes from current approved textbook evidence.",
+      "primary_sources": ["cn-moe-math-2022", "cn-pEp-math-primary", "cn-pep-math-new-edition-intro-2024"]
+    },
+    "UK": {
+      "label": "England",
+      "granularity": "Statutory year-by-year programmes of study for Years 1-6.",
+      "primary_sources": ["uk-dfe-mathematics", "uk-dfe-primary-math-guidance-2020"]
+    },
+    "US": {
+      "label": "US — Common Core baseline",
+      "granularity": "Grade-specific standards; not universal across all US states.",
+      "primary_sources": ["us-common-core-math"]
+    }
+  },
+  "progression_strands": [
+    {
+      "id": "early-number-to-place-value",
+      "name_en": "Early Number → Place Value",
+      "name_cn": "早期数概念 → 位值",
+      "concept_ids": ["counting", "number-recognition", "number-composition-decomposition", "place-value", "compare-order-numbers", "rounding-estimation", "decimal-place-value"],
+      "CN": {
+        "verified_level": "stage_plus_partial_textbook",
+        "sequence": [
+          {
+            "placement": "Grade 1 upper — current PEP 12th series, partial verified",
+            "focus": "Two consecutive early-number units: 5以内数的认识和加、减法 followed by 6～10的认识和加、减法; number meaning, composition/decomposition and operations are developed together.",
+            "source_ids": ["cn-pep-math-new-edition-intro-2024"]
+          },
+          {
+            "placement": "Grades 1-2 national learning stage",
+            "focus": "Develop meaning of whole numbers up to 10,000, positional value, comparison, and connections among quantities, representations and numerals.",
+            "source_ids": ["cn-moe-math-2022"]
+          },
+          {
+            "placement": "Grades 3-4 national learning stage",
+            "focus": "Extend whole-number structure beyond 10,000 and deepen understanding of the decimal/base-ten system and calculation structures.",
+            "source_ids": ["cn-moe-math-2022"]
+          },
+          {
+            "placement": "Grades 5-6 national learning stage",
+            "focus": "Use the structure of counting units to connect whole numbers, decimals, fractions and operations; exact current textbook semester placement remains edition-specific.",
+            "source_ids": ["cn-moe-math-2022", "cn-pep-math-new-edition-intro-2024"]
+          }
+        ]
+      },
+      "UK": {
+        "verified_level": "year_specific",
+        "sequence": [
+          {"placement":"Year 1","focus":"Count/read/write to 100; begin place value beyond 20."},
+          {"placement":"Year 2","focus":"Two-digit tens/ones; compare/order to at least 100."},
+          {"placement":"Year 3","focus":"Three-digit hundreds/tens/ones; compare/order to 1,000."},
+          {"placement":"Year 4","focus":"Four-digit place value; numbers beyond 1,000; rounding and negative-number introduction."},
+          {"placement":"Year 5","focus":"Whole numbers to at least 1,000,000 plus deeper decimal place value."},
+          {"placement":"Year 6","focus":"Whole numbers to 10,000,000; rounding and negative numbers in context."}
+        ]
+      },
+      "US": {
+        "verified_level": "grade_specific_common_core",
+        "sequence": [
+          {"placement":"Grade 1","focus":"Tens and ones; numbers to at least 100."},
+          {"placement":"Grade 2","focus":"Base-ten notation to 1,000; hundreds/tens/ones."},
+          {"placement":"Grade 3","focus":"Use place value for rounding and multi-digit arithmetic."},
+          {"placement":"Grade 4","focus":"Generalise place value; each place is ten times the place to its right; multi-digit comparison and rounding."},
+          {"placement":"Grade 5","focus":"Extend base-ten structure to decimal thousandths and powers of ten."},
+          {"placement":"Grade 6","focus":"No standalone NBT strand; extend number understanding to rational and negative numbers."}
+        ]
+      },
+      "comparison_notes": [
+        "Do not compare only by grade number: China’s national source is stage-based while England and Common Core provide finer year/grade granularity.",
+        "A useful teacher-facing comparison is not simply 'who teaches larger numbers earlier' but how each system uses representations, counting units and place-value structure to support later operations."
+      ]
+    },
+    {
+      "id": "multiplicative-thinking",
+      "name_en": "Multiplicative Thinking → Fluency → Written Methods",
+      "name_cn": "乘法思维 → 基本事实流利度 → 笔算方法",
+      "concept_ids": ["multiplication-meaning", "division-meaning", "equal-groups", "arrays", "repeated-addition", "sharing-grouping-division", "multiplication-facts", "division-facts", "multiplication-properties", "written-multiplication", "written-division"],
+      "CN": {
+        "verified_level": "national_stage_plus_textbook_change_evidence",
+        "focus": "National learning-stage requirements are combined with current PEP evidence that related multiplication units were reorganised/merged. Exact full Grade 1-6 PEP unit sequence remains under direct volume verification.",
+        "source_ids": ["cn-moe-math-2022", "cn-pep-math-new-edition-intro-2024"]
+      },
+      "UK": {
+        "verified_level": "year_specific",
+        "sequence": [
+          {"placement":"Year 1","focus":"Concrete/pictorial multiplication and division problems; arrays, grouping and sharing foundations."},
+          {"placement":"Year 2","focus":"2, 5 and 10 tables; arrays, repeated addition, grouping/sharing, commutativity and inverse relations."},
+          {"placement":"Years 3-4","focus":"Build table fluency, reaching 12×12 by end of Year 4, while developing written and mental methods."},
+          {"placement":"Years 5-6","focus":"Apply facts and properties to larger numbers, factors/multiples, multi-digit multiplication and division, and increasingly complex problem solving."}
+        ]
+      },
+      "US": {
+        "verified_level": "grade_specific_common_core",
+        "sequence": [
+          {"placement":"Grade 2","focus":"Equal groups and arrays as foundations for multiplication."},
+          {"placement":"Grade 3","focus":"Formal meaning of products/quotients, properties/inverse relationships, fluency within 100."},
+          {"placement":"Grade 4","focus":"Multi-digit multiplication/division using place value, properties, arrays and area models."},
+          {"placement":"Grade 5","focus":"Fluent multi-digit multiplication and division plus decimal operations."},
+          {"placement":"Grade 6","focus":"Fluent multi-digit/decimal computation and extension of division to fraction-by-fraction division."}
+        ]
+      }
+    },
+    {
+      "id": "fraction-development",
+      "name_en": "Equal Shares → Fractions as Numbers → Equivalence → Operations",
+      "name_cn": "等分 → 分数作为数 → 等值关系 → 分数运算",
+      "concept_ids": ["fraction-as-part-whole", "fraction-as-measure", "fraction-as-quotient", "unit-fractions", "fraction-number-line", "equivalent-fractions", "compare-order-fractions", "mixed-improper-fractions", "add-subtract-fractions", "multiply-fractions", "divide-fractions"],
+      "CN": {
+        "verified_level": "national_stage",
+        "focus": "Use national-stage expectations plus the current PEP '计数单位' structural thread. Exact grade/semester mapping must be filled only from verified current PEP volumes.",
+        "source_ids": ["cn-moe-math-2022", "cn-pep-math-new-edition-intro-2024"]
+      },
+      "UK": {
+        "verified_level": "year_specific",
+        "sequence": [
+          {"placement":"Year 1","focus":"Halves and quarters of objects, shapes and quantities."},
+          {"placement":"Year 2","focus":"Thirds/quarters/halves/three-quarters, simple equivalence and fraction counting."},
+          {"placement":"Year 3","focus":"Fractions as numbers on a number line, simple equivalence/comparison and same-denominator addition/subtraction."},
+          {"placement":"Year 4","focus":"Equivalent-fraction families, hundredths, fractions-decimals connections and deeper same-denominator work."},
+          {"placement":"Year 5","focus":"Improper/mixed fractions, related-denominator addition/subtraction, fraction × whole number, fraction-decimal-percentage links."},
+          {"placement":"Year 6","focus":"Unlike-denominator addition/subtraction, fraction multiplication, division of proper fractions by whole numbers and equivalence across fractions/decimals/percentages."}
+        ]
+      },
+      "US": {
+        "verified_level": "grade_specific_common_core",
+        "sequence": [
+          {"placement":"Grades 1-2","focus":"Equal-share foundations are embedded largely in geometry rather than a formal fractions domain."},
+          {"placement":"Grade 3","focus":"Formal fractions-as-numbers domain; unit fractions, number line, equivalence and comparison."},
+          {"placement":"Grade 4","focus":"Explain equivalence with visual models, compare unlike fractions, build fractions from unit fractions and multiply a fraction by a whole number."},
+          {"placement":"Grade 5","focus":"Unlike-denominator addition/subtraction, fraction-as-division, fraction multiplication and limited fraction division."},
+          {"placement":"Grade 6","focus":"Full extension to division of fractions by fractions."}
+        ]
+      },
+      "comparison_notes": [
+        "The most useful classroom comparison is the meaning attached to fractions and the representations used before procedures, not merely the first year in which the word 'fraction' appears.",
+        "US Common Core makes a particularly explicit shift in Grade 3 to fractions as numbers on a number line; England introduces fraction language earlier and develops number-line/equivalence connections progressively."
+      ]
+    }
+  ],
+  "publication_rules": [
+    "Never convert a Chinese 1-2 learning-stage statement into an exact Grade 1 or Grade 2 claim without current textbook evidence.",
+    "UK mode must be labelled England where statutory curriculum claims are made.",
+    "US mode must identify Common Core as the baseline and allow state-specific overlays.",
+    "Teacher-facing text should paraphrase source requirements; exact quotations/source locators remain internal evidence metadata."
+  ]
+}
