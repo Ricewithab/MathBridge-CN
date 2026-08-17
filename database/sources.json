@@ -43,7 +43,34 @@
       "title_cn": "人教版小学数学教材",
       "title_en": "PEP Primary Mathematics Textbooks",
       "organisation": "人民教育出版社",
-      "reliability_rating": 4
+      "reliability_rating": 5
+    },
+    {
+      "id": "cn-pep-math-new-edition-intro-2024",
+      "country": "CN",
+      "category": "teaching_guidance",
+      "title_cn": "人教版义务教育数学（一～六年级）新教材简介",
+      "title_en": "Introduction to the New PEP Compulsory Education Mathematics Textbooks (Grades 1–6)",
+      "organisation": "人民教育出版社",
+      "reliability_rating": 5
+    },
+    {
+      "id": "cn-pep-series12-overview-2024",
+      "country": "CN",
+      "category": "teaching_guidance",
+      "title_cn": "人教版第十二套教材纵览",
+      "title_en": "Overview of the 12th PEP Textbook Series",
+      "organisation": "人民教育出版社",
+      "reliability_rating": 5
+    },
+    {
+      "id": "cn-pep-digital-math-textbooks",
+      "country": "CN",
+      "category": "textbook",
+      "title_cn": "人教版小学数学电子教材",
+      "title_en": "PEP Primary Mathematics Digital Textbooks",
+      "organisation": "人民教育出版社",
+      "reliability_rating": 5
     },
     {
       "id": "uk-dfe-mathematics",
