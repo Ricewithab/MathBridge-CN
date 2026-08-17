@@ -1,16 +1,31 @@
 {
-  "version": "0.1.0",
-  "research_date": "2026-08-17",
+  "version": "0.2.0",
+  "research_date": "2026-08-18",
   "purpose": "Track which exact PEP primary mathematics volumes have been identified and prevent legacy digital books from being mistaken for the current 12th-series edition.",
   "current_series": {
     "series_name": "PEP 12th Series Primary Mathematics",
     "basis": "2022 national mathematics curriculum standard",
     "launch_evidence": "PEP states that the 12th series began use in starting grades from autumn 2024.",
     "source_ids": ["cn-pep-series12-overview-2024", "cn-pep-math-new-edition-intro-2024"],
-    "volume_policy": "A volume is not marked fully verified until its exact title page/ISBN or official teacher-guide metadata and table of contents have been captured."
+    "volume_policy": "A volume is not marked fully verified until its exact title page/ISBN or official teacher-guide metadata and table of contents have been captured.",
+    "rollout_rule": "Do not infer mathematics year-by-year rollout from rollout notices for other subjects."
   },
   "volumes": [
-    {"grade":1,"semester":"upper","current_12th_series_status":"partial_verified","known_current_unit_evidence":["5以内数的认识和加、减法","6～10的认识和加、减法"],"legacy_digital_reference":{"status":"verified_official_legacy_digital_book","url":"https://download.pep.com.cn/xsxjc/22xjcsx11x/index.html","warning":"Official PEP digital book from the earlier illustrated edition; do not treat as 12th-series sequence."}},
+    {
+      "grade":1,
+      "semester":"upper",
+      "current_12th_series_status":"partial_verified",
+      "known_current_unit_evidence":["5以内数的认识和加、减法","6～10的认识和加、减法"],
+      "current_companion_evidence":[
+        {
+          "source_id":"cn-pep-grade1-upper-oral-practice-2024",
+          "evidence":"Official PEP page states the Grade 1 upper oral-calculation workbook is synchronized by lesson period with the new textbook.",
+          "limit":"Does not expose the textbook TOC or ISBN."
+        }
+      ],
+      "missing_for_full_verification":["complete table of contents","unit numbers","subsection titles","textbook ISBN","publication metadata","teacher-guide catalog record"],
+      "legacy_digital_reference":{"status":"verified_official_legacy_digital_book","url":"https://download.pep.com.cn/xsxjc/22xjcsx11x/index.html","warning":"Official PEP digital book from the earlier illustrated edition; do not treat as 12th-series sequence."}
+    },
     {"grade":1,"semester":"lower","current_12th_series_status":"research_required","legacy_digital_reference":{"status":"pending_direct_url_verification"}},
     {"grade":2,"semester":"upper","current_12th_series_status":"research_required","legacy_digital_reference":{"status":"verified_official_legacy_digital_book","url":"https://download.pep.com.cn/xsxjc/22xjcsx21x/mobile/index.html","warning":"Official PEP legacy digital book; unit sequence may differ from the 12th series."}},
     {"grade":2,"semester":"lower","current_12th_series_status":"research_required","legacy_digital_reference":{"status":"pending_direct_url_verification"}},
@@ -24,5 +39,6 @@
     {"grade":6,"semester":"lower","current_12th_series_status":"research_required","legacy_digital_reference":{"status":"pending_direct_url_verification"}}
   ],
   "verification_fields_required": ["edition_or_series","grade","semester","publication_year","ISBN","official_url_or_catalog_record","table_of_contents","teacher_guide_reference","last_verified"],
+  "research_sources": ["database/research/cn_pep_direct_source_locator_pass_2026-08-18.json"],
   "ui_rule": "Never display a legacy textbook unit as the current Chinese grade sequence unless the edition is explicitly labelled and selected by the user."
 }
