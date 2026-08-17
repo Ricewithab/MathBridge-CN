@@ -1,0 +1,157 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "purpose": "Store mathematical representations separately from curriculum expectations and teacher moves so MathBridge can explain what a representation makes visible, when it helps, and how its use is evidenced across systems.",
+  "evidence_policy": {
+    "rule": "Do not treat the presence of a representation in one official document as proof that all teachers in that jurisdiction use it frequently.",
+    "country_comparison_rule": "Representations are compared by documented curriculum/guidance use and pedagogical function, not by stereotypes about national teaching style.",
+    "us_rule": "Common Core specifies some representations but explicitly does not prescribe a full teaching method; IES/WWC guidance supplies separate evidence about instructional use.",
+    "cn_rule": "Current PEP evidence supports structured, connected, multi-representational and exploratory design, but representation-by-grade claims require direct current-volume or teacher-guide evidence."
+  },
+  "representations": [
+    {
+      "id": "number-bonds-part-whole",
+      "name_en": "Number Bonds / Part–Part–Whole",
+      "name_cn": "数的组成 / 部分—部分—整体模型",
+      "representation_type": ["pictorial", "diagrammatic", "structural"],
+      "primary_functions": ["composition and decomposition", "addition/subtraction structure", "inverse relationships", "unknown-part reasoning"],
+      "concept_ids": ["number-composition-decomposition", "addition-meaning", "subtraction-meaning", "fact-families"],
+      "teacher_moves": ["ask pupils to identify the whole and parts", "write multiple equations for the same structure", "hide one part and reason from known relationships"],
+      "common_misconceptions": ["treating the diagram as decoration rather than a mathematical relationship", "assuming subtraction is only take-away rather than finding a missing part or difference"],
+      "systems": {
+        "CN": {"status":"supported_in_principle","evidence":"Current PEP Grade 1 design integrates number meaning, composition, addition and subtraction in connected units; exact diagram naming/frequency remains volume-level evidence."},
+        "UK": {"status":"verified_guidance","evidence":"DfE guidance explicitly develops addition and subtraction through part–part–whole structure and connects equations to diagrams."},
+        "US": {"status":"verified_standard_structure","evidence":"Common Core includes putting-together, taking-apart and compare problem structures with unknowns in varied positions, supported by objects, drawings and equations."}
+      },
+      "source_ids": ["cn-pep-math-new-edition-intro-2024", "uk-dfe-primary-math-guidance-2020", "us-common-core-math"]
+    },
+    {
+      "id": "ten-frame",
+      "name_en": "Ten-Frame",
+      "name_cn": "十格框",
+      "representation_type": ["semi-concrete", "pictorial", "structural"],
+      "primary_functions": ["subitising", "number composition", "making ten", "place-value unitisation", "scaling powers of ten"],
+      "concept_ids": ["number-recognition", "number-composition-decomposition", "place-value", "mental-addition-subtraction"],
+      "teacher_moves": ["ask what pupils can see without counting one-by-one", "compare two arrangements for the same number", "scale the value represented by each counter while preserving the frame structure"],
+      "common_misconceptions": ["using the frame only for counting rather than seeing structure", "changing layouts so frequently that pupils cannot internalise five-and-ten structure"],
+      "systems": {
+        "CN": {"status":"research_required_current_volume","evidence":"Do not infer current PEP ten-frame use without direct page/teacher-guide evidence."},
+        "UK": {"status":"verified_guidance","evidence":"DfE primary guidance explicitly uses tens frames and counters from Year 1 and reuses the same structure with scaled place values in later years."},
+        "US": {"status":"not_prescribed_by_common_core","evidence":"Common Core supports concrete models and drawings for base-ten reasoning but does not require the ten-frame as a named representation."}
+      },
+      "source_ids": ["uk-dfe-primary-math-guidance-2020", "us-common-core-math", "us-ies-math-practice"]
+    },
+    {
+      "id": "base-ten-place-value-models",
+      "name_en": "Base-Ten / Place-Value Models",
+      "name_cn": "十进位值模型 / 位值学具",
+      "representation_type": ["concrete", "semi-concrete", "pictorial"],
+      "primary_functions": ["unitising", "place value", "regrouping", "connecting written digits to quantities", "multi-digit operations"],
+      "concept_ids": ["place-value", "number-composition-decomposition", "written-addition", "written-subtraction", "decimal-place-value"],
+      "teacher_moves": ["compose ten smaller units into one larger unit", "decompose one larger unit when regrouping", "connect each physical/pictorial action to a written equation or algorithm"],
+      "common_misconceptions": ["pupils manipulating blocks procedurally without linking them to place value", "failing to distinguish unit size from number of units"],
+      "systems": {
+        "CN": {"status":"supported_in_principle","evidence":"Current PEP foregrounds counting units as a structural thread across whole numbers, decimals, fractions and operations; exact manipulatives require textbook/teacher-guide evidence."},
+        "UK": {"status":"verified_guidance","evidence":"DfE guidance uses place-value counters, bundled units and scaled tens-frame structures to expose powers-of-ten relationships."},
+        "US": {"status":"verified_standard_and_evidence","evidence":"Common Core repeatedly requires base-ten understanding and allows concrete models/drawings; IES recommends well-chosen concrete and semi-concrete representations."}
+      },
+      "source_ids": ["cn-pep-math-new-edition-intro-2024", "uk-dfe-primary-math-guidance-2020", "us-common-core-math", "us-ies-math-practice"]
+    },
+    {
+      "id": "number-line",
+      "name_en": "Number Line",
+      "name_cn": "数轴 / 数线",
+      "representation_type": ["diagrammatic", "linear", "spatial"],
+      "primary_functions": ["magnitude", "order", "distance", "operations", "fractions as numbers", "decimals", "proportional reasoning"],
+      "concept_ids": ["number-lines", "compare-order-numbers", "fraction-number-line", "compare-order-fractions", "compare-order-decimals", "negative-numbers"],
+      "teacher_moves": ["use marked and unmarked number lines", "reason from endpoints and midpoints instead of counting ticks", "connect position to magnitude and distance", "vary endpoints and intervals"],
+      "common_misconceptions": ["treating ticks as objects to count rather than locations", "assuming a fraction number line always runs from 0 to 1", "unequal spacing"],
+      "systems": {
+        "CN": {"status":"supported_historically_current_specifics_pending","evidence":"PEP has a long-standing documented use of objects, pictures, figures and number lines for number concepts; current 12th-series grade-specific use needs direct evidence."},
+        "UK": {"status":"verified_guidance","evidence":"DfE introduces number lines explicitly for order and relative size in Year 1 and extends them to fractions, decimals, rounding and proportional reasoning."},
+        "US": {"status":"verified_standard_and_evidence","evidence":"Common Core explicitly requires number-line diagrams for whole-number operations, fractions and later rational numbers; IES gives number-line use strong evidence in elementary intervention."}
+      },
+      "source_ids": ["cn-pep-math-new-edition-intro-2024", "uk-dfe-primary-math-guidance-2020", "us-common-core-math", "us-ies-math-practice"]
+    },
+    {
+      "id": "arrays",
+      "name_en": "Arrays",
+      "name_cn": "阵列模型",
+      "representation_type": ["concrete", "pictorial", "spatial", "structural"],
+      "primary_functions": ["equal groups", "multiplication meaning", "commutativity", "factor structure", "bridge to area"],
+      "concept_ids": ["arrays", "equal-groups", "multiplication-meaning", "multiplication-properties", "area-concept"],
+      "teacher_moves": ["describe rows and columns", "rotate arrays to discuss commutativity", "partition arrays to expose distributivity", "connect equal groups to area"],
+      "common_misconceptions": ["counting individual objects instead of using group structure", "confusing number of groups with group size"],
+      "systems": {
+        "CN": {"status":"current_specifics_pending","evidence":"Use must be verified from current PEP multiplication units before claiming a grade-specific sequence."},
+        "UK": {"status":"supported_by_guidance_mastery_ecosystem","evidence":"Arrays form part of the representation repertoire used in primary multiplication guidance/resources; exact use should be attached to specific DfE/NCETM locators when surfaced."},
+        "US": {"status":"verified_standard","evidence":"Common Core uses rectangular arrays in Grade 2 as equal-addend structure and as a foundation for multiplication and area."}
+      },
+      "source_ids": ["uk-dfe-primary-math-guidance-2020", "uk-ncetm-primary-mastery", "us-common-core-math"]
+    },
+    {
+      "id": "bar-model-tape-diagram",
+      "name_en": "Bar Model / Tape Diagram",
+      "name_cn": "条形模型 / 线段图式模型",
+      "representation_type": ["diagrammatic", "structural", "modelling"],
+      "primary_functions": ["part-whole relationships", "comparison", "multiplicative relationships", "fractions of quantities", "ratio", "unknowns", "word-problem modelling"],
+      "concept_ids": ["bar-models", "addition-subtraction-problems", "multiplication-division-problems", "fraction-as-part-whole", "ratio-meaning", "unknowns"],
+      "teacher_moves": ["translate a context into quantities and relationships before calculating", "label known and unknown quantities", "ask what each bar or segment represents", "compare the model with an equation"],
+      "common_misconceptions": ["teaching the bar model as a fixed recipe", "drawing bars not proportional to the intended relationship when proportionality matters", "moving to calculation before interpreting the model"],
+      "systems": {
+        "CN": {"status":"related_tradition_current_specifics_pending","evidence":"Chinese primary mathematics has a broader diagrammatic/problem-structure tradition, but current PEP bar/segment-model claims require direct textbook evidence rather than analogy."},
+        "UK": {"status":"verified_guidance","evidence":"NCETM explicitly describes the bar model as a representation for exposing mathematical structure rather than a solution method; DfE guidance uses bar models for division, fractions and unknowns."},
+        "US": {"status":"verified_standard_definition","evidence":"Common Core defines a visual fraction model as including a tape diagram, number-line diagram or area model; tape diagrams also fit its modelling and representation practices."}
+      },
+      "source_ids": ["uk-ncetm-primary-mastery", "uk-dfe-primary-math-guidance-2020", "us-common-core-math"]
+    },
+    {
+      "id": "area-model",
+      "name_en": "Area Model",
+      "name_cn": "面积模型",
+      "representation_type": ["pictorial", "diagrammatic", "structural"],
+      "primary_functions": ["multiplication", "distributive property", "partial products", "fraction equivalence", "fraction multiplication", "area measurement"],
+      "concept_ids": ["area-models", "multiplication-properties", "written-multiplication", "equivalent-fractions", "multiply-fractions", "area-concept"],
+      "teacher_moves": ["partition a rectangle by place value or fractional parts", "connect each region to a partial product", "recombine regions into an equation", "compare area and symbolic methods"],
+      "common_misconceptions": ["treating partition lines as arbitrary", "losing the connection between dimensions and factors", "using the model after pupils no longer understand what each region represents"],
+      "systems": {
+        "CN": {"status":"current_specifics_pending","evidence":"Current PEP emphasises structural connections and modelling, but representation-specific grade use requires direct current-volume verification."},
+        "UK": {"status":"supported_representation","evidence":"DfE/NCETM primary materials use rectangular/partitioned structures in multiplication and fractions; exact locator should accompany publication-level claims."},
+        "US": {"status":"verified_standard","evidence":"Common Core explicitly includes area models within visual fraction models and uses area/array structure to connect multiplication and fractions."}
+      },
+      "source_ids": ["cn-pep-math-new-edition-intro-2024", "uk-dfe-primary-math-guidance-2020", "uk-ncetm-primary-mastery", "us-common-core-math", "us-ies-math-practice"]
+    },
+    {
+      "id": "partial-products-expanded-methods",
+      "name_en": "Partial Products / Expanded Methods",
+      "name_cn": "部分积 / 展开式计算方法",
+      "representation_type": ["symbolic", "diagrammatic", "transitional"],
+      "primary_functions": ["connect place value to multiplication", "make distributivity visible", "bridge models to compact algorithms"],
+      "concept_ids": ["written-multiplication", "multiplication-properties", "place-value"],
+      "teacher_moves": ["name the value of each partial product", "connect partial products to an array or area partition", "compare expanded and compact written forms", "ask why regrouping or recombination is valid"],
+      "common_misconceptions": ["treating partial products as an extra algorithm to memorise", "failing to connect each line to place value", "keeping transitional recording after it stops adding conceptual value"],
+      "systems": {
+        "CN": {"status":"grade_timing_pending","evidence":"Current PEP multiplication-unit restructuring is verified, but exact expanded-method sequence requires direct teacher-guide evidence."},
+        "UK": {"status":"verified_progression_context","evidence":"DfE guidance develops calculation methods through place-value structure toward efficient formal written methods."},
+        "US": {"status":"verified_progression_context","evidence":"Common Core explicitly maintains place-value/properties-based strategies before mandatory standard algorithms in later grades."}
+      },
+      "source_ids": ["cn-pep-math-new-edition-intro-2024", "uk-dfe-primary-math-guidance-2020", "us-common-core-math"]
+    },
+    {
+      "id": "standard-written-algorithm",
+      "name_en": "Standard Written Algorithm",
+      "name_cn": "标准笔算算法",
+      "representation_type": ["symbolic", "procedural"],
+      "primary_functions": ["efficient calculation", "recording place-value operations", "fluency with larger numbers"],
+      "concept_ids": ["written-addition", "written-subtraction", "written-multiplication", "written-division"],
+      "teacher_moves": ["connect each written step to place value and prior representations", "compare efficiency with mental or expanded methods", "use estimation to check reasonableness", "ask pupils to explain regrouping and intermediate values"],
+      "common_misconceptions": ["introducing the compact algorithm before pupils understand place value", "teaching carrying/borrowing as unexplained digit manipulation", "assuming procedural fluency proves conceptual understanding"],
+      "systems": {
+        "CN": {"status":"exact_current_timing_pending","evidence":"Algorithm fluency is an important part of Chinese primary mathematics, but current PEP 12th-series introduction points must be verified volume by volume."},
+        "UK": {"status":"verified_progression","evidence":"DfE statutory/guidance progression explicitly moves into formal columnar and formal multiplication/division methods across primary years."},
+        "US": {"status":"verified_progression","evidence":"Common Core specifies conceptual and strategy development first and mandates particular standard algorithms at later grade points for major whole-number operations."}
+      },
+      "source_ids": ["cn-moe-math-2022", "cn-pep-math-new-edition-intro-2024", "uk-dfe-mathematics", "uk-dfe-primary-math-guidance-2020", "us-common-core-math"]
+    }
+  ]
+}
