@@ -1,0 +1,89 @@
+{
+  "source_categories": [
+    {
+      "id": "official_curriculum",
+      "name": "Official Curriculum",
+      "description": "Government curriculum standards and official learning requirements"
+    },
+    {
+      "id": "teaching_guidance",
+      "name": "Teaching Guidance",
+      "description": "Official pedagogical guidance and teacher support materials"
+    },
+    {
+      "id": "textbook",
+      "name": "Textbook Resource",
+      "description": "Published textbooks, teacher editions and worked examples"
+    },
+    {
+      "id": "research",
+      "name": "Research Evidence",
+      "description": "Peer-reviewed mathematics education research"
+    },
+    {
+      "id": "classroom_practice",
+      "name": "Classroom Practice",
+      "description": "Examples of real teaching approaches and activities"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cn-moe-math-2022",
+      "country": "CN",
+      "category": "official_curriculum",
+      "title_cn": "义务教育数学课程标准（2022年版）",
+      "title_en": "Mathematics Curriculum Standards for Compulsory Education (2022 Edition)",
+      "organisation": "中华人民共和国教育部",
+      "reliability_rating": 5
+    },
+    {
+      "id": "cn-pEp-math-primary",
+      "country": "CN",
+      "category": "textbook",
+      "title_cn": "人教版小学数学教材",
+      "title_en": "PEP Primary Mathematics Textbooks",
+      "organisation": "人民教育出版社",
+      "reliability_rating": 4
+    },
+    {
+      "id": "uk-dfe-mathematics",
+      "country": "UK",
+      "category": "official_curriculum",
+      "title_en": "National Curriculum in England: Mathematics Programmes of Study",
+      "organisation": "Department for Education",
+      "reliability_rating": 5
+    },
+    {
+      "id": "uk-ncetm-primary-mastery",
+      "country": "UK",
+      "category": "teaching_guidance",
+      "title_en": "NCETM Primary Mastery Materials",
+      "organisation": "National Centre for Excellence in the Teaching of Mathematics",
+      "reliability_rating": 5
+    },
+    {
+      "id": "us-common-core-math",
+      "country": "US",
+      "category": "official_curriculum",
+      "title_en": "Common Core State Standards for Mathematics",
+      "organisation": "Common Core State Standards Initiative",
+      "reliability_rating": 5
+    },
+    {
+      "id": "us-ies-math-practice",
+      "country": "US",
+      "category": "research",
+      "title_en": "IES Mathematics Practice Guides",
+      "organisation": "Institute of Education Sciences",
+      "reliability_rating": 5
+    },
+    {
+      "id": "international-timss",
+      "country": "INT",
+      "category": "research",
+      "title_en": "TIMSS Mathematics Frameworks",
+      "organisation": "International Association for the Evaluation of Educational Achievement",
+      "reliability_rating": 5
+    }
+  ]
+}
