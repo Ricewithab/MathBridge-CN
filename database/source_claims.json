@@ -1,39 +1,62 @@
 {
-  "description": "Links educational claims to supporting evidence sources.",
-  "claims": [
+  "version":"0.2.0",
+  "description":"Links narrow educational claims to the sources that directly support them. Claims here must not be used to infer national classroom practice unless the source itself measures classroom practice.",
+  "claim_rules":[
+    "Use canonical source IDs from sources.json.",
+    "State what the source documents, not what teachers in an entire country are assumed to do.",
+    "Keep curriculum requirements, teaching guidance, research evidence and textbook design claims separate.",
+    "A claim may be surfaced only at or below its recorded evidence scope."
+  ],
+  "claims":[
     {
-      "id": "claim_001",
-      "statement": "Effective mathematics instruction often uses multiple representations to support conceptual understanding.",
-      "claim_type": "pedagogy",
-      "related_domains": ["Number", "Fractions", "Geometry"],
-      "supported_by": [
-        "UK_NCETM_PRIMARY_MASTERY",
-        "US_IES_MATHEMATICS_PRACTICE_GUIDES",
-        "RESEARCH_REPRESENTATION_LEARNING"
-      ],
-      "confidence": "high"
+      "id":"claim_001",
+      "statement":"Concrete, pictorial and diagrammatic representations can support mathematical understanding when teachers explicitly connect the representation to the mathematical structure and to symbols.",
+      "claim_type":"pedagogy",
+      "evidence_scope":"Teaching guidance and evidence-reviewed elementary mathematics intervention guidance.",
+      "related_domains":["Number","Fractions","Measurement","Geometry"],
+      "supported_by":["uk-dfe-primary-math-guidance-2020","uk-ncetm-representation-structure","us-ies-elementary-representations-2021"],
+      "verification_status":"verified",
+      "use_limit":"Do not interpret this as evidence that one named representation is required or routinely used in every classroom."
     },
     {
-      "id": "claim_002",
-      "statement": "Chinese primary mathematics places strong emphasis on structured progression, fluency and mathematical accuracy.",
-      "claim_type": "curriculum_characteristic",
-      "related_domains": ["Number", "Arithmetic"],
-      "supported_by": [
-        "CN_MATH_CURRICULUM_2022",
-        "CN_PEP_PRIMARY_MATH"
-      ],
-      "confidence": "high"
+      "id":"claim_002",
+      "statement":"The current PEP primary mathematics redesign organises content to strengthen connections across knowledge, places related content together, and uses exploration, reasoning and practice to develop understanding alongside calculation.",
+      "claim_type":"textbook_design",
+      "evidence_scope":"Official PEP description of the current 12th-series primary mathematics textbooks.",
+      "related_domains":["All primary mathematics domains"],
+      "supported_by":["cn-pep-math-new-edition-intro-2024"],
+      "verification_status":"verified",
+      "use_limit":"This describes the published PEP textbook design. It is not evidence that every Chinese primary mathematics lesson follows the same teaching pattern."
     },
     {
-      "id": "claim_003",
-      "statement": "US mathematics standards include mathematical practices that require students to explain reasoning and solve problems in different ways.",
-      "claim_type": "curriculum_characteristic",
-      "related_domains": ["Problem Solving", "Number"],
-      "supported_by": [
-        "US_COMMON_CORE_MATH",
-        "US_IES_MATHEMATICS_PRACTICE_GUIDES"
-      ],
-      "confidence": "high"
+      "id":"claim_003",
+      "statement":"The Common Core Standards for Mathematical Practice include making sense of problems, constructing and critiquing arguments, modelling, using tools strategically, attending to precision, looking for structure and noticing repeated reasoning.",
+      "claim_type":"curriculum_framework",
+      "evidence_scope":"Common Core Standards for Mathematical Practice.",
+      "related_domains":["Mathematical Practices","Problem Solving","Reasoning"],
+      "supported_by":["us-common-core-math"],
+      "verification_status":"verified",
+      "use_limit":"Common Core is a US comparison baseline. This claim does not describe all US state standards or classroom practice."
+    },
+    {
+      "id":"claim_004",
+      "statement":"NCETM teaching-for-mastery guidance identifies coherence, representation and structure, mathematical thinking, fluency and variation as five connected ideas for lesson and curriculum design.",
+      "claim_type":"teaching_guidance",
+      "evidence_scope":"NCETM teaching-for-mastery programme guidance.",
+      "related_domains":["Pedagogy","Mathematical Practices"],
+      "supported_by":["uk-ncetm-five-big-ideas"],
+      "verification_status":"verified",
+      "use_limit":"This describes NCETM's teaching-for-mastery framework, not a statutory requirement or a claim about every school in England."
+    },
+    {
+      "id":"claim_005",
+      "statement":"NCETM teaching-for-mastery guidance treats procedural fluency and conceptual understanding as mutually supporting and recommends carefully selected examples and representations that expose mathematical structure.",
+      "claim_type":"teaching_guidance",
+      "evidence_scope":"NCETM teaching-for-mastery programme guidance.",
+      "related_domains":["Number","Calculation","Pedagogy"],
+      "supported_by":["uk-ncetm-mastery-essence"],
+      "verification_status":"verified",
+      "use_limit":"Use as an explanation of the NCETM approach, not as a general definition of mathematics teaching in England."
     }
   ]
 }
