@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "research_date": "2026-08-17",
   "purpose": "Prevent MathBridge from mixing different PEP mathematics textbook generations when mapping Chinese classroom sequence.",
   "current_series": {
@@ -9,8 +9,8 @@
     "status": "current_new_series",
     "confirmed_launch": "2024秋季起始年级正式投入使用",
     "source_ids": [
-      "cn-pep-12th-series-overview",
-      "cn-pep-primary-math-new-series"
+      "cn-pep-series12-overview-2024",
+      "cn-pep-math-new-edition-intro-2024"
     ]
   },
   "critical_rules": [
@@ -24,55 +24,36 @@
       "id": "pep12-unit-structure",
       "statement_cn": "每册按单元组织知识群，单元内一般按知识序列分小节和知识点，整册末安排“复习与关联”。",
       "teacher_significance_en": "The new series is explicitly structured around connected units and ends each volume with a review-and-connections unit, so MathBridge should model unit-level and cross-unit relationships rather than isolated standards.",
-      "source_id": "cn-pep-primary-math-new-series",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
       "status": "verified"
     },
     {
       "id": "pep12-grade1-number-units-adjacent",
       "statement_cn": "一年级上册“5以内数的认识和加、减法”与“6～10的认识和加、减法”调整为两个连续单元。",
-      "concept_ids": [
-        "counting",
-        "number-recognition",
-        "number-composition-decomposition",
-        "addition-meaning",
-        "subtraction-meaning"
-      ],
-      "source_id": "cn-pep-primary-math-new-series",
+      "concept_ids": ["counting","number-recognition","number-composition-decomposition","addition-meaning","subtraction-meaning"],
+      "source_id": "cn-pep-math-new-edition-intro-2024",
       "status": "verified"
     },
     {
       "id": "pep12-add-subtract-10000-merged",
       "statement_cn": "原先分开的“万以内的加减法（一）”和“万以内的加减法（二）”在新教材中适当整合。",
-      "concept_ids": [
-        "written-addition",
-        "written-subtraction",
-        "addition-subtraction-problems"
-      ],
-      "source_id": "cn-pep-primary-math-new-series",
+      "concept_ids": ["written-addition","written-subtraction","addition-subtraction-problems"],
+      "source_id": "cn-pep-math-new-edition-intro-2024",
       "status": "verified"
     },
     {
       "id": "pep12-multiplication-units-merged",
       "statement_cn": "“两位数乘两位数”与“三位数乘两位数”在新教材体系中整合。",
-      "concept_ids": [
-        "written-multiplication",
-        "multiplication-properties",
-        "multiplication-division-problems"
-      ],
-      "source_id": "cn-pep-primary-math-new-series",
+      "concept_ids": ["written-multiplication","multiplication-properties","multiplication-division-problems"],
+      "source_id": "cn-pep-math-new-edition-intro-2024",
       "status": "verified"
     },
     {
       "id": "pep12-counting-unit-thread",
       "statement_cn": "新教材以“计数单位”为贯穿整数、小数、分数认识和运算的重要主线。",
       "teacher_significance_en": "This is a major pedagogical bridge point: Chinese textbook design explicitly links whole numbers, decimals and fractions through counting units, not merely through separate procedures.",
-      "concept_ids": [
-        "place-value",
-        "decimal-place-value",
-        "fraction-as-measure",
-        "fractions-decimals"
-      ],
-      "source_id": "cn-pep-primary-math-new-series",
+      "concept_ids": ["place-value","decimal-place-value","fraction-as-measure","fractions-decimals"],
+      "source_id": "cn-pep-math-new-edition-intro-2024",
       "status": "verified"
     }
   ],
@@ -83,17 +64,7 @@
       "grade": 2,
       "semester": "upper",
       "source_id": "cn-pep-legacy-grade2-upper-support",
-      "units": [
-        "长度单位",
-        "100以内的加法和减法（二）",
-        "角的初步认识",
-        "表内乘法（一）",
-        "观察物体（一）",
-        "表内乘法（二）",
-        "认识时间",
-        "数学广角——搭配（一）",
-        "总复习"
-      ],
+      "units": ["长度单位","100以内的加法和减法（二）","角的初步认识","表内乘法（一）","观察物体（一）","表内乘法（二）","认识时间","数学广角——搭配（一）","总复习"],
       "warning": "This sequence is from an earlier PEP edition and is retained only as legacy evidence."
     }
   },
