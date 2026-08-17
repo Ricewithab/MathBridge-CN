@@ -1,0 +1,14 @@
+{
+  "version":"0.1.0",
+  "research_date":"2026-08-18",
+  "purpose":"Algebraic-thinking misconception records for remaining Grade 1-6 gaps.",
+  "misconceptions":[
+    {"id":"repeating-pattern-unit-not-identified","concept_ids":["repeating-patterns"],"statement":"The pupil can copy a repeating pattern but does not identify the repeating unit, so cannot reliably predict later terms.","source_ids":["uk-dfe-primary-math-guidance-2020"],"status":"curriculum_inferred"},
+    {"id":"growing-pattern-surface-not-rule","concept_ids":["growing-patterns","number-sequences"],"statement":"The pupil notices that a pattern gets larger but cannot describe the consistent change or rule that generates each term.","source_ids":["us-common-core-math","uk-dfe-mathematics"],"status":"curriculum_inferred"},
+    {"id":"function-pairs-not-related","concept_ids":["function-thinking"],"statement":"The pupil reads an input-output table as two independent lists rather than paired quantities connected by one rule.","source_ids":["us-common-core-math","cn-moe-math-2022"],"status":"curriculum_inferred"},
+    {"id":"expression-equation-confusion","concept_ids":["expressions","simple-equations"],"statement":"The pupil treats an expression as if it must contain an equals sign or assumes every symbolic statement is an equation to solve.","source_ids":["us-common-core-math","cn-moe-math-2022"],"status":"curriculum_inferred"},
+    {"id":"variable-fixed-unknown-only","concept_ids":["unknowns","expressions","function-thinking"],"statement":"The pupil understands a letter only as one hidden number and not as a quantity that may vary or express a general relationship.","source_ids":["cn-moe-math-2022","us-common-core-math"],"status":"curriculum_inferred"},
+    {"id":"property-overgeneralised-to-noncommutative-operations","concept_ids":["generalising-properties"],"statement":"The pupil applies commutativity or another valid property to an operation where it does not hold.","source_ids":["uk-dfe-mathematics","us-common-core-math"],"status":"curriculum_inferred"},
+    {"id":"unit-rate-wrong-quantity-per-one","concept_ids":["unit-rate","ratio-meaning"],"statement":"The pupil computes a quotient but does not identify which quantity is being expressed per one unit of the other quantity.","source_ids":["us-common-core-math","us-ies-fractions-2010"],"status":"curriculum_inferred"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version":"0.1.0",
+  "research_date":"2026-08-18",
+  "purpose":"Instructional diagnostic probes linked to directly checked misconception evidence. These are not psychometrically validated tests.",
+  "questions":[
+    {
+      "id":"dq-equals-001",
+      "concept_ids":["meaning-equals-sign","simple-equations","unknowns"],
+      "targets":["equals-sign-operation-command"],
+      "prompt_en":"What number makes this true: 7 + 4 = □ + 5? Explain what the equals sign tells you.",
+      "prompt_cn":"哪个数能使7+4=□+5成立？请说明等号在这里表示什么。",
+      "expected_core":"The missing number is 6 because both sides must have the same value, 11. The equals sign states equivalence between the two expressions.",
+      "follow_ups":["Is 11 = 7 + 4 a correct equation? Why?","Without calculating both sides completely, how could you decide whether 9 + 3 = 8 + 4 is true?"],
+      "diagnostic_interpretation":{"adds_all_visible_numbers_or_rejects_nonstandard_equation":"Possible operational view of the equals sign. Ask for an explanation and a second equation form before classifying the difficulty.","correct_answer_but_cannot_explain_equivalence":"May indicate procedural success without secure relational meaning."},
+      "validation_status":"instructional_probe_not_psychometric_test",
+      "evidence_source_ids":["research-stephens-equal-sign-2013"]
+    }
+  ]
+}

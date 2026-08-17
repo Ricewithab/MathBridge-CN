@@ -1,0 +1,15 @@
+{
+  "version":"0.2.0",
+  "research_date":"2026-08-18",
+  "purpose":"Compatibility records created during the diagnostic-evidence pass. Canonical misconception records remain in the base/domain catalogs.",
+  "misconceptions":[
+    {
+      "id":"equals-sign-operation-command",
+      "alias_of":"equals-sign-means-answer-next",
+      "status":"deprecated_alias",
+      "write_rule":"Do not attach this ID to new concept profiles. Resolve it to equals-sign-means-answer-next when reading older data.",
+      "source_ids":["research-stephens-equal-sign-2013"],
+      "evidence_level":"direct_empirical"
+    }
+  ]
+}

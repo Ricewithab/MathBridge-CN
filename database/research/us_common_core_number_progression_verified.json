@@ -1,0 +1,122 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "system": "US",
+  "framework": "Common Core State Standards for Mathematics",
+  "source_ids": ["us-common-core-math"],
+  "verification_status": "verified_primary_source",
+  "scope": ["place-value", "multiplication-division", "fractions"],
+  "important_note": "Common Core is used as the US baseline comparison framework. It is not a national curriculum and does not represent every US state.",
+  "grades": [
+    {
+      "grade": 1,
+      "place_value": {
+        "summary": "Develop whole-number relationships and place value through tens and ones, including numbers to at least 100.",
+        "standard_codes": ["1.NBT"],
+        "concept_ids": ["place-value", "number-composition-decomposition", "compare-order-numbers"]
+      },
+      "multiplication_division": {
+        "summary": "No formal multiplication/division content domain yet; Grade 1 focuses on addition/subtraction structures that prepare multiplicative thinking.",
+        "standard_codes": [],
+        "concept_ids": []
+      },
+      "fractions": {
+        "summary": "Partition circles and rectangles into halves and fourths and reason about equal shares; this is a geometry foundation rather than a formal fractions domain.",
+        "standard_codes": ["1.G.A.3"],
+        "concept_ids": ["fraction-as-part-whole", "unit-fractions"]
+      }
+    },
+    {
+      "grade": 2,
+      "place_value": {
+        "summary": "Extend base-ten notation to 1,000, including hundreds, tens and ones; compare and operate using place-value reasoning.",
+        "standard_codes": ["2.NBT"],
+        "concept_ids": ["place-value", "compare-order-numbers", "number-composition-decomposition"]
+      },
+      "multiplication_division": {
+        "summary": "Work with equal groups to build foundations for multiplication, including odd/even structure and rectangular arrays.",
+        "standard_codes": ["2.OA.C"],
+        "concept_ids": ["equal-groups", "arrays", "multiplication-meaning"]
+      },
+      "fractions": {
+        "summary": "Continue equal-share reasoning through geometry; formal Number and Operations—Fractions begins in Grade 3.",
+        "standard_codes": ["2.G.A.3"],
+        "concept_ids": ["fraction-as-part-whole", "unit-fractions"]
+      }
+    },
+    {
+      "grade": 3,
+      "place_value": {
+        "summary": "Use place value to round whole numbers and to perform arithmetic within 1,000; multiply one-digit numbers by multiples of 10 using place-value reasoning.",
+        "standard_codes": ["3.NBT.A.1", "3.NBT.A.2", "3.NBT.A.3"],
+        "concept_ids": ["place-value", "rounding-estimation", "written-addition", "written-subtraction"]
+      },
+      "multiplication_division": {
+        "summary": "Interpret products and quotients through equal groups, arrays and measurement; use properties and inverse relationships; achieve fluency within 100.",
+        "standard_codes": ["3.OA.A", "3.OA.B", "3.OA.C"],
+        "concept_ids": ["multiplication-meaning", "division-meaning", "equal-groups", "arrays", "sharing-grouping-division", "multiplication-properties", "multiplication-facts", "division-facts"]
+      },
+      "fractions": {
+        "summary": "Develop fractions as numbers, including unit fractions, number-line representations, equivalence and comparison.",
+        "standard_codes": ["3.NF.A"],
+        "concept_ids": ["fraction-as-part-whole", "fraction-as-measure", "unit-fractions", "fraction-number-line", "equivalent-fractions", "compare-order-fractions"]
+      }
+    },
+    {
+      "grade": 4,
+      "place_value": {
+        "summary": "Generalise multi-digit whole-number place value, including the ten-times relationship between adjacent places, reading/writing/comparing, and rounding.",
+        "standard_codes": ["4.NBT.A"],
+        "concept_ids": ["place-value", "compare-order-numbers", "rounding-estimation"]
+      },
+      "multiplication_division": {
+        "summary": "Use place value and properties to multiply up to four-digit by one-digit and two-digit by two-digit numbers, and to divide with remainders; explain using equations, arrays and area models.",
+        "standard_codes": ["4.NBT.B.5", "4.NBT.B.6"],
+        "concept_ids": ["written-multiplication", "written-division", "remainders", "arrays", "area-models", "multiplication-properties"]
+      },
+      "fractions": {
+        "summary": "Explain and generate equivalent fractions using visual models, compare fractions with different numerators/denominators, build fractions from unit fractions, and multiply a fraction by a whole number.",
+        "standard_codes": ["4.NF.A", "4.NF.B"],
+        "concept_ids": ["equivalent-fractions", "compare-order-fractions", "unit-fractions", "add-subtract-fractions", "multiply-fractions", "visual-models"]
+      }
+    },
+    {
+      "grade": 5,
+      "place_value": {
+        "summary": "Extend place-value reasoning to decimals through thousandths and powers of 10; use place value to support operations with decimals.",
+        "standard_codes": ["5.NBT.A"],
+        "concept_ids": ["place-value", "decimal-place-value", "compare-order-decimals", "rounding-estimation"]
+      },
+      "multiplication_division": {
+        "summary": "Achieve fluency with multi-digit whole-number multiplication, divide up to four-digit dividends by two-digit divisors using place-value/property reasoning, and operate with decimals to hundredths.",
+        "standard_codes": ["5.NBT.B"],
+        "concept_ids": ["written-multiplication", "written-division", "decimal-operations", "area-models"]
+      },
+      "fractions": {
+        "summary": "Use equivalent fractions to add/subtract unlike denominators, interpret fractions as division, multiply fractions, and divide unit fractions by whole numbers or whole numbers by unit fractions.",
+        "standard_codes": ["5.NF.A", "5.NF.B"],
+        "concept_ids": ["equivalent-fractions", "add-subtract-fractions", "fraction-as-quotient", "multiply-fractions", "divide-fractions", "visual-models"]
+      }
+    },
+    {
+      "grade": 6,
+      "place_value": {
+        "summary": "Place value is no longer a standalone NBT domain; students extend prior number understanding to rational numbers, including negative numbers and coordinates.",
+        "standard_codes": ["6.NS.C"],
+        "concept_ids": ["negative-numbers", "number-lines"]
+      },
+      "multiplication_division": {
+        "summary": "Compute fluently with multi-digit numbers and decimals, find common factors/multiples, and extend division to fractions divided by fractions.",
+        "standard_codes": ["6.NS.A", "6.NS.B"],
+        "concept_ids": ["written-division", "decimal-operations", "common-factors-multiples", "divide-fractions"]
+      },
+      "fractions": {
+        "summary": "Interpret and compute quotients of fractions, including fraction-by-fraction division, while applying visual models and equations to problem contexts.",
+        "standard_codes": ["6.NS.A.1"],
+        "concept_ids": ["divide-fractions", "fraction-as-quotient", "visual-models"]
+      }
+    }
+  ],
+  "source_locator": "Common Core State Standards for Mathematics, Grades 1-6 content standards and grade introductions.",
+  "ui_caution": "Display 'US — Common Core baseline' and optionally layer California/Texas variants rather than implying one uniform US curriculum."
+}

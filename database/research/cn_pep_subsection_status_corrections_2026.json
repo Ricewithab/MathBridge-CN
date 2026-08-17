@@ -1,0 +1,41 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "purpose":"Correct detail-layer status labels so revised-series design, secondary subsection evidence and documented classroom rollout are not conflated.",
+  "corrections":[
+    {
+      "grade":4,"semester":"lower",
+      "replace_detail_status":"designed_sequence_verified_subsection_pending",
+      "rollout_status":"no_revised_pep_lower_semester_classroom_artifact_verified_as_of_2026-08-18",
+      "reason":"The revised-series all-volume table verifies this book's unit sequence. Documented 2026 rollout evidence places Grades 4-6 upper books in the autumn training/use phase; a revised Grade 4 lower artifact matching the new sequence has not been verified. Older pages with 四则运算/观察物体 are legacy and must be rejected."
+    },
+    {
+      "grade":5,"semester":"lower",
+      "replace_detail_status":"designed_series_subsection_secondary_verified_not_rollout_verified",
+      "rollout_status":"later_semester_use_not_verified_as_of_2026-08-18",
+      "reason":"Secondary directories matching the revised-series table support broad subsection/focus structure, but this does not prove current classroom use in August 2026. Treat the detail as designed-series evidence, not rollout evidence."
+    },
+    {
+      "grade":6,"semester":"lower",
+      "replace_detail_status":"designed_sequence_verified_subsection_pending",
+      "rollout_status":"no_revised_pep_lower_semester_classroom_artifact_verified_as_of_2026-08-18",
+      "reason":"The revised-series table verifies the intended unit sequence. Current web pages showing 负数、百分数（二） and 鸽巢问题 as lower-semester units are legacy PEP and conflict with the revised-series sequence."
+    },
+    {
+      "grade":4,"semester":"upper",
+      "rollout_status":"2026_autumn_training_or_entry_phase_in_documented_contexts",
+      "reason":"Current synchronized resources match the revised sequence, but August 2026 evidence should not be phrased as if every PEP-using school had already completed classroom use."
+    },
+    {
+      "grade":5,"semester":"upper",
+      "rollout_status":"2026_autumn_training_or_entry_phase_in_documented_contexts",
+      "reason":"Current 2026 synchronized resources match the revised sequence; locality-specific classroom adoption remains separate."
+    },
+    {
+      "grade":6,"semester":"upper",
+      "rollout_status":"2026_autumn_training_or_entry_phase_in_documented_contexts",
+      "reason":"Current 2026 synchronized resources match the revised sequence; locality-specific classroom adoption remains separate."
+    }
+  ],
+  "resolver_rule":"Apply these status corrections after the base subsection-detail registry and detail extensions. They change evidence/rollout status only; they do not alter the authoritative unit sequence."
+}

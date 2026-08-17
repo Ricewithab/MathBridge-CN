@@ -1,0 +1,178 @@
+{
+  "version": "0.1.0",
+  "purpose": "Store mathematical representations as reusable instructional tools linked to concepts, pedagogical purposes, evidence and system-specific usage. A representation must not be treated as exclusive to a country or curriculum.",
+  "representation_types": [
+    "concrete",
+    "pictorial",
+    "spatial",
+    "symbolic",
+    "diagrammatic"
+  ],
+  "representations": [
+    {
+      "id": "number-bonds",
+      "name_en": "Number Bonds / Part-Part-Whole",
+      "name_cn": "数的组成 / 部分—部分—整体",
+      "types": ["pictorial", "symbolic"],
+      "best_for": ["number-composition-decomposition", "addition-meaning", "subtraction-meaning", "fact-families"],
+      "mathematical_structure": "A whole can be decomposed into parts and recomposed; addition and subtraction describe inverse relationships among the same quantities.",
+      "teacher_moves": [
+        "Ask pupils to find more than one decomposition of the same whole.",
+        "Keep the whole constant while varying the parts.",
+        "Connect the diagram to equations in more than one orientation.",
+        "Ask what is known, what is unknown and what relationship stays unchanged."
+      ],
+      "common_misuses": [
+        "Treating the diagram as a decorative template rather than discussing the relationship between parts and whole.",
+        "Only using it for addition and failing to connect subtraction/inverse relationships."
+      ]
+    },
+    {
+      "id": "ten-frames",
+      "name_en": "Ten-Frames",
+      "name_cn": "十格框",
+      "types": ["concrete", "pictorial", "spatial"],
+      "best_for": ["counting", "number-recognition", "number-composition-decomposition", "addition-meaning", "mental-addition-subtraction"],
+      "mathematical_structure": "Quantities are organised relative to five and ten, helping pupils see composition, complements and subitising patterns without recounting every item.",
+      "teacher_moves": [
+        "Ask how many are seen without counting one-by-one.",
+        "Ask how many more are needed to make ten.",
+        "Show the same number in different arrangements and compare what is easier to see.",
+        "Connect filled and empty spaces to equations."
+      ],
+      "common_misuses": [
+        "Using random placements that obscure the five-and-ten structure.",
+        "Keeping pupils dependent on the frame after facts should be recalled fluently."
+      ]
+    },
+    {
+      "id": "base-ten-materials",
+      "name_en": "Base-Ten Materials / Place-Value Blocks",
+      "name_cn": "十进制位值材料 / 位值积木",
+      "types": ["concrete", "spatial"],
+      "best_for": ["place-value", "number-composition-decomposition", "written-addition", "written-subtraction", "decimal-place-value"],
+      "mathematical_structure": "Units are nested by powers of ten; regrouping is exchanging equivalent quantities across adjacent place-value units.",
+      "teacher_moves": [
+        "Name the unit represented by each piece rather than relying only on size.",
+        "Physically exchange ten of one unit for one of the next unit.",
+        "Place materials beside written notation so each regrouping step has a structural meaning.",
+        "Change the designated whole when moving into decimals so pupils do not overgeneralise object size."
+      ],
+      "common_misuses": [
+        "Teaching carrying/borrowing language without linking it to unit exchange.",
+        "Assuming a physical piece always has a fixed numerical value independent of the defined whole."
+      ]
+    },
+    {
+      "id": "number-lines",
+      "name_en": "Number Lines",
+      "name_cn": "数轴 / 数线",
+      "types": ["pictorial", "spatial", "diagrammatic"],
+      "best_for": ["counting", "compare-order-numbers", "addition-meaning", "subtraction-meaning", "fraction-number-line", "decimal-place-value", "negative-numbers"],
+      "mathematical_structure": "Numbers are positions on a continuous ordered line; distance, direction, magnitude and interval can be represented spatially.",
+      "teacher_moves": [
+        "Distinguish a number as a point from an interval as a length.",
+        "Use both labelled and partially labelled lines.",
+        "Ask pupils to justify relative position rather than only locate known marks.",
+        "Connect jumps to additive or multiplicative relationships without turning every calculation into repeated counting."
+      ],
+      "common_misuses": [
+        "Treating fractions only as shaded parts of shapes and not as numbers with positions.",
+        "Counting tick marks instead of intervals.",
+        "Using number-line jumps mechanically without discussing magnitude or structure."
+      ]
+    },
+    {
+      "id": "arrays",
+      "name_en": "Arrays",
+      "name_cn": "阵列模型",
+      "types": ["concrete", "pictorial", "spatial"],
+      "best_for": ["multiplication-meaning", "division-meaning", "equal-groups", "multiplication-properties", "factors", "multiplication-facts"],
+      "mathematical_structure": "Equal rows and columns expose multiplicative structure, commutativity, factors and decomposition of products.",
+      "teacher_moves": [
+        "Ask what each dimension represents and distinguish number of groups from group size.",
+        "Rotate an array to discuss commutativity while preserving the quantities represented.",
+        "Partition an array to expose distributivity.",
+        "Connect the same array to multiplication and division equations."
+      ],
+      "common_misuses": [
+        "Reducing arrays to pictures for memorising facts instead of reasoning about structure.",
+        "Using repeated addition as the only interpretation of multiplication."
+      ]
+    },
+    {
+      "id": "bar-models",
+      "name_en": "Bar Models",
+      "name_cn": "条形模型 / 线段模型",
+      "types": ["pictorial", "diagrammatic"],
+      "best_for": ["addition-subtraction-problems", "multiplication-division-problems", "fraction-as-part-whole", "ratio-meaning", "unknowns"],
+      "mathematical_structure": "Relative lengths encode quantitative relationships among knowns, unknowns, parts and wholes so that the problem structure can be separated from surface context.",
+      "teacher_moves": [
+        "Build from the situation before drawing the bars.",
+        "Ask what each bar or section represents and whether lengths should be equal or unequal.",
+        "Hide or vary the unknown position so pupils reason from structure rather than keywords.",
+        "Connect the completed model to an equation."
+      ],
+      "common_misuses": [
+        "Teaching bar models as a fixed problem-solving procedure.",
+        "Drawing bars without preserving quantitative relationships.",
+        "Using the representation after an equation is already obvious, adding cognitive load rather than clarity."
+      ]
+    },
+    {
+      "id": "area-models",
+      "name_en": "Area / Rectangular Models",
+      "name_cn": "面积模型 / 矩形模型",
+      "types": ["pictorial", "spatial", "diagrammatic"],
+      "best_for": ["multiplication-properties", "written-multiplication", "multiply-fractions", "area-concept", "area-formulas"],
+      "mathematical_structure": "A product is represented as the area of a rectangle, making factor decomposition and the distributive property visible.",
+      "teacher_moves": [
+        "Label dimensions and connect each partial region to a partial product.",
+        "Partition factors by place value and recombine partial products.",
+        "Use the same rectangular structure to connect whole-number and fraction multiplication where mathematically appropriate.",
+        "Move progressively from drawn regions to symbolic distributive notation."
+      ],
+      "common_misuses": [
+        "Treating boxes as an algorithm without connecting dimensions to factors.",
+        "Allowing an area-model procedure to become a permanent substitute for efficient fluent calculation."
+      ]
+    },
+    {
+      "id": "partial-products",
+      "name_en": "Partial Products / Expanded Multiplication",
+      "name_cn": "部分积 / 展开乘法",
+      "types": ["symbolic", "diagrammatic"],
+      "best_for": ["written-multiplication", "multiplication-properties", "place-value"],
+      "mathematical_structure": "Factors are decomposed by place value and multiplication is distributed across the decomposed parts before products are recombined.",
+      "teacher_moves": [
+        "Connect each partial product to place-value units and, where useful, an array or area model.",
+        "Compare expanded recording with the compact standard algorithm.",
+        "Ask which quantities are implicit in compact notation.",
+        "Fade the expanded form when pupils can maintain the place-value structure mentally."
+      ],
+      "common_misuses": [
+        "Treating partial products and the standard algorithm as unrelated methods.",
+        "Retaining expanded recording after it stops supporting understanding or accuracy."
+      ]
+    },
+    {
+      "id": "standard-written-algorithms",
+      "name_en": "Standard Written Algorithms",
+      "name_cn": "标准笔算算法",
+      "types": ["symbolic"],
+      "best_for": ["written-addition", "written-subtraction", "written-multiplication", "written-division", "decimal-operations"],
+      "mathematical_structure": "Compact symbolic procedures encode place-value decomposition, unit exchange and operation properties efficiently.",
+      "teacher_moves": [
+        "Explain the place-value meaning of each recorded step before expecting fluent use.",
+        "Compare compact notation with an earlier representation when diagnosing misconceptions.",
+        "Use estimation or inverse operations to check reasonableness.",
+        "Once secure, prioritise efficient and accurate execution rather than requiring a concrete representation for every calculation."
+      ],
+      "common_misuses": [
+        "Teaching digit manipulation as an unexplained rule.",
+        "Requiring multiple representations indefinitely after the algorithm is understood and fluent.",
+        "Treating conceptual understanding and procedural fluency as competing goals."
+      ]
+    }
+  ]
+}

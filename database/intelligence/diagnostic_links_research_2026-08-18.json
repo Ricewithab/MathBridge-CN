@@ -1,0 +1,10 @@
+{
+  "version":"0.1.0",
+  "research_date":"2026-08-18",
+  "links":[
+    {"concept_id":"meaning-equals-sign","add_misconception_ids":["equals-sign-operation-command"],"add_diagnostic_question_ids":["dq-equals-001"]},
+    {"concept_id":"simple-equations","add_misconception_ids":["equals-sign-operation-command"],"add_diagnostic_question_ids":["dq-equals-001"]},
+    {"concept_id":"unknowns","add_misconception_ids":["equals-sign-operation-command"],"add_diagnostic_question_ids":["dq-equals-001"]}
+  ],
+  "resolver_rule":"Merge and deduplicate after base and domain-specific diagnostic links. Preserve the evidence level from the misconception record."
+}

@@ -1,0 +1,73 @@
+{
+  "version": "0.2.0",
+  "purpose": "Defines which source types MathBridge should use for each layer of a curriculum comparison and prevents a single source from being stretched beyond its authority.",
+  "comparison_layers": [
+    {
+      "id": "what_is_taught",
+      "label_en": "What is taught",
+      "label_cn": "教什么",
+      "preferred_sources": {
+        "CN": ["cn-moe-math-2022", "cn-pep-math-primary", "cn-pep-digital-math-textbooks"],
+        "UK": ["uk-dfe-mathematics"],
+        "US_baseline": ["us-common-core-math"],
+        "US_state_examples": ["us-california-math-framework-2023", "us-texas-teks-math"]
+      },
+      "rule": "Curriculum requirements must come from official curriculum/standards or a verified current textbook sequence; classroom resources cannot establish statutory expectations."
+    },
+    {
+      "id": "how_it_is_taught",
+      "label_en": "How it is taught",
+      "label_cn": "怎么教",
+      "preferred_sources": {
+        "CN": ["cn-pep-math-new-edition-intro-2024", "cn-pep-math-primary", "cn-pep-digital-math-textbooks"],
+        "UK": ["uk-dfe-primary-math-guidance-2020", "uk-ncetm-primary-mastery", "uk-ncetm-five-big-ideas"],
+        "US": ["us-california-math-framework-2023", "us-illustrative-math-k5", "us-ies-elementary-representations-2021", "us-ies-problem-solving-2012"]
+      },
+      "rule": "Teaching-method claims should be tied to explicit guidance, current textbook evidence or observed lesson design. Avoid national stereotypes."
+    },
+    {
+      "id": "why_this_approach",
+      "label_en": "Why this approach",
+      "label_cn": "为什么这样教",
+      "preferred_sources": {
+        "CN": ["cn-pep-math-new-edition-intro-2024", "cn-moe-math-2022"],
+        "UK": ["uk-dfe-primary-math-guidance-2020", "uk-ncetm-mastery-essence", "uk-ncetm-five-big-ideas"],
+        "US": ["us-ies-elementary-representations-2021", "us-ies-fractions-2010", "us-ies-problem-solving-2012", "us-california-math-framework-2023"],
+        "international": ["international-timss"]
+      },
+      "rule": "Explanations of pedagogical rationale should distinguish official intent from research evidence and from MathBridge interpretation."
+    },
+    {
+      "id": "classroom_example",
+      "label_en": "Classroom example",
+      "label_cn": "课堂例子",
+      "preferred_sources": {
+        "CN": ["cn-pep-math-primary", "cn-pep-digital-math-textbooks"],
+        "UK": ["uk-ncetm-primary-mastery", "uk-dfe-primary-math-guidance-2020"],
+        "US": ["us-illustrative-math-k5", "us-california-math-framework-2023"]
+      },
+      "rule": "Examples must be labelled as examples, not as universal descriptions of every classroom in that system."
+    },
+    {
+      "id": "research_evidence",
+      "label_en": "Research evidence",
+      "label_cn": "研究依据",
+      "preferred_sources": {
+        "US_federal": ["us-ies-elementary-representations-2021", "us-ies-fractions-2010", "us-ies-problem-solving-2012"],
+        "umbrella_only_when_needed": ["us-ies-math-practice"],
+        "international": ["international-timss"]
+      },
+      "rule": "Use the specific evidence-rated practice guide when one directly supports the claim. Use umbrella organisations only when no more specific record is available."
+    }
+  ],
+  "publication_rules": [
+    "Every visible curriculum claim must have at least one source_id.",
+    "Claims presented as official requirements require an official curriculum, standards or verified current approved-textbook source.",
+    "Claims comparing national teaching cultures require comparative evidence and should normally be avoided when a source-specific description is sufficient.",
+    "Exact quotations require a source locator and page/section/standard code where available.",
+    "Teacher-facing summaries should normally paraphrase rather than reproduce long source text.",
+    "US mode must identify whether a statement refers to Common Core, a specific state, or a classroom-resource example.",
+    "China mode must distinguish national curriculum stage requirements from PEP textbook year-by-year sequencing.",
+    "Legacy and current textbook editions must never be silently mixed."
+  ]
+}

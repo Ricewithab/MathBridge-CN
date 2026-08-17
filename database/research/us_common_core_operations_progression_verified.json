@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "system": "United States — Common Core baseline",
+  "scope": ["addition", "subtraction", "multiplication", "division", "standard_algorithm", "representations"],
+  "primary_source": {
+    "source_id": "us-common-core-math",
+    "title": "Common Core State Standards for Mathematics",
+    "official_url": "https://corestandards.org/wp-content/uploads/2023/09/ADA-Compliant-Math-Standards.pdf"
+  },
+  "policy_note": "Common Core is used by MathBridge as a US comparison baseline only. It is not a single national US curriculum and state standards may differ.",
+  "progression": [
+    {
+      "grade": 1,
+      "addition_subtraction": {
+        "standards": ["1.OA.A.1", "1.OA.B.3", "1.OA.B.4", "1.OA.C.6", "1.NBT.C.4", "1.NBT.C.6"],
+        "expectations": [
+          "Solve addition and subtraction situations within 20 with unknowns in different positions.",
+          "Use properties of operations and the relationship between addition and subtraction as strategies.",
+          "Develop fluency within 20 and fluency within 10 using strategies such as counting on, making ten and decomposing to ten.",
+          "Add within 100 in selected two-digit cases using concrete models or drawings and place-value-based strategies, related to a written method."
+        ],
+        "standard_algorithm_required": false,
+        "teaching_signals": ["making ten", "decomposition", "inverse relationship", "place-value reasoning", "explain strategy"]
+      },
+      "multiplication_division": {
+        "status": "not yet a formal grade-level domain",
+        "preparation": "No formal multiplication/division standards; foundations are built through equal groups and repeated structures in later Grade 2."
+      }
+    },
+    {
+      "grade": 2,
+      "addition_subtraction": {
+        "standards": ["2.OA.A.1", "2.OA.B.2", "2.NBT.B.5", "2.NBT.B.7", "2.NBT.B.9"],
+        "expectations": [
+          "Solve one- and two-step addition/subtraction problems within 100.",
+          "Fluently add and subtract within 20 using mental strategies and know one-digit sums from memory by the end of the grade.",
+          "Fluently add and subtract within 100 using place value, properties of operations and/or inverse relationships.",
+          "Add and subtract within 1000 using concrete models or drawings and place-value-based strategies; relate the strategy to a written method and explain why it works."
+        ],
+        "standard_algorithm_required": false,
+        "important_difference": "Grade 2 explicitly expects strategy explanation and written-method connections, but not the standard algorithm as the endpoint."
+      },
+      "multiplication_division": {
+        "standards": ["2.OA.C.3", "2.OA.C.4"],
+        "status": "foundation",
+        "expectations": [
+          "Work with odd/even structure by pairing and equal addends.",
+          "Use repeated addition to find totals in rectangular arrays up to 5 by 5."
+        ],
+        "teaching_signals": ["equal groups", "arrays", "repeated addition"]
+      }
+    },
+    {
+      "grade": 3,
+      "addition_subtraction": {
+        "standards": ["3.NBT.A.2"],
+        "expectations": ["Fluently add and subtract within 1000 using strategies and algorithms based on place value, properties of operations and/or the relationship between addition and subtraction."],
+        "standard_algorithm_required": false,
+        "note": "A range of algorithms may be used; the standard algorithm is not yet mandated."
+      },
+      "multiplication_division": {
+        "standards": ["3.OA.A.1", "3.OA.A.2", "3.OA.A.3", "3.OA.B", "3.OA.C.7", "3.NBT.A.3"],
+        "expectations": [
+          "Interpret multiplication as equal groups and division as both sharing and grouping.",
+          "Solve multiplication/division problems within 100 using equal groups, arrays and measurement contexts.",
+          "Use properties of multiplication and the multiplication–division relationship.",
+          "Fluently multiply and divide within 100; know products of two one-digit numbers from memory by the end of Grade 3.",
+          "Multiply one-digit numbers by multiples of 10 using place value and properties."
+        ],
+        "standard_algorithm_required": false,
+        "teaching_signals": ["meaning before procedure", "arrays", "properties", "inverse relationship", "fact fluency"]
+      }
+    },
+    {
+      "grade": 4,
+      "addition_subtraction": {
+        "standards": ["4.NBT.B.4"],
+        "expectations": ["Fluently add and subtract multi-digit whole numbers using the standard algorithm."],
+        "standard_algorithm_required": true,
+        "algorithm": ["standard addition algorithm", "standard subtraction algorithm"]
+      },
+      "multiplication_division": {
+        "standards": ["4.NBT.B.5", "4.NBT.B.6", "4.OA"],
+        "expectations": [
+          "Multiply up to four-digit by one-digit and two-digit by two-digit whole numbers using place-value/property-based strategies.",
+          "Illustrate and explain multiplication using equations, rectangular arrays and/or area models.",
+          "Find whole-number quotients and remainders with up to four-digit dividends and one-digit divisors using place value, properties and/or multiplication–division relationships.",
+          "Illustrate and explain division using equations, arrays and/or area models."
+        ],
+        "standard_algorithm_required": false,
+        "important_difference": "Grade 4 requires the standard algorithm for addition/subtraction, but deliberately continues conceptual/representational strategies for multi-digit multiplication and division."
+      }
+    },
+    {
+      "grade": 5,
+      "addition_subtraction": {
+        "standards": ["5.NBT.B.7"],
+        "expectations": ["Add and subtract decimals to hundredths using concrete models or drawings and place-value/property-based strategies, relating strategies to written methods and explaining reasoning."],
+        "whole_number_standard_algorithm": "Already established in Grade 4",
+        "decimal_standard_algorithm_required": false
+      },
+      "multiplication_division": {
+        "standards": ["5.NBT.B.5", "5.NBT.B.6", "5.NBT.B.7"],
+        "expectations": [
+          "Fluently multiply multi-digit whole numbers using the standard algorithm.",
+          "Find quotients with up to four-digit dividends and two-digit divisors using place-value/property-based strategies and/or multiplication–division relationships, explaining with equations, arrays and/or area models.",
+          "Multiply and divide decimals to hundredths using models/drawings and reasoning connected to written methods."
+        ],
+        "multiplication_standard_algorithm_required": true,
+        "division_standard_algorithm_required": false
+      }
+    },
+    {
+      "grade": 6,
+      "addition_subtraction": {
+        "status": "whole-number and decimal fluency assumed from earlier grades; arithmetic is applied in rational-number and algebraic contexts"
+      },
+      "multiplication_division": {
+        "status": "multi-digit whole-number division reaches the standard-algorithm fluency endpoint in Grade 6 in Common Core progression",
+        "teacher_note": "MathBridge should distinguish this from England, where formal long division appears explicitly in Year 6, and from any Chinese textbook placement that must be edition-verified before claiming exact grade equivalence."
+      }
+    }
+  ],
+  "mathbridge_interpretation": {
+    "core_pattern": "Common Core deliberately separates conceptual/strategic development from the point at which the standard algorithm becomes mandatory. Addition/subtraction reaches that endpoint in Grade 4; multi-digit multiplication in Grade 5; division later.",
+    "pedagogical_signature": [
+      "strategy explanation",
+      "place-value justification",
+      "properties of operations",
+      "multiple representations",
+      "delayed requirement for standard algorithms"
+    ],
+    "comparison_warning": "Standards specify endpoints, not a mandated daily teaching sequence or textbook method."
+  }
+}

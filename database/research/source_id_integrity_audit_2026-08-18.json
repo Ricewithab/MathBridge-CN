@@ -1,0 +1,34 @@
+{
+  "version":"1.0.0",
+  "audit_date":"2026-08-18",
+  "purpose":"Check the evidence layer for unresolved source IDs, obsolete aliases, stale seed status and unsupported claim promotion.",
+  "scope":["database/sources.json","registered source_extensions","database/source_metadata.json","registered source_metadata_extensions","database/source_claims.json","database/source_coverage_matrix.json","database/teaching_principles.json","database/teaching_moves.json","database/concept_curriculum_map.json","database/research/concept_curriculum_map_pep_corrections_2026.json","database/diagnostics/*.json","database/intelligence/*.json","runtime-registered research/progression files"],
+  "checks":[
+    {"id":"pep-source-canonicalisation","result":"pass","evidence":"Core sources register cn-pep-math-primary and a compatibility alias from cn-pEp-math-primary."},
+    {"id":"seed-map-stale-cn-status","result":"pass_after_overlay","evidence":"The five original CN seed records are superseded at runtime by database/research/concept_curriculum_map_pep_corrections_2026.json, which reflects the verified revised PEP sequence."},
+    {"id":"diagnostic-extension-resolution","result":"pass","evidence":"reference_registry.json loads the diagnostic manifest and concept_intelligence_manifest.json defines overlay resolution."},
+    {"id":"research-source-resolution","result":"pass","evidence":"Research-paper sources are loaded from ordered source_extensions and metadata extensions; they need not be duplicated in database/sources.json."},
+    {"id":"pep-sequence-source-resolution","result":"pass","evidence":"Publisher-authored all-volume sequence source and metadata are registered as source extensions."},
+    {"id":"legacy-pep-isolation","result":"pass","evidence":"Legacy PEP source/ISBN/sequence records are explicitly labelled and excluded from current revised-series resolution."},
+    {"id":"claim-authority-separation","result":"pass","evidence":"Curriculum, teaching guidance, research, textbook detail and rollout are resolved as separate evidence dimensions."},
+    {"id":"diagnostic-evidence-classification","result":"pass","evidence":"80/80 canonical misconception records have an effective evidence class; no research_required/unclassified records remain."}
+  ],
+  "resolved_issues":[
+    {"issue":"source_claims.json used obsolete uppercase/nonexistent IDs.","resolution":"Replaced with canonical/narrower source-specific claims.","status":"fixed"},
+    {"issue":"teaching_principles.json contained unsupported national-prevalence wording.","resolution":"National prevalence claims removed; principles tied to documented guidance/research.","status":"fixed"},
+    {"issue":"teaching_moves.json principle slugs did not align.","resolution":"Links canonicalised.","status":"fixed"},
+    {"issue":"IES fractions and NCETM specific guidance needed dedicated records.","resolution":"Specific records added and registered.","status":"fixed"},
+    {"issue":"PEP umbrella ID had inconsistent casing.","resolution":"Canonical cn-pep-math-primary plus compatibility alias now registered.","status":"fixed"},
+    {"issue":"Original CN seed-map PEP status became stale after the 12-volume sequence was verified.","resolution":"Runtime correction overlay registered; the stale seed text cannot override verified current evidence.","status":"fixed"}
+  ],
+  "remaining_technical_debt":[],
+  "publication_guardrails":[
+    "A source ID must resolve through the core source registry or a registered source extension.",
+    "Do not upgrade a claim because several files mention it; preserve the verification/authority status of the directly supporting source.",
+    "Use a specific practice guide/guidance source where available rather than a broad umbrella organisation record.",
+    "Do not infer national teaching frequency from curriculum, textbook or programme guidance.",
+    "Do not substitute legacy PEP evidence for revised-series evidence.",
+    "Candidate or not-publicly-recovered artifact metadata must preserve its explicit status."
+  ],
+  "audit_status":"pass"
+}

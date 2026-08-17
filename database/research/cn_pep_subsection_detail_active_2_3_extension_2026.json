@@ -1,0 +1,76 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "purpose":"Extend below-unit detail for revised PEP Grade 2 upper/lower and Grade 3 upper using current-edition resources that match the authoritative revised-series unit sequence.",
+  "evidence_level":"current_secondary_crosscheck",
+  "records":[
+    {
+      "grade":2,"semester":"upper",
+      "sources":[
+        {"url":"https://sxkhl.cn/grade/rjn2a","type":"current_secondary_directory","edition_label":"人教版2024新"},
+        {"url":"https://www.51jiaoxi.com/album-138080.html","type":"current_secondary_lesson_index","edition_label":"2025-2026 人教版2024新"},
+        {"url":"https://zy.21cnjy.com/23878153","type":"current_secondary_lesson_resource","edition_label":"2025-2026 人教版2024新"}
+      ],
+      "units":[
+        {"unit":"分类与整理","verified_focus":["按不同标准分类","用简单表格整理分类结果","比较分类结果"]},
+        {"unit":"1～6的表内乘法","lessons":["乘法的初步认识","2～6的乘法口诀","5的乘法口诀","2、3、4的乘法口诀","乘加、乘减","6的乘法口诀","整理和复习"],"note":"Current whole-unit planning also describes 2 lessons for multiplication meaning, 6 lessons for facts, and 1 review lesson."},
+        {"unit":"1～6的表内除法","lessons":["平均分","除法的初步认识","用2～6的乘法口诀求商","用表内除法解决问题","整理和复习"]},
+        {"unit":"校园小导游","lessons":["认识东、南、西、北","校园小导游","小讲堂"],"status":"integrated_practice"},
+        {"unit":"厘米和米","verified_focus":["认识厘米","认识米","用刻度尺测量","厘米和米的关系","选择合适的长度单位"]},
+        {"unit":"身体上的尺子","verified_focus":["寻找身体尺","测量身体尺","用身体尺估测长度"],"status":"integrated_practice"},
+        {"unit":"7～9的表内乘、除法","lessons":["7的乘法口诀","8的乘法口诀","9的乘法口诀","提问题并解答","用7、8的乘法口诀求商","用9的乘法口诀求商","用乘、除法解决问题","整理和复习"],"textbook_page_secondary_evidence":[{"pages":"87-90","focus":"整理和复习","status":"secondary_page_match"}]},
+        {"unit":"复习与关联","lessons":["数与运算","数量关系","图形的位置与测量","数据分类"]}
+      ],
+      "use_limit":"These records support lesson/subsection navigation. They do not replace the publisher-authored table as the authority for unit sequence and do not provide primary PEP page verification."
+    },
+    {
+      "grade":2,"semester":"lower",
+      "sources":[
+        {"url":"https://www.sohu.com/a/1044973026_120904083","type":"secondary_teacher_guide_reproduction","edition_label":"2026 revised PEP"},
+        {"url":"https://www.51jiaoxi.com/album-136583.html","type":"current_secondary_lesson_index","edition_label":"2025-2026 revised PEP"},
+        {"url":"https://www.51jiaoxi.com/album-139134.html","type":"current_secondary_lesson_index","edition_label":"人教版2024 二年级下册"}
+      ],
+      "units":[
+        {"unit":"时间在哪里","lessons":["认识时间","我与时间的故事","我的时间小书","小讲堂"],"verified_focus":["钟面结构","时分秒","时刻与时长","1分和1秒量感","简单经过时间问题"],"status":"integrated_practice"},
+        {"unit":"有余数的除法","lessons":["有余数除法的认识","有余数除法的竖式","试商","用余数解决实际问题","用余数解决周期/排列问题"]},
+        {"unit":"数量间的乘除关系","lessons":["倍的认识","求一个数是另一个数的几倍","求一个数的几倍是多少","已知一个数的几倍是多少求这个数","连续两问的实际问题","根据已知条件补充问题","根据问题补充合适条件","整理和复习"]},
+        {"unit":"万以内数的认识","lessons":["1000以内数的认识、组成和读写","认识计数单位千","10000以内数的组成","认识算盘","认识计数单位万及数位顺序表","万以内数的读法","万以内数的写法","万以内数的大小比较","近似数","简单的整百整千数加减法","整理和复习"]},
+        {"unit":"万以内的加法和减法","lessons":["加法","减法","加减法各部分间的关系","整理和复习"],"verified_focus":["进位加法","连续进位","退位减法","加减法关系","估算与结果检验"]},
+        {"unit":"数学连环画","lessons":["连环画创作/阅读","连环画分享会"],"status":"integrated_practice"},
+        {"unit":"复习与关联","verified_focus":["数与运算","数量关系","测量与时间","综合应用"]}
+      ],
+      "use_limit":"Some lesson titles come from current synchronized-resource indexes rather than the teacher-guide table of contents. Keep evidence labelled secondary and do not assign PEP textbook page numbers unless separately verified."
+    },
+    {
+      "grade":3,"semester":"upper",
+      "sources":[
+        {"url":"https://www.sohu.com/a/1044974313_120904083","type":"secondary_teacher_guide_reproduction","edition_label":"2026 revised PEP"},
+        {"url":"https://www.51jiaoxi.com/shiti/shuxue/xxrjbsnjsc-c4069660/","type":"current_secondary_textbook_directory","edition_label":"人教版2024 三年级上册"},
+        {"url":"https://www.51jiaoxi.com/album-123752.html","type":"current_secondary_lesson_index","edition_label":"新教材新课标"},
+        {"url":"https://t.30edu.com.cn/07122820/Article.do?ID=24204937-014e-4bc1-b198-77d1b5fadc4e","type":"current_school_teaching_plan","edition_label":"2025-2026 revised PEP"}
+      ],
+      "additions":[
+        {"unit":"分数的初步认识","subsections":["初步认识分数","几分之一","几分之几","分数的大小比较","分数的简单计算","进一步认识分数","解决问题","整理和复习"],"lesson_evidence":["比较同分母分数及几分之一的大小","同分母分数的简单加减","进一步认识分数"],"student_textbook_page_range_secondary":"73-91"},
+        {"unit":"复习与关联","subsections":["数与运算","数量关系","图形的认识与测量","常见的量","应用提升"],"student_textbook_page_range_secondary":"92-102"}
+      ],
+      "whole_volume_student_textbook_page_ranges_secondary":[
+        {"unit":"观察物体","pages":"1-5"},
+        {"unit":"混合运算","pages":"6-19"},
+        {"unit":"毫米、分米和千米","pages":"20-30"},
+        {"unit":"曹冲称象的故事","pages":"31-38"},
+        {"unit":"多位数乘一位数","pages":"39-56"},
+        {"unit":"数字编码","pages":"57-60"},
+        {"unit":"线和角","pages":"61-72"},
+        {"unit":"分数的初步认识","pages":"73-91"},
+        {"unit":"复习与关联","pages":"92-102"}
+      ],
+      "page_caution":"The page ranges come from a current school teaching plan and are useful cross-checks; they are not primary PEP-hosted page verification."
+    }
+  ],
+  "integrity_rules":[
+    "All unit names must match cn_pep_current_sequence_verified_2026.json before detail is accepted.",
+    "Reject legacy directories even when the site labels them 2024 or 2026 if their unit sequence conflicts with the revised-series table.",
+    "Secondary lesson indexes may refine subsection navigation but cannot override the authoritative unit sequence.",
+    "Student-textbook pages and teacher-guide pages must remain explicitly distinguished."
+  ]
+}

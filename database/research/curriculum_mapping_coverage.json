@@ -1,0 +1,56 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "purpose":"Track curriculum/textbook mapping completeness for the MathBridge core baseline, distinguishing safe completed evidence states from optional future detail.",
+  "definitions":{
+    "reference_complete":"Every taxonomy concept resolves to relevant curriculum/framework evidence or an explicit framework non-placement/cross-cutting classification.",
+    "core_mapping_complete":"The product can state the concept's China learning-stage/framework position, England position and Common Core baseline position without inventing equivalence.",
+    "pep_unit_sequence_complete":"The revised PEP series has verified grade/semester/unit sequence across all 12 volumes.",
+    "below_unit_classified":"Available subsection/lesson/page detail is stored at its evidence level; unavailable/later-rollout detail is explicitly classified rather than inferred."
+  },
+  "pep_series_coverage":{
+    "canonical_sequence":"database/research/cn_pep_current_sequence_verified_2026.json",
+    "unit_concept_map":"database/research/cn_pep_unit_concept_map_2026.json",
+    "unit_concept_corrections":"database/research/cn_pep_unit_concept_corrections_2026.json",
+    "detail_registry":"database/research/cn_pep_subsection_detail_registry_2026.json",
+    "detail_extensions":["database/research/cn_pep_subsection_detail_active_2_3_extension_2026.json","database/research/cn_pep_subsection_detail_upper_4_6_extension_2026.json"],
+    "artifact_completion":"database/research/cn_pep_artifact_completion_classification_2026.json",
+    "volume_slots":12,
+    "unit_sequence_verified_volumes":12,
+    "unit_sequence_coverage_percent":100,
+    "unit_to_taxonomy_classification_complete":true,
+    "below_unit_evidence_state_classified":true,
+    "artifact_evidence_state_classified":true,
+    "locality_rollout":"query_dependent_by_design"
+  },
+  "domains":[
+    {"domain_id":"number","concepts":49,"reference_complete":true,"core_mapping_complete":true,"pep_unit_sequence_complete":true,"below_unit_classified":true,"status":"complete"},
+    {"domain_id":"algebraic-thinking","concepts":13,"reference_complete":true,"core_mapping_complete":true,"pep_unit_sequence_complete":true,"below_unit_classified":true,"status":"complete"},
+    {"domain_id":"measurement","concepts":14,"reference_complete":true,"core_mapping_complete":true,"pep_unit_sequence_complete":true,"below_unit_classified":true,"status":"complete"},
+    {"domain_id":"geometry","concepts":16,"reference_complete":true,"core_mapping_complete":true,"pep_unit_sequence_complete":true,"below_unit_classified":true,"status":"complete"},
+    {"domain_id":"statistics-probability","concepts":12,"reference_complete":true,"core_mapping_complete":true,"pep_unit_sequence_complete":true,"below_unit_classified":true,"status":"complete"},
+    {"domain_id":"mathematical-practices","concepts":17,"reference_complete":true,"core_mapping_complete":true,"pep_unit_sequence_complete":"integrated/practice units classified where applicable","below_unit_classified":true,"status":"complete"}
+  ],
+  "overall":{
+    "taxonomy_concepts":121,
+    "concept_profiles_with_curriculum_or_framework_reference":121,
+    "profile_reference_coverage_complete":true,
+    "core_cross_system_mapping_complete":true,
+    "current_pep_grade_semester_unit_sequence_complete":true,
+    "current_pep_volume_sequence_coverage":"12/12",
+    "below_unit_evidence_states_classified":true,
+    "artifact_evidence_states_classified":"12/12",
+    "diagnostic_route_coverage_complete":true,
+    "diagnostic_evidence_classification_complete":true,
+    "generic_pending_core_mapping_fields":0,
+    "status":"pass"
+  },
+  "classified_nonblocking_limits":[
+    "Exact PEP subsection/page detail is not uniformly publicly available across all designed volumes; renderer uses only verified detail.",
+    "Exact single-page locators for every China 2022 bullet are not directly rendered; verified printed range + hierarchy is used.",
+    "PEP actual-use rollout varies by locality/publisher/term and is resolved as a query, not a national constant.",
+    "California/Texas are optional state overlays; Common Core remains the complete core US comparison baseline."
+  ],
+  "publication_rule":"Core mapping is complete. Every rendered claim must still obey its evidence level; completion is not permission to upgrade secondary, unavailable or query-dependent fields.",
+  "status":"complete"
+}

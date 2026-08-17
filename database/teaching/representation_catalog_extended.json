@@ -1,0 +1,30 @@
+{
+  "version": "0.1.0",
+  "purpose": "Add representations needed for measurement, geometry, data, probability, ratio and early algebra.",
+  "evidence_status": "research_mapping_required",
+  "representations": [
+    {"id":"equality-balance-model","name_en":"Equality Balance Model","name_cn":"等式平衡模型","primary_functions":["equality","unknowns","equations"],"concept_ids":["meaning-equals-sign","unknowns","simple-equations"]},
+    {"id":"pattern-table","name_en":"Pattern Table","name_cn":"规律表","primary_functions":["patterns","sequences","functional relationships"],"concept_ids":["repeating-patterns","growing-patterns","number-sequences","function-thinking"]},
+    {"id":"ratio-table-double-number-line","name_en":"Ratio Table / Double Number Line","name_cn":"比表 / 双数轴","primary_functions":["ratio","rate","proportion","scaling"],"concept_ids":["ratio-meaning","equivalent-ratios","unit-rate","proportional-reasoning"]},
+    {"id":"measurement-tools","name_en":"Measurement Tools","name_cn":"测量工具","primary_functions":["direct measurement","comparison","estimation"],"concept_ids":["comparison-measurement","standard-units","measurement-estimation"]},
+    {"id":"ruler-scale","name_en":"Ruler / Linear Scale","name_cn":"直尺 / 线性刻度","primary_functions":["length","scale reading","unit conversion","perimeter"],"concept_ids":["standard-units","unit-conversion","perimeter"]},
+    {"id":"clock-face","name_en":"Clock Face","name_cn":"钟面","primary_functions":["telling time","intervals","elapsed time"],"concept_ids":["telling-time","elapsed-time"]},
+    {"id":"timeline-calendar","name_en":"Timeline / Calendar","name_cn":"时间线 / 日历","primary_functions":["duration","elapsed time","calendar reasoning"],"concept_ids":["elapsed-time","calendar"]},
+    {"id":"money-model","name_en":"Money Model","name_cn":"货币模型","primary_functions":["coin and note values","equivalence","money calculation"],"concept_ids":["money-values","money-calculations"]},
+    {"id":"unit-square-grid","name_en":"Unit-Square Grid","name_cn":"单位方格","primary_functions":["area","perimeter","covering","formula development"],"concept_ids":["perimeter","area-concept","area-formulas"]},
+    {"id":"unit-cube-model","name_en":"Unit-Cube Model","name_cn":"单位立方体模型","primary_functions":["volume","packing","formula development"],"concept_ids":["volume-concept","volume-formulas"]},
+    {"id":"shape-property-diagram","name_en":"Shape Property Diagram","name_cn":"图形性质图","primary_functions":["shape recognition","classification","properties","parallel and perpendicular relationships"],"concept_ids":["2d-shapes","3d-shapes","classifying-shapes","parallel-perpendicular","quadrilaterals-polygons","circles"]},
+    {"id":"angle-turn-model","name_en":"Angle as Turn Model","name_cn":"角的转动模型","primary_functions":["angle meaning","angle size","rotation"],"concept_ids":["angle-as-turn","angle-size","rotation"]},
+    {"id":"protractor-angle-measure","name_en":"Protractor / Angle Measure","name_cn":"量角器 / 角度测量","primary_functions":["measuring angles","angle comparison","angle relationships"],"concept_ids":["angle-size","angle-types","measuring-angles","angle-relationships"]},
+    {"id":"coordinate-grid","name_en":"Coordinate Grid","name_cn":"坐标网格","primary_functions":["position","coordinates","translation","rotation"],"concept_ids":["position-direction","coordinates","translation","rotation"]},
+    {"id":"symmetry-diagram","name_en":"Symmetry Diagram","name_cn":"对称图","primary_functions":["line symmetry","reflection","shape comparison"],"concept_ids":["symmetry"]},
+    {"id":"transformation-diagram","name_en":"Transformation Diagram","name_cn":"图形变换图","primary_functions":["translation","rotation","position change"],"concept_ids":["translation","rotation","position-direction"]},
+    {"id":"data-table","name_en":"Data Table","name_cn":"数据表","primary_functions":["recording","organising","comparing","calculating averages"],"concept_ids":["collect-data","organise-data","tables","mean-average","interpret-data","experimental-probability"]},
+    {"id":"pictogram","name_en":"Pictogram","name_cn":"象形统计图","primary_functions":["representing frequency","reading simple data"],"concept_ids":["pictograms","interpret-data"]},
+    {"id":"bar-chart","name_en":"Bar Chart","name_cn":"条形统计图","primary_functions":["frequency comparison","categorical data","interpretation"],"concept_ids":["bar-charts","interpret-data"]},
+    {"id":"line-graph","name_en":"Line Graph","name_cn":"折线统计图","primary_functions":["change over time","trend interpretation"],"concept_ids":["line-graphs","interpret-data"]},
+    {"id":"pie-chart","name_en":"Pie Chart","name_cn":"扇形统计图","primary_functions":["part-whole data","percentage and proportion"],"concept_ids":["pie-charts","interpret-data","percent-meaning"]},
+    {"id":"probability-line","name_en":"Probability Line","name_cn":"可能性数轴","primary_functions":["chance language","probability magnitude","comparison"],"concept_ids":["chance-language","simple-probability","experimental-probability"]}
+  ],
+  "rule": "These records describe the function of each representation. System-specific grade use must be supported separately before it is presented as curriculum practice."
+}

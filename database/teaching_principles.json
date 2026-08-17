@@ -1,0 +1,71 @@
+{
+  "version":"0.2.0",
+  "description":"Pedagogical principles used to explain teaching choices. These records describe documented frameworks or evidence-supported teaching ideas; they are not labels for countries or claims about how all teachers in a jurisdiction teach.",
+  "use_rules":[
+    "Do not use a principle to describe national classroom practice unless comparative classroom evidence supports that claim.",
+    "Keep a named programme, such as NCETM teaching for mastery, separate from statutory curriculum requirements.",
+    "When a principle is recommended in MathBridge, explain the mathematical purpose and the evidence source."
+  ],
+  "principles":[
+    {
+      "id":"principle_cpa",
+      "name_en":"Link concrete, visual and symbolic representations",
+      "name_cn":"连接具体、图示与符号表征",
+      "description":"Use objects, drawings or diagrams to make a mathematical relationship visible, then connect the same relationship explicitly to equations and symbols.",
+      "why_it_matters":"A representation is useful when it helps pupils see mathematical structure and transfer that structure to another representation or to symbols.",
+      "related_domains":["Number","Fractions","Measurement","Geometry"],
+      "evidence_sources":["uk-dfe-primary-math-guidance-2020","uk-ncetm-representation-structure","us-ies-elementary-representations-2021"],
+      "evidence_scope":"Teaching guidance and evidence-reviewed elementary intervention guidance.",
+      "verification_status":"verified",
+      "use_rule":"Do not present 'concrete-pictorial-abstract' as a fixed universal sequence. Choose and connect representations according to the concept and pupil need."
+    },
+    {
+      "id":"principle_mastery",
+      "name_en":"NCETM teaching for mastery",
+      "name_cn":"NCETM数学精通式教学",
+      "description":"An NCETM teaching framework built around coherent sequencing, representation and structure, mathematical thinking, fluency and variation.",
+      "why_it_matters":"The framework links curriculum sequencing, representations, reasoning and practice rather than treating fluency and understanding as separate goals.",
+      "related_domains":["All"],
+      "evidence_sources":["uk-ncetm-five-big-ideas","uk-ncetm-mastery-essence","uk-ncetm-primary-mastery"],
+      "evidence_scope":"NCETM programme guidance.",
+      "verification_status":"verified",
+      "use_rule":"Label this as NCETM teaching-for-mastery guidance. Do not present it as the statutory mathematics curriculum or as the method used in every school in England."
+    },
+    {
+      "id":"principle_variation",
+      "name_en":"Purposeful variation",
+      "name_cn":"有目的的变式",
+      "description":"Change selected features of examples while keeping other features constant so pupils can notice the mathematical structure, relationship or boundary being studied.",
+      "why_it_matters":"Carefully chosen variation directs attention to what changes, what stays the same and which features define the concept.",
+      "related_domains":["Number","Algebraic Thinking","Fractions","Geometry"],
+      "evidence_sources":["uk-ncetm-five-big-ideas"],
+      "evidence_scope":"NCETM teaching-for-mastery guidance.",
+      "verification_status":"verified",
+      "use_rule":"Do not equate every sequence of related textbook examples with formal variation pedagogy. Attach the label only where the source explicitly supports it."
+    },
+    {
+      "id":"principle_reasoning",
+      "name_en":"Reasoning and justification",
+      "name_cn":"推理与说明",
+      "description":"Ask pupils to explain relationships, justify conclusions, compare methods and use mathematical language to communicate why an answer or method is valid.",
+      "why_it_matters":"Reasoning provides evidence of how a pupil understands the mathematics and can reveal whether a correct procedure is connected to the underlying structure.",
+      "related_domains":["Mathematical Practices","Problem Solving","All content domains"],
+      "evidence_sources":["us-common-core-math","uk-dfe-mathematics","uk-ncetm-five-big-ideas","cn-pep-math-new-edition-intro-2024"],
+      "evidence_scope":"Curriculum/framework expectations and official teaching/textbook guidance.",
+      "verification_status":"verified",
+      "use_rule":"Describe the specific framework expectation being compared. Do not reduce the comparison to 'one system reasons while another memorises'."
+    },
+    {
+      "id":"principle_fluency",
+      "name_en":"Fluency with understanding",
+      "name_cn":"建立在理解基础上的熟练度",
+      "description":"Develop accurate and efficient recall and procedures while keeping their connection to number relationships, place value and mathematical structure explicit.",
+      "why_it_matters":"Automatic recall and efficient procedures reduce unnecessary processing, while conceptual connections help pupils choose, explain and adapt methods.",
+      "related_domains":["Number","Calculation","Fractions"],
+      "evidence_sources":["uk-ncetm-five-big-ideas","uk-ncetm-mastery-essence","uk-dfe-mathematics","us-common-core-math","cn-pep-math-new-edition-intro-2024"],
+      "evidence_scope":"Curriculum/framework expectations and official teaching/textbook guidance.",
+      "verification_status":"verified",
+      "use_rule":"Do not treat fluency as synonymous with speed or rote repetition. Distinguish fact recall, procedural efficiency and conceptual understanding in diagnostic and teaching recommendations."
+    }
+  ]
+}

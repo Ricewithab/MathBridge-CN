@@ -1,0 +1,51 @@
+{
+  "version":"0.1.0",
+  "purpose":"Define how MathBridge compares grade/year placement without inventing one-to-one equivalence between China, England and US systems.",
+  "default_mode":"concept_aligned",
+  "modes":{
+    "concept_aligned":{
+      "label_cn":"按数学概念对齐",
+      "label_en":"Align by mathematical concept",
+      "rule":"Start from the selected Chinese concept and show the verified curriculum stage/year/grade where the same concept appears in the comparison system. Different grade numbers are allowed and should remain visible.",
+      "use":"default"
+    },
+    "selected_grade_context":{
+      "label_cn":"查看同年级标签的课程内容",
+      "label_en":"View the same numbered grade/year label",
+      "rule":"Show the requested grade/year content as context only. Do not call it equivalent unless concept evidence independently supports the alignment.",
+      "use":"optional"
+    },
+    "age_context":{
+      "label_cn":"年龄背景",
+      "label_en":"Age context",
+      "rule":"Age information may be displayed later as contextual metadata. It must not be used as the curriculum mapping key and must not override verified concept placement.",
+      "use":"future_optional"
+    }
+  },
+  "china_resolution":{
+    "national_standard":"Use the 2022 national learning stage when exact current textbook placement is not verified.",
+    "current_pep":"Use exact Grade N / semester / unit only when current-edition PEP evidence directly verifies it.",
+    "fallback":"Never fill a missing current PEP grade from a legacy textbook sequence."
+  },
+  "england_resolution":{
+    "rule":"Use statutory National Curriculum in England Year 1-6 placement.",
+    "display":"Use England Year N; do not translate Year N into 中国N年级."
+  },
+  "us_resolution":{
+    "baseline":"Use Common Core Grade N only when no state is selected.",
+    "states":"When California or Texas is selected and a mapped state standard exists, use that state grade placement as the curriculum layer.",
+    "missing_state_mapping":"Say the state-specific mapping is not yet available; do not silently substitute Common Core as the state requirement."
+  },
+  "alignment_output":{
+    "fields":["concept_id","china_placement","comparison_placement","alignment_type","alignment_note","source_ids","verification_status"],
+    "alignment_type_values":["same_label_and_concept","different_label_same_concept","stage_to_year_or_grade","comparison_not_explicit","state_mapping_pending"],
+    "rule":"alignment_type describes placement relationship only; it is not a judgement that two curricula have identical depth, pedagogy or assessment."
+  },
+  "rendering_rules":[
+    "Never hide different year/grade numbers to make the comparison look cleaner.",
+    "Do not use age as a proxy for curriculum equivalence.",
+    "Where China is stage-level and England/US is year-specific, show that difference explicitly.",
+    "If the same concept appears over several years, show a progression range rather than selecting one arbitrary equivalent year.",
+    "Depth, representations, procedures and reasoning expectations are compared separately from placement."
+  ]
+}

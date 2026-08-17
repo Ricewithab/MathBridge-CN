@@ -1,0 +1,90 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "purpose":"Provide printed-page and hierarchy locators for primary content in the Ministry of Education Mathematics Curriculum Standards for Compulsory Education (2022 Edition), without fabricating per-bullet page numbers that have not been directly rendered.",
+  "authority":{
+    "source_id":"cn-moe-math-2022",
+    "authority_url":"https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+    "official_pdf_url":"http://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582346895190.pdf",
+    "government_mirror_page":"https://edu.sh.gov.cn/mbjy_fgwx_qt/20220720/02b90de93ebd49099e43063f7a6e2630.html",
+    "government_mirror_pdf":"https://edu.sh.gov.cn/cmsres/1f/1fa4b848512f4ef98d7c40e8f5df2d7d/e332d9d7a33b8634fab280cbd14194a7.pdf",
+    "document_identity_status":"verified_primary_government_source"
+  },
+  "pagination_method":{
+    "status":"verified_printed_toc_pagination_with_hierarchical_content_crosscheck",
+    "note":"The official government attachment is about 40 MB and cannot be rendered through the current web parser. Printed pagination was cross-checked against indexed page-numbered copies that match the Ministry document identity and table of contents. Claim-level locators therefore use the exact printed domain page/range plus hierarchy/stage/subsection/item, not an invented exact page for each bullet.",
+    "publication_rule":"Display the Ministry as the authority. Do not cite a transcription/mirror as the policy authority."
+  },
+  "primary_section":{
+    "printed_start_page":17,
+    "printed_end_page":52,
+    "domains":[
+      {
+        "domain_id":"number-algebra",
+        "title_cn":"数与代数",
+        "printed_start_page":17,
+        "printed_end_page":26,
+        "themes":["数与运算","数量关系"],
+        "stages":[
+          {"stage":"第一学段","grades":"1-2","locator":"p.17-26 → 数与代数 → 第一学段（1-2年级） → 内容要求/学业要求/教学提示","verified_scope":["万以内数的意义和数位","比较万以内数","整数加减乘除的初步意义和运算","常见数量关系","相等和不等关系"]},
+          {"stage":"第二学段","grades":"3-4","locator":"p.17-26 → 数与代数 → 第二学段（3-4年级） → 内容要求/学业要求/教学提示","verified_scope":["万以上数","小数和分数的初步认识","多位数乘除","混合运算和运算律","估算","总量与分量关系","总价=单价×数量","路程=速度×时间","等量关系"]},
+          {"stage":"第三学段","grades":"5-6","locator":"p.17-26 → 数与代数 → 第三学段（5-6年级） → 内容要求/学业要求/教学提示","verified_scope":["因数倍数质数","小数和分数意义及四则运算","整数除法与分数关系","等号基本性质","估算","用字母表示数和数量关系","比和比值","按比例分配","正比例关系","数量关系问题"]}
+        ]
+      },
+      {
+        "domain_id":"geometry",
+        "title_cn":"图形与几何",
+        "printed_start_page":27,
+        "printed_end_page":35,
+        "themes":["图形的认识与测量","图形的位置与运动"],
+        "stages":[
+          {"stage":"第一学段","grades":"1-2","locator":"p.27-35 → 图形与几何 → 第一学段（1-2年级） → 内容要求/学业要求/教学提示","verified_scope":["简单立体和平面图形的直观认识","长度测量和长度单位","图形分类和直观操作"]},
+          {"stage":"第二学段","grades":"3-4","locator":"p.27-35 → 图形与几何 → 第二学段（3-4年级） → 内容要求/学业要求/教学提示","verified_scope":["线和角","三角形和四边形","周长和面积","平移旋转轴对称","方向和位置","直尺和圆规的初步作图"]},
+          {"stage":"第三学段","grades":"5-6","locator":"p.27-35 → 图形与几何 → 第三学段（5-6年级） → 内容要求/学业要求/教学提示","verified_scope":["三角形两边关系和内角和","平行四边形三角形梯形面积","圆和扇形","圆周率及圆周长面积","长方体正方体圆柱圆锥","体积和表面积","面积体积容积单位及换算","不同方向观察物体","有序数对确定位置","平移旋转轴对称"]}
+        ],
+        "teaching_prompt_evidence":[{"claim":"角的大小与边的长短无关","locator":"p.27-35 → 图形与几何 → 第二学段教学提示/角的认识相关提示","status":"hierarchy_verified_exact_page_pending"}]
+      },
+      {
+        "domain_id":"statistics-probability",
+        "title_cn":"统计与概率",
+        "printed_start_page":36,
+        "printed_end_page":41,
+        "themes":["数据分类","数据的收集、整理与表达","随机现象发生的可能性"],
+        "stages":[
+          {"stage":"第一学段","grades":"1-2","locator":"p.36-41 → 统计与概率 → 第一学段（1-2年级） → 内容要求/学业要求/教学提示","verified_scope":["对物体、图形或数据进行分类","理解分类和分类标准的初步关系","形成初步数据意识"]},
+          {"stage":"第二学段","grades":"3-4","locator":"p.36-41 → 统计与概率 → 第二学段（3-4年级） → 数据的收集、整理与表达 → 内容要求/学业要求/教学提示","verified_scope":["经历简单数据收集整理描述分析","简单数据收集方法","呈现数据整理结果","条形统计图","读懂简单统计图表","平均数意义及简单应用"]},
+          {"stage":"第三学段","grades":"5-6","locator":"p.36-41 → 统计与概率 → 第三学段（5-6年级） → 内容要求/学业要求/教学提示","verified_scope":["根据实际问题收集整理分析数据","折线统计图","扇形统计图","条形和折线图表达数据","从媒体获取数据","百分数的统计意义及简单问题","简单随机现象","定性描述可能性大小"]}
+        ]
+      },
+      {
+        "domain_id":"integrated-practice",
+        "title_cn":"综合与实践",
+        "printed_start_page":42,
+        "printed_end_page":52,
+        "themes":["主题活动","项目学习"],
+        "stages":[
+          {"stage":"第一学段","grades":"1-2","locator":"p.42-52 → 综合与实践 → 第一学段（1-2年级） → 内容要求/学业要求/教学提示","verified_examples":["数学游戏分享","欢乐购物街","时间在哪里","我的教室","身体上的尺子","数学连环画"],"verified_scope":["货币","时分秒","方向和位置","长度测量","数学活动经验","真实或模拟情境中的表达与交流"]},
+          {"stage":"第二学段","grades":"3-4","locator":"p.42-52 → 综合与实践 → 第二学段（3-4年级） → 内容要求/学业要求/教学提示","verified_scope":["主题式学习","综合运用数学与其他学科知识解决实际问题","实践操作、调查、设计和表达","创新性评价要求增强"]},
+          {"stage":"第三学段","grades":"5-6","locator":"p.42-52 → 综合与实践 → 第三学段（5-6年级） → 内容要求/学业要求/教学提示","verified_scope":["主题活动和项目学习","真实问题","跨学科知识与方法","项目式学习","负数可在主题活动/项目学习中理解和应用","形成模型意识、应用意识和创新意识"]}
+        ]
+      }
+    ]
+  },
+  "toc_crosscheck":{
+    "course_content_start":16,
+    "primary_start":17,
+    "number_algebra_start":17,
+    "geometry_start":27,
+    "statistics_probability_start":36,
+    "integrated_practice_start":42,
+    "lower_secondary_start":53,
+    "source_identity":"义务教育数学课程标准（2022年版）"
+  },
+  "integrity_rules":[
+    "The printed page range is not equivalent to an exact page for every bullet.",
+    "Use the most specific hierarchy available after the printed range.",
+    "Do not turn a learning-stage requirement into an exact Chinese grade unless textbook evidence supplies the grade/semester placement.",
+    "Keep PEP textbook sequence locators separate from national curriculum locators.",
+    "When a teacher-facing claim needs verbatim page-level proof, retain exact_page_pending unless a directly rendered page is available."
+  ]
+}

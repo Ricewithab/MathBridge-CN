@@ -1,0 +1,26 @@
+{
+  "version":"0.3.0",
+  "research_date":"2026-08-18",
+  "purpose":"Attach the second Number diagnostic extension to existing concept profiles.",
+  "links":[
+    {"concept_id":"counting","add_misconception_ids":["counting-last-number-not-cardinality"],"add_diagnostic_question_ids":["dq-count-001"]},
+    {"concept_id":"compare-order-numbers","add_misconception_ids":["compare-numbers-by-visible-digit"],"add_diagnostic_question_ids":["dq-compare-001"]},
+    {"concept_id":"negative-numbers","add_misconception_ids":["negative-order-whole-number-rule"],"add_diagnostic_question_ids":["dq-neg-001"]},
+    {"concept_id":"mental-addition-subtraction","add_misconception_ids":["compensation-changes-total"],"add_diagnostic_question_ids":["dq-mental-001"]},
+    {"concept_id":"addition-subtraction-estimation","add_misconception_ids":["estimate-treated-as-exact-answer"],"add_diagnostic_question_ids":["dq-est-001"]},
+    {"concept_id":"multiplication-facts","add_misconception_ids":["multiplication-facts-isolated"],"add_diagnostic_question_ids":["dq-facts-001"]},
+    {"concept_id":"division-facts","add_misconception_ids":["multiplication-facts-isolated"],"add_diagnostic_question_ids":["dq-facts-001"]},
+    {"concept_id":"fractions-decimals","add_misconception_ids":["fraction-decimal-unrelated-symbols"],"add_diagnostic_question_ids":["dq-frac-dec-001"]},
+    {"concept_id":"fraction-decimal-percent","add_misconception_ids":["fraction-decimal-unrelated-symbols","percent-independent-of-whole"],"add_diagnostic_question_ids":["dq-frac-dec-001","dq-percent-001"]},
+    {"concept_id":"percent-meaning","add_misconception_ids":["percent-independent-of-whole"],"add_diagnostic_question_ids":["dq-percent-001"]},
+    {"concept_id":"factors","add_misconception_ids":["factor-multiple-confusion"],"add_diagnostic_question_ids":["dq-factor-001"]},
+    {"concept_id":"multiples","add_misconception_ids":["factor-multiple-confusion"],"add_diagnostic_question_ids":["dq-factor-001"]},
+    {"concept_id":"prime-composite","add_misconception_ids":["prime-means-odd-or-one"],"add_diagnostic_question_ids":["dq-prime-001"]},
+    {"concept_id":"common-factors-multiples","add_misconception_ids":["gcf-lcm-procedure-without-meaning"],"add_diagnostic_question_ids":["dq-gcf-lcm-001"]},
+    {"concept_id":"written-subtraction","add_misconception_ids":["algorithm-digits-without-units"],"add_diagnostic_question_ids":["dq-wsub-001"]},
+    {"concept_id":"written-multiplication","add_misconception_ids":["partial-product-place-value-misaligned"],"add_diagnostic_question_ids":["dq-wmult-001"]},
+    {"concept_id":"written-division","add_misconception_ids":["algorithm-digits-without-units","division-sharing-only"],"add_diagnostic_question_ids":["dq-wdiv-001","dq-div-001"]},
+    {"concept_id":"multiplication-properties","add_misconception_ids":["partial-product-place-value-misaligned"],"add_diagnostic_question_ids":["dq-wmult-001"]}
+  ],
+  "resolver_rule":"Merge and deduplicate IDs after base profile resolution. Preserve curriculum evidence status."
+}

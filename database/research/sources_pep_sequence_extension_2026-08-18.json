@@ -1,0 +1,20 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "sources":[
+    {
+      "id":"cn-pep-primary-math-compilation-table-2024",
+      "country":"CN",
+      "category":"textbook",
+      "title_cn":"落实“四基”、培养“四能”、发展核心素养——人教版小学数学教科书编写解读",
+      "title_en":"PEP Primary Mathematics Textbook Compilation Interpretation: Four Basics, Four Abilities and Core Competencies",
+      "author":"李海东",
+      "author_role":"人民教育出版社副总编辑、编审",
+      "original_publication":"《小学数学教育》2024年Z3期",
+      "republished_by":"光明网",
+      "republished_date":"2026-01-12",
+      "authority_note":"Publisher-authored textbook-compilation article. Its Table 1 explicitly presents the contents of PEP Grades 1-6, all 12 volumes.",
+      "use_limit":"Use for the revised PEP series structure and sequence. Do not use it to claim that every school/locality in China currently uses PEP or adopted every revised volume simultaneously."
+    }
+  ]
+}

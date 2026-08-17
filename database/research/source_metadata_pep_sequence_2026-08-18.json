@@ -1,0 +1,20 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "records":[
+    {
+      "source_id":"cn-pep-primary-math-compilation-table-2024",
+      "official_url":"https://topics.gmw.cn/2026-01/12/content_38530766.htm",
+      "document_year":2024,
+      "republished_year":2026,
+      "grade_range":"PEP primary mathematics Grades 1-6, all 12 volumes",
+      "domains":["All primary mathematics domains","Textbook sequence","Textbook design"],
+      "languages":["Chinese"],
+      "citation_format":"李海东《落实“四基”、培养“四能”、发展核心素养——人教版小学数学教科书编写解读》，表1“人教版教科书一～六年级各册内容”",
+      "verification_status":"verified_authoritative_publisher_authored_series_table",
+      "last_verified":"2026-08-18",
+      "locator":"表1 人教版教科书一～六年级各册内容",
+      "notes":"Authored by a PEP deputy editor-in-chief/editor and originally published in 小学数学教育 2024 Z3. Guangming republishes the article and table. Sequence evidence is distinct from locality-specific rollout and from subsection/page-level textbook verification."
+    }
+  ]
+}

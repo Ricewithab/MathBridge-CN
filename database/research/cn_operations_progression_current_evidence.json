@@ -1,0 +1,77 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "system": "China",
+  "scope": ["addition", "subtraction", "multiplication", "division", "current_PEP_12th_series"],
+  "authoritative_sources": [
+    {
+      "source_id": "cn-moe-math-2022",
+      "role": "national_curriculum",
+      "title_cn": "义务教育数学课程标准（2022年版）",
+      "authority": "中华人民共和国教育部",
+      "official_url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html"
+    },
+    {
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "role": "current_textbook_design_and_sequence_evidence",
+      "title_cn": "人教版义务教育数学（一～六年级）新教材简介",
+      "authority": "人民教育出版社",
+      "official_url": "https://www.pep.com.cn/xw/zt/hd/12/xjcjs/xx/202409/t20240920_1995566.html"
+    }
+  ],
+  "verification_policy": {
+    "national_standard": "The 2022 MOE standard is the authority for compulsory-education outcomes and has been in effect since autumn 2022.",
+    "grade_sequence": "Exact grade/semester/unit placement is taken from the current textbook/teacher-guide edition, not inferred from the stage-level national standard.",
+    "edition_rule": "Do not combine pre-12th-series PEP unit placement with the current 12th-series sequence unless clearly labelled legacy."
+  },
+  "verified_current_pep_signals": [
+    {
+      "id": "grade1-early-add-sub-number-structure",
+      "grade": 1,
+      "semester": "upper",
+      "status": "verified_partial_sequence",
+      "evidence": "PEP states that ‘5以内数的认识和加、减法’ and ‘6～10的认识和加、减法’ were adjusted into two consecutive units.",
+      "concept_ids": ["number-recognition", "number-composition-decomposition", "addition-meaning", "subtraction-meaning"],
+      "mathbridge_interpretation": "Early addition and subtraction are structurally integrated with learning what numbers mean and how they are composed, rather than stored as an isolated calculation strand.",
+      "source_id": "cn-pep-math-new-edition-intro-2024"
+    },
+    {
+      "id": "within-10000-add-sub-integration",
+      "status": "verified_design_change",
+      "evidence": "PEP states that the previously separate ‘万以内的加减法（一）’ and ‘万以内的加减法（二）’ are appropriately integrated in the new textbook structure.",
+      "concept_ids": ["mental-addition-subtraction", "written-addition", "written-subtraction", "addition-subtraction-problems"],
+      "mathbridge_interpretation": "The current series is reducing artificial fragmentation between closely related calculation content and strengthening structural continuity.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "exact_current_grade": null,
+      "grade_status": "requires_current_volume_TOC_verification"
+    },
+    {
+      "id": "multi-digit-multiplication-integration",
+      "status": "verified_design_change",
+      "evidence": "PEP states that ‘两位数乘两位数’ and ‘三位数乘两位数’ are integrated within the new textbook system.",
+      "concept_ids": ["written-multiplication", "multiplication-properties", "multiplication-division-problems"],
+      "mathbridge_interpretation": "The redesign favors a connected multiplication structure that supports analogy and transfer rather than treating neighboring algorithms as isolated units.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "exact_current_grade": null,
+      "grade_status": "requires_current_volume_TOC_verification"
+    },
+    {
+      "id": "exploration-before-result",
+      "status": "verified_textbook_design_principle",
+      "evidence": "PEP describes the series as guiding students through operations, experiments, reasoning and other activities that simulate mathematical discovery and knowledge exploration.",
+      "mathbridge_interpretation": "MathBridge should not characterize current Chinese PEP mathematics as rote procedure only. The current official textbook design explicitly calls for exploration, reasoning and practical activity alongside fluency and structured content.",
+      "source_id": "cn-pep-math-new-edition-intro-2024"
+    }
+  ],
+  "pending_operations_mapping": [
+    {
+      "target": "full Grade 1–6 addition/subtraction sequence",
+      "required_evidence": ["current 12th-series table of contents", "teacher-guide objectives", "worked-example progression", "ISBN/edition metadata"]
+    },
+    {
+      "target": "full Grade 1–6 multiplication/division sequence",
+      "required_evidence": ["current 12th-series table of contents", "teacher-guide objectives", "representation guidance", "formal-algorithm introduction points"]
+    }
+  ],
+  "publication_rule": "Until the current volume-level evidence is complete, the UI may compare verified Chinese curricular/textbook principles with England/US grade progressions, but must label exact Chinese grade placement as pending rather than inventing one-to-one equivalence."
+}

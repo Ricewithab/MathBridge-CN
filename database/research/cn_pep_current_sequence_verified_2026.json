@@ -1,0 +1,231 @@
+{
+  "version": "1.0.0",
+  "research_date": "2026-08-18",
+  "purpose": "Canonical semester-by-semester sequence for the revised PEP primary mathematics series based on the 2022 national curriculum standard.",
+  "series": {
+    "name_cn": "人教版义务教育小学数学教科书（修订版）",
+    "name_en": "Revised PEP Compulsory Education Primary Mathematics Textbooks",
+    "volume_count": 12,
+    "grades": [1,2,3,4,5,6],
+    "basis": "义务教育数学课程标准（2022年版）",
+    "sequence_status": "complete_series_structure_verified",
+    "rollout_status": "locality_specific_rollout_not_asserted",
+    "policy": "This file verifies the sequence designed for the revised PEP series. It does not claim that every school in China uses PEP or that every locality adopted every revised volume at the same time."
+  },
+  "primary_sequence_source": {
+    "source_id": "cn-pep-primary-math-compilation-table-2024",
+    "title_cn": "落实“四基”、培养“四能”、发展核心素养——人教版小学数学教科书编写解读",
+    "author": "李海东",
+    "author_role": "人民教育出版社副总编辑、编审",
+    "original_publication": "《小学数学教育》2024年Z3期",
+    "republished_by": "光明网",
+    "republished_date": "2026-01-12",
+    "url": "https://topics.gmw.cn/2026-01/12/content_38530766.htm",
+    "locator": "表1 人教版教科书一～六年级各册内容",
+    "table_images": [
+      "https://imgtopics.gmw.cn/attachement/png/site2/20260112/f44d30758a692ace90e32d.png",
+      "https://imgtopics.gmw.cn/attachement/png/site2/20260112/f44d30758a692ace90e32e.png",
+      "https://imgtopics.gmw.cn/attachement/jpg/site2/20260112/f44d30758a692ace90e32f.jpg"
+    ],
+    "verification_status": "verified_authoritative_publisher_authored_series_table",
+    "use_limit": "Authoritative for the intended revised PEP series sequence. Treat school/locality adoption as a separate question."
+  },
+  "supporting_primary_source": {
+    "source_id": "cn-pep-math-new-edition-intro-2024",
+    "role": "Cross-checks revised-series structure and named changes, including final review units, merged content and integrated/practical activities."
+  },
+  "volumes": [
+    {
+      "grade": 1,
+      "semester": "upper",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 0, "title_cn": "数学游戏", "unit_type": "integrated_practice"},
+        {"order": 1, "title_cn": "5以内数的认识和加、减法", "unit_type": "numbered_unit"},
+        {"order": 2, "title_cn": "6～10的认识和加、减法", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "认识立体图形", "unit_type": "numbered_unit"},
+        {"order": 4, "title_cn": "11～20的认识", "unit_type": "numbered_unit"},
+        {"order": 5, "title_cn": "20以内的进位加法", "unit_type": "numbered_unit"},
+        {"order": 6, "title_cn": "复习与关联", "unit_type": "review_connection"}
+      ]
+    },
+    {
+      "grade": 1,
+      "semester": "lower",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 1, "title_cn": "认识平面图形", "unit_type": "numbered_unit"},
+        {"order": 2, "title_cn": "20以内的退位减法", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "100以内数的认识", "unit_type": "numbered_unit"},
+        {"order": 4, "title_cn": "100以内的口算加、减法", "unit_type": "numbered_unit"},
+        {"order": 5, "title_cn": "100以内的笔算加、减法", "unit_type": "numbered_unit"},
+        {"order": 6, "title_cn": "数量间的加减关系", "unit_type": "numbered_unit"},
+        {"order": 6.5, "title_cn": "欢乐购物街", "unit_type": "integrated_practice"},
+        {"order": 7, "title_cn": "复习与关联", "unit_type": "review_connection"}
+      ]
+    },
+    {
+      "grade": 2,
+      "semester": "upper",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 1, "title_cn": "分类与整理", "unit_type": "numbered_unit"},
+        {"order": 2, "title_cn": "1～6的表内乘法", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "1～6的表内除法", "unit_type": "numbered_unit"},
+        {"order": 3.5, "title_cn": "校园小导游", "unit_type": "integrated_practice"},
+        {"order": 4, "title_cn": "厘米和米", "unit_type": "numbered_unit"},
+        {"order": 4.5, "title_cn": "身体上的尺子", "unit_type": "integrated_practice"},
+        {"order": 5, "title_cn": "7～9的表内乘、除法", "unit_type": "numbered_unit"},
+        {"order": 6, "title_cn": "复习与关联", "unit_type": "review_connection"}
+      ]
+    },
+    {
+      "grade": 2,
+      "semester": "lower",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 0, "title_cn": "时间在哪里", "unit_type": "integrated_practice"},
+        {"order": 1, "title_cn": "有余数的除法", "unit_type": "numbered_unit"},
+        {"order": 2, "title_cn": "数量间的乘除关系", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "万以内数的认识", "unit_type": "numbered_unit"},
+        {"order": 4, "title_cn": "万以内的加法和减法", "unit_type": "numbered_unit"},
+        {"order": 4.5, "title_cn": "数学连环画", "unit_type": "integrated_practice"},
+        {"order": 5, "title_cn": "复习与关联", "unit_type": "review_connection"}
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "upper",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 1, "title_cn": "观察物体", "unit_type": "numbered_unit"},
+        {"order": 2, "title_cn": "混合运算", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "毫米、分米和千米", "unit_type": "numbered_unit"},
+        {"order": 3.5, "title_cn": "曹冲称象的故事", "unit_type": "integrated_practice"},
+        {"order": 4, "title_cn": "多位数乘一位数", "unit_type": "numbered_unit"},
+        {"order": 4.5, "title_cn": "数字编码", "unit_type": "integrated_practice"},
+        {"order": 5, "title_cn": "线和角", "unit_type": "numbered_unit"},
+        {"order": 6, "title_cn": "分数的初步认识", "unit_type": "numbered_unit"},
+        {"order": 7, "title_cn": "复习与关联", "unit_type": "review_connection"}
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "lower",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 1, "title_cn": "生活中的运动现象", "unit_type": "numbered_unit"},
+        {"order": 2, "title_cn": "除数是一位数的除法", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "长方形和正方形", "unit_type": "numbered_unit"},
+        {"order": 4, "title_cn": "图形的面积", "unit_type": "numbered_unit"},
+        {"order": 5, "title_cn": "数据的收集和整理", "unit_type": "numbered_unit"},
+        {"order": 5.5, "title_cn": "年月日的秘密", "unit_type": "integrated_practice"},
+        {"order": 6, "title_cn": "小数的初步认识", "unit_type": "numbered_unit"},
+        {"order": 7, "title_cn": "复习与关联", "unit_type": "review_connection"}
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "upper",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 1, "title_cn": "万以上数的认识", "unit_type": "numbered_unit"},
+        {"order": 1.5, "title_cn": "1亿有多大", "unit_type": "integrated_practice"},
+        {"order": 2, "title_cn": "角的度量", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "多位数乘两位数", "unit_type": "numbered_unit"},
+        {"order": 4, "title_cn": "加法模型和乘法模型", "unit_type": "numbered_unit"},
+        {"order": 5, "title_cn": "平行四边形和梯形", "unit_type": "numbered_unit"},
+        {"order": 6, "title_cn": "条形统计图", "unit_type": "numbered_unit"},
+        {"order": 6.5, "title_cn": "寻找宝藏", "unit_type": "integrated_practice"},
+        {"order": 7, "title_cn": "复习与关联", "unit_type": "review_connection"}
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "lower",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 1, "title_cn": "除数是两位数的除法", "unit_type": "numbered_unit"},
+        {"order": 2, "title_cn": "混合运算和运算律", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "三角形", "unit_type": "numbered_unit"},
+        {"order": 4, "title_cn": "小数的认识", "unit_type": "numbered_unit"},
+        {"order": 5, "title_cn": "小数的加法和减法", "unit_type": "numbered_unit"},
+        {"order": 6, "title_cn": "平均数", "unit_type": "numbered_unit"},
+        {"order": 6.5, "title_cn": "制订旅游计划", "unit_type": "integrated_practice"},
+        {"order": 7, "title_cn": "复习与关联", "unit_type": "review_connection"}
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "upper",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 1, "title_cn": "观察简单组合体", "unit_type": "numbered_unit"},
+        {"order": 2, "title_cn": "小数乘法", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "小数除法", "unit_type": "numbered_unit"},
+        {"order": 4, "title_cn": "图形的运动", "unit_type": "numbered_unit"},
+        {"order": 5, "title_cn": "用字母表示数和数量关系", "unit_type": "numbered_unit"},
+        {"order": 6, "title_cn": "多边形的面积", "unit_type": "numbered_unit"},
+        {"order": 6.5, "title_cn": "有趣的密铺", "unit_type": "integrated_practice"},
+        {"order": 7, "title_cn": "可能性", "unit_type": "numbered_unit"},
+        {"order": 8, "title_cn": "复习与关联", "unit_type": "review_connection"}
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "lower",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 1, "title_cn": "因数和倍数", "unit_type": "numbered_unit"},
+        {"order": 2, "title_cn": "分数的认识", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "分数的加法和减法", "unit_type": "numbered_unit"},
+        {"order": 4, "title_cn": "长方体和正方体", "unit_type": "numbered_unit"},
+        {"order": 4.5, "title_cn": "度量衡的故事", "unit_type": "integrated_practice"},
+        {"order": 5, "title_cn": "折线统计图", "unit_type": "numbered_unit"},
+        {"order": 6, "title_cn": "复习与关联", "unit_type": "review_connection"}
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "upper",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 1, "title_cn": "确定位置", "unit_type": "numbered_unit"},
+        {"order": 2, "title_cn": "分数乘法", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "分数除法", "unit_type": "numbered_unit"},
+        {"order": 3.5, "title_cn": "生活中的负数", "unit_type": "integrated_practice"},
+        {"order": 4, "title_cn": "圆", "unit_type": "numbered_unit"},
+        {"order": 4.5, "title_cn": "体育中的数学", "unit_type": "integrated_practice"},
+        {"order": 5, "title_cn": "百分数", "unit_type": "numbered_unit"},
+        {"order": 5.5, "title_cn": "水是生命之源", "unit_type": "project_learning"},
+        {"order": 6, "title_cn": "复习与关联", "unit_type": "review_connection"}
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "lower",
+      "status": "sequence_verified",
+      "units": [
+        {"order": 1, "title_cn": "比和比例关系", "unit_type": "numbered_unit"},
+        {"order": 1.5, "title_cn": "有趣的平衡", "unit_type": "integrated_practice"},
+        {"order": 1.6, "title_cn": "校园平面图", "unit_type": "integrated_practice"},
+        {"order": 2, "title_cn": "扇形统计图", "unit_type": "numbered_unit"},
+        {"order": 3, "title_cn": "圆柱和圆锥", "unit_type": "numbered_unit"},
+        {"order": 3.5, "title_cn": "营养午餐", "unit_type": "project_learning"},
+        {"order": 4, "title_cn": "总复习", "unit_type": "review_connection"}
+      ]
+    }
+  ],
+  "cross_checks": [
+    {"grade":3,"semester":"lower","status":"matched_current_new-edition_teacher_resource","note":"Current 2026 Grade 3 lower new-edition textbook interpretation matches the authoritative table."},
+    {"grade":4,"semester":"upper","status":"matched_multiple_current_2026_resources","note":"Current 2026 Grade 4 upper resources match the authoritative table."},
+    {"grade":5,"semester":"upper","status":"matched_2026_catalog_resource","note":"A June 2026 Xinhua-system catalog resource reproduces the same volume sequence."},
+    {"grade":6,"semester":"upper","status":"matched_2026_catalog_resource","note":"A June 2026 catalog resource reproduces the same volume sequence."}
+  ],
+  "integrity_rules": [
+    "Do not substitute legacy PEP contents for this revised-series sequence.",
+    "Do not infer nationwide school adoption from this series table.",
+    "Keep unit sequence verification separate from subsection/page verification.",
+    "Use exact unit titles from the table unless a later publisher correction is verified."
+  ]
+}

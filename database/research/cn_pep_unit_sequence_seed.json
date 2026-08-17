@@ -1,0 +1,38 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "description":"Compatibility entry point for PEP textbook sequencing. The original partial current-series seed has been superseded by a verified 12-volume revised-series sequence. Legacy material remains isolated for historical comparison only.",
+  "current_12th_series":{
+    "status":"complete_unit_sequence_verified",
+    "canonical_sequence":"database/research/cn_pep_current_sequence_verified_2026.json",
+    "unit_concept_map":"database/research/cn_pep_unit_concept_map_2026.json",
+    "source_ids":["cn-pep-primary-math-compilation-table-2024","cn-pep-math-new-edition-intro-2024"],
+    "coverage":{"grades":[1,2,3,4,5,6],"semesters_per_grade":2,"volume_slots":12,"sequence_verified":12},
+    "limits":["Subsection/example/page-level mapping is a separate research layer.","Locality-specific adoption is not inferred from the series table.","PEP is one textbook system and must not be presented as the only textbook used in China."]
+  },
+  "legacy_pep_reference":[
+    {
+      "grade":2,
+      "semester":"upper",
+      "edition":"Legacy PEP pre-revised-series",
+      "status":"verified_legacy_sequence",
+      "source_ids":["cn-pep-legacy-grade2-upper-support"],
+      "units":[
+        {"order":1,"unit_title_cn":"长度单位","concept_ids":["standard-units","comparison-measurement"]},
+        {"order":2,"unit_title_cn":"100以内的加法和减法（二）","concept_ids":["mental-addition-subtraction","written-addition","written-subtraction","addition-subtraction-problems"]},
+        {"order":3,"unit_title_cn":"角的初步认识","concept_ids":["angle-as-turn","angle-size"]},
+        {"order":4,"unit_title_cn":"表内乘法（一）","concept_ids":["multiplication-meaning","equal-groups","arrays","repeated-addition","multiplication-facts"]},
+        {"order":5,"unit_title_cn":"观察物体（一）","concept_ids":["3d-shapes","visual-models"],"mapping_note":"Legacy mapping only."},
+        {"order":6,"unit_title_cn":"表内乘法（二）","concept_ids":["multiplication-facts","multiplication-meaning","multiplication-division-problems"]},
+        {"order":7,"unit_title_cn":"认识时间","concept_ids":["telling-time"]},
+        {"order":8,"unit_title_cn":"数学广角——搭配（一）","concept_ids":["choose-strategy"],"taxonomy_gap":"combinatorial-counting / systematic enumeration"},
+        {"order":9,"unit_title_cn":"总复习","concept_ids":[]}
+      ]
+    }
+  ],
+  "database_behavior":{
+    "default_ui":"Use the verified revised-series sequence when PEP is selected.",
+    "legacy_ui":"Show legacy records only when a previous-edition/historical view is explicitly selected.",
+    "national_curriculum_ui":"Keep PEP textbook placement separate from the national 2022 learning-stage requirements."
+  }
+}

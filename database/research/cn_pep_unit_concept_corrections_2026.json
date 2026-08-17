@@ -1,0 +1,17 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "purpose":"Evidence-based corrections applied after the broad unit-title concept map. Corrections take precedence over cn_pep_unit_concept_map_2026.json.",
+  "corrections":[
+    {
+      "grade":6,
+      "semester":"lower",
+      "unit_title_cn":"比和比例关系",
+      "remove_concept_ids":["unit-rate"],
+      "retain_concept_ids":["ratio-meaning","equivalent-ratios","proportional-reasoning"],
+      "reason":"The 2022 China national mathematics standard explicitly includes ratio, ratio value, proportional allocation and direct proportion. The Common-Core-specific term unit rate is not established as an explicit China primary requirement by the national standard or the verified PEP unit title. Do not add it to PEP placement unless current revised-volume subsection evidence directly supports it.",
+      "status":"verified_correction"
+    }
+  ],
+  "resolver_rule":"Apply this file after cn_pep_unit_concept_map_2026.json. Remove listed concept IDs before resolving current PEP placements."
+}

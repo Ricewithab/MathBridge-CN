@@ -1,0 +1,101 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-18",
+  "purpose": "Cross-system curriculum placement for the Grade 1-6 measurement concepts in the MathBridge taxonomy.",
+  "verification_policy": {
+    "CN": "Use the 2022 MOE mathematics standard at learning-stage level. Exact current PEP grade and semester placement remains pending unless directly verified from a 12th-series volume. Theme-activity exposure is distinguished from formal domain content.",
+    "UK": "Use the statutory National Curriculum in England year-by-year programmes of study.",
+    "US": "Use Common Core State Standards as the comparison baseline. If a MathBridge concept is not a named or explicit Common Core Grade 1-6 expectation, record that rather than forcing a match."
+  },
+  "concepts": [
+    {
+      "concept_id": "comparison-measurement",
+      "CN": {"status":"partially_verified","stage":"第一学段","grades":[1,2],"expectation":"Experience comparison and measurement of quantities in practical activity, including length; develop an initial sense of quantity and measurement.","source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":1,"expectation":"Compare and describe length/height, mass, capacity/volume and time, and begin to measure and record them."},{"year":2,"expectation":"Compare and order length, mass and capacity/volume using standard units."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline","placement":[{"grade":1,"standard_codes":["1.MD.A.1"],"expectation":"Order objects by length and compare two lengths indirectly using a third object."},{"grade":2,"standard_codes":["2.MD.A.4"],"expectation":"Measure to determine how much longer one object is than another in a standard length unit."}],"source_id":"us-common-core-math"}
+    },
+    {
+      "concept_id": "standard-units",
+      "CN": {"status":"partially_verified","stages":[{"stage":"第一学段","grades":[1,2],"expectation":"Experience common length units through measurement activity."},{"stage":"第二学段","grades":[3,4],"expectation":"Extend measurement to units including kilometre, decimetre and millimetre and square units for area."},{"stage":"第三学段","grades":[5,6],"expectation":"Extend area, volume and capacity units, including larger area units and cubic units."}],"source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":2,"expectation":"Choose and use standard units for length, mass, temperature and capacity."},{"year":3,"expectation":"Measure and compare length, mass and volume/capacity in standard metric units."},{"year":5,"expectation":"Use standard metric units and approximate equivalences with common imperial units."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline","placement":[{"grade":1,"standard_codes":["1.MD.A.2"],"expectation":"Measure length by iterating equal-sized length units."},{"grade":2,"standard_codes":["2.MD.A.1","2.MD.A.2"],"expectation":"Measure length with standard tools and reason about the effect of unit size."},{"grade":3,"standard_codes":["3.MD.A.2"],"expectation":"Measure and estimate liquid volume and mass using grams, kilograms and litres."}],"source_id":"us-common-core-math"}
+    },
+    {
+      "concept_id": "unit-conversion",
+      "CN": {"status":"partially_verified","stages":[{"stage":"第二学段","grades":[3,4],"expectation":"Carry out simple conversions between related measurement units."},{"stage":"第三学段","grades":[5,6],"expectation":"Use relationships between area, volume and capacity units and carry out conversions in measurement problems."}],"source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":4,"expectation":"Convert between different units of measure, including kilometre/metre and hour/minute."},{"year":5,"expectation":"Convert between metric units and understand approximate metric/imperial equivalences."},{"year":6,"expectation":"Solve problems involving calculation and conversion of units, using decimal notation where appropriate."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline","placement":[{"grade":4,"standard_codes":["4.MD.A.1","4.MD.A.2"],"expectation":"Know relative unit sizes and express larger units in smaller units within one measurement system."},{"grade":5,"standard_codes":["5.MD.A.1"],"expectation":"Convert among different-sized standard units within a measurement system in multi-step problems."}],"source_id":"us-common-core-math"}
+    },
+    {
+      "concept_id": "measurement-estimation",
+      "CN": {"status":"partially_verified","stages":[{"stage":"第二学段","grades":[3,4],"expectation":"Estimate and measure lengths and areas in practical contexts."},{"stage":"第三学段","grades":[5,6],"expectation":"Estimate areas of irregular shapes and reason about size and measurement in practical problems."}],"source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":2,"expectation":"Estimate and measure using appropriate standard units."},{"year":3,"expectation":"Estimate and read time and measure with increasing accuracy."},{"year":4,"expectation":"Estimate, compare and calculate different measures."},{"year":5,"expectation":"Estimate area of irregular shapes and volume/capacity."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline","placement":[{"grade":2,"standard_codes":["2.MD.A.3"],"expectation":"Estimate lengths in inches, feet, centimetres and metres."},{"grade":3,"standard_codes":["3.MD.A.2"],"expectation":"Measure and estimate liquid volumes and masses."}],"source_id":"us-common-core-math"}
+    },
+    {
+      "concept_id": "telling-time",
+      "CN": {"status":"partially_verified_theme_activity","stage":"第一学段","grades":[1,2],"expectation":"Time is used in integrated/theme activity contexts to connect mathematics with daily life; exact formal textbook progression should be taken from the current textbook rather than inferred from the stage statement.","source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":1,"expectation":"Recognise and use dates and sequence events; tell time to the hour and half hour."},{"year":2,"expectation":"Tell time to five minutes including quarter past/to and know minutes per hour and hours per day."},{"year":3,"expectation":"Tell and write time to the nearest minute using analogue, 12-hour and 24-hour clocks."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline","placement":[{"grade":1,"standard_codes":["1.MD.B.3"],"expectation":"Tell and write time in hours and half-hours using analogue and digital clocks."},{"grade":2,"standard_codes":["2.MD.C.7"],"expectation":"Tell and write time to the nearest five minutes using a.m. and p.m."},{"grade":3,"standard_codes":["3.MD.A.1"],"expectation":"Tell and write time to the nearest minute."}],"source_id":"us-common-core-math"}
+    },
+    {
+      "concept_id": "elapsed-time",
+      "CN": {"status":"partially_verified_contextual","stages":[{"stage":"第一学段","grades":[1,2],"expectation":"Use time in practical/theme activities."},{"stage":"第二学段","grades":[3,4],"expectation":"Use calendar and time relationships in practical and integrated contexts."}],"source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification","notes":"Exact formal elapsed-time sequence needs current textbook verification."},
+      "UK": {"status":"verified","placement":[{"year":2,"expectation":"Compare and sequence intervals of time."},{"year":3,"expectation":"Record and compare durations and use relationships among seconds, minutes, hours, days, months and years."},{"year":4,"expectation":"Solve problems converting hours/minutes, minutes/seconds, years/months and weeks/days."},{"year":5,"expectation":"Solve problems involving conversion between units of time."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline","placement":[{"grade":3,"standard_codes":["3.MD.A.1"],"expectation":"Measure time intervals in minutes and solve addition/subtraction problems involving intervals, including with number-line diagrams."},{"grade":4,"standard_codes":["4.MD.A.1","4.MD.A.2"],"expectation":"Use hour-minute-second relationships and solve measurement problems involving intervals of time."}],"source_id":"us-common-core-math"}
+    },
+    {
+      "concept_id": "calendar",
+      "CN": {"status":"partially_verified_theme_activity","stages":[{"stage":"第一学段","grades":[1,2],"expectation":"Use time and daily-life schedules in theme activities."},{"stage":"第二学段","grades":[3,4],"expectation":"Use year, month and day relationships in practical/integrated activities."}],"source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":1,"expectation":"Recognise and use language relating to dates, including days of the week, weeks, months and years."},{"year":3,"expectation":"Know number of seconds/minute, days/month, year and leap year and compare durations."},{"year":4,"expectation":"Solve conversions involving years/months and weeks/days."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"no_explicit_grade_1_6_common_core_calendar_standard","placement":[],"source_id":"us-common-core-math","notes":"Common Core Grade 1-6 includes clock time and time-unit relationships but does not set out a standalone calendar/date progression comparable with England."}
+    },
+    {
+      "concept_id": "money-values",
+      "CN": {"status":"partially_verified_theme_activity","stage":"第一学段","grades":[1,2],"expectation":"Use renminbi and shopping contexts in integrated/theme activities to apply number and quantity ideas.","source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":1,"expectation":"Recognise and know the value of different denominations of coins and notes."},{"year":2,"expectation":"Use £ and p symbols, combine amounts and find different coin combinations for the same value."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline_limited","placement":[{"grade":2,"standard_codes":["2.MD.C.8"],"expectation":"Solve word problems involving dollar bills and common US coins using $ and ¢ notation."}],"source_id":"us-common-core-math","notes":"The standard uses coin values in problems rather than defining a broad money-value progression."}
+    },
+    {
+      "concept_id": "money-calculations",
+      "CN": {"status":"partially_verified_theme_activity","stages":[{"stage":"第一学段","grades":[1,2],"expectation":"Apply number operations in simple shopping and renminbi contexts."},{"stage":"第二学段","grades":[3,4],"expectation":"Continue practical use of quantities and calculation in real contexts."}],"source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":2,"expectation":"Solve addition/subtraction money problems including change."},{"year":3,"expectation":"Add and subtract amounts of money and give change using £ and p."},{"year":4,"expectation":"Estimate, compare and calculate measures including money."},{"year":5,"expectation":"Use all four operations in problems involving measures including money."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline_limited","placement":[{"grade":2,"standard_codes":["2.MD.C.8"],"expectation":"Solve money word problems involving dollar bills and coins."},{"grade":4,"standard_codes":["4.MD.A.2"],"expectation":"Use the four operations to solve measurement problems including money."}],"source_id":"us-common-core-math"}
+    },
+    {
+      "concept_id": "perimeter",
+      "CN": {"status":"partially_verified","stage":"第二学段","grades":[3,4],"expectation":"Recognise perimeter, measure/calculate the perimeter of figures, and derive/use rectangle and square perimeter formulas in appropriate contexts.","source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":3,"expectation":"Measure the perimeter of simple 2-D shapes."},{"year":4,"expectation":"Measure and calculate perimeter of rectilinear figures."},{"year":5,"expectation":"Calculate perimeter of composite rectilinear shapes."},{"year":6,"expectation":"Recognise when area and perimeter can vary independently and use formula-based reasoning."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline","placement":[{"grade":3,"standard_codes":["3.MD.D.8"],"expectation":"Solve real-world and mathematical problems involving polygon perimeter and distinguish perimeter from area."},{"grade":4,"standard_codes":["4.MD.A.3"],"expectation":"Apply rectangle area and perimeter formulas in problems."}],"source_id":"us-common-core-math"}
+    },
+    {
+      "concept_id": "area-concept",
+      "CN": {"status":"partially_verified","stage":"第二学段","grades":[3,4],"expectation":"Recognise area as a measure of a plane figure, use square units, estimate and measure area, and distinguish area from perimeter.","source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":4,"expectation":"Find the area of rectilinear shapes by counting squares."},{"year":5,"expectation":"Calculate and compare rectangle area and estimate irregular area."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline","placement":[{"grade":3,"standard_codes":["3.MD.C.5","3.MD.C.6","3.MD.C.7"],"expectation":"Understand area as an attribute measured in unit squares, measure by counting squares, and relate area to multiplication and addition."}],"source_id":"us-common-core-math"}
+    },
+    {
+      "concept_id": "area-formulas",
+      "CN": {"status":"partially_verified","stages":[{"stage":"第二学段","grades":[3,4],"expectation":"Derive and use rectangle and square area formulas."},{"stage":"第三学段","grades":[5,6],"expectation":"Derive and use area formulas for parallelograms, triangles and trapezoids and estimate irregular area."}],"source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":5,"expectation":"Calculate rectangle/square area using standard square units and estimate irregular area."},{"year":6,"expectation":"Recognise and use formulae for area and calculate areas of parallelograms and triangles."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline","placement":[{"grade":3,"standard_codes":["3.MD.C.7"],"expectation":"Relate rectangle area to multiplication and addition and use side-length products."},{"grade":4,"standard_codes":["4.MD.A.3"],"expectation":"Apply rectangle area formulas."},{"grade":6,"standard_codes":["6.G.A.1"],"expectation":"Find area of triangles, quadrilaterals and polygons by composing/decomposing figures."}],"source_id":"us-common-core-math"}
+    },
+    {
+      "concept_id": "volume-concept",
+      "CN": {"status":"partially_verified","stage":"第三学段","grades":[5,6],"expectation":"Understand volume and capacity, use cubic units, measure volume, and investigate volume of regular and irregular objects.","source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":5,"expectation":"Estimate volume using 1 cm³ blocks to build cuboids/cubes and estimate capacity using water."},{"year":6,"expectation":"Calculate, estimate and compare volume of cubes and cuboids using standard cubic units."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline","placement":[{"grade":5,"standard_codes":["5.MD.C.3","5.MD.C.4"],"expectation":"Understand volume as an attribute measured in unit cubes and measure volume by counting unit cubes."}],"source_id":"us-common-core-math"}
+    },
+    {
+      "concept_id": "volume-formulas",
+      "CN": {"status":"partially_verified","stage":"第三学段","grades":[5,6],"expectation":"Derive and use volume formulas for rectangular prisms/cubes and cylinders and develop formula-based reasoning for cone volume within the third-stage measurement strand.","source_id":"cn-moe-math-2022","current_pep_grade":"pending_direct_volume_verification"},
+      "UK": {"status":"verified","placement":[{"year":6,"expectation":"Recognise when it is possible to use formulae for volume and calculate the volume of cubes and cuboids."}],"source_id":"uk-dfe-mathematics"},
+      "US": {"status":"verified_common_core_baseline","placement":[{"grade":5,"standard_codes":["5.MD.C.5"],"expectation":"Relate volume to multiplication/addition and use V=lwh and V=bh for right rectangular prisms with whole-number edges."},{"grade":6,"standard_codes":["6.G.A.2"],"expectation":"Apply V=lwh and V=bh to right rectangular prisms with fractional edge lengths."}],"source_id":"us-common-core-math"}
+    }
+  ],
+  "cross_system_notes": [
+    "England has a detailed statutory year-by-year measurement progression from Year 1 through Year 6.",
+    "Common Core concentrates explicit early measurement standards in Grades 1-5 and extends area/volume applications in Grade 6 Geometry; calendar content is not a standalone Grade 1-6 Common Core sequence.",
+    "China 2022 organises formal measurement primarily through learning stages and also moves some everyday measurement contexts, such as money/time, into integrated/theme activities. Exact current PEP year placement must be verified separately."
+  ]
+}

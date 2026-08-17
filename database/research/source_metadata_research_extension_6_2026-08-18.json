@@ -1,0 +1,33 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "records":[
+    {
+      "source_id":"uk-nfer-ks1-money-value-assessment",
+      "official_url":"https://www.nfer.ac.uk/assessment-hub/how-do-i-help-pupils-understand-value-in-ks1-maths/",
+      "verification_status":"official_NFER_page_checked",
+      "sample_scope":"The public NFER assessment-hub page reports response percentages for a KS1 coin-value item; the retrieved page does not expose a full study methodology/sample-size description.",
+      "supports":"Pupils can confuse coin value with perceptual/notation cues; the page reports 12% selecting a size-based distractor and 45% selecting a number-on-face distractor in the discussed item.",
+      "does_not_support":"The exact prevalence of counting number of coins instead of total value, or a jurisdiction-wide prevalence estimate without the underlying assessment sample details.",
+      "use_note":"Use together with NCETM/Oak guidance as support for probing coin value/unitising, not as a standalone prevalence study."
+    },
+    {
+      "source_id":"research-wilkie-hopkins-subtraction-difference-2024",
+      "official_url":"https://research.monash.edu/en/publications/primary-students-relational-thinking-and-computation-strategies-w/",
+      "verification_status":"university_repository_and_publisher_record_checked",
+      "sample_scope":"22 primary pupils aged 9-11 completed 15 individual-interview tasks involving subtraction as difference across concrete, numeric and symbolic representations.",
+      "supports":"Children vary in coordinating take-away and indirect-addition/difference interpretations of subtraction; flexible use of subtraction-as-difference is a meaningful reasoning construct.",
+      "does_not_support":"A money-specific change misconception or prevalence of failing to link change with difference.",
+      "use_note":"Use as broader direct mechanism evidence alongside money-specific NCETM guidance."
+    },
+    {
+      "source_id":"research-thomas-time-2023",
+      "official_url":"https://link.springer.com/article/10.1007/s13394-023-00451-3",
+      "verification_status":"primary_publisher_checked",
+      "sample_scope":"27 Year 3/4 pupils in one Australian school completed a 69-item task-based interview; the paper also discusses Australian NAPLAN evidence on calendar/time problems.",
+      "supports":"Primary pupils can have difficulty with calendar calculations and coordinating time units; Year 3/5 assessment evidence includes difficulties adding days/weeks/years to calendar dates.",
+      "does_not_support":"The exact claim that pupils systematically assume every month has the same number of days.",
+      "use_note":"Use as broader direct calendar/time evidence; keep the exact month-length wording as a diagnostic hypothesis unless a matching study is found."
+    }
+  ]
+}

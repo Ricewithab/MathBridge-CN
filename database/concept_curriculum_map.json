@@ -1,0 +1,171 @@
+{
+  "version":"0.2.0",
+  "description":"Seed concept-to-curriculum map. Detailed progression remains in the referenced research/progression files so this map does not duplicate or overwrite evidence.",
+  "status_values":["research_required","draft","verified"],
+  "system_notes":{
+    "CN":"Use the 2022 national mathematics standard for national requirements. Exact current PEP grade/semester placement is added only from verified 12th-series evidence.",
+    "UK":"UK key is retained for compatibility, but statutory curriculum claims refer to England.",
+    "US":"Use Common Core as the baseline comparison framework and identify it as such; state-specific mappings can be layered separately."
+  },
+  "mapping_schema":{
+    "concept_id":"ID from concept_taxonomy.json",
+    "systems":{
+      "CN|UK|US":{
+        "status":"research_required|draft|verified",
+        "placement_summary":"Short summary only; detailed placement is resolved from research_file_refs.",
+        "source_ids":["Canonical IDs from sources.json"],
+        "research_file_refs":["Files containing the detailed evidence and source locators"],
+        "last_verified":"YYYY-MM-DD or null",
+        "publication_rule":"Any evidence limitation that must be preserved in teacher-facing output."
+      }
+    }
+  },
+  "mappings":[
+    {
+      "concept_id":"place-value",
+      "systems":{
+        "CN":{
+          "status":"draft",
+          "placement_summary":"National progression is verified at Grades 1-2, 3-4 and 5-6 learning-stage level. Grade 1 upper has partial current-PEP evidence; full single-grade sequence remains incomplete.",
+          "source_ids":["cn-moe-math-2022","cn-pep-math-new-edition-intro-2024"],
+          "research_file_refs":["database/research/number_place_value_verified.json","database/progression/core_number_cn_uk_us.json","database/research/cn_pep_volume_registry.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Do not convert a learning-stage requirement into an exact Chinese grade unless current 12th-series textbook evidence supports it."
+        },
+        "UK":{
+          "status":"verified",
+          "placement_summary":"Year-by-year place-value progression is verified for Years 1-6 in the National Curriculum in England.",
+          "source_ids":["uk-dfe-mathematics","uk-dfe-primary-math-guidance-2020"],
+          "research_file_refs":["database/research/number_place_value_verified.json","database/research/england_primary_number_progression_verified.json","database/progression/core_number_cn_uk_us.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Label statutory claims as England, not the whole UK."
+        },
+        "US":{
+          "status":"verified",
+          "placement_summary":"Common Core grade-by-grade place-value/base-ten progression is verified for Grades 1-6, with Grade 6 moving into the broader rational-number system.",
+          "source_ids":["us-common-core-math"],
+          "research_file_refs":["database/research/number_place_value_verified.json","database/research/us_common_core_number_progression_verified.json","database/progression/core_number_cn_uk_us.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Present Common Core as the US baseline, not as a universal US curriculum."
+        }
+      }
+    },
+    {
+      "concept_id":"multiplication-meaning",
+      "systems":{
+        "CN":{
+          "status":"draft",
+          "placement_summary":"Current national and PEP evidence supports connected development of multiplication meaning and related operations, but exact current Grade 1-6 PEP sequencing is not yet fully verified.",
+          "source_ids":["cn-moe-math-2022","cn-pep-math-new-edition-intro-2024"],
+          "research_file_refs":["database/research/cn_operations_progression_current_evidence.json","database/progression/operations_cn_uk_us.json","database/research/cn_pep_volume_registry.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Do not publish a precise current Chinese grade introduction point unless the relevant 12th-series volume is verified."
+        },
+        "UK":{
+          "status":"verified",
+          "placement_summary":"England develops grouping, sharing and arrays in Year 1, formal multiplication/division structures and 2/5/10 facts in Year 2, then extends facts and written methods through later years.",
+          "source_ids":["uk-dfe-mathematics","uk-dfe-primary-math-guidance-2020"],
+          "research_file_refs":["database/research/england_operations_progression_verified.json","database/progression/operations_cn_uk_us.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Separate statutory expectations from non-statutory teaching guidance."
+        },
+        "US":{
+          "status":"verified",
+          "placement_summary":"Common Core uses equal groups and arrays in Grade 2 as foundations and formally defines products and quotients in Grade 3 before later multi-digit methods.",
+          "source_ids":["us-common-core-math"],
+          "research_file_refs":["database/research/us_common_core_operations_progression_verified.json","database/progression/operations_cn_uk_us.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Common Core standards specify mathematical expectations and representations but do not prescribe one complete teaching method."
+        }
+      }
+    },
+    {
+      "concept_id":"fraction-as-part-whole",
+      "systems":{
+        "CN":{
+          "status":"draft",
+          "placement_summary":"Fraction development is verified at national learning-stage level and linked to the current PEP counting-unit structure; exact current semester sequence remains pending.",
+          "source_ids":["cn-moe-math-2022","cn-pep-math-new-edition-intro-2024"],
+          "research_file_refs":["database/progression/core_number_cn_uk_us.json","database/research/cn_pep_volume_registry.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Use learning-stage wording unless a current textbook volume verifies the exact grade/semester."
+        },
+        "UK":{
+          "status":"verified",
+          "placement_summary":"England introduces halves and quarters in Year 1 and develops fraction meaning, equivalence, number-line interpretation and operations progressively through Year 6.",
+          "source_ids":["uk-dfe-mathematics","uk-dfe-primary-math-guidance-2020"],
+          "research_file_refs":["database/research/england_primary_number_progression_verified.json","database/progression/core_number_cn_uk_us.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Keep statutory requirements separate from recommended representations in guidance."
+        },
+        "US":{
+          "status":"verified",
+          "placement_summary":"Common Core uses equal-share foundations in Grades 1-2 geometry and begins the formal fractions-as-numbers domain in Grade 3.",
+          "source_ids":["us-common-core-math","us-ies-fractions-2010"],
+          "research_file_refs":["database/research/us_common_core_number_progression_verified.json","database/progression/core_number_cn_uk_us.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Use Common Core for curriculum placement and the IES guide only for pedagogical/research rationale."
+        }
+      }
+    },
+    {
+      "concept_id":"equivalent-fractions",
+      "systems":{
+        "CN":{
+          "status":"draft",
+          "placement_summary":"National-stage fraction evidence supports fraction relationships and operations, but exact current PEP placement of formal equivalence work remains pending direct volume verification.",
+          "source_ids":["cn-moe-math-2022","cn-pep-math-new-edition-intro-2024"],
+          "research_file_refs":["database/progression/core_number_cn_uk_us.json","database/research/cn_pep_volume_registry.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Do not infer current PEP unit placement from a legacy textbook sequence."
+        },
+        "UK":{
+          "status":"verified",
+          "placement_summary":"England develops simple equivalence from Year 2, equivalent-fraction families in Year 4, and uses equivalence increasingly in comparison and calculation through Years 5-6.",
+          "source_ids":["uk-dfe-mathematics","uk-dfe-primary-math-guidance-2020"],
+          "research_file_refs":["database/research/england_primary_number_progression_verified.json","database/progression/core_number_cn_uk_us.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Representations are teaching guidance unless explicitly stated in the statutory programme of study."
+        },
+        "US":{
+          "status":"verified",
+          "placement_summary":"Common Core begins formal fraction equivalence in Grade 3 and develops explanation/generation of equivalent fractions with visual models in Grade 4.",
+          "source_ids":["us-common-core-math","us-ies-fractions-2010"],
+          "research_file_refs":["database/research/us_common_core_number_progression_verified.json","database/progression/core_number_cn_uk_us.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Use IES to explain evidence-based instruction, not to establish the grade placement."
+        }
+      }
+    },
+    {
+      "concept_id":"area-concept",
+      "systems":{
+        "CN":{
+          "status":"draft",
+          "placement_summary":"The 2022 national standard places area in the Grades 3-4 learning stage, including area as an attribute, square units, estimation/measurement and distinction from perimeter. Exact current PEP grade/semester remains pending.",
+          "source_ids":["cn-moe-math-2022"],
+          "research_file_refs":["database/research/measurement_curriculum_verified.json","database/research/cn_pep_volume_registry.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"State the verified Grades 3-4 learning stage unless current textbook evidence narrows the placement."
+        },
+        "UK":{
+          "status":"verified",
+          "placement_summary":"England explicitly develops area from counting squares in Year 4 to calculating/comparing rectangle area and estimating irregular area in Year 5, with formula work extended in Year 6.",
+          "source_ids":["uk-dfe-mathematics"],
+          "research_file_refs":["database/research/measurement_curriculum_verified.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Use the statutory year placement for curriculum claims and separate any teaching representation advice."
+        },
+        "US":{
+          "status":"verified",
+          "placement_summary":"Common Core Grade 3 defines area as a measurable attribute in square units and explicitly connects rectangle area to multiplication and addition.",
+          "source_ids":["us-common-core-math"],
+          "research_file_refs":["database/research/measurement_curriculum_verified.json"],
+          "last_verified":"2026-08-18",
+          "publication_rule":"Present Common Core as the baseline and keep state-specific differences separate."
+        }
+      }
+    }
+  ],
+  "future_extensions":["state_specific_us_mappings","verified_current_pep_unit_and_lesson_locations","prerequisite_and_successor_links","cross_system_alignment_strength","claim_level_misconceptions","assessment_examples"]
+}

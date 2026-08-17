@@ -1,0 +1,154 @@
+{
+  "version":"0.1.0",
+  "research_date":"2026-08-18",
+  "purpose":"Extend diagnostic coverage for high-priority Grade 1-6 concepts that did not yet have a linked misconception record.",
+  "evidence_policy": {
+    "rule":"A misconception record describes a possible reasoning pattern. It must not be treated as a diagnosis from one wrong answer.",
+    "status_meaning": {
+      "evidence_supported":"Directly supported by evidence-reviewed guidance or established research synthesis used by MathBridge.",
+      "curriculum_inferred":"A plausible instructional misconception derived from the mathematical structure and official guidance; use cautiously and probe before classification."
+    }
+  },
+  "misconceptions":[
+    {
+      "id":"rounding-follow-digit-rule-without-benchmark",
+      "concept_ids":["rounding-estimation"],
+      "statement":"The pupil applies a memorised rounding rule without understanding the two benchmark multiples the number lies between.",
+      "examples":["Rounds 349 to 400 because the final digit is 9 without identifying 300 and 400 as the relevant hundreds.","Cannot explain why 350 rounds to 400 to the nearest hundred."],
+      "useful_representations":["number-line"],
+      "response_moves":["use-benchmark","compare-examples","probe-why"],
+      "source_ids":["uk-dfe-primary-math-guidance-2020","us-ies-math-practice"],
+      "status":"curriculum_inferred"
+    },
+    {
+      "id":"remainder-ignored-or-used-without-context",
+      "concept_ids":["remainders","multiplication-division-problems"],
+      "statement":"The pupil obtains a remainder but does not interpret what it means in the problem context.",
+      "examples":["Reports 4 remainder 2 when the question asks how many buses are needed for 22 pupils with 5 pupils per bus.","Always rounds a quotient down even when the context requires another whole group."],
+      "useful_representations":["bar-model","array","number-line"],
+      "response_moves":["move-from-context-to-model","probe-why","compare-problem-structures"],
+      "source_ids":["us-ies-math-practice","uk-dfe-primary-math-guidance-2020"],
+      "status":"evidence_supported"
+    },
+    {
+      "id":"fraction-add-denominators",
+      "concept_ids":["add-subtract-fractions"],
+      "statement":"The pupil adds or subtracts numerators and denominators separately instead of operating on quantities expressed in common units.",
+      "examples":["Calculates 1/3 + 1/4 as 2/7.","Cannot explain why unlike denominators require a common fractional unit before addition or subtraction."],
+      "useful_representations":["number-line","visual-fraction-model","bar-model"],
+      "response_moves":["connect-representations","compare-examples","probe-why"],
+      "source_ids":["us-ies-fractions-2010","uk-dfe-primary-math-guidance-2020"],
+      "status":"evidence_supported"
+    },
+    {
+      "id":"fraction-multiplication-must-make-bigger",
+      "concept_ids":["multiply-fractions"],
+      "statement":"The pupil overgeneralises from whole-number multiplication and assumes multiplication must make a quantity larger.",
+      "examples":["Claims 1/2 × 8 cannot be 4 because multiplication should increase 8.","Does not interpret multiplication by a fraction as taking a fraction of a quantity."],
+      "useful_representations":["area-model","bar-model","number-line"],
+      "response_moves":["represent-before-calculate","compare-examples","probe-why"],
+      "source_ids":["us-ies-fractions-2010"],
+      "status":"evidence_supported"
+    },
+    {
+      "id":"fraction-division-must-make-smaller",
+      "concept_ids":["divide-fractions"],
+      "statement":"The pupil overgeneralises from whole-number division and assumes division must make a quantity smaller.",
+      "examples":["Claims 3 ÷ 1/2 must be less than 3.","Cannot interpret division by a fraction as asking how many fractional groups fit in a quantity."],
+      "useful_representations":["bar-model","number-line"],
+      "response_moves":["move-from-context-to-model","compare-examples","probe-why"],
+      "source_ids":["us-ies-fractions-2010"],
+      "status":"evidence_supported"
+    },
+    {
+      "id":"equals-sign-means-answer-next",
+      "concept_ids":["meaning-equals-sign","simple-equations","unknowns"],
+      "statement":"The pupil interprets the equals sign as an instruction to calculate the answer that comes next rather than as a statement that two expressions have the same value.",
+      "examples":["Says 8 + 4 = __ + 5 must have 12 in the blank because 8 + 4 = 12.","Rejects 7 = 7 because there is no calculation on the left."],
+      "useful_representations":["equality-balance-model","number-bonds-part-whole"],
+      "response_moves":["variation-one-feature","connect-representations","probe-why"],
+      "source_ids":["uk-dfe-primary-math-guidance-2020","us-common-core-math"],
+      "status":"curriculum_inferred"
+    },
+    {
+      "id":"ratio-treated-as-additive-difference",
+      "concept_ids":["ratio-meaning","equivalent-ratios","proportional-reasoning"],
+      "statement":"The pupil compares quantities by additive difference when the relationship is multiplicative.",
+      "examples":["Treats 2:3 and 4:5 as equivalent because both pairs differ by 1.","Extends a ratio table by adding the same amount to both columns instead of scaling both quantities by the same factor."],
+      "useful_representations":["ratio-table-double-number-line","bar-model"],
+      "response_moves":["variation-one-feature","reason-from-structure","probe-why"],
+      "source_ids":["us-ies-fractions-2010","us-common-core-math"],
+      "status":"evidence_supported"
+    },
+    {
+      "id":"measurement-counts-marks-not-intervals",
+      "concept_ids":["standard-units","comparison-measurement"],
+      "statement":"The pupil counts scale marks rather than equal intervals when reading or using a measuring scale.",
+      "examples":["Reads a length from 2 cm to 7 cm as 6 cm because six tick marks are visible.","Cannot measure correctly when an object does not start at zero."],
+      "useful_representations":["ruler-scale","measurement-tools","number-line"],
+      "response_moves":["connect-representations","variation-one-feature","probe-why"],
+      "source_ids":["uk-dfe-primary-math-guidance-2020","us-ies-math-practice"],
+      "status":"curriculum_inferred"
+    },
+    {
+      "id":"unit-conversion-rule-without-unit-size",
+      "concept_ids":["unit-conversion"],
+      "statement":"The pupil uses multiply/divide rules for conversions without reasoning about the relative size of the units.",
+      "examples":["Converts 3 m to 0.03 cm because they remember dividing when changing units.","Cannot explain why a measurement has a larger numerical value when expressed in a smaller unit."],
+      "useful_representations":["ruler-scale","ratio-table-double-number-line"],
+      "response_moves":["connect-representations","reason-from-structure","probe-why"],
+      "source_ids":["uk-dfe-primary-math-guidance-2020"],
+      "status":"curriculum_inferred"
+    },
+    {
+      "id":"perimeter-area-confusion",
+      "concept_ids":["perimeter","area-concept","area-formulas"],
+      "statement":"The pupil treats perimeter and area as interchangeable measures because both are associated with a shape.",
+      "examples":["Adds side lengths when asked for area.","Counts internal squares when asked for perimeter."],
+      "useful_representations":["unit-square-grid","shape-property-diagram"],
+      "response_moves":["compare-examples","connect-representations","probe-definition"],
+      "source_ids":["uk-dfe-primary-math-guidance-2020","us-common-core-math"],
+      "status":"curriculum_inferred"
+    },
+    {
+      "id":"angle-size-depends-on-arm-length",
+      "concept_ids":["angle-size","measuring-angles"],
+      "statement":"The pupil judges an angle by the length of its arms rather than by the amount of turn between the rays.",
+      "examples":["Says a long-drawn acute angle is larger than a short-drawn obtuse angle.","Changes an angle estimate when only the arm lengths are changed."],
+      "useful_representations":["angle-turn-model","protractor-angle-measure"],
+      "response_moves":["variation-one-feature","connect-representations","probe-why"],
+      "source_ids":["uk-dfe-primary-math-guidance-2020"],
+      "status":"curriculum_inferred"
+    },
+    {
+      "id":"coordinate-order-reversed",
+      "concept_ids":["coordinates","position-direction"],
+      "statement":"The pupil reverses the coordinate order or treats the two coordinates as interchangeable.",
+      "examples":["Plots (2,5) at (5,2).","Cannot explain what each coordinate tells them to do on the grid."],
+      "useful_representations":["coordinate-grid"],
+      "response_moves":["use-precise-language-structures","variation-one-feature","probe-why"],
+      "source_ids":["uk-dfe-primary-math-guidance-2020","us-common-core-math"],
+      "status":"curriculum_inferred"
+    },
+    {
+      "id":"bar-chart-scale-assumed-one",
+      "concept_ids":["bar-charts","interpret-data"],
+      "statement":"The pupil assumes each grid interval on a chart represents one unit and does not read the stated scale.",
+      "examples":["Reads a bar at the third grid line as 3 when the scale increases by 5.","Compares bar height correctly but reports incorrect values."],
+      "useful_representations":["bar-chart","data-table"],
+      "response_moves":["variation-one-feature","connect-representations","probe-why"],
+      "source_ids":["uk-dfe-primary-math-guidance-2020","us-common-core-math"],
+      "status":"curriculum_inferred"
+    },
+    {
+      "id":"probability-counts-outcomes-without-size",
+      "concept_ids":["simple-probability","chance-language"],
+      "statement":"The pupil counts labelled outcomes but ignores whether outcomes are equally likely.",
+      "examples":["Says a spinner with two red labels and one blue label makes red exactly twice as likely even when the sectors have different sizes.","Assumes each named outcome must have equal probability."],
+      "useful_representations":["probability-line","data-table"],
+      "response_moves":["variation-one-feature","reason-from-structure","probe-why"],
+      "source_ids":["uk-dfe-mathematics","us-common-core-math"],
+      "status":"curriculum_inferred"
+    }
+  ]
+}

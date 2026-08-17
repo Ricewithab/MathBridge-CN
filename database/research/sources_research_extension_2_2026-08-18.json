@@ -1,0 +1,43 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "category":"research",
+  "sources":[
+    {
+      "id":"research-peters-prediger-unit-conversion-2026",
+      "country":"INT",
+      "title_en":"Enhancing student’s understanding of unit conversion by explicating underlying structures: design research on schematization in middle schools",
+      "organisation":"Educational Studies in Mathematics",
+      "authors":["Sofia Peters","Susanne Prediger"],
+      "publication_year":2026,
+      "doi":"10.1007/s10649-025-10437-6"
+    },
+    {
+      "id":"research-tatsis-spinner-fairness-2008",
+      "country":"INT",
+      "title_en":"Kindergarten Children Discussing the Fairness of Probabilistic Games: The Creation of a Primary Discursive Community",
+      "organisation":"Early Childhood Education Journal",
+      "authors":["Konstantinos Tatsis","Sonia Kafoussi","Chrysanthi Skoumpourdi"],
+      "publication_year":2008,
+      "doi":"10.1007/s10643-008-0283-y"
+    },
+    {
+      "id":"research-larsson-multiplication-2017",
+      "country":"INT",
+      "title_en":"Students’ conceptualisations of multiplication as repeated addition or equal groups in relation to multi-digit and decimal numbers",
+      "organisation":"The Journal of Mathematical Behavior",
+      "authors":["Kerstin Larsson","Kerstin Pettersson","Paul Andrews"],
+      "publication_year":2017,
+      "doi":"10.1016/j.jmathb.2017.07.003"
+    },
+    {
+      "id":"research-park-nunes-multiplication-2001",
+      "country":"INT",
+      "title_en":"The development of the concept of multiplication",
+      "organisation":"Cognitive Development",
+      "authors":["Jee-Hyun Park","Terezinha Nunes"],
+      "publication_year":2001,
+      "doi":"10.1016/S0885-2014(01)00058-2"
+    }
+  ]
+}
