@@ -1,0 +1,168 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "title": "Primary Operations Progression: China, England and US Common Core Baseline",
+  "purpose": "Provide a comparison spine for addition, subtraction, multiplication, division and formal written methods without forcing false grade equivalence.",
+  "source_files": [
+    "database/research/cn_operations_progression_current_evidence.json",
+    "database/research/england_operations_progression_verified.json",
+    "database/research/us_common_core_operations_progression_verified.json"
+  ],
+  "comparison_dimensions": [
+    "conceptual meaning",
+    "fact fluency",
+    "mental strategies",
+    "representations",
+    "properties and inverse relationships",
+    "written methods",
+    "formal standard algorithms",
+    "problem solving",
+    "reasoning and explanation"
+  ],
+  "strands": [
+    {
+      "id": "addition-subtraction-foundations",
+      "concept_ids": ["addition-meaning", "subtraction-meaning", "number-composition-decomposition", "fact-families", "mental-addition-subtraction"],
+      "CN": {
+        "status": "partially_verified_current_textbook",
+        "placement": "Grade 1 upper confirmed for early number/addition/subtraction units; later exact grade sequence pending current-volume verification.",
+        "signature": ["number composition integrated with operations", "connected unit structure", "exploration and reasoning alongside calculation"]
+      },
+      "UK": {
+        "status": "verified",
+        "placement": "Year 1 begins within 20; Year 2 consolidates facts and two-digit calculation with concrete, pictorial and mental methods.",
+        "signature": ["number bonds", "inverse relationship", "practical contexts", "concrete and pictorial representations"]
+      },
+      "US": {
+        "status": "verified_common_core_baseline",
+        "placement": "Grade 1 develops strategy-based addition/subtraction within 20 and selected calculation within 100; Grade 2 extends to 1000 through place-value-based strategies.",
+        "signature": ["making ten", "decomposition", "unknowns in all positions", "explain why strategies work"]
+      }
+    },
+    {
+      "id": "addition-subtraction-written-methods",
+      "concept_ids": ["written-addition", "written-subtraction"],
+      "CN": {
+        "status": "grade_placement_pending",
+        "verified_signal": "Current PEP redesign integrates previously separate within-10,000 addition/subtraction units.",
+        "publication_constraint": "Do not publish an exact current grade for formal algorithm introduction until the current 12th-series volume and teacher guide are verified."
+      },
+      "UK": {
+        "status": "verified",
+        "progression": [
+          "Year 2: column recording prepares for formal methods",
+          "Year 3: formal columnar addition/subtraction up to 3 digits",
+          "Year 4: formal columnar methods up to 4 digits",
+          "Year 5–6: fluent application with increasingly large numbers and multi-step problems"
+        ]
+      },
+      "US": {
+        "status": "verified_common_core_baseline",
+        "progression": [
+          "Grade 1–2: strategies, models, place-value reasoning and written-method connections",
+          "Grade 3: fluency within 1000 using strategies and algorithms; no single standard algorithm mandated",
+          "Grade 4: standard algorithm required for multi-digit whole-number addition/subtraction",
+          "Grade 5: decimals continue through models, reasoning and written-method connections"
+        ]
+      },
+      "comparison_insight": "England makes formal columnar addition/subtraction explicit earlier than Common Core's mandatory standard-algorithm endpoint, while Common Core intentionally preserves multiple strategies for longer. Exact current PEP timing is not yet safe to claim."
+    },
+    {
+      "id": "multiplication-division-conceptual-foundations",
+      "concept_ids": ["multiplication-meaning", "division-meaning", "equal-groups", "arrays", "repeated-addition", "sharing-grouping-division"],
+      "CN": {
+        "status": "current_design_verified_grade_sequence_incomplete",
+        "signature": ["connected content structure", "analogy and transfer", "exploration through operations, experiment and reasoning"],
+        "note": "Current PEP exact grade-by-grade placement requires volume-level verification."
+      },
+      "UK": {
+        "status": "verified",
+        "progression": [
+          "Year 1: grouping, sharing, doubling and arrays with teacher support",
+          "Year 2: 2, 5 and 10 tables plus arrays, repeated addition and inverse relations",
+          "Year 3: 3, 4 and 8 tables; two-digit by one-digit calculation begins moving toward written methods"
+        ]
+      },
+      "US": {
+        "status": "verified_common_core_baseline",
+        "progression": [
+          "Grade 2: equal groups and rectangular arrays as foundations",
+          "Grade 3: formal meaning of products and quotients, equal groups, arrays, sharing/grouping, fact fluency within 100"
+        ]
+      },
+      "comparison_insight": "Both England and Common Core explicitly establish multiplication/division through grouping, sharing and arrays before multi-digit algorithms. The current PEP series also describes a stronger connected-content and exploratory design, so MathBridge should avoid the stereotype that Chinese mathematics is algorithm-first by definition."
+    },
+    {
+      "id": "multiplication-written-methods",
+      "concept_ids": ["written-multiplication", "multiplication-properties", "area-models", "arrays"],
+      "CN": {
+        "status": "grade_placement_pending",
+        "verified_signal": "PEP reports integration of the former two-digit × two-digit and three-digit × two-digit units in the new series.",
+        "interpretation": "The redesign is explicitly intended to support logical connection, analogy and transfer across related content."
+      },
+      "UK": {
+        "status": "verified",
+        "progression": [
+          "Year 3: movement from mental calculation toward written two-digit × one-digit methods",
+          "Year 4: formal layout for two-/three-digit × one-digit; short multiplication",
+          "Year 5: formal multiplication up to four-digit × one-/two-digit, including long multiplication",
+          "Year 6: long multiplication maintained as a fluent four-operation method"
+        ]
+      },
+      "US": {
+        "status": "verified_common_core_baseline",
+        "progression": [
+          "Grade 3: facts/properties and one-digit × multiples of 10",
+          "Grade 4: multi-digit multiplication through place value, properties, equations, arrays and area models; standard algorithm not yet required",
+          "Grade 5: fluent multi-digit multiplication using the standard algorithm"
+        ]
+      },
+      "comparison_insight": "A key England/US distinction is algorithm timing: England explicitly develops formal written multiplication during Years 3–5, while Common Core preserves model/property-based multi-digit strategies through Grade 4 before requiring the standard algorithm in Grade 5."
+    },
+    {
+      "id": "division-written-methods",
+      "concept_ids": ["written-division", "remainders", "sharing-grouping-division"],
+      "CN": {
+        "status": "grade_placement_pending",
+        "publication_constraint": "Current PEP volume/teacher-guide evidence is required before claiming the precise introduction point for formal written division or long division."
+      },
+      "UK": {
+        "status": "verified",
+        "progression": [
+          "Year 3: reliable written division begins from two-digit ÷ one-digit contexts",
+          "Year 4: short division with exact answers",
+          "Year 5: short division up to four-digit dividends by one digit with contextual remainder interpretation",
+          "Year 6: long division and short division with two-digit divisors, interpreting remainders appropriately"
+        ]
+      },
+      "US": {
+        "status": "verified_common_core_baseline",
+        "progression": [
+          "Grade 3: division meaning/facts within 100",
+          "Grade 4: quotients/remainders with up to four-digit dividends and one-digit divisors using place-value/property strategies plus arrays/area models",
+          "Grade 5: up to four-digit dividends and two-digit divisors through place-value/property strategies; standard algorithm not yet the Grade 5 requirement",
+          "Grade 6: standard-algorithm fluency endpoint for multi-digit division in the Common Core progression"
+        ]
+      },
+      "comparison_insight": "England names formal short and long division methods explicitly in primary statutory guidance; Common Core delays the standard-algorithm endpoint and requires explanation through place value, properties and representations during earlier multi-digit division."
+    }
+  ],
+  "ui_output_schema": {
+    "teacher_question_example": "How is long multiplication introduced differently?",
+    "response_blocks": [
+      "Where this sits in each system",
+      "What students are expected to understand first",
+      "Representations used before/alongside the algorithm",
+      "When the formal method becomes an expected endpoint",
+      "Why the progression is structured this way",
+      "What a Chinese teacher could borrow without abandoning the Chinese curriculum",
+      "Evidence and source locators"
+    ]
+  },
+  "research_next": [
+    "Verify current PEP Grade 1–6 volume tables of contents and teacher guides for exact algorithm placement.",
+    "Add DfE primary mathematics guidance examples for representations and prerequisite knowledge.",
+    "Add IES/WWC research evidence on whole-number operations and mathematical problem solving.",
+    "Add California and Texas operation mappings as US state-specific overlays rather than replacing the Common Core baseline."
+  ]
+}
