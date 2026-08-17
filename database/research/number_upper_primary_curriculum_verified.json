@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "research_date": "2026-08-18",
   "purpose": "Fill the remaining upper-primary Number curriculum mappings that were previously missing from the intelligence profiles. China uses the 2022 national standard at learning-stage level; England uses the statutory National Curriculum in England; the US uses Common Core as the comparison baseline.",
   "verification_policy": {
@@ -11,11 +11,12 @@
     {
       "concept_id": "negative-numbers",
       "CN": {
-        "status": "verified_scope_change_secondary_crosscheck",
-        "primary_stage": null,
-        "placement": "Not a primary-school content requirement in the 2022 standard; moved to junior secondary.",
+        "status": "partially_verified_scope_change",
+        "formal_number_content": "Negative numbers were moved out of the formal primary Number and Operations content sequence and into junior secondary in the 2022 revision.",
+        "primary_exposure": "The third-stage goals and integrated/theme activity guidance can still include contextual exposure to negative numbers. This should not be presented as the same as a formal primary negative-number unit.",
         "source_id": "cn-moe-math-2022",
-        "notes": "Official/provincial curriculum interpretation of the 2022 revision explicitly states that negative numbers were moved from primary to junior secondary. Do not show a current PEP primary grade for this concept without contradictory official evidence."
+        "current_pep_grade": "no_current_primary_grade_should_be_inferred",
+        "notes": "MathBridge should distinguish formal curriculum placement from contextual exposure."
       },
       "UK": {
         "status": "verified",
@@ -208,7 +209,7 @@
   ],
   "china_crosscheck_notes": [
     "Accessible transcriptions of the 2022 standard place factors/multiples/prime-composite work in the third learning stage (Grades 5-6).",
-    "Official/provincial training material states that negative numbers were moved from primary to junior secondary in the 2022 revision.",
+    "The 2022 revision moves formal negative-number content out of the primary Number and Operations sequence, while third-stage integrated/theme activities may still give contextual exposure to negative numbers.",
     "The 2022 revision treats percentage under Statistics and Probability and emphasises its statistical meaning.",
     "Direct MOE PDF page-level locators should replace secondary cross-checks when the official file becomes reliably machine-readable."
   ]
