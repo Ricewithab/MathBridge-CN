@@ -1,6 +1,6 @@
 {
   "version": "0.2.0",
-  "source_metadata_fields": {
+  "fields": {
     "source_id": "Unique identifier matching sources.json",
     "official_url": "Primary reference URL",
     "document_year": "Publication or revision year",
@@ -8,94 +8,130 @@
     "domains": "Mathematical areas covered",
     "languages": "Available languages",
     "citation_format": "How sources are displayed to users",
-    "verification_status": "verified, partially_verified, pending_review, or archived",
-    "last_verified": "Date of last verification",
-    "notes": "Additional context for teachers"
+    "verification_status": "verified|partially_verified|pending_review|archived",
+    "last_verified": "YYYY-MM-DD",
+    "notes": "Additional context for teachers and researchers"
   },
   "records": [
     {
       "source_id": "cn-moe-math-2022",
       "official_url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
       "document_year": 2022,
-      "grade_range": "Compulsory education; MathBridge primary scope Grades 1-6",
+      "grade_range": "Compulsory education Grades 1-9; MathBridge uses primary Grades 1-6",
       "domains": ["Number & Algebra", "Geometry", "Statistics & Probability", "Integrated Practice"],
       "languages": ["Chinese"],
       "citation_format": "教育部《义务教育数学课程标准（2022年版）》",
       "verification_status": "verified",
       "last_verified": "2026-08-17",
-      "notes": "Primary national authority. The 2022 standard is organised by learning stages rather than giving every requirement as a single-grade prescription. For Grades 1-6, stages are 1-2, 3-4 and 5-6. Exact year-by-year sequencing should therefore be mapped using approved textbook editions and teacher materials in addition to the national standard."
+      "notes": "Primary national curriculum authority. Primary requirements are organised by learning stages rather than a complete year-by-year textbook sequence."
     },
     {
       "source_id": "cn-pEp-math-primary",
       "official_url": "https://www.pep.com.cn/",
       "document_year": null,
-      "grade_range": "Primary",
-      "domains": ["Number & Algebra", "Geometry", "Statistics & Probability", "Integrated Practice"],
+      "grade_range": "Grades 1-6",
+      "domains": ["All primary mathematics domains"],
       "languages": ["Chinese"],
-      "citation_format": "人民教育出版社小学数学教材（具体册次）",
-      "verification_status": "pending_review",
-      "last_verified": null,
-      "notes": "Use edition-specific records before making grade-by-grade claims. Do not treat one PEP edition as the only Chinese classroom sequence."
+      "citation_format": "人民教育出版社《义务教育教科书·数学》",
+      "verification_status": "partially_verified",
+      "last_verified": "2026-08-17",
+      "notes": "Umbrella record for PEP primary mathematics textbooks. Always attach edition/year and volume-level evidence before using this source for exact sequencing."
+    },
+    {
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "official_url": "https://www.pep.com.cn/xw/zt/hd/12/xjcjs/xx/202409/t20240920_1995566.html",
+      "document_year": 2024,
+      "grade_range": "Grades 1-6",
+      "domains": ["All primary mathematics domains", "Pedagogy", "Textbook structure"],
+      "languages": ["Chinese"],
+      "citation_format": "人民教育出版社《人教版义务教育数学（一～六年级）新教材简介》",
+      "verification_status": "verified",
+      "last_verified": "2026-08-17",
+      "notes": "Official overview of the new PEP mathematics series aligned to the 2022 curriculum standard. Useful for structural and pedagogical changes; not by itself a complete volume-by-volume table of contents."
+    },
+    {
+      "source_id": "cn-pep-series12-overview-2024",
+      "official_url": "https://www.pep.com.cn/xw/zt/hd/12/202409/t20240902_1994545.html",
+      "document_year": 2024,
+      "grade_range": "Compulsory education",
+      "domains": ["Textbook implementation", "Edition history"],
+      "languages": ["Chinese"],
+      "citation_format": "人民教育出版社《人教版第十二套教材纵览》",
+      "verification_status": "verified",
+      "last_verified": "2026-08-17",
+      "notes": "Confirms that the 12th PEP textbook series, revised against the 2022 curriculum scheme and standards, began use from the 2024 autumn term in starting grades. Do not infer the exact rollout status of every later primary grade without volume-level confirmation."
+    },
+    {
+      "source_id": "cn-pep-digital-math-textbooks",
+      "official_url": "https://jc.pep.com.cn/?filed=%E5%B0%8F%E5%AD%A6&subject=%E6%95%B0%E5%AD%A6",
+      "document_year": null,
+      "grade_range": "Grades 1-6",
+      "domains": ["All primary mathematics domains"],
+      "languages": ["Chinese"],
+      "citation_format": "人民教育出版社小学数学电子教材",
+      "verification_status": "partially_verified",
+      "last_verified": "2026-08-17",
+      "notes": "Official PEP digital textbook portal linked from the PEP homepage. Browser access may require the interactive PEP reader; use volume-level locators when extracting sequence data."
     },
     {
       "source_id": "uk-dfe-mathematics",
-      "official_url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
-      "document_year": 2013,
-      "grade_range": "England Years 1-6 / Key Stages 1-2",
-      "domains": ["Number", "Measurement", "Geometry", "Statistics", "Ratio & Proportion", "Algebra"],
+      "official_url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study",
+      "document_year": 2014,
+      "grade_range": "Key Stages 1-2 / Years 1-6",
+      "domains": ["Number", "Measurement", "Geometry", "Statistics", "Ratio", "Algebra"],
       "languages": ["English"],
       "citation_format": "Department for Education, National Curriculum in England: Mathematics Programmes of Study",
       "verification_status": "verified",
       "last_verified": "2026-08-17",
-      "notes": "Statutory programme of study. Page last updated by DfE in 2021. Year-by-year programmes are published, while schools retain some flexibility within each key stage."
+      "notes": "Statutory curriculum framework for England."
     },
     {
       "source_id": "uk-ncetm-primary-mastery",
-      "official_url": "https://www.ncetm.org.uk/",
+      "official_url": "https://www.ncetm.org.uk/teaching-for-mastery/mastery-materials/primary-mastery-professional-development/",
       "document_year": null,
       "grade_range": "Primary",
-      "domains": ["Number", "Calculation", "Fractions", "Geometry", "Measurement"],
+      "domains": ["Number", "Calculation", "Fractions", "Geometry", "Measurement", "Pedagogy"],
       "languages": ["English"],
-      "citation_format": "NCETM Primary Mastery Materials",
-      "verification_status": "pending_review",
-      "last_verified": null,
-      "notes": "Use specific NCETM resource pages and spine/material identifiers for claim-level citations."
+      "citation_format": "NCETM Primary Mastery Professional Development Materials",
+      "verification_status": "verified",
+      "last_verified": "2026-08-17",
+      "notes": "Teaching guidance rather than statutory curriculum. Use to explain representations, sequencing and mastery pedagogy."
     },
     {
       "source_id": "us-common-core-math",
       "official_url": "https://corestandards.org/mathematics-standards/",
       "document_year": 2010,
-      "grade_range": "K-12; MathBridge primary scope Grades 1-6",
-      "domains": ["Operations & Algebraic Thinking", "Number & Operations in Base Ten", "Fractions", "Measurement & Data", "Geometry", "Ratios", "The Number System"],
+      "grade_range": "K-12; MathBridge uses Grades 1-6",
+      "domains": ["All Common Core mathematics domains", "Standards for Mathematical Practice"],
       "languages": ["English"],
-      "citation_format": "Common Core State Standards for Mathematics (CCSSM)",
+      "citation_format": "Common Core State Standards for Mathematics",
       "verification_status": "verified",
       "last_verified": "2026-08-17",
-      "notes": "Reference framework for US mode, not a claim that every US state uses Common Core. State-specific mappings should be stored separately."
+      "notes": "Baseline US comparison framework, not a claim that every US state currently uses Common Core unchanged."
     },
     {
       "source_id": "us-ies-math-practice",
       "official_url": "https://ies.ed.gov/ncee/wwc/PracticeGuides",
       "document_year": null,
       "grade_range": "Varies by practice guide",
-      "domains": ["Mathematics Instruction"],
+      "domains": ["Mathematics instruction", "Intervention", "Problem solving", "Evidence-based practice"],
       "languages": ["English"],
-      "citation_format": "Institute of Education Sciences / What Works Clearinghouse Mathematics Practice Guide",
-      "verification_status": "pending_review",
-      "last_verified": null,
-      "notes": "Each instructional claim should cite the specific practice guide, recommendation and evidence rating rather than this collection page alone."
+      "citation_format": "Institute of Education Sciences / What Works Clearinghouse Mathematics Practice Guides",
+      "verification_status": "verified",
+      "last_verified": "2026-08-17",
+      "notes": "Use guide-specific evidence ratings and recommendations rather than treating all IES guidance as a single claim."
     },
     {
       "source_id": "international-timss",
       "official_url": "https://timssandpirls.bc.edu/",
       "document_year": null,
-      "grade_range": "International assessment frameworks, especially Grade 4 and Grade 8",
-      "domains": ["Number", "Measurement & Geometry", "Data"],
+      "grade_range": "International Grade 4 and Grade 8 assessment frameworks",
+      "domains": ["Number", "Measurement & Geometry", "Data", "Cognitive domains"],
       "languages": ["English"],
       "citation_format": "TIMSS Mathematics Framework",
-      "verification_status": "pending_review",
-      "last_verified": null,
-      "notes": "Use edition-specific framework records when comparing international expectations."
+      "verification_status": "verified",
+      "last_verified": "2026-08-17",
+      "notes": "International comparison source; not a national curriculum."
     }
   ]
 }
