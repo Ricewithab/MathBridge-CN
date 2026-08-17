@@ -1,0 +1,166 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-18",
+  "purpose": "Provide short diagnostic prompts that reveal how a pupil is thinking. Questions are linked to concepts and likely misconceptions, with follow-up prompts that require explanation or representation.",
+  "design_rules": [
+    "Prefer one or two carefully chosen questions over long quizzes.",
+    "Use distractors that correspond to plausible reasoning patterns, not random wrong answers.",
+    "Require a follow-up explanation, representation or comparison before inferring a misconception.",
+    "Diagnostic questions should be usable orally, on mini-whiteboards or digitally.",
+    "MathBridge may translate/adapt wording for Chinese classrooms, but the mathematical structure of the question must remain unchanged."
+  ],
+  "questions": [
+    {
+      "id": "dq-pv-001",
+      "concept_ids": ["place-value"],
+      "targets": ["pv-digit-value-is-digit-name"],
+      "prompt_en": "In 507, what is the value of the digit 5? How do you know?",
+      "prompt_cn": "在507中，数字5表示多少？你怎么知道的？",
+      "expected_core": "500, with an explanation based on hundreds/place value.",
+      "follow_ups": ["Show 507 using a place-value model.", "What would the 5 be worth if it moved one place to the right?"],
+      "diagnostic_interpretation": {
+        "answer_5": "Possible confusion between digit name and digit value.",
+        "answer_500_without_explanation": "Likely procedural recognition; probe representation before concluding secure understanding."
+      }
+    },
+    {
+      "id": "dq-pv-002",
+      "concept_ids": ["place-value", "number-composition-decomposition"],
+      "targets": ["pv-zero-has-no-structural-role"],
+      "prompt_en": "Which number is shown by 5 hundreds, 0 tens and 4 ones? Explain what the zero is doing.",
+      "prompt_cn": "5个百、0个十和4个一组成什么数？请解释这里的0有什么作用。",
+      "expected_core": "504; zero preserves the tens place in positional notation.",
+      "follow_ups": ["How is 504 different from 54?", "Can you partition 504 in another way?"],
+      "diagnostic_interpretation": {
+        "answer_54": "Strong signal of weak placeholder/place-value understanding."
+      }
+    },
+    {
+      "id": "dq-as-001",
+      "concept_ids": ["subtraction-meaning", "addition-subtraction-problems"],
+      "targets": ["subtraction-is-always-take-away", "add-subtract-operation-keyword-only"],
+      "prompt_en": "Mia has 12 stickers and Leo has 7. How many more stickers does Mia have than Leo? Show the relationship in two ways.",
+      "prompt_cn": "Mia有12张贴纸，Leo有7张。Mia比Leo多多少张？请用两种方式表示数量关系。",
+      "expected_core": "5, represented as comparison/difference and/or 7 + 5 = 12 / 12 - 7 = 5.",
+      "follow_ups": ["Could you solve it without taking anything away?", "What addition equation matches the same relationship?"],
+      "diagnostic_interpretation": {
+        "cannot_model_comparison": "Possible take-away-only conception of subtraction.",
+        "uses_keyword_without_relationship": "Probe unknown position and equation structure."
+      }
+    },
+    {
+      "id": "dq-as-002",
+      "concept_ids": ["mental-addition-subtraction", "place-value"],
+      "targets": ["algorithm-digits-without-units"],
+      "prompt_en": "Which is easier to calculate mentally: 398 + 25 or 400 + 23? Are the answers the same? Explain.",
+      "prompt_cn": "心算时，398+25和400+23哪个更容易？它们的结果相同吗？请解释。",
+      "expected_core": "The sums are equal because 2 was transferred from 25 to 398; compensation preserves the total.",
+      "follow_ups": ["Show the compensation on a number line.", "Create another pair of equal sums using the same idea."],
+      "diagnostic_interpretation": {
+        "calculates_both_only": "May have weak structural/compensation reasoning despite correct arithmetic.",
+        "says_not_equal_because_numbers_changed": "Possible weak understanding of conservation in addition."
+      }
+    },
+    {
+      "id": "dq-mult-001",
+      "concept_ids": ["multiplication-meaning", "arrays", "multiplication-properties"],
+      "targets": ["mult-is-only-repeated-addition"],
+      "prompt_en": "Draw an array for 3 × 4. Now turn the array. What multiplication does it show? What stayed the same and what changed?",
+      "prompt_cn": "画一个表示3×4的阵列。把阵列转过来后表示哪个乘法算式？什么没有变，什么变了？",
+      "expected_core": "4 × 3; product stays 12 while the interpretation of rows/groups changes.",
+      "follow_ups": ["Why do both products equal 12?", "Does this mean 3 groups of 4 and 4 groups of 3 describe exactly the same situation?"],
+      "diagnostic_interpretation": {
+        "cannot_connect_rotation": "Weak link between arrays and commutativity.",
+        "says_context_identical": "Probe distinction between numerical equality and situation structure."
+      }
+    },
+    {
+      "id": "dq-div-001",
+      "concept_ids": ["division-meaning", "sharing-grouping-division"],
+      "targets": ["division-sharing-only"],
+      "prompt_en": "24 counters are put into groups of 6. How many groups are made? Then 24 counters are shared equally among 6 children. How are the two problems alike and different?",
+      "prompt_cn": "把24个计数片每6个分成一组，可以分成几组？再把24个计数片平均分给6个孩子，每人分到几个？这两个问题有什么相同和不同？",
+      "expected_core": "Both use 24 ÷ 6 = 4 numerically, but one asks number of groups and the other asks amount in each group.",
+      "follow_ups": ["Draw both situations.", "Write a multiplication equation that checks each result."],
+      "diagnostic_interpretation": {
+        "solves_one_not_other": "Possible limited interpretation of division.",
+        "cannot_explain_difference": "Probe group-size versus number-of-groups distinction."
+      }
+    },
+    {
+      "id": "dq-frac-001",
+      "concept_ids": ["unit-fractions", "compare-order-fractions"],
+      "targets": ["fraction-larger-denominator-means-larger"],
+      "prompt_en": "Which is larger: 1/4 or 1/8? Explain without using a rule about the numbers 4 and 8.",
+      "prompt_cn": "1/4和1/8哪个更大？不要只比较4和8这两个数字，请解释原因。",
+      "expected_core": "1/4 is larger because the same whole divided into fewer equal parts produces larger parts.",
+      "follow_ups": ["Show both on the same number line.", "What must be true about the whole for this comparison to work?"],
+      "diagnostic_interpretation": {
+        "answer_1_8_because_8_gt_4": "Strong whole-number-overgeneralisation signal.",
+        "correct_without_same_whole_awareness": "Probe the role of the same whole."
+      }
+    },
+    {
+      "id": "dq-frac-002",
+      "concept_ids": ["fraction-as-part-whole", "unit-fractions"],
+      "targets": ["fraction-parts-need-not-be-equal"],
+      "prompt_en": "A shape is split into 4 pieces, but the pieces are different sizes. One piece is shaded. Is the shaded part definitely 1/4 of the shape? Why or why not?",
+      "prompt_cn": "一个图形被分成4块，但4块大小不同，其中1块被涂色。涂色部分一定是这个图形的1/4吗？为什么？",
+      "expected_core": "No. Fourths require four equal parts of the same whole.",
+      "follow_ups": ["Draw a version that really does show 1/4.", "What is the minimum information you need before naming a fraction?"],
+      "diagnostic_interpretation": {
+        "yes_because_one_of_four": "Strong signal that the pupil is counting pieces without attending to equal partitioning."
+      }
+    },
+    {
+      "id": "dq-frac-003",
+      "concept_ids": ["fraction-number-line", "fraction-as-measure"],
+      "targets": ["fraction-not-a-number"],
+      "prompt_en": "Mark 3/4 on a number line from 0 to 1. Explain how you decided where it goes.",
+      "prompt_cn": "在0到1的数轴上标出3/4，并解释你为什么把它标在那里。",
+      "expected_core": "Partition 0 to 1 into four equal intervals and locate the third division from zero.",
+      "follow_ups": ["Where would 5/4 go?", "Show the same 3/4 with an area model and explain what is the same."],
+      "diagnostic_interpretation": {
+        "places_at_third_tick_without_equal_intervals": "Possible procedural counting without magnitude understanding.",
+        "cannot_place_improper_fraction": "Possible part-of-one-only conception of fractions."
+      }
+    },
+    {
+      "id": "dq-frac-004",
+      "concept_ids": ["equivalent-fractions"],
+      "targets": ["equivalent-fractions-look-different-so-different-value"],
+      "prompt_en": "Are 1/2 and 2/4 the same number? Convince someone who thinks they cannot be equal because the numerators and denominators are different.",
+      "prompt_cn": "1/2和2/4是同一个数吗？请说服一个认为“分子分母不同，所以它们不可能相等”的同学。",
+      "expected_core": "Yes; use a common whole, fraction model or same point on a number line to justify equivalence.",
+      "follow_ups": ["Give another fraction equal to 1/2.", "Can you explain the pattern without relying only on a memorised rule?"],
+      "diagnostic_interpretation": {
+        "not_equal_due_symbols": "Strong symbol-appearance misconception signal.",
+        "uses_multiply_rule_only": "Probe conceptual justification with representation."
+      }
+    },
+    {
+      "id": "dq-dec-001",
+      "concept_ids": ["decimal-place-value", "compare-order-decimals"],
+      "targets": ["decimal-more-digits-means-larger"],
+      "prompt_en": "Which is greater: 0.5 or 0.35? Explain using place value or a number line.",
+      "prompt_cn": "0.5和0.35哪个更大？请用位值或数轴解释。",
+      "expected_core": "0.5 = 0.50, which is greater than 0.35.",
+      "follow_ups": ["Write both numbers in hundredths.", "Place both between 0 and 1 on a number line."],
+      "diagnostic_interpretation": {
+        "answer_0_35_because_35_gt_5": "Strong whole-number-length reasoning signal."
+      }
+    },
+    {
+      "id": "dq-alg-001",
+      "concept_ids": ["written-addition", "place-value"],
+      "targets": ["algorithm-digits-without-units"],
+      "prompt_en": "In the calculation 268 + 157, a written method may regroup 10 ones as 1 ten. What quantity is actually being exchanged? Explain with a model.",
+      "prompt_cn": "计算268+157时，竖式中会把10个一换成1个十。实际交换的数量是什么？请用模型解释。",
+      "expected_core": "Ten ones are equivalent to one ten; regrouping changes representation but not quantity.",
+      "follow_ups": ["Why does the total not change?", "Show the same exchange on a place-value chart."],
+      "diagnostic_interpretation": {
+        "describes_carrying_digit_only": "May know the algorithmic action without understanding the place-value exchange."
+      }
+    }
+  ]
+}
