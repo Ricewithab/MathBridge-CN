@@ -1,10 +1,10 @@
 {
-  "version":"0.1.0",
+  "version":"0.1.1",
   "domain_id":"algebraic-thinking",
   "purpose":"Joined intelligence profiles for primary algebraic thinking.",
   "profiles":[
     {"concept_id":"repeating-patterns","curriculum_refs":[],"representation_ids":["pattern-table"],"teaching_move_ids":["variation-one-feature","use-precise-language-structures","explain-why"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required"},
-    {"concept_id":"growing-patterns","curriculum_refs":[],"representation_ids":["pattern-table","number-line"],"teaching_move_ids":["variation-one-feature","reason-from-structure","generalise"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required","notes":"Use canonical teaching moves only; generalisation is represented through reason-from-structure and explain-why until a dedicated move is added."},
+    {"concept_id":"growing-patterns","curriculum_refs":[],"representation_ids":["pattern-table","number-line"],"teaching_move_ids":["variation-one-feature","reason-from-structure","explain-why"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required"},
     {"concept_id":"number-sequences","curriculum_refs":[],"representation_ids":["pattern-table","number-line"],"teaching_move_ids":["variation-one-feature","reason-from-structure","use-precise-language-structures"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required"},
     {"concept_id":"function-thinking","curriculum_refs":[],"representation_ids":["pattern-table","ratio-table-double-number-line"],"teaching_move_ids":["variation-one-feature","reason-from-structure","connect-representations"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required"},
     {"concept_id":"meaning-equals-sign","curriculum_refs":[],"representation_ids":["equality-balance-model","number-bonds-part-whole"],"teaching_move_ids":["represent-before-symbolise","variation-one-feature","explain-why"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_diagnostic_required"},
