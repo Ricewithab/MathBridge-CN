@@ -1,1 +1,45 @@
-{"version":"0.3.0","research_date":"2026-08-18","purpose":"Track exact PEP primary mathematics volumes and prevent legacy or generic current-series pages from being mistaken for verified 12th-series semester sequences.","current_series":{"series_name":"PEP 12th Series Primary Mathematics","basis":"2022 national mathematics curriculum standard","launch_evidence":"PEP states that the 12th series began use in starting grades from autumn 2024.","source_ids":["cn-pep-series12-overview-2024","cn-pep-math-new-edition-intro-2024"],"context_source_ids":["cn-pep-primary-math-video-2026"],"volume_policy":"A volume is not fully verified until edition identity plus an official TOC and sufficient volume metadata are captured.","rollout_rule":"Do not infer mathematics year-by-year rollout from notices for other subjects.","context_rule":"A current PEP page without a volume TOC can confirm current-series activity but cannot verify grade/semester sequence."},"volumes":[{"grade":1,"semester":"upper","current_12th_series_status":"partial_verified","known_current_unit_evidence":["5以内数的认识和加、减法","6～10的认识和加、减法"],"current_companion_evidence":[{"source_id":"cn-pep-grade1-upper-oral-practice-2024","evidence":"Official PEP page states the Grade 1 upper oral-calculation workbook is synchronized by lesson period with the new textbook.","limit":"No textbook TOC or ISBN exposed."}],"missing_for_full_verification":["complete TOC","unit numbers","subsection titles","textbook ISBN","publication metadata","teacher-guide catalog record"],"legacy_digital_reference":{"status":"verified_official_legacy_digital_book","url":"https://download.pep.com.cn/xsxjc/22xjcsx11x/index.html","warning":"Earlier illustrated edition; not 12th-series sequence."}},{"grade":1,"semester":"lower","current_12th_series_status":"research_required","public_index_status":"No edition-identified current mathematics TOC found."},{"grade":2,"semester":"upper","current_12th_series_status":"research_required","public_index_status":"No edition-identified current mathematics TOC found.","legacy_digital_reference":{"status":"verified_official_legacy_digital_book","url":"https://download.pep.com.cn/xsxjc/22xjcsx21x/mobile/index.html","warning":"Legacy PEP digital book; do not use as current sequence."}},{"grade":2,"semester":"lower","current_12th_series_status":"research_required","public_index_status":"No edition-identified current mathematics TOC found."},{"grade":3,"semester":"upper","current_12th_series_status":"research_required","public_index_status":"No edition-identified current mathematics TOC found."},{"grade":3,"semester":"lower","current_12th_series_status":"research_required"},{"grade":4,"semester":"upper","current_12th_series_status":"research_required"},{"grade":4,"semester":"lower","current_12th_series_status":"research_required"},{"grade":5,"semester":"upper","current_12th_series_status":"research_required","legacy_digital_reference":{"status":"verified_official_legacy_digital_book","url":"https://download.pep.com.cn/xsxjc/22xjcsx51x/index.html","warning":"Earlier illustrated edition; not current sequence evidence."}},{"grade":5,"semester":"lower","current_12th_series_status":"research_required"},{"grade":6,"semester":"upper","current_12th_series_status":"research_required"},{"grade":6,"semester":"lower","current_12th_series_status":"research_required"}],"verification_fields_required":["edition_or_series","grade","semester","publication_year","ISBN_or_official_volume_identifier","official_url_or_catalog_record","table_of_contents","teacher_guide_reference","last_verified"],"current_context_evidence":[{"source_id":"cn-pep-primary-math-video-2026","date":"2026-05-15","evidence":"Official PEP page titled 义务教育小学数学教材.","limit":"Public index exposes no TOC and no downloadable asset URL; not volume-specific evidence."}],"research_sources":["database/research/cn_pep_direct_source_locator_pass_2026-08-18.json"],"ui_rule":"Never display a legacy textbook unit as the current Chinese grade sequence unless the edition is explicitly labelled and selected. If current exact sequencing is unverified, show the national learning stage and mark textbook placement pending."}
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "purpose":"Track revised PEP primary mathematics volume identity, sequence verification, rollout status and remaining artifact-level metadata without mixing legacy editions.",
+  "current_series":{
+    "series_name":"Revised PEP Primary Mathematics / PEP 12th-series generation",
+    "basis":"2022 national mathematics curriculum standard",
+    "launch_evidence":"PEP states that the 12th series began use in starting grades from autumn 2024.",
+    "source_ids":["cn-pep-series12-overview-2024","cn-pep-math-new-edition-intro-2024","cn-pep-primary-math-compilation-table-2024"],
+    "canonical_sequence_file":"database/research/cn_pep_current_sequence_verified_2026.json",
+    "unit_concept_map":"database/research/cn_pep_unit_concept_map_2026.json",
+    "sequence_verification":"12_of_12_volumes_verified_at_unit_sequence_level",
+    "rollout_rule":"Series structure does not prove simultaneous locality-specific adoption. Never infer mathematics rollout from notices for other subjects.",
+    "edition_rule":"Legacy PEP digital books remain separate and must never be selected as current revised-series sequence evidence."
+  },
+  "verification_dimensions":{
+    "series_sequence":"Grade + semester + ordered unit/activity titles in the revised series.",
+    "volume_artifact_metadata":"ISBN, publication/impression metadata and official volume-level catalog/digital asset.",
+    "subsection_page_detail":"Subsection headings, example numbers, exercise pages and teacher-guide page locators.",
+    "local_rollout":"Whether a locality/school was using the specific revised volume at a specific date."
+  },
+  "volumes":[
+    {"grade":1,"semester":"upper","sequence_status":"verified","artifact_metadata_status":"partial","subsection_page_status":"partial","crosscheck_status":"official_PEP_intro_supports_named_units","legacy_digital_reference":{"url":"https://download.pep.com.cn/xsxjc/22xjcsx11x/index.html","warning":"Earlier illustrated edition; not revised-series sequence."}},
+    {"grade":1,"semester":"lower","sequence_status":"verified","artifact_metadata_status":"pending","subsection_page_status":"pending"},
+    {"grade":2,"semester":"upper","sequence_status":"verified","artifact_metadata_status":"pending","subsection_page_status":"pending","legacy_digital_reference":{"url":"https://download.pep.com.cn/xsxjc/22xjcsx21x/mobile/index.html","warning":"Legacy PEP digital book; not revised-series sequence."}},
+    {"grade":2,"semester":"lower","sequence_status":"verified","artifact_metadata_status":"pending","subsection_page_status":"pending"},
+    {"grade":3,"semester":"upper","sequence_status":"verified","artifact_metadata_status":"pending","subsection_page_status":"pending"},
+    {"grade":3,"semester":"lower","sequence_status":"verified","artifact_metadata_status":"partial_secondary_crosscheck","subsection_page_status":"partial_secondary_crosscheck","crosscheck_status":"current_2026_new-edition_teacher-resource_sequence_matches_authoritative_table"},
+    {"grade":4,"semester":"upper","sequence_status":"verified","artifact_metadata_status":"partial_secondary_crosscheck","subsection_page_status":"partial_secondary_crosscheck","crosscheck_status":"multiple_current_2026_resources_match_authoritative_table"},
+    {"grade":4,"semester":"lower","sequence_status":"verified","artifact_metadata_status":"pending","subsection_page_status":"pending","warning":"Some third-party pages labelled new textbook still reproduce the older sequence; use the publisher-authored series table as sequence authority."},
+    {"grade":5,"semester":"upper","sequence_status":"verified","artifact_metadata_status":"partial_catalog_crosscheck","subsection_page_status":"pending","crosscheck_status":"June_2026_catalog_resource_matches_authoritative_table","legacy_digital_reference":{"url":"https://download.pep.com.cn/xsxjc/22xjcsx51x/index.html","warning":"Earlier illustrated edition; not revised-series sequence evidence."}},
+    {"grade":5,"semester":"lower","sequence_status":"verified","artifact_metadata_status":"pending","subsection_page_status":"pending"},
+    {"grade":6,"semester":"upper","sequence_status":"verified","artifact_metadata_status":"partial_catalog_crosscheck","subsection_page_status":"pending","crosscheck_status":"June_2026_catalog_resource_matches_authoritative_table"},
+    {"grade":6,"semester":"lower","sequence_status":"verified","artifact_metadata_status":"pending","subsection_page_status":"pending"}
+  ],
+  "coverage":{
+    "volume_slots":12,
+    "sequence_verified":12,
+    "sequence_coverage_percent":100,
+    "artifact_metadata_complete":false,
+    "subsection_page_detail_complete":false,
+    "local_rollout_complete":false
+  },
+  "ui_rule":"When PEP revised series is selected, exact grade/semester/unit placement may now be shown from the verified series table. Do not imply nationwide PEP use, simultaneous rollout, or subsection/page detail that has not been separately verified."
+}
