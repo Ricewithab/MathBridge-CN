@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "purpose": "Canonical registry for joining MathBridge curriculum, teaching and diagnostic data without duplicating content. Aliases exist only to resolve older shorthand IDs; new records should use canonical IDs directly.",
   "canonical_sources": {
     "concepts": "database/concept_taxonomy.json",
@@ -7,6 +7,7 @@
     "number_progression": "database/progression/core_number_cn_uk_us.json",
     "operations_progression": "database/progression/operations_cn_uk_us.json",
     "representations": "database/teaching/representation_catalog.json",
+    "representations_extended": "database/teaching/representation_catalog_extended.json",
     "teaching_moves": "database/teaching/teaching_moves_catalog.json",
     "misconceptions": "database/diagnostics/misconception_catalog.json",
     "diagnostic_questions": "database/diagnostics/diagnostic_question_catalog.json",
@@ -15,15 +16,8 @@
     "source_metadata": "database/source_metadata.json"
   },
   "canonical_representation_ids": [
-    "number-bonds-part-whole",
-    "ten-frame",
-    "base-ten-place-value-models",
-    "number-line",
-    "arrays",
-    "bar-model-tape-diagram",
-    "area-model",
-    "partial-products-expanded-methods",
-    "standard-written-algorithm"
+    "number-bonds-part-whole","ten-frame","base-ten-place-value-models","number-line","arrays","bar-model-tape-diagram","area-model","partial-products-expanded-methods","standard-written-algorithm",
+    "equality-balance-model","pattern-table","ratio-table-double-number-line","measurement-tools","ruler-scale","clock-face","timeline-calendar","money-model","unit-square-grid","unit-cube-model","shape-property-diagram","angle-turn-model","protractor-angle-measure","coordinate-grid","symmetry-diagram","transformation-diagram","data-table","pictogram","bar-chart","line-graph","pie-chart","probability-line"
   ],
   "representation_aliases": {
     "part-whole-number-bond": ["number-bonds-part-whole"],
@@ -31,19 +25,13 @@
     "bar-model": ["bar-model-tape-diagram"],
     "array": ["arrays"],
     "partial-products": ["partial-products-expanded-methods"],
-    "visual-fraction-model": ["area-model", "bar-model-tape-diagram", "number-line"]
+    "visual-fraction-model": ["area-model", "bar-model-tape-diagram", "number-line"],
+    "double-number-line": ["ratio-table-double-number-line"],
+    "unit-grid": ["unit-square-grid"],
+    "coordinate-plane": ["coordinate-grid"]
   },
   "canonical_teaching_move_ids": [
-    "connect-representations",
-    "fade-support",
-    "compare-methods",
-    "variation-one-feature",
-    "reason-from-structure",
-    "explain-why",
-    "represent-before-symbolise",
-    "use-precise-language-structures",
-    "use-error-and-misconception",
-    "move-from-context-to-model"
+    "connect-representations","fade-support","compare-methods","variation-one-feature","reason-from-structure","explain-why","represent-before-symbolise","use-precise-language-structures","use-error-and-misconception","move-from-context-to-model"
   ],
   "diagnostic_action_routing": {
     "ask-for-representation": ["represent-before-symbolise"],
@@ -68,11 +56,11 @@
     "explain-each-line": ["explain-why", "connect-representations"],
     "compare-methods": ["compare-methods"]
   },
-  "routing_note": "Diagnostic-action routing maps an older granular action to one or more canonical teaching moves for UI/recommendation assembly. It does not claim the terms are exact pedagogical synonyms.",
+  "routing_note": "Diagnostic-action routing maps an older granular action to one or more canonical teaching moves for UI assembly. It does not claim the terms are exact pedagogical synonyms.",
   "integrity_rules": [
-    "All new concept profiles must use concept IDs from concept_taxonomy.json.",
-    "All new representation references must use canonical_representation_ids.",
-    "All new teaching-move references must use canonical_teaching_move_ids.",
+    "All concept profiles must use concept IDs from concept_taxonomy.json.",
+    "All representation references must use canonical_representation_ids.",
+    "All teaching-move references must use canonical_teaching_move_ids.",
     "Legacy aliases may be resolved at read time but should not be written into new intelligence records.",
     "A missing reference is an integrity error and must not be silently ignored."
   ]
