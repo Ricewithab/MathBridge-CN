@@ -1,0 +1,66 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "purpose":"Separate the verified revised PEP series design from documented classroom/platform rollout. Rollout evidence is locality/province specific unless a national mathematics-specific source states otherwise.",
+  "national_publisher_context":{
+    "source_id":"cn-pep-series12-overview-2024",
+    "claim":"PEP states that the 12th series began formal use in starting grades from autumn 2024.",
+    "status":"verified_publisher_context",
+    "limit":"Does not provide a mathematics-specific national grade-by-grade rollout schedule."
+  },
+  "documented_rollout_examples":[
+    {
+      "location":"Wuhu, Anhui",
+      "term":"2024 autumn",
+      "evidence":"Municipal education platform records 数学人教版（新课标）一年级上册（2024年新编）.",
+      "pep_math_volumes":[{"grade":1,"semester":"upper"}],
+      "source_url":"https://jyj.wuhu.gov.cn/xwzx/tzgg/8637749.html",
+      "status":"official_local_government_platform_evidence"
+    },
+    {
+      "location":"Wuhu, Anhui",
+      "term":"2025 spring",
+      "evidence":"Municipal platform records 数学人教版（新课标）一年级下册（2025年新编）.",
+      "pep_math_volumes":[{"grade":1,"semester":"lower"}],
+      "source_url":"https://jyj.wuhu.gov.cn/xwzx/tzgg/8698793.html",
+      "status":"official_local_government_platform_evidence"
+    },
+    {
+      "location":"Wuhu, Anhui",
+      "term":"2025 autumn",
+      "evidence":"Municipal platform records 数学人教版（新课标）二年级上册（2025年新编） and 三年级上册（2025年新编）.",
+      "pep_math_volumes":[{"grade":2,"semester":"upper"},{"grade":3,"semester":"upper"}],
+      "source_url":"https://jyj.wuhu.gov.cn/xwzx/tzgg/8854556.html",
+      "status":"official_local_government_platform_evidence"
+    },
+    {
+      "location":"Wuhu, Anhui",
+      "term":"2026 spring",
+      "evidence":"Municipal platform records revised PEP Grade 2 lower and Grade 3 lower mathematics directories as new/updated for the term.",
+      "pep_math_volumes":[{"grade":2,"semester":"lower"},{"grade":3,"semester":"lower"}],
+      "source_urls":["https://jyj.wuhu.gov.cn/xwzx/tzgg/8910768.html","https://jyj.wuhu.gov.cn/xwzx/tzgg/8912139.html"],
+      "status":"official_local_government_platform_evidence"
+    },
+    {
+      "location":"Anhui province training context",
+      "term":"2026 autumn",
+      "evidence":"An official education notice states that 2026 primary mathematics revised-textbook training covers Grades 4-6 and that publishers supplied Grades 4-6 upper-semester textbook samples for training. The underlying provincial notice covers PEP and Jiangsu Education versions; local Wuwei implementation uses Jiangsu Education, so this evidence establishes the provincial rollout/training structure but is not itself proof that every locality uses PEP.",
+      "grade_scope":[4,5,6],
+      "semester":"upper",
+      "source_url":"https://www.ww.gov.cn/openness/public/6603481/41241937.html",
+      "status":"official_government_training_evidence",
+      "pep_use_limit":"Use only to explain the 2026 Grade 4-6 rollout/training phase in Anhui. Do not state that Wuwei itself uses PEP mathematics."
+    }
+  ],
+  "interpretation":{
+    "verified":"The revised PEP series sequence contains all 12 designed volumes. In documented PEP-use contexts, active classroom/platform evidence progresses by term rather than all 12 books appearing simultaneously in 2024.",
+    "strong_inference":"The scarcity of genuine revised Grade 4-6 lower-semester classroom resources by August 2026 is consistent with the documented rollout, because Grade 4-6 upper books are entering the 2026 autumn training/use phase in the cited Anhui evidence.",
+    "not_verified":"A nationwide mathematics-specific rule that every PEP-using locality follows exactly the same grade/term schedule, or an official national statement that Grade 4-6 lower revised PEP begins spring 2027."
+  },
+  "product_rules":[
+    "Series sequence may show a future/designed PEP volume even when local classroom rollout has not reached that semester.",
+    "When the user asks what a Chinese class is currently using, require locality/publisher/term context; do not infer from the series design alone.",
+    "Do not describe PEP as the national textbook; it is a major approved textbook series used in selected localities.",
+    "Do not use the three-subject unified-textbook rollout schedule as mathematics rollout evidence."
+  ]
+}
