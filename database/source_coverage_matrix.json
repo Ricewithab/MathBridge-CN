@@ -1,0 +1,79 @@
+{
+  "version": "0.1.0",
+  "purpose": "Defines which source types MathBridge should use for each layer of a curriculum comparison and prevents a single source from being stretched beyond its authority.",
+  "comparison_layers": [
+    {
+      "id": "what_is_taught",
+      "label_en": "What is taught",
+      "label_cn": "教什么",
+      "preferred_sources": {
+        "CN": ["cn-moe-math-2022", "cn-pEp-math-primary", "cn-pep-digital-math-textbooks"],
+        "UK": ["uk-dfe-mathematics"],
+        "US_baseline": ["us-common-core-math"],
+        "US_state_examples": ["us-california-math-framework-2023", "us-texas-teks-math"]
+      },
+      "rule": "Curriculum requirements must come from official curriculum/standards or an approved textbook sequence; classroom resources cannot establish statutory expectations."
+    },
+    {
+      "id": "how_it_is_taught",
+      "label_en": "How it is taught",
+      "label_cn": "怎么教",
+      "preferred_sources": {
+        "CN": ["cn-pep-math-new-edition-intro-2024", "cn-pEp-math-primary", "cn-pep-digital-math-textbooks"],
+        "UK": ["uk-dfe-primary-math-guidance-2020", "uk-ncetm-primary-mastery"],
+        "US": ["us-california-math-framework-2023", "us-illustrative-math-k5", "us-ies-math-practice"]
+      },
+      "rule": "Teaching-method claims should be tied to explicit guidance, textbook evidence or observed lesson design. Avoid national stereotypes."
+    },
+    {
+      "id": "why_this_approach",
+      "label_en": "Why this approach",
+      "label_cn": "为什么这样教",
+      "preferred_sources": {
+        "CN": ["cn-pep-math-new-edition-intro-2024", "cn-moe-math-2022"],
+        "UK": ["uk-dfe-primary-math-guidance-2020", "uk-ncetm-primary-mastery"],
+        "US": ["us-ies-math-practice", "us-california-math-framework-2023"],
+        "international": ["international-timss"]
+      },
+      "rule": "Explanations of pedagogical rationale should distinguish official intent from research evidence and from MathBridge interpretation."
+    },
+    {
+      "id": "classroom_example",
+      "label_en": "Classroom example",
+      "label_cn": "课堂例子",
+      "preferred_sources": {
+        "CN": ["cn-pEp-math-primary", "cn-pep-digital-math-textbooks"],
+        "UK": ["uk-ncetm-primary-mastery", "uk-dfe-primary-math-guidance-2020"],
+        "US": ["us-illustrative-math-k5", "us-california-math-framework-2023"]
+      },
+      "rule": "Examples must be labelled as examples, not as universal descriptions of every classroom in that system."
+    },
+    {
+      "id": "research_evidence",
+      "label_en": "Research evidence",
+      "label_cn": "研究依据",
+      "preferred_sources": {
+        "US_federal": ["us-ies-math-practice"],
+        "international": ["international-timss"]
+      },
+      "rule": "Research claims should eventually link to specific papers, reviews or evidence-rated practice guides rather than only umbrella organisations."
+    }
+  ],
+  "authority_levels": [
+    {"level": 5, "label": "Primary official authority", "examples": ["national curriculum", "state standards", "official approved textbook", "government teaching guidance"]},
+    {"level": 4, "label": "High-quality implementation resource", "examples": ["NCETM materials", "Illustrative Mathematics", "official framework support materials"]},
+    {"level": 3, "label": "Peer-reviewed or strong secondary evidence", "examples": ["research studies", "systematic reviews", "academic syntheses"]},
+    {"level": 2, "label": "Professional practice evidence", "examples": ["teacher resources", "lesson examples", "professional organisations"]},
+    {"level": 1, "label": "Context only", "examples": ["blogs", "commercial summaries", "unverified classroom anecdotes"]}
+  ],
+  "publication_rules": [
+    "Every visible curriculum claim must have at least one source_id.",
+    "Claims presented as official requirements require an authority-level 5 source.",
+    "Claims comparing national teaching cultures should normally have multiple evidence types and be phrased cautiously.",
+    "Exact quotations require a source locator and page/section/standard code where available.",
+    "Teacher-facing summaries should normally paraphrase rather than reproduce long source text.",
+    "US mode must identify whether a statement refers to Common Core, a specific state, or a classroom-resource example.",
+    "China mode must distinguish national curriculum stage requirements from PEP textbook year-by-year sequencing.",
+    "Legacy and current textbook editions must never be silently mixed."
+  ]
+}
