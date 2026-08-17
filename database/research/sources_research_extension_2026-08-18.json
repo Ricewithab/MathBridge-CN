@@ -1,5 +1,5 @@
 {
-  "version":"0.1.0",
+  "version":"0.2.0",
   "research_date":"2026-08-18",
   "category":"research",
   "sources":[
@@ -7,6 +7,10 @@
     {"id":"research-huang-area-2013","country":"INT","title_en":"Children’s Conceptions of Area Measurement and Their Strategies for Solving Area Measurement Problems","organisation":"Journal of Curriculum and Teaching","doi":"10.5430/jct.v2n1p10"},
     {"id":"research-tansisman-measurement-2016","country":"INT","title_en":"A Study on Sixth Grade Students’ Misconceptions and Errors in Spatial Measurement: Length, Area, and Volume","organisation":"International Journal of Science and Mathematics Education","doi":"10.1007/s10763-015-9642-5"},
     {"id":"research-vandooren-additive-multiplicative-2010","country":"INT","title_en":"From Addition to Multiplication … and Back: The Development of Students’ Additive and Multiplicative Reasoning Skills","organisation":"Cognition and Instruction","doi":"10.1080/07370008.2010.488306"},
-    {"id":"research-watson-moritz-bargraphs-1999","country":"INT","title_en":"Interpreting & Predicting from Bar Graphs","organisation":"Mathematics Education Research Journal","doi":"10.1177/183693919902400206"}
+    {"id":"research-watson-moritz-bargraphs-1999","country":"INT","title_en":"Interpreting & Predicting from Bar Graphs","organisation":"Mathematics Education Research Journal","doi":"10.1177/183693919902400206"},
+    {"id":"research-gibson-angle-2015","country":"INT","title_en":"The Effects of Word-Learning Biases on Children's Concept of Angle","organisation":"Child Development","doi":"10.1111/cdev.12286"},
+    {"id":"research-berthelot-angle-2013","country":"INT","title_en":"About the concept of angle in elementary school: Misconceptions and teaching sequences","organisation":"Journal of Mathematical Behavior","doi":"10.1016/j.jmathb.2012.10.001"},
+    {"id":"research-kwon-ruler-2024","country":"INT","title_en":"Overturning Children’s Misconceptions about Ruler Measurement: The Power of Disconfirming Evidence","organisation":"Journal of Intelligence","doi":"10.3390/jintelligence12070062"},
+    {"id":"research-earnest-clock-2018","country":"INT","title_en":"Time as a Measure: Elementary Students Positioning the Hands of an Analog Clock","organisation":"Journal of Numerical Cognition","doi":"10.5964/jnc.v4i1.94"}
   ]
 }
