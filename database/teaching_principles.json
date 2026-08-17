@@ -1,0 +1,50 @@
+{
+  "description": "Core mathematics education principles used to explain why different systems teach concepts differently.",
+  "principles": [
+    {
+      "id": "principle_cpa",
+      "name_en": "Concrete Pictorial Abstract",
+      "name_cn": "具体-图像-抽象",
+      "description": "A progression where students first experience mathematical ideas using objects, then visual representations, before moving to symbols and formal procedures.",
+      "common_in": ["UK", "Singapore", "China influenced approaches"],
+      "related_domains": ["Number", "Fractions", "Geometry"],
+      "evidence_sources": ["UK_NCETM_PRIMARY_MASTERY", "RESEARCH_REPRESENTATION_LEARNING"]
+    },
+    {
+      "id": "principle_mastery",
+      "name_en": "Mastery Learning",
+      "name_cn": "数学精通式学习",
+      "description": "Students develop deep understanding of a concept before moving forward, with attention to misconceptions and multiple representations.",
+      "common_in": ["UK", "Singapore"],
+      "related_domains": ["All"],
+      "evidence_sources": ["UK_NCETM_PRIMARY_MASTERY"]
+    },
+    {
+      "id": "principle_variation",
+      "name_en": "Variation Theory",
+      "name_cn": "变式教学",
+      "description": "Students compare carefully selected examples and non-examples to identify mathematical structures and relationships.",
+      "common_in": ["China", "Singapore", "UK mastery approaches"],
+      "related_domains": ["Number", "Algebraic Thinking"],
+      "evidence_sources": ["RESEARCH_VARIATION_THEORY"]
+    },
+    {
+      "id": "principle_reasoning",
+      "name_en": "Mathematical Reasoning",
+      "name_cn": "数学推理",
+      "description": "Students explain, justify and communicate mathematical thinking rather than only produce answers.",
+      "common_in": ["US", "UK"],
+      "related_domains": ["Problem Solving", "Number"],
+      "evidence_sources": ["US_COMMON_CORE_MATH", "US_IES_MATHEMATICS_PRACTICE_GUIDES"]
+    },
+    {
+      "id": "principle_fluency",
+      "name_en": "Procedural Fluency",
+      "name_cn": "程序性流利度",
+      "description": "Students develop efficient and accurate mathematical procedures while understanding when and why to use them.",
+      "common_in": ["China", "US", "UK"],
+      "related_domains": ["Arithmetic", "Number"],
+      "evidence_sources": ["CN_MATH_CURRICULUM_2022", "US_COMMON_CORE_MATH"]
+    }
+  ]
+}
