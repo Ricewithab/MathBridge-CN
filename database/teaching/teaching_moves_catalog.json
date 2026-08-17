@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "purpose": "Store teacher actions separately from representations so MathBridge can explain how the same model can be used in more or less conceptually powerful ways.",
+  "moves": [
+    {
+      "id": "connect-representations",
+      "name_en": "Connect Representations",
+      "name_cn": "连接多种表征",
+      "description_en": "Make explicit links between concrete, pictorial, diagrammatic and symbolic forms rather than presenting them as separate activities.",
+      "why_it_matters": "Students can otherwise learn to operate each representation without understanding the invariant mathematical structure across them.",
+      "prompt_examples": ["What is the same in these two representations?", "Where can you see this part of the equation in the diagram?", "If I remove the counters, what information must the symbols preserve?"],
+      "source_ids": ["uk-dfe-primary-math-guidance-2020", "us-ies-math-practice", "cn-pep-math-new-edition-intro-2024"]
+    },
+    {
+      "id": "fade-support",
+      "name_en": "Fade Representational Support",
+      "name_cn": "逐步减少表征支架",
+      "description_en": "Move from more explicit supports toward mental and symbolic reasoning when pupils can preserve the underlying structure without the support.",
+      "why_it_matters": "A representation should expose structure, not become a permanent procedure pupils cannot work without.",
+      "prompt_examples": ["Can you solve it without drawing every object?", "What could you imagine instead of building it?", "Which part of the model do you no longer need?"],
+      "source_ids": ["uk-dfe-primary-math-guidance-2020", "us-ies-math-practice"]
+    },
+    {
+      "id": "compare-methods",
+      "name_en": "Compare Methods",
+      "name_cn": "比较不同方法",
+      "description_en": "Place two valid strategies or representations side by side and ask pupils to analyse efficiency, structure and generalisability.",
+      "why_it_matters": "Comparison can shift attention from obtaining an answer to understanding why methods work and when each is useful.",
+      "prompt_examples": ["Which method makes the place value easiest to see?", "Why do both methods give the same result?", "Which method would you choose for a larger number, and why?"],
+      "source_ids": ["us-common-core-math", "cn-pep-math-new-edition-intro-2024", "uk-dfe-primary-math-guidance-2020"]
+    },
+    {
+      "id": "variation-one-feature",
+      "name_en": "Vary One Feature at a Time",
+      "name_cn": "有目的地改变一个特征",
+      "description_en": "Sequence examples so that selected features change while others remain stable, directing attention to mathematical structure and relationships.",
+      "why_it_matters": "Careful variation supports generalisation and helps pupils distinguish essential from non-essential features.",
+      "prompt_examples": ["What changed? What stayed the same?", "Predict the next answer before calculating.", "Which part of the representation must change if this number changes?"],
+      "source_ids": ["uk-ncetm-primary-mastery", "cn-pep-math-new-edition-intro-2024"]
+    },
+    {
+      "id": "reason-from-structure",
+      "name_en": "Reason From Structure Before Calculating",
+      "name_cn": "先看结构，再计算",
+      "description_en": "Ask pupils to analyse quantities, relationships and known facts before carrying out a calculation.",
+      "why_it_matters": "This reduces indiscriminate procedure use and builds transfer between related problems.",
+      "prompt_examples": ["What do you notice before you calculate?", "Which known fact can help?", "What relationship is shown by the bar/array/number line?"],
+      "source_ids": ["uk-dfe-primary-math-guidance-2020", "us-common-core-math", "cn-pep-math-new-edition-intro-2024"]
+    },
+    {
+      "id": "explain-why",
+      "name_en": "Explain Why a Method Works",
+      "name_cn": "解释方法为什么成立",
+      "description_en": "Require an explanation tied to mathematical relationships, not only a description of procedural steps.",
+      "why_it_matters": "A pupil can execute a procedure accurately without understanding the mathematical principle that justifies it.",
+      "prompt_examples": ["Why is regrouping allowed here?", "Why does splitting the array not change the product?", "Why are these fractions equivalent?"],
+      "source_ids": ["us-common-core-math", "uk-dfe-primary-math-guidance-2020", "cn-pep-math-new-edition-intro-2024"]
+    },
+    {
+      "id": "represent-before-symbolise",
+      "name_en": "Represent Before or Alongside Symbolising",
+      "name_cn": "先表征，再符号化或同步符号化",
+      "description_en": "Use objects, diagrams, actions or contexts to establish meaning, then connect them explicitly to mathematical symbols and equations.",
+      "why_it_matters": "Symbols are compressed representations; pupils need access to the quantities and relationships the symbols stand for.",
+      "prompt_examples": ["Show this equation with a diagram.", "What does the 3 represent in this problem?", "Write an equation that matches what you built."],
+      "source_ids": ["us-common-core-math", "uk-dfe-primary-math-guidance-2020", "us-ies-math-practice", "cn-pep-math-new-edition-intro-2024"]
+    },
+    {
+      "id": "use-precise-language-structures",
+      "name_en": "Use Precise Mathematical Language Structures",
+      "name_cn": "使用准确的数学语言句式",
+      "description_en": "Provide and rehearse concise sentence structures that express mathematical relationships accurately, then adapt them to new examples.",
+      "why_it_matters": "Language can make mathematical structure explicit and gives pupils a tool for explaining reasoning rather than relying on vague descriptions.",
+      "prompt_examples": ["10 hundreds is equal to 1 thousand.", "The whole is __ and the parts are __ and __.", "I know __ because __."],
+      "source_ids": ["uk-dfe-primary-math-guidance-2020", "us-ies-math-practice"]
+    },
+    {
+      "id": "use-error-and-misconception",
+      "name_en": "Use Errors and Misconceptions as Diagnostic Prompts",
+      "name_cn": "利用错误与误解进行诊断",
+      "description_en": "Present or analyse incorrect representations and methods to identify which mathematical relationship has been misunderstood.",
+      "why_it_matters": "The location of an error often reveals whether the difficulty is conceptual, representational, linguistic or procedural.",
+      "prompt_examples": ["What has this pupil misunderstood?", "Where does the diagram stop matching the equation?", "How could we change one thing to make this correct?"],
+      "source_ids": ["us-ies-math-practice", "uk-dfe-primary-math-guidance-2020"]
+    },
+    {
+      "id": "move-from-context-to-model",
+      "name_en": "Move From Context to Mathematical Model",
+      "name_cn": "从情境抽象到数学模型",
+      "description_en": "Identify the quantities and relationships in a real or word-problem context, express them with a representation, then operate symbolically.",
+      "why_it_matters": "This supports modelling and prevents key words from replacing analysis of mathematical structure.",
+      "prompt_examples": ["What quantities do we know?", "How are the quantities related?", "Which representation would make that relationship easiest to see?"],
+      "source_ids": ["uk-ncetm-primary-mastery", "us-common-core-math", "cn-pep-math-new-edition-intro-2024"]
+    }
+  ],
+  "ui_note": "MathBridge should recommend a teaching move only when the selected representation, concept, grade/stage and evidence support it; these moves are not national stereotypes."
+}
