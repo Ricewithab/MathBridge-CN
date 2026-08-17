@@ -1,11 +1,12 @@
 {
-  "version":"0.5.0",
+  "version":"0.6.0",
   "purpose":"Entry point for all Grade 1-6 concept intelligence profiles.",
   "taxonomy":"database/concept_taxonomy.json",
   "registry":"database/intelligence/reference_registry.json",
   "curriculum_coverage":"database/research/curriculum_mapping_coverage.json",
   "cn_section_locators":"database/research/cn_moe_2022_section_locators.json",
   "diagnostic_extensions":"database/intelligence/diagnostic_extension_manifest_2026-08-18.json",
+  "diagnostic_coverage_audit":"database/validation/diagnostic_coverage_audit_2026-08-18.json",
   "profile_files":[
     {"path":"database/intelligence/concept_intelligence_index.json","role":"seed_profiles","concept_count":15},
     {"path":"database/intelligence/profiles/number_remaining.json","domain_id":"number","concept_count":34},
@@ -23,8 +24,9 @@
     "cn_high_use_section_locator_layer_added":true,
     "cn_official_pdf_page_numbers_complete":false,
     "full_claim_level_curriculum_verification_complete":false,
-    "diagnostic_extension_concepts_added":26,
-    "diagnostic_coverage_complete":false,
+    "diagnostic_route_coverage_concepts":121,
+    "diagnostic_route_coverage_complete":true,
+    "diagnostic_empirical_depth_complete":false,
     "current_pep_grade_mapping_complete":false
   },
   "resolver_rules":[
@@ -33,8 +35,8 @@
     "Every concept profile must point to at least one relevant curriculum/framework record; use curriculum_mapping_coverage.json to check research depth.",
     "For China 2022 national-standard claims, apply cn_section_locators when a concept match exists and surface its section hierarchy as the evidence locator.",
     "Do not display a China PDF page number when the locator record has printed_page=null.",
-    "Load diagnostic_extensions after base profiles and apply its link files before assembling diagnostics.",
-    "An empty misconception_ids or diagnostic_question_ids array after diagnostic extensions are applied means that diagnostic content is still required; do not invent it at render time.",
+    "Load diagnostic_extensions after base profiles and apply all link files before assembling diagnostics.",
+    "Diagnostic route coverage means at least one misconception/probe route is available; it does not imply that every misconception is empirically established.",
     "Keep evidence status from the source record. Joining records does not increase confidence.",
     "Use England when referring to the statutory National Curriculum in England.",
     "Treat Common Core as a US comparison baseline, not a single US curriculum.",
