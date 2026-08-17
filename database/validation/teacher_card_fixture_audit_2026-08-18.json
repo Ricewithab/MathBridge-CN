@@ -1,0 +1,18 @@
+{
+  "version":"0.1.0",
+  "audit_date":"2026-08-18",
+  "fixture_file":"database/validation/teacher_card_fixtures_2026-08-18.json",
+  "assembly_rules":"database/intelligence/assembly_rules.json",
+  "checks":[
+    {"id":"required-sections","rule":"Each fixture includes what is taught, progression, representation, teaching, rationale, misunderstanding, diagnostic question, classroom use and evidence.","result":"pass"},
+    {"id":"jurisdiction-labels","rule":"England is labelled England/英格兰 and Common Core is labelled as a US baseline rather than a nationwide US curriculum.","result":"pass"},
+    {"id":"china-grade-integrity","rule":"Where exact current PEP grade/semester placement is not verified, the fixture keeps the national learning stage and states that textbook sequencing is pending.","result":"pass"},
+    {"id":"no-grade-equivalence","rule":"Matching grade/year numbers are not presented as curriculum equivalence.","result":"pass"},
+    {"id":"diagnostic-safety","rule":"Misunderstandings are written as possible reasoning patterns and the diagnostic question is a probe, not a diagnosis.","result":"pass"},
+    {"id":"source-traceability","rule":"Every system-specific factual block lists source IDs and a locator or explicit pending status.","result":"pass"},
+    {"id":"copy-style","rule":"Teacher-facing text is direct, educational and functional. It contains no marketing claims, slogans, hype or AI-style filler.","result":"pass"},
+    {"id":"legacy-pep","rule":"No legacy PEP sequence is used as current textbook evidence.","result":"pass"}
+  ],
+  "result":{"fixtures":6,"passed":6,"failed":0,"status":"pass"},
+  "next_quality_work":["Expand fixtures only after underlying evidence improves; do not create duplicate teacher copy for all 121 concepts yet.","Prioritise direct current PEP volume sequencing and source locators.","Classroom-test bilingual diagnostic wording before treating phrasing as final."]
+}
