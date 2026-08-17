@@ -1,0 +1,258 @@
+{
+  "version": "0.1.0",
+  "description": "Maps neutral MathBridge concept IDs to curriculum-specific placements and evidence. Exact grade/year placement and standard wording must be verified against primary sources before status is changed to verified.",
+  "status_values": ["research_required", "draft", "verified"],
+  "system_notes": {
+    "CN": "Use Chinese curriculum stage/grade placement and textbook sequence. Do not infer direct equivalence from foreign year labels.",
+    "UK": "Use England National Curriculum year/key-stage placement plus NCETM teaching guidance where relevant.",
+    "US": "Use Common Core as the baseline comparison framework, while preserving the ability to add state-specific mappings later."
+  },
+  "mapping_schema": {
+    "concept_id": "ID from concept_taxonomy.json",
+    "systems": {
+      "CN|UK|US": {
+        "status": "research_required|draft|verified",
+        "grade_or_year": "Exact curriculum placement once verified",
+        "curriculum_stage": "Optional broader stage/key stage",
+        "standard_code": "Official code where one exists",
+        "official_wording": "Exact or carefully paraphrased official expectation",
+        "teaching_interpretation": "Teacher-facing explanation of what the expectation means in practice",
+        "depth": "introductory|developing|secure|advanced",
+        "source_ids": ["IDs from sources.json"],
+        "source_locator": "Page, section, statement, chapter or URL anchor",
+        "last_verified": "YYYY-MM-DD or null",
+        "notes": "Important caveats, sequencing or cross-system differences"
+      }
+    }
+  },
+  "mappings": [
+    {
+      "concept_id": "place-value",
+      "systems": {
+        "CN": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["cn-moe-math-2022", "cn-pEp-math-primary"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Map both official curriculum expectation and actual PEP textbook sequence."
+        },
+        "UK": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["uk-dfe-mathematics", "uk-ncetm-primary-mastery"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Capture progression in place-value range, representations and reasoning expectations."
+        },
+        "US": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["us-common-core-math", "us-ies-math-practice"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Map Common Core grade progression first; state-specific variants can be layered later."
+        }
+      }
+    },
+    {
+      "concept_id": "multiplication-meaning",
+      "systems": {
+        "CN": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["cn-moe-math-2022", "cn-pEp-math-primary"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Separate conceptual introduction from multiplication-fact fluency and written algorithms."
+        },
+        "UK": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["uk-dfe-mathematics", "uk-ncetm-primary-mastery"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Record equal-groups, arrays, repeated addition and later multiplicative reasoning as separate evidence points."
+        },
+        "US": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["us-common-core-math", "us-ies-math-practice"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Keep conceptual meaning, properties and fact fluency as distinct strands."
+        }
+      }
+    },
+    {
+      "concept_id": "fraction-as-part-whole",
+      "systems": {
+        "CN": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["cn-moe-math-2022", "cn-pEp-math-primary"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Capture first formal introduction and the representations used in the textbook sequence."
+        },
+        "UK": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["uk-dfe-mathematics", "uk-ncetm-primary-mastery"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Map unit fractions, equal parts, sets, measures and progression toward number-line interpretation."
+        },
+        "US": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["us-common-core-math", "us-ies-math-practice"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Distinguish early informal partitioning from formal fraction standards."
+        }
+      }
+    },
+    {
+      "concept_id": "equivalent-fractions",
+      "systems": {
+        "CN": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["cn-moe-math-2022", "cn-pEp-math-primary"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Map conceptual equivalence separately from simplification and common-denominator procedures."
+        },
+        "UK": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["uk-dfe-mathematics", "uk-ncetm-primary-mastery"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Capture visual/model-based equivalence and progression into comparison and calculation."
+        },
+        "US": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["us-common-core-math", "us-ies-math-practice"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Map visual fraction models, generated equivalents and justification requirements separately."
+        }
+      }
+    },
+    {
+      "concept_id": "area-concept",
+      "systems": {
+        "CN": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["cn-moe-math-2022", "cn-pEp-math-primary"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Separate understanding area as covering from memorisation/use of area formulae."
+        },
+        "UK": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["uk-dfe-mathematics", "uk-ncetm-primary-mastery"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Capture progression from comparison/counting squares to derived formulae."
+        },
+        "US": {
+          "status": "research_required",
+          "grade_or_year": null,
+          "curriculum_stage": null,
+          "standard_code": null,
+          "official_wording": null,
+          "teaching_interpretation": null,
+          "depth": null,
+          "source_ids": ["us-common-core-math", "us-ies-math-practice"],
+          "source_locator": null,
+          "last_verified": null,
+          "notes": "Track area as an attribute, unit-square reasoning, multiplication connection and formula development."
+        }
+      }
+    }
+  ],
+  "future_extensions": [
+    "state_specific_us_mappings",
+    "textbook_unit_and_lesson_locations",
+    "prerequisite_and_successor_links",
+    "cross_system_alignment_strength",
+    "common_misconceptions",
+    "assessment_examples"
+  ]
+}
