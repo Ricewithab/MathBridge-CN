@@ -1,0 +1,63 @@
+{
+  "version":"0.1.0",
+  "research_date":"2026-08-18",
+  "purpose":"Separate direct empirical evidence, evidence syntheses and curriculum-inferred diagnostic risks for high-use MathBridge misconceptions. A source may support the existence of a reasoning pattern without supporting its prevalence in a particular country or validating a specific diagnostic item.",
+  "evidence_levels":["direct_empirical","evidence_synthesis","guidance_supported","curriculum_inferred","research_required"],
+  "records":[
+    {
+      "misconception_id":"fraction-larger-denominator-means-larger",
+      "evidence_level":"direct_empirical_plus_synthesis",
+      "sources":[
+        {"source_id":"research-meert-fraction-comparison-2010","evidence_type":"original_study","population":"10- and 12-year-olds","supports":"Children who compare fractions can remain sensitive to interference from denominator magnitude, especially for common-numerator comparisons.","does_not_support":"It does not show that every incorrect common-numerator comparison is caused by one fixed misconception or establish prevalence across China, England or the US."},
+        {"source_id":"us-ies-fractions-2010","evidence_type":"practice_guide","population":"K-8 evidence synthesis","supports":"Fraction magnitude should be developed as numerical magnitude, including use of number lines and meaningful comparison rather than component-wise whole-number reasoning.","does_not_support":"A practice guide is not a prevalence study of one named misconception."}
+      ],
+      "publication_rule":"Teacher-facing wording may say that pupils can incorrectly apply whole-number reasoning to fraction components. Do not say this is typical of a jurisdiction or diagnose it from one answer."
+    },
+    {
+      "misconception_id":"equals-sign-operation-command",
+      "evidence_level":"direct_empirical",
+      "sources":[
+        {"source_id":"research-stephens-equal-sign-2013","evidence_type":"original_study","population":"290 Grade 3-5 students","supports":"Many students in the study interpreted the equal sign operationally and had difficulty recognising arithmetic equation structure; performance depended partly on task form.","does_not_support":"The sample does not establish universal prevalence, cross-national differences or the validity of a single MathBridge item as a diagnostic test."}
+      ],
+      "publication_rule":"Use as a reasoning pattern to probe with non-canonical equations and explanations of equivalence."
+    },
+    {
+      "misconception_id":"pv-digit-value-is-digit-name",
+      "evidence_level":"direct_empirical_broad_construct",
+      "sources":[
+        {"source_id":"research-fuson-place-value-1997","evidence_type":"original_multi-project_study","population":"elementary pupils across four projects","supports":"Children construct qualitatively different conceptual structures for multidigit numbers and place-value units, and those structures are connected to their addition/subtraction methods.","does_not_support":"The study should not be cited as direct prevalence evidence for the exact response 'the 5 in 507 means 5'."},
+        {"source_id":"research-lafay-place-value-2023","evidence_type":"randomized_manipulative_condition_study","population":"second graders, including pupils at risk for mathematics learning disabilities","supports":"Children's ability to represent and interpret multidigit numerals depends on understanding visible place-value denominations; at-risk pupils had greater difficulty when place-value structure was not transparent.","does_not_support":"The sample and intervention do not establish one universal place-value misconception or an optimal manipulative for every pupil."}
+      ],
+      "publication_rule":"Keep the diagnostic statement narrow: the pupil may be treating a digit without attending to the quantity represented by its position."
+    },
+    {
+      "misconception_id":"pv-zero-has-no-structural-role",
+      "evidence_level":"research_required_for_exact_placeholder_claim",
+      "sources":[],
+      "crosscheck_note":"Research on zero and decimal place-value wording documents difficulties with zero, but this pass did not verify a strong primary elementary study that directly supports MathBridge's exact internal-zero placeholder diagnostic (for example, 504 → 54).",
+      "publication_rule":"Retain as a useful curriculum-informed probe, but do not upgrade to direct empirical evidence until a source targeting placeholder-zero interpretation is verified."
+    },
+    {
+      "misconception_id":"division-sharing-only",
+      "evidence_level":"direct_empirical",
+      "sources":[
+        {"source_id":"research-ching-wu-division-2021","evidence_type":"original_study","population":"237 children aged 5-6","supports":"Children's performance differed between partitive (sharing) and quotitive (grouping/measurement) division situations; inverse relations were more difficult, and performance in quotitive inverse situations was more demanding than in partitive situations.","does_not_support":"It does not justify labelling an individual pupil 'sharing-only' after one task or generalising the pattern to every age group."},
+        {"source_id":"research-kinda-division-2013","evidence_type":"cross-sectional_original_study","population":"Japanese elementary and university students","supports":"Partitive sharing and quotitive grouping are distinct division scenario types worth testing separately rather than treating division meaning as a single undifferentiated skill.","does_not_support":"The Japanese sample does not establish a universal developmental order or a China/England/US comparison."}
+      ],
+      "publication_rule":"Use paired sharing and grouping tasks to probe whether the pupil coordinates both meanings of division."
+    },
+    {
+      "misconception_id":"mult-is-only-repeated-addition",
+      "evidence_level":"guidance_supported_research_required_for_exact_claim",
+      "sources":[],
+      "crosscheck_note":"Curriculum and teaching guidance support connecting multiplication to equal groups, arrays, area, scaling and properties. This pass did not verify a direct empirical study that establishes MathBridge's exact 'repeated-addition-only' reasoning pattern as written.",
+      "publication_rule":"Keep it as an instructional risk to probe, but do not cite it as a directly established misconception until appropriate empirical evidence is added."
+    }
+  ],
+  "global_rules":[
+    "Direct empirical evidence for a reasoning pattern does not make a MathBridge diagnostic item psychometrically validated.",
+    "Do not convert a study conducted in one country into a national teaching-culture claim.",
+    "Do not report prevalence unless the study design/sample supports the exact prevalence statement being made.",
+    "Where evidence supports a broader construct rather than the exact internal wording, label that limitation explicitly."
+  ]
+}
