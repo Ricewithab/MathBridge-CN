@@ -1,0 +1,44 @@
+{
+  "version":"0.1.0",
+  "research_date":"2026-08-18",
+  "purpose":"Extend California and Texas US state overlays into geometry, coordinates and data/statistics using official state standards.",
+  "concepts":[
+    {
+      "concept_id":"coordinates",
+      "California":{"status":"verified","placement":[{"grade":5,"standard_codes":["5.G.1","5.G.2"],"summary":"Define the coordinate plane using perpendicular axes, interpret ordered-pair order and graph/interpret points in the first quadrant."},{"grade":6,"standard_codes":["6.NS.6.a","6.NS.6.b","6.NS.6.c","6.NS.8"],"summary":"Extend coordinate work to negative rational coordinates and all four quadrants; use signs, reflections and coordinate distances in problems."}],"source_id":"us-california-math-standards"},
+      "Texas":{"status":"verified","placement":[{"grade":5,"standard_codes":["§111.7(b)(8)(A-C)"],"summary":"Describe coordinate-plane attributes and ordered-pair order, then graph first-quadrant points from mathematical and real-world problems."},{"grade":6,"standard_codes":["§111.26(b)(11)"],"summary":"Graph ordered pairs of rational numbers in all four quadrants."}],"source_id":"us-texas-teks-math"},
+      "comparison_note":"Both states establish first-quadrant coordinate work in Grade 5 and extend to all four quadrants in Grade 6. California Grade 6 explicitly connects sign changes to reflections across axes; Texas states the four-quadrant rational-point expectation directly."
+    },
+    {
+      "concept_id":"parallel-perpendicular",
+      "California":{"status":"verified","placement":[{"grade":4,"standard_codes":["4.G.1","4.G.2"],"summary":"Draw and identify perpendicular and parallel lines and classify two-dimensional figures using the presence or absence of these line relationships and specified angle sizes."}],"source_id":"us-california-math-standards"},
+      "Texas":{"status":"verified","placement":[{"grade":4,"standard_codes":["§111.6(b)(6)(A-D)"],"summary":"Identify points, lines, segments, rays, angles, perpendicular and parallel lines, and classify two-dimensional figures by these properties and angle size."}],"source_id":"us-texas-teks-math"},
+      "comparison_note":"The Grade 4 expectations are closely aligned in content. MathBridge should show this as an alignment rather than manufacture a difference."
+    },
+    {
+      "concept_id":"bar-charts",
+      "California":{"status":"verified","placement":[{"grade":2,"standard_codes":["2.MD.10"],"summary":"Draw picture graphs and single-unit-scale bar graphs for up to four categories and solve comparison/part-whole problems from the data."},{"grade":3,"standard_codes":["3.MD.3"],"summary":"Extend to scaled picture graphs and scaled bar graphs and solve one- and two-step comparison problems."}],"source_id":"us-california-math-standards"},
+      "Texas":{"status":"verified","placement":[{"grade":2,"standard_codes":["§111.4(b)(10)(A-D)"],"summary":"Explain bar length/picture count, organise up to four categories in pictographs and bar graphs with intervals of one or more, solve problems and draw conclusions/predictions."},{"grade":3,"standard_codes":["§111.5(b)(8)(A-B)"],"summary":"Use frequency tables, dot plots, pictographs and bar graphs with scaled intervals and solve one- and two-step categorical-data problems."}],"source_id":"us-texas-teks-math"},
+      "comparison_note":"Both states use bar graphs from Grade 2 and scaled displays in Grade 3. Texas Grade 2 explicitly permits bar-graph intervals greater than one and includes conclusions/predictions from graphs."
+    },
+    {
+      "concept_id":"mean-average",
+      "California":{"status":"verified","placement":[{"grade":6,"standard_codes":["6.SP.3","6.SP.5.c"],"summary":"Understand measures of centre as summaries and use median and/or mean together with measures of variability to describe numerical data in context."}],"source_id":"us-california-math-standards"},
+      "Texas":{"status":"verified","placement":[{"grade":6,"standard_codes":["§111.26(b)(12)(B-C)"],"summary":"Describe centre, spread and shape and summarise data with mean and median, together with range and interquartile range."}],"source_id":"us-texas-teks-math"},
+      "comparison_note":"Both place formal mean/median distribution summaries in Grade 6. Neither should be reduced to 'calculate the average' without the context of distribution and spread."
+    },
+    {
+      "concept_id":"interpret-data",
+      "California":{"status":"verified","placement":[{"grade":3,"standard_codes":["3.MD.3","3.MD.4"],"summary":"Interpret scaled categorical graphs and measurement line plots."},{"grade":6,"standard_codes":["6.SP.1","6.SP.2","6.SP.3","6.SP.4","6.SP.5"],"summary":"Develop statistical-question and variability concepts; describe distributions by centre, spread and shape; display data with dot plots, histograms and box plots and summarise data in context."}],"source_id":"us-california-math-standards"},
+      "Texas":{"status":"verified","placement":[{"grade":3,"standard_codes":["§111.5(b)(8)(A-B)"],"summary":"Interpret categorical data using frequency tables, dot plots, pictographs and scaled bar graphs."},{"grade":4,"standard_codes":["§111.6(b)(9)(A-B)"],"summary":"Represent and solve problems from frequency tables, dot plots and stem-and-leaf plots with whole-number/fraction data."},{"grade":5,"standard_codes":["§111.7(b)(9)(A-C)"],"summary":"Use bar graphs/frequency tables for categorical data and dot plots/stem-and-leaf plots for numerical data; add discrete paired data on scatterplots."},{"grade":6,"standard_codes":["§111.26(b)(12)(A-D)","§111.26(b)(13)(A-B)"],"summary":"Use dot plots, stem-and-leaf plots, histograms and box plots; analyse centre, spread and shape; use mean/median/range/IQR and relative-frequency summaries; interpret numeric displays and variability."}],"source_id":"us-texas-teks-math"},
+      "comparison_note":"By Grade 6 both states require distribution-level interpretation, but Texas retains stem-and-leaf plots as an explicit display type while California names dot plots, histograms and box plots."
+    }
+  ],
+  "rendering_rules":[
+    "If the two states align, say so directly rather than forcing contrast.",
+    "Do not relabel a Texas stem-and-leaf plot as a California requirement.",
+    "Keep first-quadrant Grade 5 coordinate work separate from all-four-quadrant Grade 6 work.",
+    "Use state standards for required content; implementation guidance remains a separate evidence layer."
+  ],
+  "next_work":["Register this extension in the intelligence manifest.","Add state-specific teacher-card validation cases.","Then shift from curriculum breadth to strengthening misconception/research evidence where current records are curriculum-inferred."]
+}
