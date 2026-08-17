@@ -1,5 +1,5 @@
 {
-  "version":"0.1.0",
+  "version":"0.2.0",
   "research_date":"2026-08-18",
   "purpose":"Attach the second Number diagnostic extension to existing concept profiles.",
   "links":[
@@ -17,6 +17,7 @@
     {"concept_id":"multiples","add_misconception_ids":["factor-multiple-confusion"],"add_diagnostic_question_ids":["dq-factor-001"]},
     {"concept_id":"prime-composite","add_misconception_ids":["prime-means-odd-or-one"],"add_diagnostic_question_ids":["dq-prime-001"]},
     {"concept_id":"common-factors-multiples","add_misconception_ids":["gcf-lcm-procedure-without-meaning"],"add_diagnostic_question_ids":["dq-gcf-lcm-001"]},
+    {"concept_id":"written-subtraction","add_misconception_ids":["algorithm-digits-without-units"],"add_diagnostic_question_ids":["dq-wsub-001"]},
     {"concept_id":"written-multiplication","add_misconception_ids":["partial-product-place-value-misaligned"],"add_diagnostic_question_ids":["dq-wmult-001"]},
     {"concept_id":"multiplication-properties","add_misconception_ids":["partial-product-place-value-misaligned"],"add_diagnostic_question_ids":["dq-wmult-001"]}
   ],
