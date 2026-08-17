@@ -1,8 +1,9 @@
 {
-  "version":"0.2.0",
+  "version":"0.3.0",
   "purpose":"Entry point for all Grade 1-6 concept intelligence profiles.",
   "taxonomy":"database/concept_taxonomy.json",
   "registry":"database/intelligence/reference_registry.json",
+  "curriculum_coverage":"database/research/curriculum_mapping_coverage.json",
   "profile_files":[
     {"path":"database/intelligence/concept_intelligence_index.json","role":"seed_profiles","concept_count":15},
     {"path":"database/intelligence/profiles/number_remaining.json","domain_id":"number","concept_count":34},
@@ -16,19 +17,22 @@
     "taxonomy_concepts":121,
     "concepts_with_intelligence_profile":121,
     "structural_join_complete":true,
-    "curriculum_mapping_complete":false,
+    "curriculum_or_framework_reference_coverage_complete":true,
+    "full_claim_level_curriculum_verification_complete":false,
     "diagnostic_coverage_complete":false,
     "current_pep_grade_mapping_complete":false
   },
   "resolver_rules":[
     "Resolve each concept ID in exactly one profile file.",
     "Use the registry for representation and teaching-move IDs.",
-    "An empty curriculum_refs array means curriculum mapping is still required; do not infer placement.",
+    "Every concept profile must point to at least one relevant curriculum/framework record; use curriculum_mapping_coverage.json to check research depth.",
     "An empty misconception_ids or diagnostic_question_ids array means that diagnostic content is still required; do not invent it at render time.",
     "Keep evidence status from the source record. Joining records does not increase confidence.",
     "Use England when referring to the statutory National Curriculum in England.",
     "Treat Common Core as a US comparison baseline, not a single US curriculum.",
-    "Do not use legacy PEP sequence as the current sequence."
+    "Do not use legacy PEP sequence as the current sequence.",
+    "Do not infer an exact China grade from a 2022 learning-stage requirement.",
+    "For mathematical practices, resolve cross-cutting framework aims rather than forcing a year-by-year placement."
   ],
   "copy_style": {
     "rule":"Teacher-facing copy must be direct, instructional and specific.",
