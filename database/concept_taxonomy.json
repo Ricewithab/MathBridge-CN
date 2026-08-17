@@ -1,0 +1,341 @@
+{
+  "version": "0.1.0",
+  "scope": {
+    "grades": [1, 2, 3, 4, 5, 6],
+    "systems": ["CN", "UK", "US"],
+    "note": "This taxonomy is a neutral cross-system concept backbone. Grade placement is stored separately because the same concept may appear at different times or with different depth across curricula."
+  },
+  "domains": [
+    {
+      "id": "number",
+      "name_en": "Number",
+      "name_cn": "数与运算",
+      "subdomains": [
+        {
+          "id": "number-sense-place-value",
+          "name_en": "Number Sense & Place Value",
+          "name_cn": "数感与位值",
+          "concepts": [
+            {"id": "counting", "name_en": "Counting", "name_cn": "数数"},
+            {"id": "number-recognition", "name_en": "Number Recognition", "name_cn": "数的认识"},
+            {"id": "number-composition-decomposition", "name_en": "Composition & Decomposition of Numbers", "name_cn": "数的组成与分解"},
+            {"id": "place-value", "name_en": "Place Value", "name_cn": "位值"},
+            {"id": "compare-order-numbers", "name_en": "Comparing & Ordering Numbers", "name_cn": "数的比较与排序"},
+            {"id": "rounding-estimation", "name_en": "Rounding & Estimation", "name_cn": "四舍五入与估算"},
+            {"id": "negative-numbers", "name_en": "Negative Numbers", "name_cn": "负数"}
+          ]
+        },
+        {
+          "id": "addition-subtraction",
+          "name_en": "Addition & Subtraction",
+          "name_cn": "加法与减法",
+          "concepts": [
+            {"id": "addition-meaning", "name_en": "Meaning of Addition", "name_cn": "加法的意义"},
+            {"id": "subtraction-meaning", "name_en": "Meaning of Subtraction", "name_cn": "减法的意义"},
+            {"id": "fact-families", "name_en": "Fact Families & Inverse Relationships", "name_cn": "算式族与逆运算关系"},
+            {"id": "mental-addition-subtraction", "name_en": "Mental Addition & Subtraction", "name_cn": "口算加减法"},
+            {"id": "written-addition", "name_en": "Written Addition", "name_cn": "笔算加法"},
+            {"id": "written-subtraction", "name_en": "Written Subtraction", "name_cn": "笔算减法"},
+            {"id": "addition-subtraction-estimation", "name_en": "Estimation with Addition & Subtraction", "name_cn": "加减法估算"},
+            {"id": "addition-subtraction-problems", "name_en": "Addition & Subtraction Problem Structures", "name_cn": "加减法应用题结构"}
+          ]
+        },
+        {
+          "id": "multiplication-division",
+          "name_en": "Multiplication & Division",
+          "name_cn": "乘法与除法",
+          "concepts": [
+            {"id": "multiplication-meaning", "name_en": "Meaning of Multiplication", "name_cn": "乘法的意义"},
+            {"id": "division-meaning", "name_en": "Meaning of Division", "name_cn": "除法的意义"},
+            {"id": "equal-groups", "name_en": "Equal Groups", "name_cn": "等量分组"},
+            {"id": "arrays", "name_en": "Arrays", "name_cn": "阵列模型"},
+            {"id": "repeated-addition", "name_en": "Repeated Addition", "name_cn": "重复加法"},
+            {"id": "sharing-grouping-division", "name_en": "Sharing & Grouping Division", "name_cn": "平均分与包含除"},
+            {"id": "multiplication-facts", "name_en": "Multiplication Facts", "name_cn": "乘法口诀与基本事实"},
+            {"id": "division-facts", "name_en": "Division Facts", "name_cn": "除法基本事实"},
+            {"id": "multiplication-properties", "name_en": "Properties of Multiplication", "name_cn": "乘法运算律"},
+            {"id": "written-multiplication", "name_en": "Written Multiplication", "name_cn": "笔算乘法"},
+            {"id": "written-division", "name_en": "Written Division", "name_cn": "笔算除法"},
+            {"id": "remainders", "name_en": "Remainders", "name_cn": "余数"},
+            {"id": "multiplication-division-problems", "name_en": "Multiplicative Problem Structures", "name_cn": "乘除法应用题结构"}
+          ]
+        },
+        {
+          "id": "fractions",
+          "name_en": "Fractions",
+          "name_cn": "分数",
+          "concepts": [
+            {"id": "fraction-as-part-whole", "name_en": "Fractions as Part-Whole", "name_cn": "分数的部分—整体意义"},
+            {"id": "fraction-as-measure", "name_en": "Fractions as Measure", "name_cn": "分数的测量意义"},
+            {"id": "fraction-as-quotient", "name_en": "Fractions as Quotient", "name_cn": "分数的商意义"},
+            {"id": "unit-fractions", "name_en": "Unit Fractions", "name_cn": "单位分数"},
+            {"id": "fraction-number-line", "name_en": "Fractions on the Number Line", "name_cn": "数轴上的分数"},
+            {"id": "equivalent-fractions", "name_en": "Equivalent Fractions", "name_cn": "等值分数"},
+            {"id": "compare-order-fractions", "name_en": "Comparing & Ordering Fractions", "name_cn": "分数比较与排序"},
+            {"id": "mixed-improper-fractions", "name_en": "Mixed & Improper Fractions", "name_cn": "带分数与假分数"},
+            {"id": "add-subtract-fractions", "name_en": "Addition & Subtraction of Fractions", "name_cn": "分数加减法"},
+            {"id": "multiply-fractions", "name_en": "Multiplication of Fractions", "name_cn": "分数乘法"},
+            {"id": "divide-fractions", "name_en": "Division of Fractions", "name_cn": "分数除法"}
+          ]
+        },
+        {
+          "id": "decimals-percentages",
+          "name_en": "Decimals & Percentages",
+          "name_cn": "小数与百分数",
+          "concepts": [
+            {"id": "decimal-place-value", "name_en": "Decimal Place Value", "name_cn": "小数位值"},
+            {"id": "fractions-decimals", "name_en": "Fractions & Decimals", "name_cn": "分数与小数的关系"},
+            {"id": "compare-order-decimals", "name_en": "Comparing & Ordering Decimals", "name_cn": "小数比较与排序"},
+            {"id": "decimal-operations", "name_en": "Decimal Operations", "name_cn": "小数四则运算"},
+            {"id": "percent-meaning", "name_en": "Meaning of Percentage", "name_cn": "百分数的意义"},
+            {"id": "fraction-decimal-percent", "name_en": "Fraction–Decimal–Percentage Equivalence", "name_cn": "分数、小数、百分数互化"}
+          ]
+        },
+        {
+          "id": "factors-multiples",
+          "name_en": "Factors, Multiples & Number Structure",
+          "name_cn": "因数、倍数与数的结构",
+          "concepts": [
+            {"id": "factors", "name_en": "Factors", "name_cn": "因数"},
+            {"id": "multiples", "name_en": "Multiples", "name_cn": "倍数"},
+            {"id": "prime-composite", "name_en": "Prime & Composite Numbers", "name_cn": "质数与合数"},
+            {"id": "common-factors-multiples", "name_en": "Common Factors & Multiples", "name_cn": "公因数与公倍数"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "algebraic-thinking",
+      "name_en": "Algebraic Thinking",
+      "name_cn": "代数思维",
+      "subdomains": [
+        {
+          "id": "patterns-relationships",
+          "name_en": "Patterns & Relationships",
+          "name_cn": "规律与关系",
+          "concepts": [
+            {"id": "repeating-patterns", "name_en": "Repeating Patterns", "name_cn": "重复规律"},
+            {"id": "growing-patterns", "name_en": "Growing Patterns", "name_cn": "递增规律"},
+            {"id": "number-sequences", "name_en": "Number Sequences", "name_cn": "数列"},
+            {"id": "function-thinking", "name_en": "Early Functional Thinking", "name_cn": "初步函数思想"}
+          ]
+        },
+        {
+          "id": "equality-expressions",
+          "name_en": "Equality, Expressions & Equations",
+          "name_cn": "等式、式与方程",
+          "concepts": [
+            {"id": "meaning-equals-sign", "name_en": "Meaning of the Equals Sign", "name_cn": "等号的意义"},
+            {"id": "unknowns", "name_en": "Unknowns", "name_cn": "未知数"},
+            {"id": "expressions", "name_en": "Expressions", "name_cn": "算式与表达式"},
+            {"id": "simple-equations", "name_en": "Simple Equations", "name_cn": "简单方程"},
+            {"id": "generalising-properties", "name_en": "Generalising Arithmetic Properties", "name_cn": "运算性质的一般化"}
+          ]
+        },
+        {
+          "id": "ratio-proportion",
+          "name_en": "Ratio & Proportion",
+          "name_cn": "比与比例",
+          "concepts": [
+            {"id": "ratio-meaning", "name_en": "Meaning of Ratio", "name_cn": "比的意义"},
+            {"id": "equivalent-ratios", "name_en": "Equivalent Ratios", "name_cn": "等比关系"},
+            {"id": "unit-rate", "name_en": "Unit Rate", "name_cn": "单位率"},
+            {"id": "proportional-reasoning", "name_en": "Proportional Reasoning", "name_cn": "比例推理"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "measurement",
+      "name_en": "Measurement",
+      "name_cn": "测量",
+      "subdomains": [
+        {
+          "id": "length-mass-capacity",
+          "name_en": "Length, Mass & Capacity",
+          "name_cn": "长度、质量与容量",
+          "concepts": [
+            {"id": "comparison-measurement", "name_en": "Direct & Indirect Comparison", "name_cn": "直接与间接比较"},
+            {"id": "standard-units", "name_en": "Standard Units", "name_cn": "标准单位"},
+            {"id": "unit-conversion", "name_en": "Unit Conversion", "name_cn": "单位换算"},
+            {"id": "measurement-estimation", "name_en": "Measurement Estimation", "name_cn": "测量估算"}
+          ]
+        },
+        {
+          "id": "time-money",
+          "name_en": "Time & Money",
+          "name_cn": "时间与货币",
+          "concepts": [
+            {"id": "telling-time", "name_en": "Telling Time", "name_cn": "认识时间"},
+            {"id": "elapsed-time", "name_en": "Elapsed Time", "name_cn": "经过时间"},
+            {"id": "calendar", "name_en": "Calendar & Duration", "name_cn": "日历与时长"},
+            {"id": "money-values", "name_en": "Money Values", "name_cn": "货币单位与币值"},
+            {"id": "money-calculations", "name_en": "Money Calculations", "name_cn": "货币计算"}
+          ]
+        },
+        {
+          "id": "perimeter-area-volume",
+          "name_en": "Perimeter, Area & Volume",
+          "name_cn": "周长、面积与体积",
+          "concepts": [
+            {"id": "perimeter", "name_en": "Perimeter", "name_cn": "周长"},
+            {"id": "area-concept", "name_en": "Concept of Area", "name_cn": "面积概念"},
+            {"id": "area-formulas", "name_en": "Area Formulae", "name_cn": "面积公式"},
+            {"id": "volume-concept", "name_en": "Concept of Volume", "name_cn": "体积概念"},
+            {"id": "volume-formulas", "name_en": "Volume Formulae", "name_cn": "体积公式"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "name_en": "Geometry",
+      "name_cn": "几何",
+      "subdomains": [
+        {
+          "id": "shape-properties",
+          "name_en": "Shape & Properties",
+          "name_cn": "图形与性质",
+          "concepts": [
+            {"id": "2d-shapes", "name_en": "2D Shapes", "name_cn": "平面图形"},
+            {"id": "3d-shapes", "name_en": "3D Shapes", "name_cn": "立体图形"},
+            {"id": "classifying-shapes", "name_en": "Classifying Shapes", "name_cn": "图形分类"},
+            {"id": "parallel-perpendicular", "name_en": "Parallel & Perpendicular Lines", "name_cn": "平行与垂直"},
+            {"id": "quadrilaterals-polygons", "name_en": "Quadrilaterals & Polygons", "name_cn": "四边形与多边形"},
+            {"id": "circles", "name_en": "Circles", "name_cn": "圆"}
+          ]
+        },
+        {
+          "id": "angles",
+          "name_en": "Angles",
+          "name_cn": "角",
+          "concepts": [
+            {"id": "angle-as-turn", "name_en": "Angle as Turn", "name_cn": "角作为转动"},
+            {"id": "angle-size", "name_en": "Angle Size", "name_cn": "角的大小"},
+            {"id": "angle-types", "name_en": "Types of Angles", "name_cn": "角的分类"},
+            {"id": "measuring-angles", "name_en": "Measuring Angles", "name_cn": "角的度量"},
+            {"id": "angle-relationships", "name_en": "Angle Relationships", "name_cn": "角的关系"}
+          ]
+        },
+        {
+          "id": "position-transformation",
+          "name_en": "Position, Direction & Transformation",
+          "name_cn": "位置、方向与变换",
+          "concepts": [
+            {"id": "position-direction", "name_en": "Position & Direction", "name_cn": "位置与方向"},
+            {"id": "coordinates", "name_en": "Coordinates", "name_cn": "坐标"},
+            {"id": "symmetry", "name_en": "Symmetry", "name_cn": "对称"},
+            {"id": "translation", "name_en": "Translation", "name_cn": "平移"},
+            {"id": "rotation", "name_en": "Rotation", "name_cn": "旋转"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "statistics-probability",
+      "name_en": "Statistics & Probability",
+      "name_cn": "统计与概率",
+      "subdomains": [
+        {
+          "id": "data",
+          "name_en": "Data",
+          "name_cn": "数据",
+          "concepts": [
+            {"id": "collect-data", "name_en": "Collecting Data", "name_cn": "收集数据"},
+            {"id": "organise-data", "name_en": "Organising Data", "name_cn": "整理数据"},
+            {"id": "tables", "name_en": "Tables", "name_cn": "统计表"},
+            {"id": "pictograms", "name_en": "Pictograms", "name_cn": "象形统计图"},
+            {"id": "bar-charts", "name_en": "Bar Charts", "name_cn": "条形统计图"},
+            {"id": "line-graphs", "name_en": "Line Graphs", "name_cn": "折线统计图"},
+            {"id": "pie-charts", "name_en": "Pie Charts", "name_cn": "扇形统计图"},
+            {"id": "mean-average", "name_en": "Mean / Average", "name_cn": "平均数"},
+            {"id": "interpret-data", "name_en": "Interpreting Data", "name_cn": "数据分析与解释"}
+          ]
+        },
+        {
+          "id": "probability",
+          "name_en": "Probability",
+          "name_cn": "概率",
+          "concepts": [
+            {"id": "chance-language", "name_en": "Language of Chance", "name_cn": "可能性语言"},
+            {"id": "simple-probability", "name_en": "Simple Probability", "name_cn": "简单概率"},
+            {"id": "experimental-probability", "name_en": "Experimental Probability", "name_cn": "实验概率"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathematical-practices",
+      "name_en": "Mathematical Practices",
+      "name_cn": "数学实践与思维",
+      "subdomains": [
+        {
+          "id": "problem-solving",
+          "name_en": "Problem Solving",
+          "name_cn": "问题解决",
+          "concepts": [
+            {"id": "understand-problem", "name_en": "Understanding the Problem", "name_cn": "理解问题"},
+            {"id": "choose-strategy", "name_en": "Choosing a Strategy", "name_cn": "选择策略"},
+            {"id": "represent-problem", "name_en": "Representing a Problem", "name_cn": "表征问题"},
+            {"id": "check-reasonableness", "name_en": "Checking Reasonableness", "name_cn": "检验结果合理性"},
+            {"id": "multi-step-problems", "name_en": "Multi-step Problems", "name_cn": "多步骤问题"}
+          ]
+        },
+        {
+          "id": "reasoning-communication",
+          "name_en": "Reasoning & Communication",
+          "name_cn": "推理与表达",
+          "concepts": [
+            {"id": "explain-thinking", "name_en": "Explaining Mathematical Thinking", "name_cn": "解释数学思路"},
+            {"id": "justify", "name_en": "Justification", "name_cn": "说明与论证"},
+            {"id": "compare-strategies", "name_en": "Comparing Strategies", "name_cn": "比较不同策略"},
+            {"id": "generalise", "name_en": "Generalising", "name_cn": "概括与一般化"},
+            {"id": "mathematical-language", "name_en": "Mathematical Language", "name_cn": "数学语言"}
+          ]
+        },
+        {
+          "id": "representation-modelling",
+          "name_en": "Representation & Modelling",
+          "name_cn": "表征与建模",
+          "concepts": [
+            {"id": "manipulatives", "name_en": "Manipulatives", "name_cn": "操作材料"},
+            {"id": "visual-models", "name_en": "Visual Models", "name_cn": "图像模型"},
+            {"id": "number-lines", "name_en": "Number Lines", "name_cn": "数轴"},
+            {"id": "bar-models", "name_en": "Bar Models", "name_cn": "条形模型"},
+            {"id": "area-models", "name_en": "Area Models", "name_cn": "面积模型"},
+            {"id": "equations-symbols", "name_en": "Equations & Symbols", "name_cn": "等式与符号表征"},
+            {"id": "real-world-modelling", "name_en": "Real-world Mathematical Modelling", "name_cn": "现实情境数学建模"}
+          ]
+        }
+      ]
+    }
+  ],
+  "relationship_types": [
+    "prerequisite_of",
+    "builds_on",
+    "related_to",
+    "representation_for",
+    "strategy_for",
+    "misconception_related_to"
+  ],
+  "future_mapping_fields": {
+    "concept_curriculum_map": [
+      "concept_id",
+      "system",
+      "grade_or_year",
+      "framework_id",
+      "expectation_id",
+      "depth",
+      "sequence_order",
+      "source_ids"
+    ],
+    "concept_pedagogy_map": [
+      "concept_id",
+      "teaching_principle_ids",
+      "representation_ids",
+      "common_misconceptions",
+      "teacher_question_ids",
+      "source_ids"
+    ]
+  }
+}
