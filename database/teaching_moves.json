@@ -1,0 +1,86 @@
+{
+  "version": "0.1.0",
+  "purpose": "Store teacher actions that can be attached to concepts and representations. These are instructional moves, not claims that one country exclusively teaches this way.",
+  "moves": [
+    {
+      "id": "vary-one-feature",
+      "name_en": "Vary One Feature",
+      "name_cn": "一次改变一个特征",
+      "purpose": "Draw attention to mathematical structure by changing one relevant element while holding others constant.",
+      "linked_principles": ["variation-theory"],
+      "example": "Keep the whole as 10 while changing the two parts: 1+9, 2+8, 3+7...",
+      "teacher_questions": ["What changed?", "What stayed the same?", "What can you predict next?"],
+      "risks": ["Variation without a clear mathematical focus can become a sequence of unrelated examples."]
+    },
+    {
+      "id": "connect-representations",
+      "name_en": "Connect Representations",
+      "name_cn": "连接不同表征",
+      "purpose": "Make the same mathematical relationship visible in concrete, pictorial and symbolic forms.",
+      "linked_principles": ["concrete-pictorial-abstract", "mathematical-reasoning"],
+      "example": "Show 23 with place-value materials, a partition diagram and 20+3, then ask what each part of every representation means.",
+      "teacher_questions": ["Where is the same quantity in this representation?", "What does this symbol correspond to?", "Which representation makes this relationship easiest to see?"],
+      "risks": ["Showing many representations simultaneously without explicitly connecting them can increase cognitive load."]
+    },
+    {
+      "id": "fade-representation",
+      "name_en": "Fade the Representation",
+      "name_cn": "逐步撤去表征支架",
+      "purpose": "Move pupils toward efficient mental or symbolic methods once the representation has exposed the intended structure.",
+      "linked_principles": ["procedural-fluency", "concrete-pictorial-abstract"],
+      "example": "Move from base-ten exchange to annotated written addition and then to the compact columnar algorithm.",
+      "teacher_questions": ["What can you now do without the blocks?", "Which part of the diagram is now represented by this digit?", "Why does the compact method still work?"],
+      "risks": ["Removing support before understanding is secure; or keeping support so long that it blocks fluent calculation."]
+    },
+    {
+      "id": "compare-methods",
+      "name_en": "Compare Methods",
+      "name_cn": "比较不同方法",
+      "purpose": "Develop relational understanding by comparing two valid strategies or representations for the same problem.",
+      "linked_principles": ["mathematical-reasoning", "variation-theory"],
+      "example": "Compare 16×7 solved by 10×7 + 6×7 with 8×7 + 8×7.",
+      "teacher_questions": ["What is the same in both methods?", "Why do they give the same answer?", "Which is more efficient here and why?"],
+      "risks": ["Presenting too many methods before pupils have a secure core method can fragment procedural knowledge."]
+    },
+    {
+      "id": "expose-error",
+      "name_en": "Expose and Diagnose an Error",
+      "name_cn": "呈现并诊断错误",
+      "purpose": "Use a carefully selected incorrect example to reveal misconceptions and strengthen explanation.",
+      "linked_principles": ["mathematical-reasoning"],
+      "example": "A pupil writes 302−178 as if each column can be subtracted independently without regrouping. Ask where the place-value conflict occurs.",
+      "teacher_questions": ["Where does the reasoning first become invalid?", "Can a representation show the problem?", "How would you correct it without starting over?"],
+      "risks": ["Poorly selected errors may introduce confusion; the correction and underlying principle must be made explicit."]
+    },
+    {
+      "id": "unknown-position-variation",
+      "name_en": "Vary the Position of the Unknown",
+      "name_cn": "改变未知量的位置",
+      "purpose": "Prevent keyword-based problem solving and strengthen understanding of operation relationships.",
+      "linked_principles": ["mathematical-reasoning", "mastery-learning"],
+      "example": "Use 7+?=12, ?+5=12 and 12−?=5 around the same part-whole relationship.",
+      "teacher_questions": ["What is the whole?", "Which part is unknown?", "Does the story change the mathematical relationship?"],
+      "risks": ["Jumping to difficult unknown positions before the underlying relationship is established."]
+    },
+    {
+      "id": "ask-for-justification",
+      "name_en": "Ask for Justification",
+      "name_cn": "要求说明理由",
+      "purpose": "Move beyond answers to explicit mathematical reasoning using known facts, properties, representations or counterexamples.",
+      "linked_principles": ["mathematical-reasoning"],
+      "example": "Instead of asking whether 3/4 is larger than 2/3, ask pupils to prove or disprove the comparison in two ways.",
+      "teacher_questions": ["How do you know?", "Can you prove it?", "Will that always be true?", "Can you show the same reasoning another way?"],
+      "risks": ["Accepting vague explanations such as 'because I did the rule' rather than identifying the mathematical reason."]
+    },
+    {
+      "id": "bridge-to-formal-method",
+      "name_en": "Bridge to the Formal Method",
+      "name_cn": "连接到正式算法",
+      "purpose": "Show how an efficient written procedure compresses mathematical structure pupils already understand.",
+      "linked_principles": ["procedural-fluency", "concrete-pictorial-abstract"],
+      "example": "Partition a multiplication area model into place-value partial products and align those partial products with the compact written multiplication algorithm.",
+      "teacher_questions": ["Where did this partial product go in the compact method?", "What does this carried/regrouped digit represent?", "Why is the formal method more efficient?"],
+      "risks": ["Presenting the formal algorithm as a new unrelated trick rather than a compressed form of known structure."]
+    }
+  ]
+}
