@@ -1,0 +1,91 @@
+{
+  "version":"1.0.0",
+  "audit_date":"2026-08-18",
+  "purpose":"Provide a complete canonical evidence classification for every MathBridge misconception record after aliases, evidence-depth files and overrides are applied.",
+  "input_catalogs":[
+    "database/diagnostics/misconception_catalog.json",
+    "database/diagnostics/misconception_catalog_extension_2026-08-18.json",
+    "database/diagnostics/misconception_catalog_number_extension_2026-08-18.json",
+    "database/diagnostics/misconception_catalog_algebra_extension_2026-08-18.json",
+    "database/diagnostics/misconception_catalog_measurement_extension_2026-08-18.json",
+    "database/diagnostics/misconception_catalog_geometry_extension_2026-08-18.json",
+    "database/diagnostics/misconception_catalog_statistics_extension_2026-08-18.json",
+    "database/diagnostics/misconception_catalog_practices_extension_2026-08-18.json",
+    "database/diagnostics/misconception_catalog_research_extension_2026-08-18.json"
+  ],
+  "resolution_inputs":[
+    "database/research/diagnostic_misconception_evidence_seed_2026-08-18.json",
+    "database/research/diagnostic_misconception_evidence_extension_2_2026-08-18.json",
+    "database/research/diagnostic_misconception_evidence_extension_3_2026-08-18.json",
+    "database/diagnostics/misconception_evidence_overrides_2026-08-18.json",
+    "database/intelligence/reference_registry.json"
+  ],
+  "alias_resolution":[{"raw_id":"equals-sign-operation-command","canonical_id":"equals-sign-means-answer-next","status":"deprecated_alias_excluded_from_canonical_count"}],
+  "counts":{
+    "raw_records":81,
+    "deprecated_alias_records":1,
+    "canonical_unique_records":80,
+    "classified_records":80,
+    "unclassified_records":0,
+    "research_required_effective_records":0,
+    "classification_coverage_percent":100
+  },
+  "effective_evidence_groups":{
+    "direct_empirical":{
+      "count":10,
+      "meaning":"A checked original study directly supports the relevant reasoning pattern within stated sample/population limits. This does not validate the MathBridge diagnostic item or establish prevalence.",
+      "ids":["angle-size-depends-on-arm-length","division-sharing-only","equals-sign-means-answer-next","fraction-larger-denominator-means-larger","measurement-counts-marks-not-intervals","perimeter-area-confusion","probability-counts-outcomes-without-size","ratio-treated-as-additive-difference","volume-formula-without-cubic-units","volume-surface-area-confusion"]
+    },
+    "direct_empirical_language_mediated":{
+      "count":1,
+      "meaning":"The error pattern is directly documented but language structure materially affects its occurrence/interpretation.",
+      "ids":["pv-zero-has-no-structural-role"]
+    },
+    "direct_empirical_broad_construct_or_mechanism":{
+      "count":8,
+      "meaning":"An original study supports the broader reasoning construct/mechanism, while the exact MathBridge wording, age range or context is narrower/different and must remain qualified.",
+      "ids":["calendar-all-months-same-length","change-operation-not-linked-to-difference","clock-hands-read-as-same-scale","decimal-more-digits-means-larger","elapsed-time-endpoints-not-duration","mult-is-only-repeated-addition","pv-digit-value-is-digit-name","unit-conversion-rule-without-unit-size"]
+    },
+    "evidence_synthesis_or_guidance":{
+      "count":15,
+      "meaning":"Evidence-reviewed practice guidance, research synthesis or established teaching guidance supports the instructional interpretation; no misconception-specific direct prevalence claim is made.",
+      "ids":["add-subtract-operation-keyword-only","algorithm-digits-without-units","equivalent-fractions-look-different-so-different-value","fraction-add-denominators","fraction-decimal-unrelated-symbols","fraction-division-must-make-smaller","fraction-multiplication-must-make-bigger","fraction-not-a-number","fraction-parts-need-not-be-equal","manipulative-action-not-mapped-to-quantity","model-keyword-instead-of-quantities","multi-step-computes-before-structure","remainder-ignored-or-used-without-context","representation-does-not-preserve-relationship","subtraction-is-always-take-away"]
+    },
+    "guidance_supported":{
+      "count":1,
+      "meaning":"Guidance and/or assessment-response evidence supports use of the diagnostic probe, but direct misconception-specific empirical support for the exact wording is not established.",
+      "ids":["money-count-coins-not-value"]
+    },
+    "curriculum_inferred_with_broader_support":{
+      "count":1,
+      "meaning":"The exact claim remains an instructional hypothesis, though broader empirical evidence supports the surrounding construct.",
+      "ids":["bar-chart-scale-assumed-one"]
+    },
+    "curriculum_inferred_probe_only":{
+      "count":44,
+      "meaning":"A mathematically plausible reasoning risk derived from curriculum structure/teaching guidance. It may be used only as a possible misunderstanding to probe; it must not be described as research-established.",
+      "ids":["3d-face-edge-vertex-confusion","angle-type-based-on-orientation","chance-language-certainty-confusion","circle-radius-diameter-confusion","compare-numbers-by-visible-digit","compensation-changes-total","coordinate-order-reversed","counting-last-number-not-cardinality","data-categories-overlap-or-omit","data-graph-answer-without-scale-or-source","data-question-mismatch","estimate-treated-as-exact-answer","experimental-results-must-match-exactly","explanation-repeats-procedure-only","expression-equation-confusion","factor-multiple-confusion","function-pairs-not-related","gcf-lcm-procedure-without-meaning","growing-pattern-surface-not-rule","line-graph-category-not-change","mean-is-most-common-or-data-point","measurement-estimate-unit-unreasonable","multiplication-facts-isolated","negative-order-whole-number-rule","parallel-perpendicular-orientation-bias","partial-product-place-value-misaligned","percent-independent-of-whole","pictogram-key-ignored","pie-chart-sector-not-part-whole","prime-means-odd-or-one","property-overgeneralised-to-noncommutative-operations","repeating-pattern-unit-not-identified","rotation-without-centre-angle","rounding-follow-digit-rule-without-benchmark","shape-hierarchy-exclusive-categories","shape-prototype-orientation-bias","single-example-treated-as-proof","strategy-chosen-by-habit-not-structure","strategy-comparison-answer-only","symbol-manipulation-without-equivalence","symmetry-line-not-exact-mirror","translation-changes-orientation","unit-rate-wrong-quantity-per-one","variable-fixed-unknown-only"]
+    },
+    "research_required":{
+      "count":0,
+      "meaning":"No canonical record is currently left without enough evidence to classify its use. This does not mean all records have direct empirical support."
+    }
+  },
+  "integrity_checks":{
+    "all_raw_catalog_files_loaded":true,
+    "aliases_canonicalised":true,
+    "canonical_ids_unique":true,
+    "all_canonical_records_have_effective_evidence_class":true,
+    "direct_evidence_never_treated_as_prevalence_by_default":true,
+    "probe_only_records_explicitly_separated_from_research_established_records":true,
+    "pass":true
+  },
+  "publication_rules":[
+    "Every teacher-facing misconception must display or internally preserve its effective evidence class.",
+    "Curriculum-inferred records use possible/may/probe language and must not say research shows unless a stronger evidence record exists.",
+    "Direct empirical evidence supports a reasoning pattern within the source scope; it does not make the MathBridge diagnostic question a validated assessment.",
+    "A wrong answer is never sufficient to record a misconception without follow-up evidence.",
+    "Research completeness means every diagnostic claim has a known evidence state. It does not mean every classroom probe requires its own peer-reviewed prevalence study."
+  ],
+  "status":"complete"
+}
