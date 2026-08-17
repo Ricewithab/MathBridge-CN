@@ -1,0 +1,38 @@
+{
+  "source_metadata_fields": {
+    "source_id": "Unique identifier matching sources.json",
+    "official_url": "Primary reference URL",
+    "document_year": "Publication or revision year",
+    "grade_range": "Applicable grades or stages",
+    "domains": "Mathematical areas covered",
+    "languages": "Available languages",
+    "citation_format": "How sources are displayed to users",
+    "verification_status": "Verified, pending review, or archived",
+    "last_verified": "Date of last verification",
+    "notes": "Additional context for teachers"
+  },
+  "examples": [
+    {
+      "source_id": "cn_moe_math_2022",
+      "official_url": "https://www.moe.gov.cn/",
+      "document_year": 2022,
+      "grade_range": "Grades 1-6",
+      "domains": ["Number", "Geometry", "Measurement", "Statistics"],
+      "languages": ["Chinese"],
+      "citation_format": "教育部《义务教育数学课程标准（2022年版）》",
+      "verification_status": "Verified",
+      "notes": "Primary Chinese national mathematics curriculum reference"
+    },
+    {
+      "source_id": "uk_nc_math",
+      "official_url": "https://www.gov.uk/government/collections/national-curriculum",
+      "document_year": 2014,
+      "grade_range": "Key Stage 1-2",
+      "domains": ["Number", "Measurement", "Geometry", "Statistics"],
+      "languages": ["English"],
+      "citation_format": "England National Curriculum: Mathematics",
+      "verification_status": "Verified",
+      "notes": "Statutory curriculum framework for England primary schools"
+    }
+  ]
+}
