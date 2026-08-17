@@ -1,0 +1,64 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "purpose":"Add detailed lesson/subsection structure for revised PEP Grades 4-6 upper from current 2026 synchronized resources. These sources are secondary cross-checks; the publisher-authored all-volume table remains the authority for unit sequence.",
+  "evidence_level":"current_secondary_synchronized_resource",
+  "records":[
+    {
+      "grade":4,"semester":"upper",
+      "source":{"url":"https://w.yuntaigo.com/book.action?recordid=b2hvb29oYWM5Nzg3MjE0MDk1NjAy","title":"小学数学(4上人教版2026秋)/1课3练","publication_context":"2026秋同步资源","source_type":"current_secondary_catalog"},
+      "units":[
+        {"unit":"万以上数的认识","lessons":["亿以内数的认识","亿以内数的读法","亿以内数的写法","亿以上数的认识","亿以上数的读写","数的大小比较","数的改写","求近似数"],"additional_topics":["记数工具—从古至今的演变"]},
+        {"unit":"1亿有多大","lessons":["1亿有多大"],"status":"integrated_practice"},
+        {"unit":"角的度量","lessons":["角的再认识","角的度量","画角","信息技术应用"]},
+        {"unit":"多位数乘两位数","lessons":["口算乘法","多位数乘两位数的笔算","乘数中间或末尾有0的乘法","积的变化规律","用计算器探索规律","解决问题"]},
+        {"unit":"加法模型和乘法模型","lessons":["加法模型：总量和分量","乘法模型：单价、数量和总价","乘法模型：速度、时间和路程"]},
+        {"unit":"平行四边形和梯形","lessons":["平行和垂直","画垂线","点到直线的距离","画平行线","画长方形和正方形","平行四边形的认识","梯形的认识","神奇的默比乌斯带"]},
+        {"unit":"条形统计图","lessons":["单式条形统计图","复式条形统计图"]},
+        {"unit":"寻找宝藏","lessons":["校园寻宝","绘制藏宝图","藏宝——寻宝大挑战"],"status":"integrated_practice"},
+        {"unit":"复习与关联","lessons":["数与运算","数量关系","图形的认识与测量","数据的收集、整理与表达","综合与实践"]}
+      ],
+      "use_limit":"The synchronized resource can support lesson-name navigation, but it must not be cited as the PEP textbook itself or used for exact PEP page numbers."
+    },
+    {
+      "grade":5,"semester":"upper",
+      "source":{"url":"https://www.yuntaigo.com/book.action?recordid=b2hvb3prbmM5Nzg3MjE0MDk1NTg5","title":"小学数学(5上人教版2026秋)/1课3练","publication_context":"2026秋同步资源","source_type":"current_secondary_catalog"},
+      "units":[
+        {"unit":"观察简单组合体","lessons":["观察简单组合体","按要求摆组合体"]},
+        {"unit":"小数乘法","lessons":["小数乘整数","小数乘小数","积和乘数之间的大小关系","整数乘法运算律推广到小数","解决问题"]},
+        {"unit":"小数除法","lessons":["除数是整数的小数除法","循环小数","一个数除以小数","商的近似数"]},
+        {"unit":"图形的运动","lessons":["轴对称和对称轴","平移","用平移知识求面积","旋转","平移和旋转的应用","设计图案"]},
+        {"unit":"用字母表示数和数量关系","lessons":["用字母表示数量关系","用字母表示行程问题中的数量关系","探秘百数表"]},
+        {"unit":"多边形的面积","lessons":["平行四边形的面积","三角形的面积","梯形的面积","组合图形的面积","不规则图形的面积","格点多边形的面积"]},
+        {"unit":"有趣的密铺","lessons":["密铺","设计密铺图案"],"status":"integrated_practice"},
+        {"unit":"可能性","lessons":["可能性","掷一掷"]},
+        {"unit":"复习与关联","lessons":["数与运算","数量关系","图形的位置","图形的运动与测量","可能性"]}
+      ],
+      "crosscheck":{"url":"https://www.yuntaigo.com/book.action?recordid=b2hva21uYWM5Nzg3NTY0ODYzNTI0","title":"数学(5上RJ)/教材解读","publication_date":"2026-06","status":"matching_current_secondary_structure"},
+      "use_limit":"Lesson structure only. Do not use synchronized-resource page numbering as textbook pagination."
+    },
+    {
+      "grade":6,"semester":"upper",
+      "source":{"url":"https://www.yuntaigo.com/book.action?recordid=b2huaGhvZmM5Nzg3NTc2ODY2ODM0","title":"同步计算天天练(小学6上RJ版)/新黑马数学","publication_date":"2026-06","source_type":"current_secondary_catalog"},
+      "units":[
+        {"unit":"确定位置","lessons":["用有序数对确定位置","用有序数对表示平面内的点","用方向和距离确定位置","根据方向和距离标出位置","用方向和距离描述路线"]},
+        {"unit":"分数乘法","lessons":["分数乘整数","整数乘分数","分数乘分数","小数乘分数","混合运算及运算律","连续求一个数的几分之几是多少","求比一个数多（少）几分之几的数是多少"]},
+        {"unit":"分数除法","lessons":["倒数的认识","分数除以整数","整数除以分数","分数除以分数","通过单位1解决问题"]},
+        {"unit":"生活中的负数","lessons":["寻找负数","认识负数","应用负数"],"status":"integrated_practice"},
+        {"unit":"圆","lessons":["圆的认识","扇形的认识","圆的周长","圆的面积","圆环的面积","与圆形相关的特殊图形的面积","利用圆设计图案"]},
+        {"unit":"体育中的数学","lessons":["体育中的数学"],"status":"integrated_practice"},
+        {"unit":"百分数","lessons":["百分数的意义","百分率","求一个数的百分之几是多少","折扣","利率","求一个数比另一个数多（少）百分之几","求比一个数多（少）百分之几的数","解决与变化幅度相关的实际问题","确定达标线"]},
+        {"unit":"水是生命之源","lessons":["水是生命之源"],"status":"project_learning"},
+        {"unit":"复习与关联","lessons":["数与运算","图形的认识与测量","图形的位置与运动","数据的收集、整理与表达","应用提升"]}
+      ],
+      "crosschecks":[{"url":"https://sxkhl.cn/grade/rjn6a","status":"current_secondary_unit_structure_match"}],
+      "use_limit":"The detailed synchronized structure is secondary evidence. Some supplemental titles such as 数学广角 may belong to the companion resource rather than the revised PEP numbered-unit sequence; do not add them to the canonical textbook sequence unless the PEP table/textbook verifies them."
+    }
+  ],
+  "integrity_rules":[
+    "Unit sequence always comes from cn_pep_current_sequence_verified_2026.json.",
+    "If a synchronized resource contains an extra enrichment item not present in the authoritative sequence table, keep it as companion-resource content rather than silently adding a PEP textbook unit.",
+    "Do not infer textbook pages from synchronized-resource pages.",
+    "Do not use a resource whose named units conflict with the authoritative revised-series sequence."
+  ]
+}
