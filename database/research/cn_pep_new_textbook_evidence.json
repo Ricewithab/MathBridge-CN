@@ -1,0 +1,137 @@
+{
+  "version": "0.1.0",
+  "research_date": "2026-08-17",
+  "scope": "Official evidence for the current PEP primary mathematics textbook architecture aligned to the 2022 curriculum standard.",
+  "source_ids": [
+    "cn-moe-math-2022",
+    "cn-pep-math-new-edition-intro-2024",
+    "cn-pep-series12-overview-2024",
+    "cn-pep-digital-math-textbooks"
+  ],
+  "edition_policy": {
+    "curriculum_standard_effective": "2022 autumn term",
+    "pep_12th_series_start": "2024 autumn term",
+    "implementation_wording": "PEP states that the 12th series began formal use in starting grades from autumn 2024.",
+    "important_caution": "Do not assume every Grade 1-6 classroom is using the same volume/edition at the same time. For exact grade-semester mapping, record the textbook edition and verify the individual volume or teacher guide.",
+    "status": "verified"
+  },
+  "confirmed_design_principles": [
+    {
+      "id": "pep-structure-core-concepts",
+      "name_cn": "以核心概念和思想方法组织内容",
+      "name_en": "Organise content around core concepts and mathematical ideas",
+      "evidence_summary": "PEP describes the new series as strengthening structural coherence across domains and using core mathematical concepts and underlying ideas as connecting threads.",
+      "teacher_implication": "MathBridge should compare not only topic order but the structural idea linking lessons across grades.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "verification_status": "verified"
+    },
+    {
+      "id": "pep-counting-unit-thread",
+      "name_cn": "以计数单位贯穿整数、小数、分数与运算",
+      "name_en": "Use counting units as a unifying thread across whole numbers, decimals, fractions and operations",
+      "evidence_summary": "PEP explicitly identifies 计数单位 as a through-line for understanding number, comparison and operations.",
+      "teacher_implication": "When comparing Chinese and Western approaches, MathBridge should surface the Chinese emphasis on identifying the relevant unit and the number of such units.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "verification_status": "verified"
+    },
+    {
+      "id": "pep-reality-to-abstraction",
+      "name_cn": "从现实情境到数学抽象",
+      "name_en": "Move from realistic contexts toward mathematical abstraction",
+      "evidence_summary": "PEP states that new knowledge is commonly introduced through meaningful real-world contexts and then abstracted into mathematical concepts and methods.",
+      "teacher_implication": "The Chinese baseline should not be described as purely procedural; current PEP design explicitly incorporates context, exploration and abstraction.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "verification_status": "verified"
+    },
+    {
+      "id": "pep-explore-communicate-reason",
+      "name_cn": "操作、交流、推理与探究",
+      "name_en": "Use manipulation, communication, reasoning and exploration",
+      "evidence_summary": "PEP describes students discovering new knowledge through exploration, communication, hands-on activity and reasoning rather than only receiving finished procedures.",
+      "teacher_implication": "MathBridge comparisons must distinguish the official/current PEP model from stereotyped descriptions of Chinese mathematics teaching.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "verification_status": "verified"
+    },
+    {
+      "id": "pep-practice-tiering",
+      "name_cn": "分层练习与开放性任务",
+      "name_en": "Tier practice and include open/practical tasks",
+      "evidence_summary": "PEP describes exercise progression from consolidation to integrated application and extension, with greater use of open and practical tasks and less repetitive procedural practice.",
+      "teacher_implication": "Comparisons of practice intensity should separate repetition volume from task variety and cognitive demand.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "verification_status": "verified"
+    }
+  ],
+  "confirmed_sequence_changes": [
+    {
+      "id": "pep-g1-number-units-adjacent",
+      "grade": 1,
+      "semester": "upper",
+      "change_cn": "一年级上册将“5以内数的认识和加、减法”与“6～10的认识和加、减法”调整为连续单元。",
+      "change_en": "In Grade 1 upper semester, the units on numbers/addition/subtraction within 5 and within 6-10 are arranged consecutively.",
+      "why_it_matters": "This is direct evidence of deliberate local sequencing to strengthen continuity in early number development.",
+      "concept_ids": ["number-recognition", "number-composition-decomposition", "addition-meaning", "subtraction-meaning"],
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "verification_status": "verified"
+    },
+    {
+      "id": "pep-combine-within-10000-add-sub",
+      "grade": null,
+      "semester": null,
+      "change_cn": "新版将原先“万以内的加减法（一）”和“万以内的加减法（二）”整合为一个单元。",
+      "change_en": "The new series combines the former two units on addition and subtraction within 10,000 into one unit.",
+      "why_it_matters": "PEP presents this as an example of grouping mathematically related content to support analogy and transfer.",
+      "concept_ids": ["written-addition", "written-subtraction"],
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "verification_status": "verified",
+      "exact_grade_semester_status": "volume_level_verification_required"
+    },
+    {
+      "id": "pep-combine-two-three-digit-multiplication",
+      "grade": null,
+      "semester": null,
+      "change_cn": "新版将“两位数乘两位数”与“三位数乘两位数”整合为一个单元。",
+      "change_en": "The new series combines two-digit by two-digit and three-digit by two-digit multiplication into one unit.",
+      "why_it_matters": "The stated rationale is to support analogy, transfer and structural understanding across related multiplication procedures.",
+      "concept_ids": ["written-multiplication"],
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "verification_status": "verified",
+      "exact_grade_semester_status": "volume_level_verification_required"
+    },
+    {
+      "id": "pep-combine-position-topics",
+      "grade": null,
+      "semester": null,
+      "change_cn": "高段原有两个“图形的位置”内容在新版中进行了整合。",
+      "change_en": "Two upper-primary position/coordinate topics from the prior structure are consolidated in the new series.",
+      "why_it_matters": "This is evidence that the new edition reorganises content to improve coherence rather than simply reproducing the previous sequence.",
+      "concept_ids": ["coordinates", "position-direction"],
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "verification_status": "verified",
+      "exact_grade_semester_status": "volume_level_verification_required"
+    }
+  ],
+  "progression_signals": [
+    {
+      "id": "pep-geometry-progression",
+      "summary_cn": "几何认识按认知特点螺旋上升：先直观辨认，再从几何角度认识；先定性，再定量。",
+      "summary_en": "Geometry progresses spirally: intuitive recognition first, then geometric analysis; qualitative study before quantitative study.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "verification_status": "verified"
+    },
+    {
+      "id": "pep-problem-structure-progression",
+      "summary_cn": "数量关系以分析法和综合法为主线，配合四则运算，由一步问题逐步发展到多步问题。",
+      "summary_en": "Quantitative relationships develop through analysis/synthesis alongside the four operations, progressing from one-step to multi-step problems.",
+      "source_id": "cn-pep-math-new-edition-intro-2024",
+      "verification_status": "verified"
+    }
+  ],
+  "remaining_research_tasks": [
+    "Extract the exact table of contents for every currently used Grade 1-6 PEP mathematics volume.",
+    "Record edition year/printing and whether each volume belongs to the 12th series aligned to the 2022 standard.",
+    "Map each unit and lesson to neutral concept IDs in concept_taxonomy.json.",
+    "Capture teacher-guide explanations of representations, key questions, misconceptions and lesson sequence.",
+    "Keep legacy-edition mappings separately where schools may still be using older volumes during transition."
+  ]
+}
