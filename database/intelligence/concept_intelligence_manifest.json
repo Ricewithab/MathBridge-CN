@@ -1,0 +1,38 @@
+{
+  "version":"0.2.0",
+  "purpose":"Entry point for all Grade 1-6 concept intelligence profiles.",
+  "taxonomy":"database/concept_taxonomy.json",
+  "registry":"database/intelligence/reference_registry.json",
+  "profile_files":[
+    {"path":"database/intelligence/concept_intelligence_index.json","role":"seed_profiles","concept_count":15},
+    {"path":"database/intelligence/profiles/number_remaining.json","domain_id":"number","concept_count":34},
+    {"path":"database/intelligence/profiles/algebraic_thinking.json","domain_id":"algebraic-thinking","concept_count":13},
+    {"path":"database/intelligence/profiles/measurement.json","domain_id":"measurement","concept_count":14},
+    {"path":"database/intelligence/profiles/geometry.json","domain_id":"geometry","concept_count":16},
+    {"path":"database/intelligence/profiles/statistics_probability.json","domain_id":"statistics-probability","concept_count":12},
+    {"path":"database/intelligence/profiles/mathematical_practices.json","domain_id":"mathematical-practices","concept_count":17}
+  ],
+  "coverage_summary": {
+    "taxonomy_concepts":121,
+    "concepts_with_intelligence_profile":121,
+    "structural_join_complete":true,
+    "curriculum_mapping_complete":false,
+    "diagnostic_coverage_complete":false,
+    "current_pep_grade_mapping_complete":false
+  },
+  "resolver_rules":[
+    "Resolve each concept ID in exactly one profile file.",
+    "Use the registry for representation and teaching-move IDs.",
+    "An empty curriculum_refs array means curriculum mapping is still required; do not infer placement.",
+    "An empty misconception_ids or diagnostic_question_ids array means that diagnostic content is still required; do not invent it at render time.",
+    "Keep evidence status from the source record. Joining records does not increase confidence.",
+    "Use England when referring to the statutory National Curriculum in England.",
+    "Treat Common Core as a US comparison baseline, not a single US curriculum.",
+    "Do not use legacy PEP sequence as the current sequence."
+  ],
+  "copy_style": {
+    "rule":"Teacher-facing copy must be direct, instructional and specific.",
+    "avoid":["marketing language","promotional claims","AI-style filler","slogans","unnecessary adjectives"],
+    "prefer":["short headings","plain explanations","specific teaching actions","clear evidence labels"]
+  }
+}
