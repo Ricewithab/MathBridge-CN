@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "purpose": "Canonical registry for joining MathBridge curriculum, teaching and diagnostic data without duplicating content. Aliases exist only to resolve older shorthand IDs; new records should use canonical IDs directly.",
   "canonical_sources": {
     "concepts": "database/concept_taxonomy.json",
@@ -10,7 +10,9 @@
     "representations_extended": "database/teaching/representation_catalog_extended.json",
     "teaching_moves": "database/teaching/teaching_moves_catalog.json",
     "misconceptions": "database/diagnostics/misconception_catalog.json",
+    "misconception_extensions": ["database/diagnostics/misconception_catalog_extension_2026-08-18.json"],
     "diagnostic_questions": "database/diagnostics/diagnostic_question_catalog.json",
+    "diagnostic_question_extensions": ["database/diagnostics/diagnostic_question_catalog_extension_2026-08-18.json"],
     "diagnostic_rules": "database/diagnostics/diagnostic_interpretation_rules.json",
     "sources": "database/sources.json",
     "source_metadata": "database/source_metadata.json"
@@ -61,6 +63,7 @@
     "All concept profiles must use concept IDs from concept_taxonomy.json.",
     "All representation references must use canonical_representation_ids.",
     "All teaching-move references must use canonical_teaching_move_ids.",
+    "Load diagnostic extension files listed in canonical_sources before resolving misconception or question IDs.",
     "Legacy aliases may be resolved at read time but should not be written into new intelligence records.",
     "A missing reference is an integrity error and must not be silently ignored."
   ]
