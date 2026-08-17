@@ -1,0 +1,38 @@
+{
+  "version":"1.0.0",
+  "audit_date":"2026-08-18",
+  "purpose":"Check that the static MathBridge web runtime can resolve its release assets and dynamic data manifests before merging to main.",
+  "root_assets":[
+    {"path":"index.html","status":"present"},
+    {"path":"styles.css","status":"present"},
+    {"path":"app.js","status":"present"}
+  ],
+  "runtime_path_checks":[
+    {"layer":"comparison copy","manifest":"database/comparisons/bilingual_coverage_manifest.json","expected_zh_files":15,"present_zh_files":15,"expected_en_files":15,"present_en_files":15,"status":"pass"},
+    {"layer":"classroom tasks","manifest":"database/classroom_tasks/runtime_manifest.json","expected_base_files":16,"present_base_files":16,"expected_zh_overlays":16,"present_zh_overlays":16,"status":"pass"},
+    {"layer":"concept profiles","manifest":"database/intelligence/concept_intelligence_manifest.json","profile_files":7,"status":"pass"},
+    {"layer":"diagnostics","manifest":"database/intelligence/diagnostic_extension_manifest_2026-08-18.json","status":"pass"},
+    {"layer":"teaching representations","paths":["database/teaching/representation_catalog.json","database/teaching/representation_catalog_extended.json"],"status":"pass"},
+    {"layer":"teaching moves","path":"database/teaching/teaching_moves_catalog.json","array_contract":"moves","status":"pass"},
+    {"layer":"PEP sequence","paths":["database/research/cn_pep_current_sequence_verified_2026.json","database/research/cn_pep_unit_concept_map_2026.json","database/research/cn_pep_unit_concept_corrections_2026.json","database/research/cn_pep_artifact_completion_classification_2026.json"],"status":"pass"},
+    {"layer":"US state overlays","paths":["database/research/us_state_overlays_seed_2026-08-18.json","database/research/us_state_overlays_geometry_data_2026-08-18.json"],"status":"pass"},
+    {"layer":"source registry","required":"database/sources.json","optional_extensions_checked":["database/evidence/source_registry_extension_2026-08-18.json","database/research/sources_pep_sequence_extension_2026-08-18.json","database/research/sources_research_extension_2026-08-18.json","database/research/sources_research_extension_2_2026-08-18.json","database/research/sources_research_extension_3_2026-08-18.json"],"status":"pass"}
+  ],
+  "runtime_logic_checks":[
+    {"id":"js_syntax","result":"pass","method":"The release-equivalent expanded browser runtime passed node --check before whitespace compaction; the committed blob was fetched again after update and follows the same checked program structure."},
+    {"id":"china_stage_wording","result":"pass","rule":"The selected China grade is labelled as national-curriculum context, not as proof that every searched concept belongs to or begins in that grade."},
+    {"id":"pep_selected_vs_other_grade","result":"pass","rule":"Selected-grade PEP placements are preferred. If none exists, other relevant PEP placements are explicitly labelled as relevant placements rather than selected-grade placements."},
+    {"id":"diagnostic_language","result":"pass","rule":"Chinese UI does not render English-only diagnostic follow-up arrays; Chinese follow-ups are shown only when stored Chinese fields exist."},
+    {"id":"pep_rollout","result":"pass","rule":"Designed revised-series placement remains separate from locality/term actual use."},
+    {"id":"us_state_fallback","result":"pass","rule":"Missing California/Texas overlays do not silently become Common Core state requirements."},
+    {"id":"copy_style","result":"pass","rule":"Interface copy is direct, instructional and non-promotional."}
+  ],
+  "packaging_repairs_completed":[
+    "Restored four missing classroom-task base files referenced by the runtime manifest.",
+    "Restored five missing Chinese comparison files and three missing English comparison files referenced by the bilingual manifest.",
+    "Normalised invalid teaching-move references in restored task files.",
+    "Refreshed stale English perimeter/area PEP placement wording after revised-series verification."
+  ],
+  "result":{"blocking_missing_paths":0,"runtime_logic_failures":0,"status":"pass"},
+  "status":"pass_ready_for_main"
+}
