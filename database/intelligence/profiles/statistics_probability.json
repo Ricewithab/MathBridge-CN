@@ -1,0 +1,19 @@
+{
+  "version":"0.1.0",
+  "domain_id":"statistics-probability",
+  "purpose":"Joined intelligence profiles for primary statistics and probability.",
+  "profiles":[
+    {"concept_id":"collect-data","curriculum_refs":[],"representation_ids":["data-table"],"teaching_move_ids":["move-from-context-to-model","use-precise-language-structures","reason-from-structure"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required"},
+    {"concept_id":"organise-data","curriculum_refs":[],"representation_ids":["data-table","bar-chart"],"teaching_move_ids":["connect-representations","compare-methods","reason-from-structure"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required"},
+    {"concept_id":"tables","curriculum_refs":[],"representation_ids":["data-table"],"teaching_move_ids":["represent-before-symbolise","use-precise-language-structures","reason-from-structure"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required"},
+    {"concept_id":"pictograms","curriculum_refs":[],"representation_ids":["pictogram","data-table"],"teaching_move_ids":["connect-representations","variation-one-feature","use-precise-language-structures"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_diagnostic_required"},
+    {"concept_id":"bar-charts","curriculum_refs":[],"representation_ids":["bar-chart","data-table"],"teaching_move_ids":["connect-representations","variation-one-feature","reason-from-structure"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_diagnostic_required"},
+    {"concept_id":"line-graphs","curriculum_refs":[],"representation_ids":["line-graph","data-table"],"teaching_move_ids":["connect-representations","reason-from-structure","use-precise-language-structures"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_diagnostic_required"},
+    {"concept_id":"pie-charts","curriculum_refs":[],"representation_ids":["pie-chart","data-table","area-model"],"teaching_move_ids":["connect-representations","reason-from-structure","explain-why"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required"},
+    {"concept_id":"mean-average","curriculum_refs":[],"representation_ids":["data-table","bar-chart"],"teaching_move_ids":["move-from-context-to-model","reason-from-structure","explain-why"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_diagnostic_required"},
+    {"concept_id":"interpret-data","curriculum_refs":[],"representation_ids":["data-table","pictogram","bar-chart","line-graph","pie-chart"],"teaching_move_ids":["compare-methods","reason-from-structure","use-error-and-misconception","use-precise-language-structures"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_diagnostic_required"},
+    {"concept_id":"chance-language","curriculum_refs":[],"representation_ids":["probability-line"],"teaching_move_ids":["use-precise-language-structures","variation-one-feature","reason-from-structure"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required"},
+    {"concept_id":"simple-probability","curriculum_refs":[],"representation_ids":["probability-line","data-table"],"teaching_move_ids":["represent-before-symbolise","reason-from-structure","explain-why"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required"},
+    {"concept_id":"experimental-probability","curriculum_refs":[],"representation_ids":["probability-line","data-table","bar-chart"],"teaching_move_ids":["connect-representations","compare-methods","reason-from-structure"],"misconception_ids":[],"diagnostic_question_ids":[],"coverage_status":"joined_curriculum_mapping_required"}
+  ]
+}
