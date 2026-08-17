@@ -1,0 +1,66 @@
+{
+  "version":"1.0.0",
+  "audit_date":"2026-08-18",
+  "purpose":"Final scope-aware audit to decide whether MathBridge core research is complete enough to begin the product build without hiding uncertainty or inventing missing evidence.",
+  "completion_rule":"A required item is complete when it is verified, explicitly classified as not publicly recoverable/query-dependent, or excluded/downgraded because evidence does not support the stronger claim. Generic pending values are not allowed in core release logic.",
+  "core_scope":{
+    "china":["义务教育数学课程标准（2022年版） primary Grades 1-6 learning-stage content","Revised PEP primary mathematics 12-volume sequence as the selected textbook comparison layer","PEP below-unit evidence where publicly recoverable","PEP artifact/rollout states with explicit limitations"],
+    "england":["National Curriculum in England primary mathematics Years 1-6","DfE primary mathematics guidance","NCETM registered guidance/materials"],
+    "us":["Common Core Grades 1-6 as explicitly labelled baseline","California/Texas optional overlays where registered"],
+    "pedagogy":["Representations","Teaching moves","Research evidence","Misconceptions and diagnostics"],
+    "product_content":["Bilingual comparison copy","Bilingual classroom tasks","Bilingual search aliases","Evidence rendering rules"]
+  },
+  "checks":[
+    {"id":"taxonomy","required":121,"resolved":121,"status":"pass"},
+    {"id":"intelligence_profiles","required":121,"resolved":121,"status":"pass"},
+    {"id":"curriculum_framework_routes","required":121,"resolved":121,"status":"pass"},
+    {"id":"china_national_locators","required":"all four primary domains + stages","resolved":"printed ranges p17-52 with stage/domain hierarchy","status":"pass","limit":"Exact single-page bullet locators are not directly renderable with current access and are therefore not fabricated."},
+    {"id":"pep_revised_volume_sequence","required":12,"resolved":12,"status":"pass"},
+    {"id":"pep_unit_taxonomy_mapping","required":"all canonical sequence records classified","resolved":true,"status":"pass"},
+    {"id":"pep_below_unit_research","required":"all volume slots have a safe evidence state","resolved":true,"status":"pass","note":"Publicly recoverable current/revised detail is stored; later-semester/unexposed detail is classified rather than inferred."},
+    {"id":"pep_artifact_metadata","required":12,"resolved":12,"status":"pass","note":"3 ISBNs verified; one single-source candidate is not promoted; other active identifiers are explicitly not publicly recovered; later-semester artifact states reflect rollout applicability."},
+    {"id":"pep_rollout","required":"safe model","resolved":"locality/publisher/term query model","status":"pass","note":"There is intentionally no single national PEP current-use flag."},
+    {"id":"england_primary_curriculum","required":"Years 1-6 core concepts","resolved":true,"status":"pass"},
+    {"id":"common_core_baseline","required":"Grades 1-6 core concepts or explicit non-placement","resolved":true,"status":"pass"},
+    {"id":"us_state_overlays","required":"optional only","resolved":"California/Texas high-use seed","status":"pass_optional_extension"},
+    {"id":"comparison_copy_chinese","required":121,"resolved":121,"status":"pass"},
+    {"id":"comparison_copy_english","required":121,"resolved":121,"status":"pass"},
+    {"id":"comparison_copy_integrity","required":11,"resolved":11,"status":"pass"},
+    {"id":"classroom_tasks","required":121,"resolved":121,"status":"pass"},
+    {"id":"classroom_task_bilingual_fields","required":121,"resolved":121,"status":"pass"},
+    {"id":"diagnostic_routes","required":121,"resolved":121,"status":"pass"},
+    {"id":"canonical_misconception_evidence_classes","required":80,"resolved":80,"unclassified":0,"status":"pass"},
+    {"id":"search_aliases","required":121,"resolved":121,"status":"pass"},
+    {"id":"source_id_integrity","required":"no unresolved runtime source references","resolved":true,"status":"pass"},
+    {"id":"cross_layer_consistency","required":"high-risk checks","resolved":"pass after registered runtime correction","status":"pass"},
+    {"id":"grade_alignment_policy","required":"concept-first, no automatic grade-number equivalence","resolved":true,"status":"pass"},
+    {"id":"copy_style","required":"plain educational functional copy","resolved":true,"status":"pass"}
+  ],
+  "known_limits_with_final_states":[
+    {"item":"Individual China-standard exact printed page for every bullet","state":"not_publicly_renderable_with_current_access","product_behavior":"Use verified printed domain range + hierarchy."},
+    {"item":"Some revised PEP ISBNs","state":"not_publicly_recovered_or_single_source_candidate","product_behavior":"Do not display as verified ISBN."},
+    {"item":"Later-semester revised PEP below-unit artifacts","state":"designed_sequence_verified_rollout_not_yet_verified","product_behavior":"Show series placement, not current-use claim."},
+    {"item":"Local PEP use","state":"query_dependent","product_behavior":"Use locality/publisher/term when actual use matters."},
+    {"item":"Direct empirical study for every diagnostic probe","state":"not_required; evidence class complete","product_behavior":"Probe-only records remain possible reasoning patterns."},
+    {"item":"All US state curricula","state":"optional_out_of_core_scope","product_behavior":"Common Core baseline is explicit; selected state overlay is used only where registered."}
+  ],
+  "release_integrity_rules":[
+    "Never replace a classified unavailable value with a guess.",
+    "Never use legacy PEP data as revised-series data.",
+    "Never imply PEP is the single national Chinese textbook.",
+    "Never infer same-numbered grade equivalence.",
+    "Never describe Common Core as the single nationwide US curriculum.",
+    "Never convert curriculum/guidance into national classroom-frequency claims.",
+    "Never present a diagnostic probe as a validated assessment or a one-answer diagnosis.",
+    "Keep teacher-facing copy direct, educational and non-promotional."
+  ],
+  "result":{
+    "core_checks_failed":0,
+    "generic_pending_core_fields":0,
+    "blocking_research_gaps":0,
+    "core_research_complete":true,
+    "ready_to_build":true,
+    "status":"pass"
+  },
+  "next_action":"Begin the teacher-facing web application build against the registered runtime manifests."
+}
