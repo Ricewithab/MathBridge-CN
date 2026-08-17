@@ -1,0 +1,175 @@
+{
+  "version":"0.1.0",
+  "research_date":"2026-08-18",
+  "purpose":"Track below-unit evidence for all 12 revised PEP primary mathematics volumes. The authoritative series table remains the source of truth for grade/semester/unit sequence; this registry adds subsection, teacher-guide and page detail only where separately supported.",
+  "canonical_sequence":"database/research/cn_pep_current_sequence_verified_2026.json",
+  "status_definitions":{
+    "teacher_guide_pages_secondary_verified":"A current teacher-guide reproduction/transcription identifies internal sections and page numbers. Useful for navigation; not treated as a primary PEP-hosted page verification.",
+    "subsections_current_secondary_verified":"A source explicitly labelled for the revised/current textbook gives subsection structure, but no teacher-guide page locators are verified.",
+    "textbook_page_secondary_verified":"A current secondary teaching resource identifies an exact student-textbook page/example.",
+    "current_artifact_existence_verified":"A current 2025/2026 listing or official PEP support page verifies that the grade/semester artifact/resource exists, but not its internal contents.",
+    "unit_sequence_only":"Only the authoritative revised-series unit sequence is currently used; subsection/page details remain open.",
+    "pending":"Not yet verified at this level."
+  },
+  "source_quality_rule":"Never promote a secondary teacher-guide transcription to primary-source status. Never use older-edition contents merely because the page title says 2026. Cross-check every candidate against the authoritative revised-series sequence first.",
+  "volumes":[
+    {
+      "grade":1,"semester":"upper","detail_status":"teacher_guide_pages_secondary_verified",
+      "sources":[{"url":"https://www.sohu.com/a/1044423142_120904083","type":"secondary_teacher_guide_reproduction","label":"2026 PEP Grade 1 upper teacher guide reproduction"}],
+      "details":[
+        {"unit":"数学游戏","teacher_guide":{"overall_design_page":2,"teaching_case_page":18,"resources_page":39}},
+        {"unit":"5以内数的认识和加、减法","teacher_guide":{"overall_design_page":41,"analysis_page":48,"subsections":[{"title":"1～5的认识","page":50},{"title":"1～5的加、减法","page":60},{"title":"0的认识和加、减法","page":66}],"teaching_cases":[{"title":"加、减法的初步认识","page":70},{"title":"0的认识和加、减法","page":76}]}},
+        {"unit":"6～10的认识和加、减法","teacher_guide":{"overall_design_page":84,"analysis_page":90,"subsections":[{"title":"6～9的认识","page":92},{"title":"6～9的加、减法","page":100},{"title":"10的认识和加、减法","page":110}],"teaching_cases":[{"title":"10的认识","page":123},{"title":"10的分与合","page":126}]}},
+        {"unit":"认识立体图形","teacher_guide":{"overall_design_page":134,"analysis_page":139,"teaching_cases":[{"title":"认识立体图形","page":145},{"title":"看谁搭得又稳又高","page":150}]}},
+        {"unit":"11～20的认识","teacher_guide":{"overall_design_page":161,"analysis_page":165,"teaching_cases":[{"title":"10的再认识","page":180},{"title":"11～20的认识","page":184},{"title":"解决问题","page":187}]}},
+        {"unit":"20以内的进位加法","teacher_guide":{"overall_design_page":199,"analysis_page":204,"teaching_cases":[{"title":"20以内的进位加法 单元教学设计","page":219},{"title":"解决问题","page":224}]}},
+        {"unit":"复习与关联","teacher_guide":{"overall_design_page":236,"analysis_page":241,"teaching_cases":[{"title":"数与运算的复习","page":249},{"title":"数关系的复习","page":253},{"title":"图形的认识的复习","page":257}]}}
+      ]
+    },
+    {
+      "grade":1,"semester":"lower","detail_status":"teacher_guide_pages_secondary_verified",
+      "sources":[{"url":"https://www.sohu.com/a/1044429906_120904083","type":"secondary_teacher_guide_reproduction","label":"2026 PEP Grade 1 lower teacher guide reproduction"}],
+      "details":[
+        {"unit":"认识平面图形","teacher_guide":{"overall_design_page":1,"analysis_page":7,"teaching_cases":[{"title":"图形拼组","page":14},{"title":"用七巧板拼出指定图形","page":20}]}},
+        {"unit":"20以内的退位减法","teacher_guide":{"overall_design_page":32,"analysis_page":38,"teaching_cases":[{"title":"十几减9","page":53},{"title":"问题解决","page":57}]}},
+        {"unit":"100以内数的认识","teacher_guide":{"overall_design_page":68,"analysis_page":75,"teaching_cases":[{"title":"数数、数的组成","page":95},{"title":"100以内数的顺序——百数表","page":97},{"title":"摆一摆，想一想","page":101}]}},
+        {"unit":"100以内的口算加、减法","teacher_guide":{"overall_design_page":110,"analysis_page":117,"subsections":[{"title":"口算加法","page":117},{"title":"口算减法","page":121}],"teaching_cases":[{"title":"口算100以内的不进位加法","page":130},{"title":"两位数减一位数（退位）","page":134}]}},
+        {"unit":"100以内的笔算加、减法","teacher_guide":{"overall_design_page":143,"analysis_page":150,"subsections":[{"title":"笔算加法","page":151},{"title":"笔算减法","page":156}],"teaching_case_page":163}},
+        {"unit":"数量间的加减关系","teacher_guide":{"overall_design_page":185,"analysis_page":193,"teaching_case":{"title":"数量间的相差关系 单元教学设计","page":201}}},
+        {"unit":"欢乐购物街","teacher_guide":{"overall_design_page":224,"analysis_page":229,"teaching_case_page":235}},
+        {"unit":"复习与关联","teacher_guide":{"overall_design_page":248,"analysis_page":253,"teaching_cases":[{"title":"数与运算的复习","page":260},{"title":"数量关系的复习","page":264},{"title":"图形的认识的复习","page":269}]}}
+      ]
+    },
+    {
+      "grade":2,"semester":"upper","detail_status":"subsections_current_secondary_verified",
+      "sources":[{"url":"https://sxkhl.cn/grade/rjn2a","type":"current_secondary_textbook_directory","label":"PEP 2024-new Grade 2 upper directory"}],
+      "details":[
+        {"unit":"1～6的表内乘法","subsections":["乘法的初步认识","2～6乘法口诀","5的乘法口诀","2、3、4的乘法口诀","乘加、乘减","6的乘法口诀","整理和复习"],"note":"A separate current 2026 planning source describes the unit as 9 lessons: 2 for multiplication meaning, 6 for 2-6 facts, 1 review."},
+        {"unit":"1～6的表内除法","subsections":["除法的初步认识","平均分","除法","用2～6的乘法口诀求商","整理和复习"]},
+        {"unit":"校园小导游","subsections":["认识东、南、西、北","校园小导游","小讲堂"]}
+      ],
+      "page_detail_status":"pending"
+    },
+    {
+      "grade":2,"semester":"lower","detail_status":"subsections_current_secondary_verified",
+      "sources":[{"url":"https://www.sohu.com/a/1044973026_120904083","type":"secondary_teacher_guide_reproduction","label":"2026 PEP Grade 2 lower teacher guide reproduction"}],
+      "details":[
+        {"unit":"时间在哪里","subsections":["认识时间","我与时间的故事","我的时间小书","小讲堂"],"lesson_count":4,"verified_learning_focus":["钟面结构与时针、分针、秒针","时、分、秒进率","时刻认读","1分和1秒量感","简单时长、开始和结束时刻问题"]},
+        {"unit":"数量间的乘除关系","subsection_evidence":["倍的认识"],"status":"partial"}
+      ],
+      "teacher_guide_page_detail_status":"pending"
+    },
+    {
+      "grade":3,"semester":"upper","detail_status":"teacher_guide_pages_secondary_verified",
+      "sources":[{"url":"https://www.sohu.com/a/1044974313_120904083","type":"secondary_teacher_guide_reproduction","label":"2026 PEP Grade 3 upper teacher guide reproduction"}],
+      "details":[
+        {"unit":"观察物体","teacher_guide":{"overall_design_page":1,"analysis_page":5,"teaching_cases":[{"title":"观察物体","page":10},{"title":"长方体纸盒的展开图","page":14}]}},
+        {"unit":"混合运算","teacher_guide":{"overall_design_page":22,"analysis_page":28,"teaching_case_pages":[42,48]}},
+        {"unit":"毫米、分米和千米","teacher_guide":{"overall_design_page":59,"analysis_page":64,"teaching_cases":[{"title":"毫米","page":75},{"title":"千米","page":78}]}},
+        {"unit":"曹冲称象的故事","teacher_guide":{"overall_design_page":87,"analysis_page":93,"teaching_case_page":101}},
+        {"unit":"多位数乘一位数","teacher_guide":{"overall_design_page":117,"analysis_page":125,"teaching_cases":[{"title":"口算乘法","page":143},{"title":"不进位、进位笔算乘法","page":147}]}},
+        {"unit":"数字编码","teacher_guide":{"overall_design_page":164,"analysis_page":169,"teaching_case_page":173}},
+        {"unit":"线和角","teacher_guide":{"overall_design_page":182,"analysis_page":187,"teaching_cases":[{"title":"线段、射线、直线","page":199},{"title":"直尺、圆规比较线段","page":203},{"title":"角的初步认识","page":205}]}},
+        {"unit":"分数的初步认识","detail_status":"teacher_guide_source_exists_but_remaining_page_lines_need_capture"},
+        {"unit":"复习与关联","detail_status":"teacher_guide_source_exists_but_remaining_page_lines_need_capture"}
+      ]
+    },
+    {
+      "grade":3,"semester":"lower","detail_status":"teacher_guide_pages_secondary_verified",
+      "sources":[{"url":"https://www.sohu.com/a/1044975242_120904083","type":"secondary_teacher_guide_reproduction","label":"2026 PEP Grade 3 lower teacher guide reproduction"}],
+      "details":[
+        {"unit":"生活中的运动现象","teacher_guide":{"overall_design_page":1,"analysis_page":7,"teaching_cases":[{"title":"轴对称图形","page":16},{"title":"旋转","page":20}]}},
+        {"unit":"除数是一位数的除法","teacher_guide":{"overall_design_page":30,"analysis_page":36,"subsections":[{"title":"口算除法","page":36},{"title":"笔算除法","page":41}],"teaching_case_pages":[65,68,73]}},
+        {"unit":"长方形和正方形","teacher_guide":{"overall_design_page":84,"analysis_page":91,"teaching_cases":[{"title":"多边形的认识","page":104},{"title":"周长","page":112},{"title":"解决问题","page":118},{"title":"拼图游戏","page":124}]}},
+        {"unit":"图形的面积","teacher_guide":{"overall_design_page":142,"analysis_page":146,"subsections":[{"title":"面积和面积单位","page":159},{"title":"长方形、正方形面积","page":163}]}},
+        {"unit":"数据的收集和整理","teacher_guide":{"overall_design_page":174,"analysis_page":179,"subsections":[{"title":"数据的收集和整理","page":191},{"title":"分段整理数据","page":194}]}},
+        {"unit":"年月日的秘密","teacher_guide":{"overall_design_page":205,"analysis_page":209,"teaching_case_page":218}},
+        {"unit":"小数的初步认识","teacher_guide":{"overall_design_page":232,"analysis_page":236,"subsections":[{"title":"小数的初步认识","page":245},{"title":"简单的小数加、减法","page":249}]}},
+        {"unit":"复习与关联","teacher_guide":{"overall_design_page":255,"analysis_page":261,"teaching_case_pages":[272,277,282],"evaluation_page":286,"content_structure_appendix_page":291}}
+      ]
+    },
+    {
+      "grade":4,"semester":"upper","detail_status":"subsections_current_secondary_verified",
+      "sources":[{"type":"current_secondary_textbook_directory","label":"2026 autumn revised PEP Grade 4 upper detailed directory"}],
+      "details":[
+        {"unit":"万以上数的认识","subsections":["亿以内数的认识","亿以上数的认识","数的比较","改写和求近似数","整理和复习"]},
+        {"unit":"1亿有多大","subsections":["1亿张纸有多高","1亿有多大","小讲堂"]},
+        {"unit":"角的度量","subsections":["角的再认识","角的度量","整理和复习"]},
+        {"unit":"多位数乘两位数","subsections":["口算乘法","笔算乘法","整理和复习"]},
+        {"unit":"加法模型和乘法模型","verified_focus":["加法模型：总量=分量+分量及逆向关系","乘法模型：价格/购买与路程类数量关系"],"textbook_page_evidence":[{"pages":"58-61","example":"例1/例2","status":"textbook_page_secondary_verified"}]},
+        {"unit":"平行四边形和梯形","subsections":["平行和垂直","平行四边形和梯形","整理和复习","神奇的默比乌斯带"]},
+        {"unit":"条形统计图","subsections":["单式条形统计图","复式条形统计图"]},
+        {"unit":"寻找宝藏","subsections":["校园寻宝","绘制藏宝图","藏宝——寻宝大挑战","小讲堂"]}
+      ],
+      "teacher_guide_page_detail_status":"pending"
+    },
+    {
+      "grade":4,"semester":"lower","detail_status":"current_artifact_existence_verified",
+      "sources":[{"url":"https://www.pep.com.cn/jxzy/xzzq/tlcl/qxxa/202602/t20260211_2005355.shtml","type":"official_pep_current_support_resource","label":"PEP Grade 4 lower, dated 2026-02-11"},{"type":"retail_current_teacher_guide_listing","label":"2026 spring PEP Grade 4 lower teacher guide exists"}],
+      "details":[],
+      "subsection_status":"pending",
+      "warning":"Publicly indexed pages with the older 四则运算/观察物体 sequence are legacy and must not be used for the revised-series record."
+    },
+    {
+      "grade":5,"semester":"upper","detail_status":"subsections_current_secondary_verified",
+      "sources":[{"url":"https://sxkhl.cn/grade/rjn5a","type":"current_secondary_textbook_directory","label":"PEP 2024-new Grade 5 upper directory"}],
+      "details":[
+        {"unit":"用字母表示数和数量关系","verified_focus":["用字母表示特定、未知或变化的数量","表示年龄、路程、价格和数量等关系","用字母表示运算律和公式","含字母乘法式的简写","代入求简单式值"],"textbook_page_evidence":[{"page":57,"example":"例2","focus":"用字母表示数量关系","status":"textbook_page_secondary_verified"}]}
+      ],
+      "remaining_units_subsection_status":"pending_or_broad_current_directory_only"
+    },
+    {
+      "grade":5,"semester":"lower","detail_status":"subsections_current_secondary_verified",
+      "sources":[{"url":"https://sxkhl.cn/grade/rjn5b","type":"current_secondary_textbook_directory","label":"PEP 2024-new Grade 5 lower directory"},{"type":"retail_current_teacher_guide_listing","label":"2026 spring PEP Grade 5 lower teacher guide exists"}],
+      "details":[
+        {"unit":"因数和倍数","verified_focus":["因数和倍数","求因数和倍数","2、3、5的倍数特征","质数和合数"]},
+        {"unit":"分数的认识","verified_focus":["单位1与分数意义","分数单位","真分数、假分数和带分数","分数与除法关系","分数基本性质"]},
+        {"unit":"分数的加法和减法","verified_focus":["同分母加减","异分母加减","分数加减混合运算","通分"]},
+        {"unit":"长方体和正方体","verified_focus":["特征","棱长总和","表面积","体积","体积单位"]},
+        {"unit":"度量衡的故事","verified_focus":["度量衡发展历史","长度、重量、容量单位演变","资料收集和比较"]},
+        {"unit":"折线统计图","verified_focus":["特点","绘制","数据分析","与条形统计图比较","变化趋势"]}
+      ],
+      "teacher_guide_page_detail_status":"pending"
+    },
+    {
+      "grade":6,"semester":"upper","detail_status":"subsections_current_secondary_verified",
+      "sources":[{"url":"https://sxkhl.cn/grade/rjn6a","type":"current_secondary_textbook_directory","label":"PEP 2024-new Grade 6 upper directory"}],
+      "details":[
+        {"unit":"确定位置","subsections":["用有序数对确定位置","用方向和距离确定位置","整理和复习"]},
+        {"unit":"分数乘法","subsections":["分数乘整数","一个数乘分数","分数、小数混合运算及运算律","整理和复习"]},
+        {"unit":"分数除法","subsections":["倒数","分数除法","整理和复习"]},
+        {"unit":"生活中的负数","subsections":["寻找负数","认识负数","应用负数","小讲堂"]},
+        {"unit":"圆","verified_focus":["圆的特征","各部分名称","周长","面积","圆周率"]},
+        {"unit":"体育中的数学","verified_focus":["体育情境中的综合问题","数据和规则信息的数学分析"],"status":"broad_current_directory_only"},
+        {"unit":"百分数","verified_focus":["百分数意义和读写","百分数与分数、小数联系","百分数实际问题"],"status":"broad_current_directory_only"},
+        {"unit":"水是生命之源","verified_focus":["水资源数据收集分析","用水量计算","节水方案"],"status":"broad_current_directory_only"}
+      ],
+      "teacher_guide_page_detail_status":"pending"
+    },
+    {
+      "grade":6,"semester":"lower","detail_status":"current_artifact_existence_verified",
+      "sources":[{"type":"retail_current_teacher_guide_listing","label":"2026 spring PEP Grade 6 lower teacher guide exists"}],
+      "details":[],
+      "subsection_status":"pending",
+      "warning":"Older PEP Grade 6 lower web pages containing 负数、百分数（二）、鸽巢问题 are legacy and must not be used for the revised-series record."
+    }
+  ],
+  "coverage_summary":{
+    "volumes":12,
+    "unit_sequence_complete":true,
+    "volumes_with_some_below_unit_detail":10,
+    "volumes_with_teacher_guide_page_detail":4,
+    "volumes_with_current_subsection_or_focus_detail_without_pages":6,
+    "volumes_current_artifact_only":2,
+    "fully_primary_verified_subsection_page_volumes":0,
+    "research_complete":false
+  },
+  "next_priority":[
+    "Find revised Grade 4 lower subsection/teacher-guide contents.",
+    "Find revised Grade 6 lower subsection/teacher-guide contents.",
+    "Capture missing Grade 3 upper fraction/review teacher-guide pages.",
+    "Capture complete Grade 5 upper and Grade 6 upper subsection structure from current sources.",
+    "Promote page claims only when the source clearly distinguishes teacher-guide pages from student-textbook pages.",
+    "Add ISBN/publication metadata for each current teacher-guide/textbook volume when directly verifiable."
+  ]
+}
