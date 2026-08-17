@@ -1,17 +1,15 @@
 {
-  "version":"0.1.0",
+  "version":"0.2.0",
   "research_date":"2026-08-18",
-  "purpose":"Misconception records added only where direct empirical evidence has been checked in the diagnostic-evidence pass.",
+  "purpose":"Compatibility records created during the diagnostic-evidence pass. Canonical misconception records remain in the base/domain catalogs.",
   "misconceptions":[
     {
       "id":"equals-sign-operation-command",
-      "concept_ids":["meaning-equals-sign","simple-equations","unknowns"],
-      "statement":"The pupil treats the equals sign mainly as a command to calculate or as a signal that the answer comes next, rather than as a statement that two expressions have the same value.",
-      "diagnostic_signals":["Rejects or misreads equations with operations on both sides","Expects the answer to appear only to the right of the equals sign","Calculates all visible numbers instead of comparing the two sides"],
+      "alias_of":"equals-sign-means-answer-next",
+      "status":"deprecated_alias",
+      "write_rule":"Do not attach this ID to new concept profiles. Resolve it to equals-sign-means-answer-next when reading older data.",
       "source_ids":["research-stephens-equal-sign-2013"],
-      "evidence_level":"direct_empirical",
-      "status":"evidence_supported",
-      "use_limit":"The study supports the operational-versus-relational reasoning pattern. It does not validate any single MathBridge question as a diagnostic test or establish prevalence in a specific jurisdiction."
+      "evidence_level":"direct_empirical"
     }
   ]
 }
