@@ -1,0 +1,111 @@
+{
+  "version":"0.1.0",
+  "validation_date":"2026-08-18",
+  "purpose":"Rendered teacher-facing examples used to check assembly, copy style and evidence labelling. These are validation fixtures, not canonical curriculum records.",
+  "copy_rule":"Use plain educational language. State the mathematical difference, teaching action and evidence status directly. Do not use promotional language.",
+  "fixtures":[
+    {
+      "id":"place-value-cn2-england2",
+      "concept_id":"place-value",
+      "comparison_system":"UK",
+      "input":{"cn_grade":2,"target_year":2,"language":"zh-CN"},
+      "sections":{
+        "what_is_taught":{"cn":"中国第一学段（1-2年级）发展万以内数的意义和位值理解，并把数量、表示方法和数字符号联系起来。国家课标按学段规定要求，当前人教版二年级的具体单元顺序仍需逐册核实。","comparison":"英格兰 Year 2 重点发展两位数的十位和个位，比较和排列至少到100的数，并在计算中使用位值知识。","note":"两边都教位值，但同为“二年级/Year 2”并不表示数的范围和课程深度相同。"},
+        "progression":"先确认学生理解一个数字在不同数位上代表不同数量，再把这种结构用于比较、估算和计算。",
+        "how_it_is_represented":["用十进制位值材料表示百、十、一。","把同一个数放在位值表和数轴上。","低年级可用十格框帮助学生看到5和10的结构。"],
+        "how_it_is_taught":["让学生说出每个数字代表的数量，而不只说数位名称。","比较两个表示相同数量的模型，并说明它们哪里相同。","改变一个数位，要求学生预测整个数怎样变化。"],
+        "why_it_works":"这些表示把数字符号和实际数量单位连接起来。后面的进位、退位、估算和小数位值都依赖这一结构。",
+        "likely_misunderstandings":"学生可能把数字5本身和“5个百”混为一谈，或忽视0在保持数位位置中的作用。",
+        "diagnostic_question":"在507中，数字5表示多少？你怎么知道的？",
+        "classroom_bridge":"如果学生已经会读写三位数，可以减少单纯读数练习，增加“表示—比较—解释”任务，例如用两种方法表示504并说明0的作用。"
+      },
+      "evidence":[{"source_id":"cn-moe-math-2022","locator":"第一学段（1-2年级）→ 数与代数 → 数与运算","status":"stage_level"},{"source_id":"uk-dfe-mathematics","locator":"Year 2 → Number - number and place value","status":"verified"}]
+    },
+    {
+      "id":"multiplication-meaning-cn-us3",
+      "concept_id":"multiplication-meaning",
+      "comparison_system":"US",
+      "input":{"target_grade":3,"language":"zh-CN"},
+      "sections":{
+        "what_is_taught":{"cn":"中国国家课标和新版人教版都强调把相关运算内容建立联系，但当前第十二套人教版中乘法概念的完整年级和学期顺序还没有逐册核实。","comparison":"美国 Common Core Grade 3 正式发展乘法和除法的意义，包括等量分组、阵列、乘除互逆关系和100以内基本事实。","note":"这里比较的是乘法概念怎样建立，不把尚未核实的人教版具体年级当作事实。"},
+        "progression":"从等量分组和阵列建立乘法关系，再连接交换律、分配律、基本事实和后续多位数乘法。",
+        "how_it_is_represented":["阵列模型","面积模型","条形模型"],
+        "how_it_is_taught":["要求学生说明每个因数在情境中表示什么。","旋转阵列，比较3×4和4×3在数值和情境上的相同与不同。","把一个阵列拆成两部分，用来解释分配律。"],
+        "why_it_works":"阵列同时显示组数、每组数量和总数，并能自然连接交换律、分配律和面积。",
+        "likely_misunderstandings":"学生可能把乘法只理解为重复加法，无法把同一结构迁移到面积、比例或分数乘法。",
+        "diagnostic_question":"画一个表示3×4的阵列。把阵列转过来后表示哪个乘法算式？什么没有变，什么变了？",
+        "classroom_bridge":"在练乘法口诀前后加入短的阵列解释任务。口诀仍然要熟练，但学生需要知道基本事实之间为什么有关联。"
+      },
+      "evidence":[{"source_id":"cn-pep-math-new-edition-intro-2024","locator":"新教材整体设计、探究与内容关联说明","status":"verified_general_design"},{"source_id":"us-common-core-math","locator":"Grade 3 → Operations and Algebraic Thinking","status":"verified_common_core_baseline"}]
+    },
+    {
+      "id":"equivalent-fractions-cn4-england4",
+      "concept_id":"equivalent-fractions",
+      "comparison_system":"UK",
+      "input":{"cn_grade":4,"target_year":4,"language":"zh-CN"},
+      "sections":{
+        "what_is_taught":{"cn":"中国国家课标中分数内容按学段组织。当前人教版四年级是否在具体哪个单元系统处理等值分数，需要以第十二套教材逐册核实。","comparison":"英格兰 Year 4 要求学生认识等值分数的系列，并继续连接分数、小数和百分之一等表示。","note":"不能因为两边都出现分数内容，就直接认定四年级的教学顺序完全对应。"},
+        "progression":"先建立“不同写法可以表示同一个数”，再把等值关系用于比较、约分、通分和后续分数计算。",
+        "how_it_is_represented":["同一数轴上的相同位置","同一个整体的条形模型","面积模型"],
+        "how_it_is_taught":["先要求学生证明1/2和2/4相等，再总结符号规律。","改变分子和分母，但保持表示的数值不变。","在数轴和面积模型之间来回对应。"],
+        "why_it_works":"等值分数首先是数值相等关系，不只是把分子和分母同时乘一个数的规则。",
+        "likely_misunderstandings":"学生可能认为分子和分母不同，所以两个分数一定不相等。",
+        "diagnostic_question":"1/2和2/4是同一个数吗？请说服一个认为“分子分母不同，所以它们不可能相等”的同学。",
+        "classroom_bridge":"先让学生用同一个整体或同一条数轴证明等值关系，再进入符号化的扩分和约分规则。"
+      },
+      "evidence":[{"source_id":"cn-moe-math-2022","locator":"小学分数学段要求；具体四年级教材顺序待核实","status":"stage_level"},{"source_id":"uk-dfe-mathematics","locator":"Year 4 → Number - fractions","status":"verified"}]
+    },
+    {
+      "id":"area-cn4-us3",
+      "concept_id":"area-concept",
+      "comparison_system":"US",
+      "input":{"cn_grade":4,"target_grade":3,"language":"zh-CN"},
+      "sections":{
+        "what_is_taught":{"cn":"中国第二学段（3-4年级）认识面积，使用平方单位，估测和测量面积，并区分面积与周长。当前人教版具体学期仍需逐册确认。","comparison":"美国 Common Core Grade 3 把面积定义为用单位正方形测量的属性，并把长方形面积与乘法、加法联系起来。","note":"这个例子说明课程比较不应强制使用相同年级编号。"},
+        "progression":"从覆盖一个平面和数单位正方形开始，再连接行×列、乘法和面积公式。",
+        "how_it_is_represented":["单位正方形网格","阵列","面积模型"],
+        "how_it_is_taught":["先让学生判断“测的是边界还是内部”。","用单位正方形覆盖长方形并数行和列。","把数格子连接到长×宽，而不是直接给公式。"],
+        "why_it_works":"单位正方形说明面积是二维测量；行和列的结构又把面积公式连接到乘法。",
+        "likely_misunderstandings":"学生可能把面积和周长都理解为“把数字相乘或相加”的公式，而没有区分内部表面和边界长度。",
+        "diagnostic_question":"一个长方形长5厘米、宽3厘米。求周长时测量的是什么？求面积时测量的是什么？先不要计算。",
+        "classroom_bridge":"在正式使用面积公式前，保留一次单位正方形覆盖和行列解释。之后可以逐步撤去网格。"
+      },
+      "evidence":[{"source_id":"cn-moe-math-2022","locator":"第二学段（3-4年级）→ 图形与几何 / 测量相关内容","status":"stage_level"},{"source_id":"us-common-core-math","locator":"Grade 3 → Measurement and Data → Geometric measurement: area","status":"verified_common_core_baseline"}]
+    },
+    {
+      "id":"ratio-cn6-us6",
+      "concept_id":"ratio-meaning",
+      "comparison_system":"US",
+      "input":{"cn_grade":6,"target_grade":6,"language":"zh-CN"},
+      "sections":{
+        "what_is_taught":{"cn":"中国第三学段（5-6年级）学习比和比例，在实际情境中理解两个数量的关系，并发展正比例关系。当前人教版具体学期仍需逐册核实。","comparison":"美国 Common Core Grade 6 明确引入比、比率和单位率，并用等比表、双数轴、图和方程解决问题。","note":"“单位率”是Common Core中的明确术语，不应自动写成中国国家课标的同名要求。"},
+        "progression":"从两个数量的乘法关系开始，发展等比关系，再进入单位率和比例推理。",
+        "how_it_is_represented":["条形模型","比表","双数轴"],
+        "how_it_is_taught":["要求学生说明比中的两个量分别是什么。","同时按同一倍数改变两个量，观察比是否保持不变。","把加法差异和乘法比例放在一起比较。"],
+        "why_it_works":"比例关系要求两个量按相同倍数变化。表格和双数轴能把这种对应关系直接显示出来。",
+        "likely_misunderstandings":"学生可能用固定差值判断两个比是否相等，例如认为2:3和4:5相同，因为两组都相差1。",
+        "diagnostic_question":"一种饮料每2杯果汁配3杯水。4杯果汁配5杯水是相同浓度吗？请解释。",
+        "classroom_bridge":"在比例计算前安排几组“相差相同但比例不同”的例子，让学生用乘法关系解释。"
+      },
+      "evidence":[{"source_id":"cn-moe-math-2022","locator":"第三学段（5-6年级）→ 数与代数 → 数量关系","status":"stage_level"},{"source_id":"us-common-core-math","locator":"Grade 6 → Ratios and Proportional Relationships","status":"verified_common_core_baseline"}]
+    },
+    {
+      "id":"coordinates-cn6-england6",
+      "concept_id":"coordinates",
+      "comparison_system":"UK",
+      "input":{"cn_grade":6,"target_year":6,"language":"zh-CN"},
+      "sections":{
+        "what_is_taught":{"cn":"中国第三学段（5-6年级）用有序数对表示点的位置，并建立有序数对与方格图中位置的对应。当前人教版具体学期仍需逐册核实。","comparison":"英格兰在小学阶段逐步使用坐标描述位置；到 Year 6 使用完整坐标网格描述位置，并把坐标用于图形和位置问题。","note":"坐标顺序和坐标范围应按各自课程要求呈现，不把Year 6直接翻译成中国六年级课程等价。"},
+        "progression":"先建立“第一个数和第二个数有固定顺序”，再用于定位、移动和图形关系。",
+        "how_it_is_represented":["坐标网格"],
+        "how_it_is_taught":["画点前先让学生口头说明两个坐标分别控制哪个方向。","同时比较(2,5)和(5,2)。","让学生根据位置写坐标，也根据坐标找位置。"],
+        "why_it_works":"坐标不是两个可交换的数，而是一个有顺序的位置描述。反复比较顺序相反的数对可以突出这一结构。",
+        "likely_misunderstandings":"学生可能把两个坐标的顺序颠倒，或认为(2,5)和(5,2)表示同一个点。",
+        "diagnostic_question":"点A的坐标是(2,5)。在画点之前，先解释2表示什么、5表示什么。",
+        "classroom_bridge":"在坐标练习中混入顺序相反的数对，要求学生先解释再作图，而不是只机械描点。"
+      },
+      "evidence":[{"source_id":"cn-moe-math-2022","locator":"第三学段（5-6年级）→ 图形与几何 → 图形的位置与运动","status":"stage_level"},{"source_id":"uk-dfe-mathematics","locator":"Year 6 → Geometry - position and direction","status":"verified"}]
+    }
+  ],
+  "fixture_rules":["Do not use these fixtures as canonical source records.","Regenerate a fixture when its curriculum, diagnostic or evidence inputs change.","Every factual comparison statement must remain traceable to the source IDs listed in the fixture.","Pending PEP grade placement must remain visible rather than being filled by inference."]
+}
