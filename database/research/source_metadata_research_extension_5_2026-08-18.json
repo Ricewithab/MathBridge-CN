@@ -1,0 +1,42 @@
+{
+  "version":"1.0.0",
+  "research_date":"2026-08-18",
+  "records":[
+    {
+      "source_id":"research-peters-prediger-unit-conversion-2026",
+      "official_url":"https://link.springer.com/article/10.1007/s10649-025-10437-6",
+      "verification_status":"primary_publisher_checked",
+      "sample_scope":"Design research; Cycle 1 qualitatively analyzed 20 middle-school students, with Cycle 2 tracing focus-pair learning and patterns typical of 18 students.",
+      "supports":"Understanding unit conversion requires coordinating bundle, place-value and refinement structures; students can know a procedure without being able to explain/justify its structure.",
+      "does_not_support":"Prevalence of a specific unit-conversion misconception in primary pupils or a jurisdiction-specific claim.",
+      "use_note":"Use as broader direct mechanism evidence with age-range caution."
+    },
+    {
+      "source_id":"research-tatsis-spinner-fairness-2008",
+      "official_url":"https://doi.org/10.1007/s10643-008-0283-y",
+      "verification_status":"journal_metadata_and_full_text_repository_checked",
+      "sample_scope":"Kindergarten children discussing fairness in probabilistic games involving spinners.",
+      "supports":"Young children may initially reason inadequately about spinner fairness and can develop attention to sector size/area as relevant to chance.",
+      "does_not_support":"A universal prevalence estimate or diagnosis from one spinner response.",
+      "use_note":"Direct child evidence for unequal-sector/fairness reasoning; keep task and age scope visible."
+    },
+    {
+      "source_id":"research-larsson-multiplication-2017",
+      "official_url":"https://doi.org/10.1016/j.jmathb.2017.07.003",
+      "verification_status":"primary_publisher_abstract_checked",
+      "sample_scope":"Longitudinal individual-interview case studies of two students across Grades 5-7 over five semesters.",
+      "supports":"A robust multiplication conception as repeated addition/equal groups can constrain use of commutativity and, for one student, sense-making for decimal multiplication.",
+      "does_not_support":"Prevalence of this conception among primary pupils or a claim that repeated addition is inherently harmful.",
+      "use_note":"Direct empirical evidence that the limited conception can occur; very small sample requires strong caution."
+    },
+    {
+      "source_id":"research-park-nunes-multiplication-2001",
+      "official_url":"https://ora.ox.ac.uk/objects/uuid:80a2b78c-4cfa-4bcd-b021-886aa361f2c3",
+      "verification_status":"university_repository_and_publisher_record_checked",
+      "sample_scope":"42 Year 2 children in England, mean age 6 years 7 months, randomly assigned to repeated-addition or correspondence-schema interventions.",
+      "supports":"Children taught through correspondence made greater progress on multiplicative reasoning than children taught through repeated addition; repeated addition functions as a calculation route but need not constitute the full conceptual basis of multiplication.",
+      "does_not_support":"That repeated addition should never be taught or that a particular pupil using repeated addition has a misconception.",
+      "use_note":"Use to support broadening multiplication meaning beyond repeated addition, not to diagnose from strategy use alone."
+    }
+  ]
+}
