@@ -1,0 +1,28 @@
+{
+  "version":"0.1.0",
+  "audit_date":"2026-08-18",
+  "purpose":"Check whether every concept in the 121-concept Grade 1-6 taxonomy can resolve at least one misconception or reasoning-risk record and at least one diagnostic question after all diagnostic overlays are applied.",
+  "resolution_inputs":[
+    "database/intelligence/concept_intelligence_manifest.json",
+    "database/intelligence/diagnostic_extension_manifest_2026-08-18.json",
+    "base misconception and diagnostic catalogs",
+    "all extension catalogs and link overlays listed in the diagnostic extension manifest"
+  ],
+  "coverage_by_domain":[
+    {"domain_id":"number","taxonomy_concepts":49,"concepts_with_diagnostic_route":49,"status":"complete"},
+    {"domain_id":"algebraic-thinking","taxonomy_concepts":13,"concepts_with_diagnostic_route":13,"status":"complete"},
+    {"domain_id":"measurement","taxonomy_concepts":14,"concepts_with_diagnostic_route":14,"status":"complete"},
+    {"domain_id":"geometry","taxonomy_concepts":16,"concepts_with_diagnostic_route":16,"status":"complete"},
+    {"domain_id":"statistics-probability","taxonomy_concepts":12,"concepts_with_diagnostic_route":12,"status":"complete"},
+    {"domain_id":"mathematical-practices","taxonomy_concepts":17,"concepts_with_diagnostic_route":17,"status":"complete"}
+  ],
+  "result":{"taxonomy_concepts":121,"concepts_with_diagnostic_route":121,"route_coverage_percent":100,"diagnostic_route_coverage_complete":true},
+  "meaning_of_complete":"Each concept can resolve at least one usable probe after overlays are applied. This does not mean every concept has multiple independent diagnostics or that every misconception record has high-strength empirical evidence.",
+  "quality_limits":[
+    "Many domain-specific misconception records are marked curriculum_inferred and should be treated as plausible reasoning patterns to probe, not established prevalence claims.",
+    "A wrong answer never establishes a misconception by itself; diagnostic_interpretation_rules.json still requires explanation, representation or a second item.",
+    "Some concepts share a diagnostic because the same underlying mathematical structure is being tested.",
+    "Further expansion should prioritise concepts where only one probe exists or where bilingual wording needs classroom testing, rather than creating duplicate questions simply to increase count."
+  ],
+  "status":"pass"
+}
