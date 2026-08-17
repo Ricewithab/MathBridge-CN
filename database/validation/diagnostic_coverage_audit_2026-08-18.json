@@ -1,5 +1,5 @@
 {
-  "version":"0.1.0",
+  "version":"0.2.0",
   "audit_date":"2026-08-18",
   "purpose":"Check whether every concept in the 121-concept Grade 1-6 taxonomy can resolve at least one misconception or reasoning-risk record and at least one diagnostic question after all diagnostic overlays are applied.",
   "resolution_inputs":[
@@ -17,12 +17,14 @@
     {"domain_id":"mathematical-practices","taxonomy_concepts":17,"concepts_with_diagnostic_route":17,"status":"complete"}
   ],
   "result":{"taxonomy_concepts":121,"concepts_with_diagnostic_route":121,"route_coverage_percent":100,"diagnostic_route_coverage_complete":true},
+  "direct_route_improvement":{"concept_id":"written-subtraction","misconception_id":"algorithm-digits-without-units","diagnostic_question_id":"dq-wsub-001","focus":"Explain regrouping as exchange of equal place-value units rather than as a digit-level borrowing rule."},
   "meaning_of_complete":"Each concept can resolve at least one usable probe after overlays are applied. This does not mean every concept has multiple independent diagnostics or that every misconception record has high-strength empirical evidence.",
   "quality_limits":[
     "Many domain-specific misconception records are marked curriculum_inferred and should be treated as plausible reasoning patterns to probe, not established prevalence claims.",
     "A wrong answer never establishes a misconception by itself; diagnostic_interpretation_rules.json still requires explanation, representation or a second item.",
     "Some concepts share a diagnostic because the same underlying mathematical structure is being tested.",
-    "Further expansion should prioritise concepts where only one probe exists or where bilingual wording needs classroom testing, rather than creating duplicate questions simply to increase count."
+    "Further expansion should prioritise concepts where only one probe exists or where bilingual wording needs classroom testing, rather than creating duplicate questions simply to increase count.",
+    "Diagnostic route coverage is instructional coverage, not psychometric validation."
   ],
   "status":"pass"
 }
