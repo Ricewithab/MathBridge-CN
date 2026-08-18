@@ -9,30 +9,46 @@
     if (!card) return;
 
     const zh = document.documentElement.lang !== 'en';
+    const title = card.querySelector('.tm-head h2');
     const subtitle = card.querySelector('.tm-head p');
     const blocks = card.querySelectorAll('.tm-output-grid .tm-block');
-    const firstHeading = blocks[0]?.querySelector('h3');
-    const secondHeading = blocks[1]?.querySelector('h3');
+    const headings = Array.from(blocks).map(block => block.querySelector('h3'));
+
+    if (title) {
+      title.textContent = zh ? '教师视图 · 教学对照' : 'Teacher view · Practical comparison';
+    }
 
     if (subtitle) {
       subtitle.textContent = zh
-        ? '先按中国教材进度完成当前学习，再从英格兰或美国资料中选择一个有价值的教学做法。'
-        : 'Start from the Chinese textbook sequence, then borrow one useful teaching move from England or the US.';
-    }
-
-    if (firstHeading) {
-      firstHeading.textContent = zh ? '先保留中国教材进度' : 'Keep the Chinese textbook sequence';
+        ? '把中国教材进度与英格兰或美国课程对照、教学价值、课堂应用和理解检查集中在一个视图中。'
+        : 'Chinese textbook context alongside an England or US curriculum comparison, rationale, classroom application and understanding check.';
     }
 
     const system = document.querySelector('[data-system].active')?.dataset.system || 'England';
     const jurisdiction = document.getElementById('usJurisdiction')?.value || 'Common Core baseline';
     const stateLayer = system === 'US' && jurisdiction !== 'Common Core baseline';
 
-    if (secondHeading) {
-      secondHeading.textContent = stateLayer
-        ? (zh ? '查看州级课程位置' : 'Check state curriculum placement')
-        : (zh ? '再加入一个西方视角' : 'Add one Western lens');
-    }
+    const labels = zh
+      ? [
+          '中国教材进度',
+          stateLayer ? '州级课程位置' : '西方课程对照',
+          '教学价值',
+          '课堂应用',
+          '教师提问与表征',
+          '理解检查'
+        ]
+      : [
+          'Chinese textbook sequence',
+          stateLayer ? 'State curriculum placement' : 'Western curriculum comparison',
+          'Why it matters',
+          'Classroom application',
+          'Teacher prompts & representations',
+          'Understanding check'
+        ];
+
+    headings.forEach((heading, index) => {
+      if (heading && labels[index]) heading.textContent = labels[index];
+    });
   }
 
   function queuePolish() {
