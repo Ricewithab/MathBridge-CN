@@ -1,18 +1,21 @@
 {
-  "version":"1.2.0",
+  "version":"1.3.1",
   "research_date":"2026-08-18",
   "purpose":"Audit ISBN/publication/artifact metadata for revised PEP primary mathematics volumes. Metadata is accepted only when the artifact is edition-identified and consistent with the authoritative revised-series unit sequence.",
-  "acceptance_rule":"An ISBN or publication record is attached to the revised series only when the edition/date and/or visible contents distinguish it from the 2022 illustrated legacy edition. Title alone is insufficient.",
+  "acceptance_rule":"An ISBN or publication record is attached to the revised series only when the edition/date and/or visible contents distinguish it from the 2022 illustrated legacy edition. Title alone is insufficient. A single retail identifier is kept as a candidate until independently corroborated.",
   "accepted_revised_artifacts":[
     {"grade":1,"semester":"upper","edition_label":"2024 revised PEP","isbn":"978-7-107-38244-4","isbn_compact":"9787107382444","publisher":"人民教育出版社","publication_date":"2024-07-01","publication_month":"2024-07","metadata_status":"secondary_catalog_cross_verified","sequence_match_status":"verified_separately","metadata_sources":[{"name":"王府井书店","url":"https://www.wfjsd.com/list_7107382446071792.htm"},{"name":"ChineseBookCity","url":"https://chinesebookcity.com/product/9787107382444/"}],"use_limit":"Catalog-level metadata; sequence identity is independently verified."},
-    {"grade":1,"semester":"lower","edition_label":"2024 revised PEP","isbn":"978-7-107-38245-1","isbn_compact":"9787107382451","publisher":"人民教育出版社","publication_month":"2024-11","metadata_status":"secondary_catalog_verified_plus_revised_content_match","sequence_match_status":"verified_separately","sequence_evidence":"Current revised Grade 1 lower content and teacher-guide evidence match the revised sequence: 认识平面图形; 20以内的退位减法; 100以内数的认识; 100以内的口算加、减法; 100以内的笔算加、减法; 数量间的加减关系; 欢乐购物街; 复习与关联.","metadata_sources":[{"name":"ChineseBookCity","url":"https://chinesebookcity.com/product/9787107382451/","evidence":"Product explicitly labelled 数学 一年级 下册（义务教育教科书 2024版本）, ISBN 9787107382451, PEP, publication 2024年11月."}],"use_limit":"Catalog-level metadata, not a directly rendered PEP copyright page; revised sequence is independently confirmed."},
+    {"grade":1,"semester":"lower","edition_label":"2024 revised PEP","isbn":"978-7-107-38245-1","isbn_compact":"9787107382451","publisher":"人民教育出版社","publication_month":"2024-11","metadata_status":"secondary_catalog_verified_plus_revised_content_match","sequence_match_status":"verified_separately","sequence_evidence":"Current revised Grade 1 lower content and teacher-guide evidence match the revised sequence.","metadata_sources":[{"name":"ChineseBookCity","url":"https://chinesebookcity.com/product/9787107382451/","evidence":"Product explicitly labels the 2024 version and ISBN 9787107382451."}],"use_limit":"Catalog-level metadata; revised sequence is independently confirmed."},
     {"grade":2,"semester":"upper","edition_label":"2025 revised PEP","isbn":"978-7-107-38912-2","isbn_compact":"9787107389122","publisher":"人民教育出版社","publication_month":"2025-08","metadata_status":"secondary_catalog_verified_plus_independent_sequence_match","sequence_match_status":"verified_separately","metadata_sources":[{"name":"ChineseBookCity","url":"https://chinesebookcity.com/product/9787107389122/"},{"name":"教习网 current-edition index","url":"https://www.51jiaoxi.com/books/3002393/"}],"use_limit":"Catalog-level metadata; sequence identity is independently confirmed."}
+  ],
+  "candidate_revised_artifacts":[
+    {"grade":2,"semester":"lower","edition_label":"2026 spring revised PEP candidate","candidate_isbn":"978-7-107-38913-9","isbn_compact":"9787107389139","publisher":"人民教育出版社","publication_term":"2026 spring","metadata_status":"single_source_candidate","candidate_source":{"name":"京东新华书店 listing index","url":"https://www.jd.com/hprm/171329e710341211e6b9.html","evidence":"Current 2026 spring PEP Grade 2 lower listing includes ISBN 9787107389139."},"supporting_artifact_use_sources":[{"name":"湖北新华印务","url":"https://www.hbprint.cn/News_d/130.html","evidence":"2026 spring production list includes PEP Mathematics Grade 2 lower, but does not independently corroborate the ISBN."},{"name":"济宁市兖州区教材目录","url":"https://www.jining.gov.cn/art/2026/3/24/art_84785_2924613.html","evidence":"2026 school-use directory includes PEP Mathematics Grade 2 lower, but does not independently corroborate the ISBN."}],"sequence_match_status":"verified_separately","render_rule":"Do not display this ISBN as verified until a second edition-matched source corroborates it."}
   ],
   "rejected_legacy_artifacts":[
     {"grade":1,"semester":"upper","isbn":"978-7-107-36922-3","publication_year":2022,"status":"rejected_legacy","reason":"2022 edition and legacy TOC conflict with revised sequence."},
-    {"grade":1,"semester":"lower","status":"reject_if_legacy_toc","reason":"Pages showing 分类与整理, 认识人民币, 找规律 and 总复习 as the Grade 1 lower sequence are legacy and must not be attached to ISBN 9787107382451."},
-    {"grade":2,"semester":"lower","isbn":"978-7-107-37176-9","publication_year":2023,"status":"rejected_legacy","reason":"Catalog identifies a 2023 edition; not the revised Grade 2 lower artifact."},
-    {"grade":3,"semester":"upper","isbn":"978-7-107-36924-7","publication_year":2022,"status":"rejected_legacy","reason":"Catalog identifies the 2022 edition; not accepted for revised Grade 3 upper."},
+    {"grade":1,"semester":"lower","status":"reject_if_legacy_toc","reason":"Pages showing 分类与整理, 认识人民币, 找规律 and 总复习 as the Grade 1 lower sequence are legacy."},
+    {"grade":2,"semester":"lower","isbn":"978-7-107-37176-9","publication_year":2023,"status":"rejected_legacy","reason":"2023 edition; not the revised Grade 2 lower artifact."},
+    {"grade":3,"semester":"upper","isbn":"978-7-107-36924-7","publication_year":2022,"status":"rejected_legacy","reason":"2022 edition; not accepted for revised Grade 3 upper."},
     {"grade":4,"semester":"upper","isbn":"978-7-107-36927-8","publication_year":2022,"status":"rejected_legacy"},
     {"grade":5,"semester":"upper","isbn":"978-7-107-36926-1","publication_year":2022,"status":"rejected_legacy"},
     {"grade":6,"semester":"upper","isbn":"978-7-107-36925-4","publication_year":2022,"status":"rejected_legacy"}
@@ -21,16 +24,17 @@
     {"grade":1,"semester":"upper","revised_isbn_status":"verified_secondary_crosscheck","artifact_status":"identified"},
     {"grade":1,"semester":"lower","revised_isbn_status":"verified_secondary_catalog","artifact_status":"identified_and_sequence_matched"},
     {"grade":2,"semester":"upper","revised_isbn_status":"verified_secondary_catalog","artifact_status":"identified_and_sequence_matched"},
-    {"grade":2,"semester":"lower","revised_isbn_status":"pending","artifact_status":"revised_sequence_and_current_detail_verified"},
-    {"grade":3,"semester":"upper","revised_isbn_status":"pending","artifact_status":"revised_sequence_detail_and_secondary_page_ranges_verified"},
-    {"grade":3,"semester":"lower","revised_isbn_status":"pending","artifact_status":"revised_sequence_and_teacher_guide_detail_verified"},
-    {"grade":4,"semester":"upper","revised_isbn_status":"pending","artifact_status":"2026 revised synchronized detail verified; textbook ISBN pending"},
-    {"grade":4,"semester":"lower","revised_isbn_status":"pending","artifact_status":"designed_sequence_verified; rollout/detail artifact pending"},
-    {"grade":5,"semester":"upper","revised_isbn_status":"pending","artifact_status":"2026 revised synchronized detail verified; textbook ISBN pending"},
-    {"grade":5,"semester":"lower","revised_isbn_status":"pending","artifact_status":"designed-series detail secondary verified; rollout/ISBN pending"},
-    {"grade":6,"semester":"upper","revised_isbn_status":"pending","artifact_status":"2026 revised synchronized detail verified; textbook ISBN pending"},
-    {"grade":6,"semester":"lower","revised_isbn_status":"pending","artifact_status":"designed_sequence_verified; rollout/detail artifact pending"}
+    {"grade":2,"semester":"lower","revised_isbn_status":"single_source_candidate","artifact_status":"revised_artifact_and_sequence_verified; ISBN candidate not independently corroborated"},
+    {"grade":3,"semester":"upper","revised_isbn_status":"not_publicly_recovered","artifact_status":"revised_sequence_detail_and_publication timing verified"},
+    {"grade":3,"semester":"lower","revised_isbn_status":"not_publicly_recovered","artifact_status":"revised_sequence_and_teacher-guide detail verified"},
+    {"grade":4,"semester":"upper","revised_isbn_status":"not_publicly_recovered","artifact_status":"2026 revised synchronized detail verified"},
+    {"grade":4,"semester":"lower","revised_isbn_status":"not_applicable_to_current_rollout_evidence","artifact_status":"designed_sequence_verified; later-semester artifact not required by documented rollout"},
+    {"grade":5,"semester":"upper","revised_isbn_status":"not_publicly_recovered","artifact_status":"2026 revised synchronized detail verified"},
+    {"grade":5,"semester":"lower","revised_isbn_status":"not_applicable_to_current_rollout_evidence","artifact_status":"designed sequence/detail classified; later-semester current use not verified"},
+    {"grade":6,"semester":"upper","revised_isbn_status":"not_publicly_recovered","artifact_status":"2026 revised synchronized detail verified"},
+    {"grade":6,"semester":"lower","revised_isbn_status":"not_applicable_to_current_rollout_evidence","artifact_status":"designed_sequence_verified; later-semester artifact not required by documented rollout"}
   ],
   "rejection_tests":["Reject an ISBN when visible TOC contains legacy-only units inconsistent with the canonical revised sequence.","Reject a current-dated reseller page when the physical book metadata identifies a 2022/older edition.","Do not infer ISBNs from neighboring PEP ISBN numbers.","Do not use companion-workbook ISBNs as textbook ISBNs.","Keep teacher-guide ISBNs separate from student-textbook ISBNs."],
-  "next_priority":["Verify revised Grade 2 lower and Grade 3 upper/lower textbook ISBNs.","Verify 2026 revised Grade 4-6 upper textbook ISBNs when matching catalogs index them.","Capture page count and edition/impression metadata only from the same accepted artifact."]
+  "completion":{"verified_revised_isbns":3,"single_source_candidates":1,"total_revised_volume_slots":12,"sequence_coverage":"12/12","artifact_evidence_states_classified":"12/12"},
+  "status":"complete_evidence_classification"
 }
