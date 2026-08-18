@@ -3,7 +3,7 @@
 
   const PROFILE_KEY = 'mathbridge.experience.profile.v1';
   const TM_PREF_KEY = 'mathbridge.teacherMode.preferences.v1';
-  const state = { step: 0, draft: null, profile: null, rendering: false };
+  const state = { step: 0, draft: null, profile: null, rendering: false, journeySignature: '' };
 
   const copy = {
     zh: {
@@ -189,9 +189,14 @@
     const content = document.getElementById('content');
     const pageHead = content?.querySelector('.page-head');
     if (!content || !pageHead) return;
+    const concept = document.querySelector('.topic-btn.active[data-concept]')?.dataset.concept || '';
+    const signature = [concept,state.profile.role,state.profile.need,state.profile.grade,state.profile.system,lang()].join('|');
+    const existing = document.getElementById('experienceJourney');
+    if (existing && signature === state.journeySignature) return;
     state.rendering = true;
-    document.getElementById('experienceJourney')?.remove();
+    existing?.remove();
     pageHead.insertAdjacentHTML('afterend', journeyMarkup());
+    state.journeySignature = signature;
     state.rendering = false;
   }
 
@@ -259,6 +264,7 @@
   function applyProfile() {
     saveProfile({ ...state.draft, grade:Number(state.draft.grade) });
     closeOnboarding();
+    state.journeySignature = '';
     syncUnderlyingControls();
     buildExperienceBar();
     updateSidebarLabels();
@@ -289,7 +295,20 @@
       return;
     }
     if (event.target.closest('[data-compare-concept],[data-cn-compare-concept]')) closeCurriculum();
-    if (event.target.closest('#langBtn')) setTimeout(() => { buildExperienceBar(); updateSidebarLabels(); updateCurriculumTopbar(); renderJourney(); }, 0);
+
+    const gradeControl = event.target.closest('[data-grade]');
+    if (gradeControl && state.profile && !document.getElementById('experienceOnboarding')) {
+      saveProfile({ ...state.profile, grade:Number(gradeControl.dataset.grade) });
+      state.journeySignature = '';
+      setTimeout(() => { buildExperienceBar(); renderJourney(); }, 0);
+    }
+    const systemControl = event.target.closest('[data-system]');
+    if (systemControl && state.profile && !document.getElementById('experienceOnboarding')) {
+      saveProfile({ ...state.profile, system:systemControl.dataset.system });
+      state.journeySignature = '';
+      setTimeout(() => { buildExperienceBar(); renderJourney(); }, 0);
+    }
+    if (event.target.closest('#langBtn')) setTimeout(() => { state.journeySignature=''; buildExperienceBar(); updateSidebarLabels(); updateCurriculumTopbar(); renderJourney(); }, 0);
   });
 
   function init() {
