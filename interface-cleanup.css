@@ -1,0 +1,12 @@
+/* Keep the comparison landing focused on the teacher summary. */
+.compare-secondary{display:none!important}
+body.comparison-expanded .compare-secondary.grid-2{display:grid!important}
+body.comparison-expanded .compare-secondary.card{display:block!important}
+.compare-detail-toggle{display:flex;justify-content:center;margin:2px 0 14px}
+.compare-detail-toggle button{border:1px solid var(--line);background:#fff;color:#475467;border-radius:9px;padding:8px 12px;font-size:11px;font-weight:750;box-shadow:0 2px 8px rgba(16,24,40,.025)}
+.compare-detail-toggle button:hover{background:#f9fafb}
+/* Evidence is available, but it should never dominate the primary teacher workflow. */
+.evidence-quiet{margin-top:2px;margin-bottom:14px!important}
+.tm-evidence-note{font-size:9px!important;color:#98a2b3!important;border-top-color:#f0f1f3!important}
+.footer{opacity:.82}
+@media(max-width:620px){.compare-detail-toggle button{width:100%}}
